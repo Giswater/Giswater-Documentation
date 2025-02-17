@@ -1,0 +1,3 @@
+version_list: testing, latest, 3.6017
+# Fill this list with the languages we build for the release, space separated
+supported_languages: en es_ES ca_ES

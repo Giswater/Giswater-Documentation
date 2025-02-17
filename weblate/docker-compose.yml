@@ -1,0 +1,50 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:14
+    restart: always
+    environment:
+      - POSTGRES_USER=weblate
+      - POSTGRES_PASSWORD=weblate
+      - POSTGRES_DB=weblate
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:alpine
+    restart: always
+    container_name: cache
+
+  weblate:
+    image: weblate/weblate:latest
+    restart: always
+    depends_on:
+      - db
+      - redis
+    ports:
+      - "8080:8080"
+    environment:
+      - WEBLATE_ADMIN_EMAIL=admin@example.com
+      - WEBLATE_ADMIN_PASSWORD=yourpassword
+
+      - POSTGRES_DB=weblate
+      - POSTGRES_USER=weblate
+      - POSTGRES_PASSWORD=weblate
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+
+      - WEBLATE_HOST=0.0.0.0
+      - WEBLATE_SITE_DOMAIN=localhost:8080
+      - WEBLATE_REDIS_URL=redis://cache:6379/0
+
+    volumes:
+      # Volumen para los datos internos de Weblate
+      - weblate_data:/app/data
+
+      # Montar la carpeta "GISWATER.GITHUB.IO.DOCS" (que está un nivel arriba de "weblate/")
+      - ../:/repos/docs:rw
+
+volumes:
+  db_data:
+  weblate_data:
