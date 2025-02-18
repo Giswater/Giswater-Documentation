@@ -25,6 +25,27 @@ help:
 
 .PHONY: help Makefile
 
+springclean:
+	rm -rf $(BUILDDIR)
+	# all .mo files
+	-find $(SOURCEDIR)/locale/*/LC_MESSAGES/ -type f -name '*.mo' -delete
+
+gettext:
+	echo "$(SPHINXBUILD) $(SOURCEDIR) $(BUILDDIR) $(SPHINXOPTS) $(O)"
+	@$(SPHINXBUILD) -M gettext "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+update-po: gettext
+	@echo "Updating .po files for languages: $(LANGUAGES)"
+	@$(SPHINXINTL) update -p $(BUILDDIR)/gettext
+
+sync-to-i18n:
+	@echo "Syncing i18n files for languages: $(LANGUAGES)"
+	./sync_translations_to_i18n.sh $(VERSION)
+
+sync-from-i18n:
+	@echo "Syncing i18n files from i18n to gettext"
+	./sync_translations_from_i18n.sh $(VERSION)
+
 html:
 	echo "$(SPHINXOPTS) $(SPHINXINTLOPTS)"
 	if [ $(LANG) != "en" ]; then \
@@ -44,3 +65,11 @@ site: html zip
 
 full: html zip
 	make LANG=$(LANG) pdf;
+
+# this will build ALL languages, AND tries to rsync them to the web dir on qgis2
+# to be able to run this you will need a key on the server
+all: springclean
+	@for LANG in $(LANGUAGES) ; do \
+		make LANG=$$LANG site; \
+	done
+	rsync -hvrzc $(BUILDDIR)/zip $(SITEDIR)/;
