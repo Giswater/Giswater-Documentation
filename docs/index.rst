@@ -1,6 +1,6 @@
 
 **********************************
- Documentation for Giswater |version|
+Documentation for Giswater |version|
 **********************************
 
 Welcome to the official documentation of `Giswater <https://www.giswater.org>`_,

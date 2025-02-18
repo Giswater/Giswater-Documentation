@@ -23,3 +23,5 @@ venv
 .vscode
 .vscode-extensions
 core
+site
+locale

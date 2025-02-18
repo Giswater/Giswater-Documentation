@@ -153,5 +153,33 @@ if version not in version_list:
     raise ValueError('Giswater version is not in version list',
                      version, version_list)
 
+
+context = {
+    'versions': [[v, docs_url+v] for v in version_list],
+    'supported_languages': [[l, docs_url+version+'/'+l] for l in supported_languages],
+
+    # Do not display for outdated releases
+    'display_github': not html_context['outdated'],
+    'github_user': 'Giswater',
+    'github_repo': 'Giswater-Documentation',
+    'github_version': 'master/',
+    'github_url': 'https://github.com/Giswater/Giswater-Documentation/edit/master',
+    'weblate_url': 'https://weblate.giswater.org/',
+}
+
+if 'html_context' in globals():
+    html_context.update(context)
+else:
+    html_context = context
+
+# Supported image file formats and order of picking if named alike
+from sphinx.builders.html import StandaloneHTMLBuilder
+StandaloneHTMLBuilder.supported_image_types = [
+    'image/svg+xml',
+    'image/gif',
+    'image/png',
+    'image/jpeg'
+]
+
 # A list of warning codes to suppress arbitrary warning messages.
 suppress_warnings = ["config.cache"]
