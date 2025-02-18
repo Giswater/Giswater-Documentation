@@ -25,3 +25,4 @@ venv
 core
 site
 locale
+.env
