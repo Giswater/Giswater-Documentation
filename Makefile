@@ -40,11 +40,11 @@ update-po: gettext
 
 sync-to-i18n:
 	@echo "Syncing i18n files for languages: $(LANGUAGES)"
-	./sync_translations_to_i18n.sh $(VERSION)
+	./scripts/sync_translations_to_i18n.sh $(VERSION)
 
 sync-from-i18n:
 	@echo "Syncing i18n files from i18n to gettext"
-	./sync_translations_from_i18n.sh $(VERSION)
+	./scripts/sync_translations_from_i18n.sh $(VERSION)
 
 html:
 	echo "$(SPHINXOPTS) $(SPHINXINTLOPTS)"
