@@ -79,9 +79,9 @@ cd "$I18N_REPO_PATH"
 git config user.email "admin-giswater@users.noreply.github.com"
 git config user.name "Giswater Admin"
 
-# Debug: show git diff to verify changes
-echo "Git diff output after syncing:"
-git diff
+STATUS_OUTPUT=$(git status --porcelain)
+echo "Git status output:"
+echo "$STATUS_OUTPUT"
 
 # Check for changes including untracked files
 if [ -n "$(git status --porcelain)" ]; then
