@@ -50,17 +50,35 @@ else
     cd "$MAIN_REPO_PATH"
 fi
 
-# Sync translation files for each language
+# Ensure that the specified version folder exists in the i18n repository.
+if [ ! -d "$I18N_REPO_PATH/$VERSION" ]; then
+    echo "Error: Version folder '$VERSION' does not exist in the i18n repository."
+    exit 1
+fi
+
+echo "Syncing translations from the i18n repository for version $VERSION..."
+
 for lang in "${LANGUAGES[@]}"; do
-    SOURCE_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
-    TARGET_DIR="$I18N_REPO_PATH/$VERSION/locale/$lang/LC_MESSAGES"
-    mkdir -p "$TARGET_DIR"
-    rsync -av --delete "$SOURCE_DIR"/ "$TARGET_DIR"/
-    echo "Synced language '$lang' to $TARGET_DIR"
+    SOURCE_DIR="$I18N_REPO_PATH/$VERSION/locale/$lang/LC_MESSAGES"
+    TARGET_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
+    if [ -d "$SOURCE_DIR" ]; then
+        mkdir -p "$TARGET_DIR"
+        rsync -av "$SOURCE_DIR"/ "$TARGET_DIR"/
+        echo "Copied files for language '$lang' to $TARGET_DIR"
+    else
+        echo "Warning: Source directory for language '$lang' does not exist in version '$VERSION'."
+    fi
 done
+
+echo "Sync completed for version $VERSION."
 
 # Commit and push changes in the i18n repository
 cd "$I18N_REPO_PATH"
+
+# Configure Git identity for CI
+git config user.email "admin-giswater@users.noreply.github.com"
+git config user.name "Giswater Admin"
+
 if [ -n "$(git status --porcelain)" ]; then
     git add .
     git commit -m "Auto-sync translations for version $VERSION"
