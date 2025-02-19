@@ -79,8 +79,8 @@ cd "$I18N_REPO_PATH"
 git config user.email "admin-giswater@users.noreply.github.com"
 git config user.name "Giswater Admin"
 
-STATUS_OUTPUT=$(git status --porcelain)
-echo "Git status output:"
+STATUS_OUTPUT=$(git diff)
+echo "git diff output:"
 echo "$STATUS_OUTPUT"
 
 # Check for changes including untracked files
