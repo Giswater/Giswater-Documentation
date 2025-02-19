@@ -29,6 +29,11 @@ jobs:
           source venv/bin/activate
           make gettext
 
+      - name: Make sync scripts executable
+        run: |
+          chmod +x ./scripts/sync_translations_to_i18n.sh
+          chmod +x ./scripts/sync_translations_from_i18n.sh
+
       - name: Sync latest translations from i18n repository
         run: |
           source venv/bin/activate
@@ -38,9 +43,6 @@ jobs:
         run: |
           source venv/bin/activate
           make update-po
-
-      - name: Make sync script executable
-        run: chmod +x ./scripts/sync_translations_to_i18n.sh
 
       - name: Sync Translations to i18n Repository
         run: |
