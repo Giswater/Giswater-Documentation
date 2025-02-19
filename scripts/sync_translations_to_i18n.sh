@@ -79,9 +79,14 @@ cd "$I18N_REPO_PATH"
 git config user.email "admin-giswater@users.noreply.github.com"
 git config user.name "Giswater Admin"
 
+# Debug: show git diff to verify changes
+echo "Git diff output after syncing:"
+git diff
+
+# Check for changes including untracked files
 if [ -n "$(git status --porcelain)" ]; then
     git add .
-    git commit -m "Auto-sync translations for version $VERSION"
+    git commit -m "chore: auto-sync translations for version $VERSION"
     git push origin master
     echo "Changes committed and pushed to the i18n repository."
 else
