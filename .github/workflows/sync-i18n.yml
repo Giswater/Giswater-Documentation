@@ -38,6 +38,9 @@ jobs:
         run: |
           source venv/bin/activate
           make sync-from-i18n VERSION=testing
+        env:
+          I18N_TOKEN: ${{ secrets.I18N_TOKEN }}
+          I18N_REPO_URL: ${{ secrets.I18N_REPO_URL }}
 
       - name: Update PO Files
         run: |
