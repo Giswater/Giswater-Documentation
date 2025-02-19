@@ -3,7 +3,7 @@ name: Sync Translations to i18n
 on:
   push:
     branches:
-      - master # Change to "testing" if that's your branch name
+      - master
 
 jobs:
   sync-translations:
@@ -18,18 +18,25 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install Dependencies
+      - name: Create virtual environment and install dependencies
         run: |
-          pip install sphinx sphinx-intl
-
+          python3 -m venv venv
+          source venv/bin/activate
+          pip install -r REQUIREMENTS.txt
       - name: Build gettext files
-        run: make gettext
+        run: |
+          source venv/bin/activate
+          make gettext
 
       - name: Update PO Files
-        run: make update-po
+        run: |
+          source venv/bin/activate
+          make update-po
 
       - name: Sync Translations to i18n Repository
-        run: make sync-to-i18n VERSION=testing
+        run: |
+          source venv/bin/activate
+          make sync-to-i18n VERSION=testing
         env:
           I18N_TOKEN: ${{ secrets.I18N_TOKEN }}
           I18N_REPO_URL: ${{ secrets.I18N_REPO_URL }}
