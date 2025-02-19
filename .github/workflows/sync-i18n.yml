@@ -3,7 +3,7 @@ name: Sync Translations to i18n
 on:
   push:
     branches:
-      - master
+      - master # Change to "testing" if that's your branch name
 
 jobs:
   sync-translations:
@@ -28,6 +28,11 @@ jobs:
         run: |
           source venv/bin/activate
           make gettext
+
+      - name: Sync latest translations from i18n repository
+        run: |
+          source venv/bin/activate
+          make sync-from-i18n VERSION=testing
 
       - name: Update PO Files
         run: |
