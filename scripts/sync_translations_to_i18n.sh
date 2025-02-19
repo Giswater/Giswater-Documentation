@@ -59,15 +59,10 @@ fi
 echo "Syncing translations from the i18n repository for version $VERSION..."
 
 for lang in "${LANGUAGES[@]}"; do
-    SOURCE_DIR="$I18N_REPO_PATH/$VERSION/locale/$lang/LC_MESSAGES"
-    TARGET_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
+    SOURCE_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
+    TARGET_DIR="$I18N_REPO_PATH/$VERSION/locale/$lang/LC_MESSAGES"
     if [ -d "$SOURCE_DIR" ]; then
         mkdir -p "$TARGET_DIR"
-        echo "Source checksum:"
-        md5sum "$SOURCE_DIR/for_users/overview/overview.po"
-        echo "Target checksum:"
-        md5sum "$TARGET_DIR/for_users/overview/overview.po"
-
         rsync -av --checksum "$SOURCE_DIR"/ "$TARGET_DIR"/
         echo "Copied files for language '$lang' to $TARGET_DIR"
     else
@@ -83,10 +78,6 @@ cd "$I18N_REPO_PATH"
 # Configure Git identity for CI
 git config user.email "admin-giswater@users.noreply.github.com"
 git config user.name "Giswater Admin"
-
-STATUS_OUTPUT=$(git diff)
-echo "git diff output:"
-echo "$STATUS_OUTPUT"
 
 # Check for changes including untracked files
 if [ -n "$(git status --porcelain)" ]; then
