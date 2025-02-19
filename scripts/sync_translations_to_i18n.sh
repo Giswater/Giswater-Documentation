@@ -1,32 +1,73 @@
 #!/bin/bash
 # sync_translations_to_i18n.sh
-# Sincroniza recursivamente el directorio de traducciones del repositorio principal hacia el repositorio i18n.
-# Uso: ./sync_translations_to_i18n.sh <release_version>
+# Recursively syncs the translations directory from the main repository to the i18n repository.
+# Usage: ./sync_translations_to_i18n.sh <release_version>
+#
+# Requires the environment variable I18N_TOKEN to authenticate with the i18n repository.
+# Requires the environment variable I18N_REPO_URL to be defined (base URL without token).
+# The script constructs the full repository URL using these variables.
 
 set -e
 
 if [ $# -lt 1 ]; then
-    echo "Uso: $0 <release_version>"
+    echo "Usage: $0 <release_version>"
+    exit 1
+fi
+
+# Ensure I18N_TOKEN is defined
+if [ -z "$I18N_TOKEN" ]; then
+    echo "Error: The environment variable I18N_TOKEN is not defined."
+    exit 1
+fi
+
+# Ensure I18N_REPO_URL is defined
+if [ -z "$I18N_REPO_URL" ]; then
+    echo "Error: The environment variable I18N_REPO_URL is not defined."
     exit 1
 fi
 
 VERSION=$1
 LANGUAGES=("en" "es_ES" "ca_ES")
 
-# Directorios (ajusta estas rutas si es necesario)
-MAIN_REPO_PATH=$(pwd)  # Repositorio principal
+# Directories (adjust these paths if needed)
+MAIN_REPO_PATH=$(pwd)  # Main repository (current directory)
 LOCALE_DIR="$MAIN_REPO_PATH/locale"
-I18N_REPO_PATH="../Giswater-Documentation-i18n"  # Asumiendo que está en un directorio hermano
+# Local path for the i18n repository; assumed to be a sibling directory
+I18N_REPO_PATH="../Giswater-Documentation-i18n"
+# Construct the full URL including the token for HTTPS authentication
+I18N_REPO_FULL_URL="https://${I18N_TOKEN}@${I18N_REPO_URL}"
 
-echo "Sincronizando archivos de traducción hacia el repositorio i18n para la versión $VERSION..."
+echo "Syncing translation files to the i18n repository for version $VERSION..."
 
+# If the i18n repository does not exist locally, clone it
+if [ ! -d "$I18N_REPO_PATH" ]; then
+    echo "Cloning i18n repository from $I18N_REPO_FULL_URL..."
+    git clone "$I18N_REPO_FULL_URL" "$I18N_REPO_PATH"
+else
+    echo "Updating i18n repository..."
+    cd "$I18N_REPO_PATH"
+    git pull origin master
+    cd "$MAIN_REPO_PATH"
+fi
+
+# Sync translation files for each language
 for lang in "${LANGUAGES[@]}"; do
     SOURCE_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
     TARGET_DIR="$I18N_REPO_PATH/$VERSION/locale/$lang/LC_MESSAGES"
     mkdir -p "$TARGET_DIR"
-    # Copia recursivamente todo el contenido (archivos y subdirectorios)
     rsync -av --delete "$SOURCE_DIR"/ "$TARGET_DIR"/
-    echo "Sincronizado recursivamente $lang a $TARGET_DIR"
+    echo "Synced language '$lang' to $TARGET_DIR"
 done
 
-echo "Sincronización completada para la versión $VERSION."
+# Commit and push changes in the i18n repository
+cd "$I18N_REPO_PATH"
+if [ -n "$(git status --porcelain)" ]; then
+    git add .
+    git commit -m "Auto-sync translations for version $VERSION"
+    git push origin master
+    echo "Changes committed and pushed to the i18n repository."
+else
+    echo "No changes to commit in the i18n repository."
+fi
+
+echo "Sync completed for version $VERSION."
