@@ -23,6 +23,7 @@ jobs:
           python3 -m venv venv
           source venv/bin/activate
           pip install -r REQUIREMENTS.txt
+
       - name: Build gettext files
         run: |
           source venv/bin/activate
@@ -32,6 +33,9 @@ jobs:
         run: |
           source venv/bin/activate
           make update-po
+
+      - name: Make sync script executable
+        run: chmod +x ./scripts/sync_translations_to_i18n.sh
 
       - name: Sync Translations to i18n Repository
         run: |
