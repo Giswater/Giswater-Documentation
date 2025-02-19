@@ -63,6 +63,11 @@ for lang in "${LANGUAGES[@]}"; do
     TARGET_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
     if [ -d "$SOURCE_DIR" ]; then
         mkdir -p "$TARGET_DIR"
+        echo "Source checksum:"
+        md5sum "$SOURCE_DIR/for_users/overview/overview.po"
+        echo "Target checksum:"
+        md5sum "$TARGET_DIR/for_users/overview/overview.po"
+
         rsync -av --checksum "$SOURCE_DIR"/ "$TARGET_DIR"/
         echo "Copied files for language '$lang' to $TARGET_DIR"
     else
