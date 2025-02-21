@@ -1,10 +1,10 @@
 .. _Giswater-Administrator-Guide-index-reference:
 
 ===============
-Giswater Administrator Guide
+Guía del Administrador de Giswater
 ===============
 
-Empty page for administrators index.
+Página vacía para el índice de administradores.
 
 .. toctree::
     :maxdepth: 2

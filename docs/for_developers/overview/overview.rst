@@ -4,4 +4,4 @@
 Overview
 ********
 
-Empty page for developers overview.
+Página vacía para la vista general de desarrolladores.

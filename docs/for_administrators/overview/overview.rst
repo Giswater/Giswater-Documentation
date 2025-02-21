@@ -4,5 +4,5 @@
 Overview
 ********
 
-Empty page for administrators overview.
+Página vacía para la vista general de administradores.
 

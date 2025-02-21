@@ -56,7 +56,7 @@ exclude_patterns = [
 
 # -- Internationalisation ----------------------------------------------------
 
-language = 'en'
+language = 'es_CR'
 locale_dirs = ['locale/']   # path is example but recommended.
 gettext_compact = False     # optional.
 
@@ -164,7 +164,7 @@ context = {
     'github_repo': 'Giswater-Documentation',
     'github_version': 'master/',
     'github_url': 'https://github.com/Giswater/Giswater-Documentation/edit/master',
-    'weblate_url': 'https://weblate.giswater.org/',
+    'weblate_url': 'https://translations.docs.giswater.org/',
 }
 
 if 'html_context' in globals():

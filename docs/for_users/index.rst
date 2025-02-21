@@ -13,4 +13,4 @@ Giswater User Guide
     overview/getting-started
     steps-to-create-a-new-project/steps-to-create-a-new-project
 
-Empty page for users index.
+Página vacía para el índice de usuarios.

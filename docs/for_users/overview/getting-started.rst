@@ -1,21 +1,21 @@
 .. _giswater.documentation.getting-started:
 
 ********
-Getting Started
+Primeros Pasos
 ********
 
-Welcome to the getting started page of giswater dbmodel project.
+Bienvenido a la página de inicio de giswater dbmodel.
 
-Lots of things to learn. Are you ready?
+Muchas cosas para aprender. ¿Estás listo?
 
-First of all, you need to create your database project schema, using database superuser connection, and qgis project client by click on admin button without any giswater project loaded.
+En primer lugar, necesitas crear tu esquema del proyecto de base de datos, usando una conexión de superadministrador de base de datos, y un cliente de proyecto de QGIS haciendo clic en el botón de administrador sin ningún proyecto de Giswater cargado.
 
-Requirements and software instalation:
+Requisitos y instalación de software:
 
-Firstly, to work with Giswater you will need at least 2 programs:
+En primer lugar, para trabajar con Giswater necesitarás al menos 2 programas:
 
- - PostgreSQL: Installation process must include the selection pgAdmin component (Data Base Manager) and Postgis application (Spatial Extension)
- - QGIS: Geoprocessing software
+ - PostgreSQL: El proceso de instalación debe incluir la selección del componente pgAdmin (Administrador de Base de Datos) y la aplicación Postgis (Extensión Espacial)
+ - QGIS: Software de procesamiento geoespacial
 
 
 

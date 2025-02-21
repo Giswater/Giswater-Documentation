@@ -1,30 +1,30 @@
 .. _giswater.documentation.preamble:
 
 ===============
-Preamble
+Preámbulo
 ===============
 
-Welcome to Giswater, the first open-source software for water cycle management (water supply and urban drainage).
+Bienvenido a Giswater, el primer software de código abierto para el manejo del ciclo del agua (abastecimiento de agua y drenaje urbano).
 
-The software has been licensed under the `GNU General Public License v3.0 <https://www.gnu.org/licenses/gpl-3.0.en.html>`_.
+El software ha sido licenciado bajo la `Licencia Pública General GNU v3.0 <https://www.gnu.org/licenses/gpl-3.0.en.html>`_.
 
-The following document is licensed under a `Creative Commons Attribution-ShareAlike 4.0 International License <https://creativecommons.org/licenses/by-sa/4.0/>`_.
+El siguiente documento está licenciado bajo una `Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional <https://creativecommons.org/licenses/by-sa/4.0/>`_.
 
-This user’s guide aims to help you start working with Giswater.
+Esta guía de usuario tiene como objetivo ayudarte a empezar a trabajar con Giswater.
 
-What is Giswater?
+¿Qué es Giswater?
 -----------------
 
-Giswater is an open-source application for management and exploitation of hydraulic infrastructure
-elements in both water supply and urbain drainage. It is accessible using database and graphic
-representation using any kind of geographic information system (GIS).
+Giswater es una aplicación de código abierto para el manejo y explotación de infraestructuras hidráulicas
+elementos en ambos abastecimiento de agua y drenaje urbano. Es accesible usando una base de datos y una
+representación gráfica usando cualquier sistema de información geográfica (SIG).
 
-At the same time, Giswater can act as a driver connecting spatial database with tools used for hydraulic
-analysis. Currently Giswater is on the third version of the software, which represents notable improvements
-comparing with previous versions, not only graphically but also in usability and capabilities.
+Al mismo tiempo, Giswater puede actuar como un conductor que conecta una base de datos espacial con herramientas
+usadas para el análisis hidráulico. Actualmente, Giswater está en su tercera versión de software, que representa notables
+mejoras comparadas con las versiones anteriores, no solo gráficamente sino también en usabilidad y capacidades.
 
-As presented on this image , Giswater is located between the applications, which used all together allow a
-solid and global management in relation to water supply and urban drainage models. The central element of
-the set is the database, where all the information and most of the functionalities of each Giswater project is located.
-Giswater uses PostgreSQL database, which together with its PostGIS extension allows to conveniently link it with the next
-application of the set: QGIS.
+Como se presenta en esta imagen, Giswater está ubicado entre las aplicaciones, que usadas juntas permiten un
+manejo sólido y global en relación con los modelos de abastecimiento de agua y drenaje urbano. El elemento central
+del conjunto es la base de datos, donde se encuentra toda la información y la mayoría de las funcionalidades de cada
+proyecto de Giswater. Giswater usa una base de datos PostgreSQL, que junto con su extensión PostGIS permite
+enlazarlo convenientemente con la siguiente aplicación del conjunto: QGIS.

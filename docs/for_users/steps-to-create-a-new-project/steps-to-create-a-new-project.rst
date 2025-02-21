@@ -1,7 +1,7 @@
 .. _giswater.documentation.steps-to-create-a-new-project:
 
 ********
-Creating Schema and Project Using Giswater Plugin on QGIS
+Creación de un nuevo proyecto usando el plugin de Giswater en QGIS
 ********
 
 .. only:: html
@@ -9,32 +9,32 @@ Creating Schema and Project Using Giswater Plugin on QGIS
    .. contents::
       :local:
 
-This guide will help you create a new project, assuming you have all required programs installed and a properly configured database connection with all necessary extensions.
+Esta guía te ayudará a crear un nuevo proyecto, asumiendo que tienes todos los programas requeridos instalados y una conexión de base de datos correctamente configurada con todas las extensiones necesarias.
 
 .. note::
-   We recommend installing the example project first. This provides a reference you can check against when questions arise.
+   Recomendamos instalar el proyecto de ejemplo primero. Esto proporciona una referencia que puedes usar cuando surjan preguntas.
 
 .. _qgis.documentation.create-db-project-schema:
 
-Creating the Database Project Schema
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Creación del esquema del proyecto de base de datos
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Choose your language [LANG] and coordinate system [EPSG]
-2. Select an empty project (without sample data or INP files)
+1. Elige tu idioma [LANG] y el sistema de coordenadas [EPSG]
+2. Selecciona un proyecto vacío (sin datos de ejemplo o archivos INP)
 
 .. important::
-   You need PostgreSQL superadmin privileges to work with Giswater.
+   Necesitas privilegios de superadministrador de PostgreSQL para trabajar con Giswater.
 
 .. _qgis.documentation.create-qgis-project-file:
 
-Creating the QGIS Project File
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Creación del archivo de proyecto de QGIS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Choose your role type when creating the QGIS project file.
+Elige tu tipo de rol cuando creas el archivo de proyecto de QGIS.
 
 .. note::
-   * Always protect your password
-   * For beginners, the [basic] role type is recommended as it has fewer functions and layers to manage
-   * Advanced roles provide access to additional layer views and Giswater features
+   * Siempre protege tu contraseña
+   * Para principiantes, el tipo de rol [basic] es recomendado ya que tiene menos funciones y capas para gestionar
+   * Los roles avanzados proporcionan acceso a vistas adicionales y características de Giswater
 
 .. figure:: img/roles_projects.png

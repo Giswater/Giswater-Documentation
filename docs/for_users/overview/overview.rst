@@ -1,9 +1,7 @@
 .. _giswater.documentation.users_overview:
 
 ********
-Overview
+Descripción general
 ********
 
-Empty page for users overview.
-
-More content to test the sync of translations.
+Página vacía para la descripción general de los usuarios.

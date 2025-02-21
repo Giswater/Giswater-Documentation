@@ -1,57 +1,56 @@
 
 **********************************
-Documentation for Giswater |version|
+Documentación de Giswater |version|
 **********************************
 
 .. only:: testing
 
-  .. attention::  You are reading the testing version of Giswater documentation,
-    an ongoing work which targets the latest changes in the software and may
-    document features not available or compatible with Giswater |CURRENT| Long
-    Term Release.
+  .. attention::  Estás leyendo la versión de prueba de la documentación de Giswater,
+    un trabajo en progreso que incluye los últimos cambios en el software y puede
+    documentar funciones no disponibles o compatibles con Giswater.
 
 .. only:: not testing
 
-  .. hint:: Looking for documentation of versions newer than the
-    |version| Long Term Release? Have a look at the
-    `testing docs <https://docs.giswater.org/testing/en/>`_.
+  .. hint:: ¿Buscás documentación de versiones más nuevas que la
+    |version|? Dale un vistazo a la
+    `documentación de prueba <https://docs.giswater.org/testing/es_CR/>`_.
 
-.. note:: Giswater documentation is available in various languages and versions.
-  Expand the :guilabel:`Giswater Documentation` menu at the bottom of the
-  sidebar to see the list.
-
-
-Welcome to the official documentation of `Giswater <https://www.giswater.org>`_,
-an optimized and tailored guide for your organization's use of Giswater.
-Fast, dynamic, and built to adapt to your needs, this documentation is structured
-to give you the best experience while navigating your Giswater functions.
+.. note:: La documentación de Giswater está disponible en varios idiomas y versiones.
+  Expandí el menú :guilabel:`Documentación de Giswater` en la parte inferior de la
+  barra lateral para ver la lista.
 
 
-.. note:: Welcome to Giswater, the first free software with the objective of
-   performing an integrated management of the water cycle (supply and sanitation).
+Bienvenido a la documentación oficial de `Giswater <https://www.giswater.org>`_,
+una guía optimizada y personalizada para el uso de Giswater en tu organización.
+Rápida, dinámica y construida para adaptarse a tus necesidades, esta documentación está
+estructurada para darte la mejor experiencia mientras navegás por las funciones de Giswater.
 
-    * Submit an issue or pull request on the `GitHub repository
+
+.. note:: Bienvenido a Giswater, el primer software libre con el objetivo de
+   realizar una gestión integrada del ciclo del agua (abastecimiento y saneamiento).
+
+    * Enviá un reporte o pull request en el `repositorio de GitHub
       <https://github.com/giswater/giswater/>`_,
 
-Please have a look into one of the documents below.
+Por favor, dale un vistazo a uno de los documentos a continuación.
 
 .. toctree::
    :maxdepth: 2
-   :caption: For Users
+   :caption: Para Usuarios
 
-   Giswater Desktop User Guide/Manual <for_users/index>
-
-.. toctree::
-   :maxdepth: 2
-   :caption: For Developers
-
-   Giswater Developer Guide <for_developers/index>
+   Guía/Manual de Usuario de Giswater Desktop <for_users/index>
 
 .. toctree::
    :maxdepth: 2
-   :caption: For Administrators
+   :caption: Para Desarrolladores
 
-   Giswater Administrator Guide <for_administrators/index>
+   Guía del Desarrollador de Giswater <for_developers/index>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Para Administradores
+
+   Guía del Administrador de Giswater <for_administrators/index>
 
 
 * :ref:`genindex`
