@@ -42,12 +42,3 @@ Por favor, dale un vistazo a uno de los documentos a continuación.
    giswater/for_users/index
    giswater/for_developers/index
    giswater/for_admins/index
-
-.. toctree::
-   :maxdepth: 1
-   :caption: QWC2
-   :hidden:
-   :numbered:
-
-   qwc2/for_users/index
-   qwc2/for_admins/index
