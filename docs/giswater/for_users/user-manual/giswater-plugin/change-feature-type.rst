@@ -8,8 +8,8 @@ El cambio lo podemos hacer entre arcos, nodos y connecs. Una vez seleccionado el
 .. figure:: img/change_feature_type.png
 
 - Current feature type: tipo de elemento actual. Se selecciona por defecto.
-- New feature type: tipo de elemento al cual queremos cambiar. Seleccionaremos uno en el desplegable.
-Tendremos disponibles todos aquellos que en el "Node feature catalog" tengan el valor *verdadero* en el campo *active*.
+- New feature type: tipo de elemento al cual queremos cambiar. Seleccionaremos uno en el desplegable. 
+  Tendremos disponibles todos aquellos que en el "Node feature catalog" tengan el valor *verdadero* en el campo *active*.
 - Catalog id: catálogo del nuevo elemento. Pinchando en el botón adyacente se abrirá una ventana donde especificaremos:
   
 .. figure:: img/change_feature_type_catalog.png
