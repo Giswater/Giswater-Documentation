@@ -62,7 +62,7 @@ for lang in "${LANGUAGES[@]}"; do
     TARGET_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
     if [ -d "$SOURCE_DIR" ]; then
         mkdir -p "$TARGET_DIR"
-        rsync -av "$SOURCE_DIR"/ "$TARGET_DIR"/
+        rsync -av --checksum --delete "$SOURCE_DIR"/ "$TARGET_DIR"/
         echo "Copied files for language '$lang' to $TARGET_DIR"
     else
         echo "Warning: Source directory for language '$lang' does not exist in version '$VERSION'."

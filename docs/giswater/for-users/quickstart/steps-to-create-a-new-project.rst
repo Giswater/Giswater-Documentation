@@ -31,4 +31,4 @@ Elige tu tipo de rol cuando creas el archivo de proyecto de QGIS.
    * Para principiantes, el tipo de rol [basic] es recomendado ya que tiene menos funciones y capas para gestionar
    * Los roles avanzados proporcionan acceso a vistas adicionales y características de Giswater
 
-.. figure:: img/roles_projects.png
+.. figure:: img/roles-projects.png

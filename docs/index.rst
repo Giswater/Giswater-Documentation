@@ -39,6 +39,6 @@ Por favor, dale un vistazo a uno de los documentos a continuación.
    :hidden:
    :numbered:
 
-   giswater/for_users/index
-   giswater/for_developers/index
-   giswater/for_admins/index
+   giswater/for-users/index
+   giswater/for-developers/index
+   giswater/for-admins/index
