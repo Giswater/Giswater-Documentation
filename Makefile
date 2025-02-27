@@ -36,7 +36,9 @@ gettext:
 
 update-po: gettext
 	@echo "Updating .po files for languages: $(LANGUAGES)"
-	@$(SPHINXINTL) update -p $(BUILDDIR)/gettext
+	@for LANG in $(LANGUAGES) ; do \
+		$(SPHINXINTL) update -p $(BUILDDIR)/gettext -l $$LANG; \
+	done
 
 sync-to-i18n:
 	@echo "Syncing i18n files for languages: $(LANGUAGES)"
