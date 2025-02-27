@@ -48,7 +48,7 @@ sync-from-i18n:
 
 html:
 	echo "$(SPHINXOPTS) $(SPHINXINTLOPTS)"
-	if [ $(LANG) != "en" ]; then \
+	if [ $(LANG) != "es_CR" ]; then \
 		$(SPHINXBUILD) -b html "$(SOURCEDIR)" "$(BUILDDIR)/html/$(LANG)" $(SPHINXINTLOPTS) $(0); \
 	else \
 		$(SPHINXBUILD) -b html -nW --keep-going "$(SOURCEDIR)" "$(BUILDDIR)/html/$(LANG)" $(SPHINXOPTS) $(0); \
