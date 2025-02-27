@@ -1,7 +1,7 @@
 .. _dialog-featuretype-change:
 
 ===============
-Dialogo Change Feature Type
+Diálogo Cambiar el tipo de elemento
 ===============
 
 Herramienta que permite cambiar el tipo de elemento de un objeto de la red por otro de un tipo distinto.
@@ -9,7 +9,7 @@ El cambio lo podemos hacer entre arcos, nodos y connecs. Una vez seleccionado el
 
 .. figure:: img/change-feature-type.png
 
-   Ventana de la herramienta Change feature type.
+   Ventana de la herramienta Cambiar el tipo de elemento.
 
 - Current feature type: tipo de elemento actual. Se selecciona por defecto.
 - New feature type: tipo de elemento al cual queremos cambiar. Seleccionaremos uno en el desplegable.
