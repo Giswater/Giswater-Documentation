@@ -1,7 +1,6 @@
-
-**********************************
+=================
 Documentación de Giswater |version|
-**********************************
+=================
 
 .. only:: testing
 
@@ -35,22 +34,20 @@ estructurada para darte la mejor experiencia mientras navegás por las funciones
 Por favor, dale un vistazo a uno de los documentos a continuación.
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Para Usuarios
+   :maxdepth: 1
+   :caption: GISWATER
+   :hidden:
+   :numbered:
 
-   Guía/Manual de Usuario de Giswater Desktop <for_users/index>
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Para Desarrolladores
-
-   Guía del Desarrollador de Giswater <for_developers/index>
+   giswater/for_users/index
+   giswater/for_developers/index
+   giswater/for_admins/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Para Administradores
+   :maxdepth: 1
+   :caption: QWC2
+   :hidden:
+   :numbered:
 
-   Guía del Administrador de Giswater <for_administrators/index>
-
-
-* :ref:`genindex`
+   qwc2/for_users/index
+   qwc2/for_admins/index
