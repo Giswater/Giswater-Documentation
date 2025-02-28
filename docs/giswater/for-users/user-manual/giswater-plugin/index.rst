@@ -26,3 +26,4 @@ A continuación se detallará la funcionalidad y objetivo de cada una de las her
    :caption: Botones de edición
 
    change-feature-type
+   delete-feature

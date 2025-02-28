@@ -34,11 +34,21 @@ estructurada para darte la mejor experiencia mientras navegás por las funciones
 Por favor, dale un vistazo a uno de los documentos a continuación.
 
 .. toctree::
-   :maxdepth: 1
-   :caption: GISWATER
-   :hidden:
-   :numbered:
+   :maxdepth: 2
+   :caption: PARA USUARIOS
 
-   giswater/for-users/index
-   giswater/for-developers/index
-   giswater/for-admins/index
+   Guía de inicio rápido <giswater/for-users/quickstart/steps-to-create-a-new-project>
+   Manual de usuario de Giswater <giswater/for-users/user-manual/index>
+   Trucos de usuario de Giswater <giswater/for-users/user-tricks/index>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: PARA DESARROLLADORES
+
+   Documentación para desarrolladores <giswater/for-developers/index>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: PARA ADMINISTRADORES
+
+   Documentación para administradores <giswater/for-admins/index>

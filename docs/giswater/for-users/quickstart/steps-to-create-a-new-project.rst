@@ -1,5 +1,5 @@
 ===============
-Creación de un nuevo proyecto usando el plugin de Giswater en QGIS
+Guía de inicio rápido
 ===============
 
 .. only:: html
