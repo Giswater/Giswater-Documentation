@@ -1,3 +1,3 @@
 ===============
-Entorno de trabajo en QGIS
+Instalación y puesta en marcha
 ===============

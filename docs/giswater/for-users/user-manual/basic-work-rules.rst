@@ -1,3 +1,0 @@
-===============
-Reglas básicas de trabajo
-===============
