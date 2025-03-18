@@ -6,10 +6,10 @@ Manual de Usuario de Giswater
    :maxdepth: 2
    :numbered: 4
 
-   introduction
-   necessary-software
-   basic-work-rules
-   working-environment-qgis
+   preambulo
+   que-es-giswater
+   instalacion-puesta-marcha
+   creacion-conexiones-previas
    giswater-plugin/index
    digitalization
    topological-geometrial
