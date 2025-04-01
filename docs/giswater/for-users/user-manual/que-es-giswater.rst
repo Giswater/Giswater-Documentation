@@ -9,7 +9,7 @@ como gráfica, a través de las que se tiene acceso desde cualquier sistema de i
 A su vez, Giswater también actúa como driver de conexión entre la base de datos espacial y 
 herramientas de análisis hidráulico.
 
-Como representa la Imagen 1, Giswater se enmarca dentro de una agrupación de aplicaciones que 
+Como se muestra en la siguiente figura, Giswater se enmarca dentro de una agrupación de aplicaciones que 
 conjuntamente utilizadas permiten una gestión global y sólida en relación a los modelos de 
 abastecimiento de aguas y drenaje urbano.
 
@@ -43,8 +43,6 @@ El propósito fundamental de esta guía es proporcionar al usuario un documento 
 realizar cualquier tarea con Giswater, desde la instalación inicial de los programas necesarios 
 hasta las operaciones de gestión más complejas.
 
-Las mejoras hechas en la versión 3 se verán reflejadas a lo largo del manual y se tratará de explicar 
+Las mejoras hechas en la versión 4 se verán reflejadas a lo largo del manual y se tratará de explicar 
 de la mejor forma posible la finalidad de las mejoras y el uso que se debe hacer de ellas.
 
-Además, en la Wiki de Github también se puede encontrar más información específica sobre el plugin, 
-con un enfoque técnico más elevado:
