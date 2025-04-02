@@ -1,23 +1,22 @@
-===============
+==================================
 Creación de las conexiones previas
-===============
+==================================
 
 En este apartado del manual, el usuario encontrará todos los pasos necesarios 
 para la creación de conexiones previas.
 
 
 Creación de base de datos de trabajo
-===================================
+====================================
 
 Una vez instalados DBeaver y PostgreSQL, al abrir DBeaver, lo primero que debemos
 hacer es añadir una nueva conexión.
 
 .. figure:: img/bd_dbeaver.png
-   :align: center
+    
+   Añadir nueva conexión.
 
-    Añadir nueva conexión.
-
-En la ventana "Connect to a database" hay que rellenar los siguientes campos 
+En la ventana **"Connect to a database"** hay que rellenar los siguientes campos 
 para añadir una nueva conexión:
 
 **Host:** puede ser localhost o una conexión a otro servidor.
@@ -31,7 +30,6 @@ para añadir una nueva conexión:
 **Password:** contraseña, que para el usuario postgres también es 'postgres'.
 
 .. figure:: img/Connect_db.png
-   :align: center
 
    Añadir una nueva conexión a Postgres mediante DBeaver.
 
@@ -43,20 +41,16 @@ base de datos. pgRouting será imprescindible para algunas de las herramientas
 de Giswater como el polígono de corte y los perfiles longitudinales. 
 
 .. |icon_sql| image:: img/sql.png
-   :align: middle
-
-Clicando el botón de comandos SQL podremos escribir nuestra primera query |icon_sql|
+Clicando el botón de comandos SQL podremos escribir nuestra primera query :|icon_sql|:
 
 .. figure:: img/extensions.png
-   :align: center
 
-.. note::
-    A partir de la versión 3 de PostGIS tambien será necesario añadir la 
-    extensión específica para gestionar capas ráster.
+.. attention::
+
+   A partir de la **versión 3** de **PostGIS** también será necesario añadir la 
+   extensión específica para gestionar capas ráster.
 
 .. figure:: img/extensions_raster.png
-   :align: center
-
 
 Conexión a la base de datos de trabajo desde QGIS
 =================================================
@@ -64,36 +58,35 @@ Conexión a la base de datos de trabajo desde QGIS
 Al abrir QGIS por primera vez, se deben configurar una serie de parámetros, 
 necesarios para trabajar con Giswater. Son los siguientes:
 
-* Crear una conexión PostGIS a la base de datos donde se encuentra el esquema de datos.
+- Crear una conexión PostGIS a la base de datos donde se encuentra el esquema de datos.
 
-* Para trabajar de forma cómoda y rápida con ráster, se recomienda ampliar la memoria 
+- Para trabajar de forma cómoda y rápida con ráster, se recomienda ampliar la memoria 
 caché de QGIS a 1GB y 1 año, mediante el menú *'Configuración/Opciones/Red'*.
 
-* Escoger abrir formulario si una única entidad es seleccionada.
+- Escoger abrir formulario si una única entidad es seleccionada.
 
 **¿Cómo configurar una conexión de QGIS a PostGIS?**
 
-* Pinchamos sobre el icono **Añadir capa PostGIS**.
+1. Pinchamos sobre el icono **Añadir capa PostGIS**.
 
-* Hacemos clic sobre el botón **Nueva** y en el formulario introducimos los parámetros de conexión.
+2. Hacemos clic sobre el botón **Nueva** y en el formulario introducimos los parámetros de conexión.
 
 .. figure:: img/Connect_qgis1.png
-   :align: center
-
+    
    Formulario de conexión a PostGIS desde QGIS. Así se podrán importar capas de la base de datos.
 
-* Una vez introducidos los parámetros, hacemos clic sobre el botón **Probar conexión**. 
+3. Una vez introducidos los parámetros, hacemos clic sobre el botón **Probar conexión**. 
 Si todo es correcto, en la parte superior de la ventana obtendremos el siguiente mensaje:
 
 .. figure:: img/connection_successful.png
-   :align: center
-
+    
    Probar conexión.
 
-* Pinchamos sobre el botón **Aceptar**. En este momento la información de conexión se 
+4. Pinchamos sobre el botón **Aceptar**. En este momento la información de conexión se 
 guardará con el nombre en la lista de conexiones.
 
-.. note::
+.. attention::
+   
    Si con esta conexión queremos tener la posibilidad de generar nuevos esquemas de 
    trabajo, el usuario de conexión deberá ser **SUPERUSER** en PostgreSQL.
 
