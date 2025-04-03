@@ -8,6 +8,7 @@ Herramienta que permite cambiar el tipo de elemento de un objeto de la red por o
 El cambio lo podemos hacer entre arcos, nodos y connecs. Una vez seleccionado el elemento a cambiar, en la ventana emergente obligatoriamente deberemos especificar:
 
 .. figure:: img/change-feature-type.png
+   :alt: Ventana de la herramienta Cambiar el tipo de elemento.
 
    Ventana de la herramienta Cambiar el tipo de elemento.
 
@@ -17,8 +18,9 @@ El cambio lo podemos hacer entre arcos, nodos y connecs. Una vez seleccionado el
 - Catalog id: catálogo del nuevo elemento. Pinchando en el botón adyacente se abrirá una ventana donde especificaremos:
 
 .. figure:: img/change-feature-type-catalog.png
+   :alt: Ventana para cambiar el catálogo al nuevo elemento.
 
-    Ventana para cambiar el catálogo al nuevo elemento.
+   Ventana para cambiar el catálogo al nuevo elemento.
 
 - Material: material del elemento.
 - Pn: presión nominal del elemento.

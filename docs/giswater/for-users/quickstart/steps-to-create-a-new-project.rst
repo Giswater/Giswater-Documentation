@@ -18,13 +18,17 @@ Creación del esquema del proyecto de base de datos
 Sobre un proyecto en blanco de QGIS, empezaremos por pinchar en el único botón de Giswater que tenemos disponible por el momento para que se abra la siguiente ventana:
 
 .. figure:: img/gestor-pytos.png
-      Ventana del gestor de proyectos Giswater.
+   :alt: Ventana del gestor de proyectos Giswater.
+
+   Ventana del gestor de proyectos Giswater.
 
 A continuación, seleccionaremos qué tipo de esquema queremos crear en el desplegable *Project Type* (ws para abastecimiento o ud para saneamiento)
 y pincharemos en el botón *Create DB project schema* para que se abra la ventana de creación del esquema:
 
 .. figure:: img/crear-esquema.png
-      Ventana de creación de esquema nuevo.
+   :alt: Ventana de creación de esquema nuevo.
+
+   Ventana de creación de esquema nuevo.
 
 En la ventana anterior tendremos que especificar:
 
@@ -51,7 +55,9 @@ Con el esquema de proyecto creado, el siguiente paso es crear el proyecto de QGI
 En la ventana emergente especificaremos el nombre del proyecto de QGIS, la ruta donde se guardará el proyecto así como deberemos marcar o desmarcar la casilla *Exportar contraseña usuario*.
 
 .. figure:: img/crear-pyto.png
-      Ventana de creación de proyecto QGIS.
+   :alt: Ventana de creación de proyecto QGIS
+
+   Ventana de creación de proyecto QGIS.
 
 El proyecto de QGIS se cargará tras ser creado y ya podremos empezar a trabajar con Giswater.
 
