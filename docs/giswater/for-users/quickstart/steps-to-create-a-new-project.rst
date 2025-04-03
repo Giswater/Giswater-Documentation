@@ -34,7 +34,7 @@ En la ventana anterior tendremos que especificar:
 
 - Tipo de proyecto: tipo de proyecto que vamos a crear (ws para abastecimiento o ud para saneamiento).
 - Idioma: idioma en el que se creará el esquema. Podremos elegir uno de los disponibles en el desplegable.
-  Si vamos a crear uno de los ejemplos disponibles (*Ejemplo inventario* o *Ejemplo completo*) * **obligatoriamente tendremos que seleccionar el idioma *English (USA)** *.
+  Si vamos a crear uno de los ejemplos disponibles (*Ejemplo inventario* o *Ejemplo completo*) **obligatoriamente tendremos que seleccionar el idioma English (USA)**.
 - Nombre proyecto: indicaremos el nombre del esquema de proyecto. **No puede contener letras mayúsculas**.
 - Descripción: breve descripción del proyecto.
 - Filtrar SRID: sistema de referencia de coordenadas de la zona donde se creará el esquema.
