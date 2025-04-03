@@ -168,7 +168,7 @@ relación con los estados de los elementos, lo que denominamos topología de est
 ver todos los tipos de modificaciones (insert o update) entre elementos arco y nodo y si se podran llevar a cabo teniendo 
 en cuenta el estado de los elementos. Encima de la tabla se pueden ver los distintos estados disponibles para los elementos en Giswater:
 
-.. figure:: img/modelo-de-datos-giswater/topologia_estadps.png
+.. figure:: img/modelo-de-datos-giswater/topologia_estados.png
 
 El tipo de estado que tiene unas condiciones más restrictivas es el **Planificado**. Operar con elementos en estado = 2 
 solo será posible para usuarios con el rol de masterplan o superior y hay que tener en cuenta que el manejo de estos elementos 
