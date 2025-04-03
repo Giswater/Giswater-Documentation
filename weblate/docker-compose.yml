@@ -24,6 +24,7 @@ services:
       - redis
     ports:
       - "8080:8080"
+      - "8443:4443"
     environment:
       - WEBLATE_ADMIN_EMAIL=${WEBLATE_ADMIN_EMAIL}
       - WEBLATE_ADMIN_PASSWORD=${WEBLATE_ADMIN_PASSWORD}
