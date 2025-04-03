@@ -34,7 +34,7 @@ usuarios de trabajar siempre con datos que se actualizan automáticamente.
 
 Aparte de la gestión de los datos a través de un software GIS también existe la posibilidad de 
 trabajar con los datos de Giswater en entorno web y móvil. Esta funcionalidad va aparte del uso 
-habitual en desktop, pues es solo para clientes que lo requieran.
+habitual en escritorio, pues es solo para clientes que lo requieran.
 
 ¿Cuál es el propósito de esta guía?
 ===================================
