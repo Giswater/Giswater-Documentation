@@ -104,6 +104,8 @@ interesantes para visualizar en el mapa:
     
     *Imagen .Elementos de la red segun su Nivel*
 
+.. _Catalogos:
+
 Catálogos
 ===============
 Los catálogos son una de las principales características y virtudes de Giswater. Estos permiten una organización 
@@ -124,6 +126,8 @@ Existen diversos tipos de catálogos en Giswater:
  * Gestión.
  * Modelo hidráulico.
  * Elementos adicionales.
+
+.. _Zonas del mapa:
 
 Zonas del mapa
 ==============
