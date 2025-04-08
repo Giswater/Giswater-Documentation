@@ -1,7 +1,7 @@
 ====================================
 Caja de herramientas de Giswater
 ====================================
-.. figure:: img/caja-herramientas/caja_herramientas_0.png
+.. figure:: img/caja_herramientas/caja_herramientas_0.png
 
 *Este capítulo tiene como objetivo presentar la caja de herramientas de Giswater que se 
 puede aplicar a la identificación y corrección de datos topológicos faltantes o inconsistentes de la información.*
@@ -11,7 +11,7 @@ visualizar capas vectoriales temporales que muestran espacialmente dónde están
 Además, a través de las tablas de atributos, el usuario puede calcular automática o manualmente las correcciones necesarias para que un 
 modelo hidráulico funcione.
 
-.. figure:: img/caja-herramientas/caja_herramientas_1.png
+.. figure:: img/caja_herramientas/caja_herramientas_1.png
 
 *Ilustración de la caja de herramientas auxiliar de Giswater en un esquema de UD para encontrar inconsistencias topológicas en la red CSS*
 
@@ -39,7 +39,7 @@ Por datos topológicos, nos referimos a todas las relaciones topológicas y geom
 geométricos de la red. Tienen valores de atributos, como profundidad, elevación superior, pendiente de arco, etc. 
 Estos atributos están muy bien explicados en la imagen representativa a continuación, para un esquema UD.
 
-.. figure:: img/caja-herramientas/caja_herramientas_2.png
+.. figure:: img/caja_herramientas/caja_herramientas_2.png
 
 *Ilustración de datos topológicos de red para el esquema UD.*
 
@@ -47,7 +47,7 @@ Esta información también se puede verificar, elemento por elemento, utilizando
 también es posible calcular la profundidad del nodo y la elevación superior con la herramienta de interpolación y extrapolación, 
 tal como se muestra a continuación.
 
-.. figure:: img/caja-herramientas/caja_herramientas_3.png
+.. figure:: img/caja_herramientas/caja_herramientas_3.png
 
 Por ejemplo, para un CSS (sistema de alcantarillado combinado - esquema UD), los primeros cambios en la red pueden basarse en los datos
 ráster DEM, la interpolación o la extrapolación de valores de elevación de nodos cercanos mediante herramientas Giswater específicas. 
@@ -65,7 +65,7 @@ topológicas y otras incongruencias geométricas típicas en los datos de invent
 Esta función verifica tanto el proyecto como la base de datos. Para la verificación de la base de datos, 
 se revisan todos los objetos seleccionados por el usuario a través de su selector de sector y explotación.
 
-.. figure:: img/caja-herramientas/caja_herramientas_4.png
+.. figure:: img/caja_herramientas/caja_herramientas_4.png
 
 Se ejecutará después de la importación y seleccionada las opciones correspondientes.
 
@@ -79,25 +79,25 @@ La ventana de resultados se divide en las secciones:
 Los errores críticos los podremos corregir utilizando las herramientas contenidas en 
 la Caja de herramientas de Giswater.
 
-.. figure:: img/caja-herramientas/caja_herramientas_5.png
+.. figure:: img/caja_herramientas/caja_herramientas_5.png
 
 *Información de verificación de auditoría sobre el modelo hidráulico*
 
 
 **2. Check arcs without node start/end: busca arcos sin nodos inicial/final.**
 
-.. figure:: img/caja-herramientas/caja_herramientas_6.png
+.. figure:: img/caja_herramientas/caja_herramientas_6.png
 
 *Comprobar arcos sin herramienta de inicio/fin de nodo*
 
-.. figure:: img/caja-herramientas/caja_herramientas_7.png
+.. figure:: img/caja_herramientas/caja_herramientas_7.png
 
 *Capas temporales con arcos sin nodos en QGIS ToC y Canvas, así como pestaña info log con la lista de los arcos que presentan 
 este tipo de problema.*
 
 **3. Slope consistency: Inconsistencia de la pendiente**
 
-.. figure:: img/caja-herramientas/caja_herramientas_8.png
+.. figure:: img/caja_herramientas/caja_herramientas_8.png
 
 *Generación de inconsistencia de pendiente de arco, creando capa temporal para todas las incongruencias encontradas e 
 información de metadatos de atributos*
@@ -105,46 +105,46 @@ información de metadatos de atributos*
 
 **4. Check data for o&m process: chequea los datos comprobando parámetros necesarios para procesos de operaciones y mantenimiento.**
 
-.. figure:: img/caja-herramientas/caja_herramientas_9.png
+.. figure:: img/caja_herramientas/caja_herramientas_9.png
 
 *La función permite detectar errores e inconsistencias de datos antes del primer proceso OM (mincut, zonas dinámicas de mapeo (ws), perfil (ud)).*
  
 **5. Check nodes duplicated: comprueba si hay nodos duplicados.**
 
-.. figure:: img/caja-herramientas/caja_herramientas_10.png
+.. figure:: img/caja_herramientas/caja_herramientas_10.png
 
 *Verifica el asistente de topología. Para revisar cuántos nodos están duplicados.*
 
-.. figure:: img/caja-herramientas/caja_herramientas_11.png
+.. figure:: img/caja_herramientas/caja_herramientas_11.png
 
 *Capas temporales con nodos duplicados en QGIS ToC y Canvas, así como pestaña info log con la lista de los nodos que presentan 
 este tipo de problema.*
 
 **6. Check nodes orphan: comprueba si hay nodos huérfanos (los que no están conectados a ningún otro elemento de red).**
 
-.. figure:: img/caja-herramientas/caja_herramientas_12.png
+.. figure:: img/caja_herramientas/caja_herramientas_12.png
 
 *Verifica el asistente de topología. Para revisar cuántos nodos están desconectados de la red.*
 
-.. figure:: img/caja-herramientas/caja_herramientas_13.png
+.. figure:: img/caja_herramientas/caja_herramientas_13.png
 
 *Capas temporales con nodos desconectados en QGIS ToC y Canvas, así como pestaña info log con la lista de los nodos que presentan 
 este tipo de problema.*
 
 **7. Check nodes T candidate: comprueba si hay nodos candidatos a ser una T (unión entre tres tramos).**
 
-.. figure:: img/caja-herramientas/caja_herramientas_14.png
+.. figure:: img/caja_herramientas/caja_herramientas_14.png
 
 *Verifica los nodos "T candidato" con topología incorrecta.*
 
 **8. Check connecs duplicated: comprueba si hay connec duplicados.**
 
-.. figure:: img/caja-herramientas/caja_herramientas_15.png
+.. figure:: img/caja_herramientas/caja_herramientas_15.png
 
 *Verifica el asistente de topología. Para revisar cuántas conexiones están duplicadas.*
 
 **9. Check data according to EPA rules: chequea los datos comprobando parámetros necesarios para la exportación a EPA**
 
-.. figure:: img/caja-herramientas/caja_herramientas_16.png
+.. figure:: img/caja_herramientas/caja_herramientas_16.png
 
 *No se necesitan parámetros de entrada. La función permite detectar errores e inconsistencias de datos antes de la exportación a modelos EPA.*
