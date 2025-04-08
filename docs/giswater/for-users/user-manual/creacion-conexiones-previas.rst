@@ -41,7 +41,7 @@ base de datos. pgRouting será imprescindible para algunas de las herramientas
 de Giswater como el polígono de corte y los perfiles longitudinales. 
 
 .. |icon_sql| image:: img/sql.png
-Clicando el botón de comandos SQL podremos escribir nuestra primera query :|icon_sql|:
+Clicando el botón de comandos SQL podremos escribir nuestra primera query |icon_sql|
 
 .. figure:: img/extensions.png
 
