@@ -10,9 +10,12 @@ Manual de Usuario de Giswater
    que-es-giswater
    instalacion-puesta-marcha
    creacion-conexiones-previas
-   giswater-plugin/index
+   modelo-de-datos-giswater
+   entorno-trabajo
    digitalization
+   caja-de-herramientas-giswater
    topological-geometrial
    hydraulic-model
    psectors
    netscenarios
+   giswater-plugin/index

@@ -2,14 +2,23 @@
 Instalación y puesta en marcha
 ===============================
 
-En este apartado, el usuario encontrará una guía detallada para la instalación y configuración del software necesario para trabajar con Giswater.
-Este proceso incluye los pasos previos requeridos, la instalación de los programas necesarios.
+Como acabamos de ver en la sección anterior, para poder trabajar con Giswater tenemos que tener instalados, como mínimo, QGIS y PostgreSQL junto con PostGIS.
 
-.. toctree::
-   :maxdepth: 2
-   :caption:  SOFTWARE NECESARIO
+PostgreSQL podemos tenerlo instalado en nuestro ordenador o en un servidor remoto pero QGIS tenemos que tenerlo instalado obligatoriamente en nuestro ordenador.
 
-Para trabajar con Giswater será necesario, como mínimo, contar con la instalación de dos programas en nuestro entorno
+Aunque no es obligatorio, es recomendable tener instalados los programas de simulación de redes EPANET y SWMM además de un gestor de bases de datos como pueda ser DBeaver.
+
+.. attention::
+  Es **imprescindible** verificar la `compatibilidad <https://github.com/Giswater/giswater_dbmodel/wiki/version-compatibility>`_ de versiones de QGIS, PostgreSQL, Giswater, EPANET y SWMM.
+
+.. note:: Para descargar los programas a utilizar se recomienda hacerlo desde las páginas oficiales de cada uno de ellos.
+  También se pude hacer desde el centro de descargas de la web de `Giswater <https://www.giswater.org/descarga/>`_.
+
+
+
+
+
+
 
 **PostgreSQL:** Es la base de datos que almacena toda la información relacionada con el proyecto.
 El proceso de instalación debe incluir la selección de pgAdmin (Gestor de Bases de Datos) y la extensión espacial PostGIS.
