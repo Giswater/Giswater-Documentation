@@ -209,6 +209,8 @@ explicarán las reglas topológicas en las que se hace hincapié:
 
 * **Arco sin nodo de inicio o fin:** se trata de un arco desconectado por alguno de sus extremos.
 
+.. _Comportamiento_link:
+
 Comportamiento link
 --------------------
 Link es un enlace gráfico entre elementos del mapa. En este sentido, lo que hace un *link* es conectar un elemento 
