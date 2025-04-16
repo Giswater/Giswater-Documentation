@@ -39,7 +39,7 @@ modelo hidráulico funcione.
 
 A continuación, se describe de forma ordenada cada uno de sus componentes todos los elementos que integran la caja de herramientas.
 
-
+==============================
 Processes
 ==============================
 
@@ -934,6 +934,7 @@ Ideal para procesos de actualización o transferencia de datos entre sistemas, d
 
 **Para ver más detalles, consulta la sección Diálogo "Topocontrol for data migration"**
 
+===========================
 Reports
 ===========================
 
