@@ -15,9 +15,10 @@ qué presiones estáticas tendremos en diferentes puntos, sin necesidad de efect
    Conforme más cantidad de fugas tengamos en nuestro sistema y mayor sea la presión, 
    las pérdidas de agua que tendremos en la red serán mayores.
 
-Para poder realizar **diferentes escenarios de las** ***mapzones,*** utilizaremos la herramienta de Netscenarios.
+Para poder realizar **diferentes escenarios de las** ***mapzones,*** utilizaremos la herramienta de *Netscenarios.*
 Es una funcionalidad similar a la de los dscenarios pero, en este caso, son escenarios de 
-zonas del mapa. Es decir, nos permite definir *headers* y *stoppers* distintos a los existentes en el inventario y con esto, tener diferentes propuestas de zonificación sin alterar la inventariada.
+zonas del mapa. Es decir, nos permite definir *headers* y *stoppers* distintos a los existentes en el inventario y con esto, tener diferentes propuestas de 
+zonificación sin alterar la inventariada.
 
 .. attention::
    
@@ -39,7 +40,7 @@ que permiten ver cambios en estos elementos según la zonificación.
 involucrados en la misma tales como connecs, válvulas o tuberías.
 
 .. |icon_ns| image:: img/img_escenarios/icon_ns.png
-Los Netscenarios se crean y administran desde el Gestor de Netscenarios |icon_ns| . 
+Los *Netscenarios* se crean y administran desde el *Gestor de Netscenarios* |icon_ns| . 
 
 A través de este botón se pueden **crear** nuevos escenarios, **duplicar, actualizar** y/o **borrar.**
 
@@ -57,13 +58,14 @@ no y la explotación a la que lo queremos asignar.
 
 **Gestión de escenarios**
 
-Es importante mencionar que podemos tener **distintas zonas del mapa** dentro de nuestro Gestor de Netscenarios y, 
+Es importante mencionar que podemos tener **distintas zonas del mapa** dentro de nuestro *Gestor de Netscenarios* y, 
 para administrarlas de una mejor manera, tenemos algunas opciones:
 
+.. |icon_play| image:: img/img_escenarios/icon_execute_mapzones.png
 - **Show inactive:** muestra las zonas del mapa que están definidas con active False.
-- **Current netscenario:** es el netscenario que se tiene activo en ese momento y el que simularía. Se muestra justo a la izquierda, en este caso presszones.
+- **Current netscenario:** es el netscenario que se tiene activo en ese momento y el que **simularía.**Se muestra justo a la izquierda, en este caso presszones.
 - **Toggle active:** al seleccionar un netscenario y pinchar sobre este botón, lo hace activo.
-- **Execute mapzones analysis:** es el disparador de las zonas del mapa.
+- **Execute mapzones analysis:** es el disparador de las zonas del mapa .. |icon_play| .
 - **Cargar capas Giswater:** nos permite cargar capas asociadas al netscenario.
 
 .. figure:: img/img_escenarios/gestion_netscenario.png
@@ -75,15 +77,15 @@ Escenario de red - Mapzone
 
 .. figure:: img/img_escenarios/presszones.png
 
-   Creación de un mapzone dentro de un escenario de presión.
+   Creación de un mapzone.
 
-**Configuración del graph de una mapzone**
+**Configuración del graph**
 
 .. figure:: img/img_escenarios/config_presszones.png
 
    Botón *Config* dentro del escenario.
 
-- nodeParent: es el header de la zona. Con el selector, se elige el punto directamente 
+- nodeParent: es el *header* de la zona. Con el selector, se elige el punto directamente 
 desde el inventario. Puede ser uno o varios nodos.
 - toArc: dirección del flujo en el header.
 - ignore:
@@ -119,7 +121,7 @@ trabajando en capa de válvulas.
    Agregar la capa desde el botón *Cargar capas Giswater*.
 
 
-2. Info, click botón derecho
+2. Click botón derecho *Info de Giswater*.
 
 Esto hace que nuestro inventario permanezca más ordenado y el escenario quede más completo, 
 tanto con las zonas del mapa, como con las válvulas que se definirían como cerradas en un futuro 
@@ -128,14 +130,14 @@ inventario de la red.
 **Ejecución del algoritmo**
 
 Una vez configuradas las zonas, se procede a su ejecución. Esto lo hacemos desde el 
-Netscenario manager donde hay ciertas opciones que debemos saber definir bien:
+*Netscenario manager* donde hay ciertas opciones que debemos saber definir bien:
 
 - **Create mapzones for netscenario:** se completa de manera automática según el 
 *nescenario* que esté seleccionado como *current*.
 - **Flood only one mapzone:** en caso de sólo querer simular una de las *presszones* 
 seleccionadas, insertamos su id.
 - **Force open nodes:** en caso de querer forzar abrir un elemento para que no funcione como *stopper*.
-- **Force closed nodes:** se pueden cerrar nodos para que actúen como stoppers, igual que se hace desde la configuración.
+- **Force closed nodes:** se pueden cerrar nodos para que actúen como *stoppers*, igual que se hace desde la configuración.
 - **Use selected psectors:** no hay que activarla.
 - **Mapzone constructor method:** la manera en la que queremos que se construya nuestra *mapzone*.
 - **Pipe buffer:** el tamaño del *buffer* alrededor de la tubería que queremos.
@@ -170,8 +172,8 @@ También es importante mencionar que estos elementos de las capas se pueden visu
 desde la selección de nuestra zona, los atributos y cantidad de estos elementos, 
 envueltos en nuestro escenario de zona del mapa.
 
-Sectorización de zonas de operación
-===================================
+Escenario de red - Presszones
+=============================
 
 Para determinar las presiones y optimizarlas según sea la necesidad de la red, utilizaremos 
 las *presszones.*
@@ -185,17 +187,15 @@ es posible mediante una definición e iteración de las *presszones* hasta obten
 
 .. attention::
    
-   Al ser un algoritmo topológico, las presszones solamente determinan la presión estática mediante 
+   Al ser un algoritmo topológico, las *presszones* solamente determinan la presión estática mediante 
    diferencia de cargas y elevaciones, **no tiene en cuenta aspectos como rugosidad de las tuberías o 
    pérdidas locales por elementos de la red.**
-
-**Sectorización por presiones (Presszones)**
 
 Para poder gestionar de forma más eficiente las presiones, podemos generar 
 un escenario de PRESSZONES (zonas de operación).
 
-Para trabajar las *presszones* desde los netscenarios, lo primero que se tiene que 
-hacer es crear uno tal como ya se explicó. 
+Para trabajar las *presszones* desde los *netscenarios*, lo primero que se tiene que 
+hacer es crear uno de la misma forma con los Mapzones.
 Al dar doble clic sobre nuestro netscenario tendremos la opción de hacerla activa 
 (*Toggle active*), **configurar, crear, actualizar** o **eliminar**.
 
@@ -212,15 +212,20 @@ En la creación de las presszones dentro del escenario debemos definir:
 
    Opciones en la creación de las presszones.
 
-En temas de configuración, estas zonas funcionan de la misma manera, 
+**Configuración del graph**
+
+En temas de configuración, estas zonas funcionan de la misma manera que las Mapzone
 tenemos que definir el *nodeParent* (que en este caso es la cabecera) y los *forceClosed* 
 (que serán los *stoppers* definidos según los intereses de quien modela la red).
+
+**Ejecución del algoritmo**
 
 .. |icon_execute_mapzones| image:: img/img_escenarios/icon_execute_mapzones.png
 Para la ejecución del algoritmo para PRESSZONES: desde el botón *Execute mapzones análisis* |icon_execute_mapzones| 
 el cual nos desplegará las mismas opciones que se han mencionado anteriormente.
 
-**Sectorización hidrométrica (DMA)**
+Sectorización hidrométrica
+==========================
 
 El proceso de sectorización por DMA implica dividir la red en áreas más pequeñas y gestionables. 
 Detallamos algunos de los pasos típicos involucrados en este proceso:
@@ -266,6 +271,35 @@ el cual nos desplegará las mismas opciones que se han mencionado anteriormente.
 
 Zonas de intermitencias del servicio
 ====================================
+
+Como se ha venido comentando, si bien las cabeceras y los *stoppers* están bien definidos de manera teórica para 
+cada una de las mapzones, **Giswater tiene flexibilidad en este aspecto.**
+
+Por lo que, a pesar de que se espera contar en un futuro con la incorporación del IWSA (*Intermitent Water Supply 
+Areas*) de momento, podemos utilizar las mismas DMA para definir zonas importantes como lo son las **Zonas de 
+Rotación.**
+
+Estas son zonas que han sido identificadas con escasez severa de agua y se le realizarán racionamientos 
+eventualmente. Es así, como definiendo las cabeceras como válvulas de corte, podemos simular áreas en las 
+cuales se realizarán racionamientos del servicio. Su *header* es una válvula de corte ya que será la que se 
+deberá manipular para regular el flujo.
+Este es sólo un ejemplo de las muchas aplicaciones que pueden tener estas áreas y lo útiles que son en la 
+operación y mantenimiento de las redes de abastecimiento.
+
+**Verificación con modelo hidráulico**
+
+Una vez realizadas las tareas de diseño como cumplir con rangos de presión o generar DMA con 
+características específicas, podemos simular nuestras redes y realizar análisis cruzados entre lo que hemos 
+diseñado y los resultados de la modelación.
+
+Comparaciones entre presiones estáticas y presiones dinámicas podrían permitir analizar y entender la red desde 
+otras perspectivas.
+
+
+.. figure:: img/img_escenarios/model.png
+
+   Simulación con SWWM.
+
 
 
 
