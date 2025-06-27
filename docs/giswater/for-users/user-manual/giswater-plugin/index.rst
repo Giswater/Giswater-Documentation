@@ -25,5 +25,6 @@ A continuación se detallará la funcionalidad y objetivo de cada una de las her
    :maxdepth: 2
    :caption: Botones de edición
 
-   change-feature-type
-   delete-feature
+   
+   
+

@@ -1,103 +1,96 @@
-==================================
-Creación de las conexiones previas
-==================================
+.. _creacion-conexiones-previas:
 
-En este apartado del manual, el usuario encontrará todos los pasos necesarios 
-para la creación de conexiones previas.
+========================================================
+Creación de las conexiones previas y de la base de datos
+========================================================
 
+.. only:: html
 
-Creación de base de datos de trabajo
-====================================
+   .. contents::
+      :local:
 
-Una vez instalados DBeaver y PostgreSQL, al abrir DBeaver, lo primero que debemos
-hacer es añadir una nueva conexión.
+Tras haber instalado los programas necesarios, los siguientes pasos son crear la conexión entre DBeaver y PostgreSQL, crear la base de datos de trabajo
+y crear la conexión entre QGIS y dicha base de datos.
 
-.. figure:: img/bd_dbeaver.png
+Conexión entre DBeaver y PostgreSQL
+===================================
+
+Dado que recomendamos utilizar como gestor de bases de datos DBeaver, para trabajar tenemos que empezar por crear la conexión entre él y PostgreSQL.
+Para ello, en DBeaver pincharemos en el botón correspondiente para crear una conexión nueva donde elegiremos la opción *PostgreSQL*.
+
+.. figure:: img/conexiones-previas/create-conection.png
     
-   Añadir nueva conexión.
+     Crear nueva conexión PostgreSQL.
 
-En la ventana **"Connect to a database"** hay que rellenar los siguientes campos 
-para añadir una nueva conexión:
+En la ventana *Conectar a base de datos* tenemos que rellenar los siguientes campos en la pestaña *General* para crear la nueva conexión:
 
-**Host:** puede ser localhost o una conexión a otro servidor.
+- Host: si los datos están almacenados en nuestro ordenador local, pondremos *localhost*; si no, pondremos la dirección IP del servidor donde están alojados.
+- Port: número del puerto al que nos conectaremos.
+- Database: nombre de la conexión.
+- Nombre de usuario: nombre de usuario con el que nos conectaremos a la base de datos.
+- Contraseña: contraseña del usuario con el que nos conectaremos a la base de datos.
+- Local Client: cliente PostgreSQL que tenemos instalado. Como podemos tener instalados varios PostgreSQL, tendremos que seleccionar aquel con el que queramos trabajar.
 
-**Port:** puerto.
+.. figure:: img/conexiones-previas/create-conection2.png
 
-**Database:** nombre de la conexión.
+     Campos a rellenar para crear la conexión entre DBeaver y PostgreSQL.
 
-**Username:** nombre de usuario. El primer usuario debe ser 'postgres'.
+Es aconsejable marcar la casilla *Show all databases* para que podamos visualizar todas las bases de datos que tengamos disponibles.
+En el caso de la casilla *Save password*, **si se trabaja en un entorno corporativo, se recomienda no marcar por motivos de seguridad**.
 
-**Password:** contraseña, que para el usuario postgres también es 'postgres'.
+.. warning::
+   
+     Si solo tenemos una versión de PostgreSQL instalada y no lo hemos modificado durante la instalación, el puerto de conexión será el 5432.
 
-.. figure:: img/Connect_db.png
+Creación de la base de datos
+============================
 
-   Añadir una nueva conexión a Postgres mediante DBeaver.
+Con la conexión creada, el siguiente paso es crear la base de datos que almacenará toda la información de las redes.
+Para ello desplegaremos la conexión creada hasta que veamos las bases de datos que contiene.
 
-Una vez creada la nueva conexión, veremos que se nos ha creado automáticamente
-un primer esquema *public*. A continuación, hay que añadir la extensión PostGIS, 
-para tener disponible toda la funcionalidad GIS del programa, y también la 
-extensión pgRouting, que añade funcionalidades de ruteo y análisis de redes a 
-base de datos. pgRouting será imprescindible para algunas de las herramientas 
-de Giswater como el polígono de corte y los perfiles longitudinales. 
+.. figure:: img/conexiones-previas/create-database.png
 
-.. |icon_sql| image:: img/sql.png
-Clicando el botón de comandos SQL podremos escribir nuestra primera query |icon_sql|
+     Visualización de las bases de datos.
 
-.. figure:: img/extensions.png
+Podremos crear una base de datos nueva si pinchamos con el botón derecho del ratón sobre *Bases de Datos* y seleccionamos la opción *Crear Nuevo Base de Datos*.
+En la ventana emergente tendremos que especificar nada más que el nombre que queramos darle a nuestra base de datos.
 
-.. attention::
+.. figure:: img/conexiones-previas/new-database.png
 
-   A partir de la **versión 3** de **PostGIS** también será necesario añadir la 
-   extensión específica para gestionar capas ráster.
+     Creación de nueva base de datos.
 
-.. figure:: img/extensions_raster.png
+Una vez creada, la veremos listada junto a todas las demás.
+
+.. figure:: img/conexiones-previas/all-databases.png
+
+     Visualización de todas las bases de datos.
 
 Conexión a la base de datos de trabajo desde QGIS
 =================================================
 
-Al abrir QGIS por primera vez, se deben configurar una serie de parámetros, 
-necesarios para trabajar con Giswater. Son los siguientes:
+Con DBeaver y PostgreSQL vinculados, iremos a QGIS para poder conectarlo con la base de datos recién creada.
 
-- Crear una conexión PostGIS a la base de datos donde se encuentra el esquema de datos.
+Para ello crearemos una nueva conexión a la base de datos utilizando el botón *Añadir capas PostGIS* que se encuentra en la barra de herramientas *Administrar capas*, *Administrador de fuentes de datos* o a través del menú *Capa / Añadir capa*.
 
-- Para trabajar de forma cómoda y rápida con ráster, se recomienda ampliar la memoria 
-caché de QGIS a 1GB y 1 año, mediante el menú *'Configuración/Opciones/Red'*.
+Al pinchar sobre el botón *Nueva* aparecerá una ventana emergente en la que deberemos especificar:
 
-- Escoger abrir formulario si una única entidad es seleccionada.
+- Nombre: nombre que queramos darle a la conexión en QGIS.
+- Anfitrión: servidor en el que se encuentran los datos. Si trabajamos en local, pondremos *localhost*; si no, la IP del servidor.
+- Puerto: puerto de conexión a la base de datos.
+- Base de datos: nombre de la base de datos. 
+- Nombre de usuario: nombre de nuestro usuario en PostgreSQL.
+- Contraseña: contraseña para nuestro usuario en PostgreSQL.
 
-**¿Cómo configurar una conexión de QGIS a PostGIS?**
+.. figure:: img/conexiones-previas/conection-qgis.png
 
-1. Pinchamos sobre el icono **Añadir capa PostGIS**.
+     Creación de la conexión a la base de datos desde QGIS.
 
-2. Hacemos clic sobre el botón **Nueva** y en el formulario introducimos los parámetros de conexión.
+Una vez introducidos los parámetros, pincharemos sobre el botón *Probar conexión*. Si todo es correcto, en la parte superior de la ventana veremos el siguiente mensaje:
 
-.. figure:: img/Connect_qgis1.png
-    
-   Formulario de conexión a PostGIS desde QGIS. Así se podrán importar capas de la base de datos.
+.. figure:: img/conexiones-previas/conection-success.png
 
-3. Una vez introducidos los parámetros, hacemos clic sobre el botón **Probar conexión**. 
-Si todo es correcto, en la parte superior de la ventana obtendremos el siguiente mensaje:
+     Conexión con éxito a la base de datos.
 
-.. figure:: img/connection_successful.png
-    
-   Probar conexión.
+En cuanto pinchemos sobre el botón *Aceptar* habremos creado la conexión y se guardará con el nombre indicado en la lista de conexiones disponibles.
 
-4. Pinchamos sobre el botón **Aceptar**. En este momento la información de conexión se 
-guardará con el nombre en la lista de conexiones.
-
-.. attention::
-   
-   Si con esta conexión queremos tener la posibilidad de generar nuevos esquemas de 
-   trabajo, el usuario de conexión deberá ser **SUPERUSER** en PostgreSQL.
-
-Para usar el plugin Giswater es necesario tener creada una conexión a la base de datos 
-que usaremos para trabajar. Con crearla una vez para cada QGIS instalado será suficiente.
-
-Múltiples conexiones a distintas bases de datos son posibles, aunque es este caso se 
-recomienda trabajar con precaución para no mezclar datos entre una u otra base de datos.
-
-Cuando estemos conectados podremos visualizar las tablas (con y sin geometría) 
-que contenga la base de datos correspondiente y, si es necesario, añadirlas al proyecto.
-
-
-
+Cuando estemos conectados podremos visualizar las tablas (con y sin geometría) que contenga la base de datos correspondiente y, si es necesario, añadirla al proyecto.

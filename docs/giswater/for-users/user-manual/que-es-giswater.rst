@@ -1,6 +1,13 @@
-===============
+.. _que-es-giswater:
+
+=================
 ¿Qué es Giswater?
-===============
+=================
+
+.. only:: html
+
+   .. contents::
+      :local:
 
 Giswater es una aplicación en formato libre pensada para la gestión y explotación
 de los elementos de infraestructuras hidráulicas (abastecimiento y saneamiento), tanto en base de datos
@@ -18,7 +25,7 @@ gran parte de la funcionalidad de cada proyecto Giswater. La base de datos para 
 PostgreSQL, que junto con su extensión PostGIS permite enlazar cómodamente con el siguiente aplicativo 
 del conjunto: QGIS.
 
-.. figure:: img/intro_giswater.png
+.. figure:: img/que-es-giswater/intro-giswater.png
     
     Esquema de aplicaciones que usa Giswater, centralizado en la base de datos.
 
@@ -46,3 +53,13 @@ hasta las operaciones de gestión más complejas.
 Las mejoras hechas en la versión 4 se verán reflejadas a lo largo del manual y se tratará de explicar 
 de la mejor forma posible la finalidad de las mejoras y el uso que se debe hacer de ellas.
 
+.. important::
+
+    Giswater permite crear y gestionar proyectos para redes de abastecimiento y para saneamiento y drenaje urbano.
+   
+    Aunque la mayoría de las herramientas, procesos, catálogos y demás objetos son comunes a ambas redes y no hay diferencias aparentes para el usuario, hay algunas que son específicas para cada tipo de red.
+   
+    **Siempre que no se especifique lo contrario, la herramienta, proceso, catálogo... descrito es común para ambas redes**.
+   
+    En aquellos casos en los que haya que diferenciar, podremos encontrarnos la abreviatura **ws** para referirnos a las redes de abastecimiento (water supply)
+    o la abreviatura **ud** para referirnos a las redes de saneamiento y drenaje urbano (urban drainage).

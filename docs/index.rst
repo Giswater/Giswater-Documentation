@@ -1,6 +1,6 @@
-=================
+===================================
 Documentación de Giswater |version|
-=================
+===================================
 
 .. only:: testing
 
@@ -40,6 +40,7 @@ Por favor, echa un vistazo a uno de los documentos siguientes.
    Guía de inicio rápido <giswater/for-users/quickstart/steps-to-create-a-new-project>
    Manual de usuario de Giswater <giswater/for-users/user-manual/index>
    Trucos de usuario de Giswater <giswater/for-users/user-tricks/index>
+   Fundamentos teóricos <giswater/for-users/theoretical-foundations/introduccion>
 
 .. toctree::
    :maxdepth: 2

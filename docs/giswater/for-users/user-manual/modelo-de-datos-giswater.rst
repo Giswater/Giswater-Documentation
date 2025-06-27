@@ -1,427 +1,250 @@
-==============================
+===========================
 Modelo de datos de Giswater
-==============================
-Topología arco nodo
-=======================
+===========================
 
-La topología **arco-nodo** es un modelo utilizado en sistemas de información geográfica (SIG) para representar relaciones 
-espaciales entre elementos vectoriales.
+.. only:: html
 
-Se compone de dos elementos básicos:
+   .. contents::
+      :local:
 
-*Nodos:* Puntos que definen el inicio, fin o conexión entre segmentos (arcos). 
-Actúan como "uniones" críticas, como intersecciones o vértices en redes (pozos, reservorios, válvulas, bombas).
-
-*Arcos:* Líneas rectas o curvas que conectan nodos, representando elementos lineales ( tuberías, colectores o canales ).
-
-**Relaciones clave:**
-
-1. Cada arco comienza y termina en un nodo.
-2. Los nodos garantizan conectividad y adyacencia.
-
+Una de las cualidades más destacadas de Giswater es la amplia variedad de elementos que pueden visualizarse en su entorno de trabajo.
+Esto permite una reproducción muy fiel de la realidad, lo que facilita al usuario cubrir todas sus necesidades en relación con las condiciones de la red que administra.
 
 Elementos que conforman las redes
-======================================
-Una de las características más atractiva y representativa de Giswater es la gran cantidad de elementos 
-que se pueden representar en el entorno de trabajo, un hecho que permite una representación de la realidad muy 
-ajustada y que el usuario pueda satisfacer todas sus necesidades al respeto de las condiciones de la red que gestiona.
+=================================
 
-En este apartado se desarrollará la funcionalidad de los principales elementos existentes, que se representan visualmente en la imagen. 
-Aquí se representan la mayoría de elementos, aunque luego veremos que existen algunos más.
+Los elementos que conforman la red son todos aquellos que hacen referencia a los objetos físicos de la misma que pueden tener geometría
+y que, por tanto, se pueden representar gráficamente en el mapa.
 
-.. figure:: img/modelo-de-datos-giswater/elementos_de_red_1.png
+Todos ellos están relacionados entre sí a través de la topología de tal manera que deben seguir unas ciertas reglas topológicas para su correcto funcionamiento.
+
+Gracias a las posibilidades de simbolización de QGIS podemos conseguir una representación de los diferentes elementos muy ajustada a la realidad.
+
+A continuación, podemos ver un esquema básico de los tipos de elementos de las redes en Giswater.
+
+.. figure:: img/modelo-de-datos-giswater/elementos-red.png
   
- *Representación esquemática de los distintos elementos existentes en Giswater*
+   Representación esquemática de los distintos elementos existentes en Giswater.
 
- **Node**
+Los principales objetos son:
 
-Es uno de los tipos de elemento principal de la red (ver Imagen . Elementos de la red segun su Nivel) . Siempre se rige por reglas 
-topológicas. Los elementos tipo nodo se han dividido en multitud de categorías, diferenciadas para proyectos WS y UD. Siempre son 
-representados como puntos, aunque algunos pueden tener asociados polígonos que representen su perímetro real cuando este sea importante.
+- Node
 
-Los nodos siempre se sitúan entre dos arcos, por lo tanto, rompen estos arcos en diferentes entidades. 
-La mayoría de elementos ejercen funciones específicas para romper (como reducciones de caudal o válvulas de chequeo), aunque hay 
-nodos que habitualmente no romperían arcos, en algunos casos especiales deben ejercer esta función.
+Es uno de los tipos de elementos principales de la red, se rige por reglas topológicas y **siempre son los primeros que debemos tener**. Representan elementos puntuales de la red como, por ejemplo,
+válvulas, hidrantes, uniones, contadores, depósitos... y se representan como puntos en QGIS.
 
-* Netwjoin: es una acometida (connec) que por sus dimensiones u otras características forma parte de la red y se sitúa encima de un arco.
+Los elementos tipo nodo están divididos en multitud de categorías, diferenciadas para proyectos ws y ud.
+Aunque siempre son representados como puntos, algunos pueden tener asociados polígonos que representen su perímetro real cuando éste sea importante (por ejemplo, depósitos).
 
-* Netgully: es un embornal (gully) que por sus dimensiones u otras características forma parte de la red y se sitúa encima de un arco.
+Los nodos siempre se sitúan entre dos arcos y, por lo tanto, los rompen en diferentes entidades (partes).
+Aunque la mayoría de nodos están configurados para que rompan los arcos, existen algunas excepciones en las que esto no sucede (por ejemplo, las ventosas).
 
-* Netelement: se trata de cualquier elemento que habitualmente no se conecte a la red pero que por sus características deba situarse encima de un arco y cortarlo.
+Además de los nodos, en la figura podemos observar:
 
-**Arc**
+    - Netwjoin: acometida (connec) que por sus dimensiones u otras características forma parte de la red y se sitúa encima de un arco.
+    - Netgully: imbornal (gully) que por sus dimensiones u otras características forma parte de la red y se sitúa encima de un arco.
+    - Netelement: elemento que habitualmente no se conecta a la red pero que por sus características debe situarse encima de un arco y cortarlo.
 
-Los arcos, junto con los nodos, son los principales elementos de la red (ver Imagen . Elementos de la red segun su Nivel). 
-Estos se sitúan entre dos nodos y representan los conductos y cañerías de la red. No hay tantos tipos de arcos como de nodos, 
-aunque también se encuentran categorizados y todas sus características (como puede ser diámetro, material, rugosidad…) 
-pueden añadirse en su tabla de atributos para diferenciarlos mejor.
+- Arc
 
-**El funcionamiento de los Varc (arcos virtuales)** .
-Estos conectan la red topológicamente entre arcos y nodos cuando en la realidad un arco llega a un polígono y por lo tanto 
-no existe realmente como arco. Esto es necesario para que las reglas de topología funcionen correctamente en la red Giswater. 
-Normalmente son tramos cortos.
+Es otro de los tipos de elementos principales de la red, también se rige por reglas topológicas y **son los segundos que debemos tener**. Representan elementos lineales de la red, es decir, las canalizaciones y 
+se representan como líneas en QGIS. Todas sus características (diámetro, material, rugosidad...) pueden añadirse en su tabla de atributos.
 
-**Connec**
+**Cada tramo debe estar situado entre dos nodos obligatoriamente, con lo que se insertan o digitalizan después de los nodos**.
 
-Hablamos de las acometidas, los elementos que conectan la red con edificios u otros elementos como por ejemplo fuentes. 
-Se trata de elementos puntuales, aunque para relacionar las acometidas con el resto de la red se usan links y nodos virtuales.
+Existe un tipo de arco llamado *varc* o arco virtual que se utiliza para conectar topológicamente partes de la red. Este tipo de arco, que en realidad no existe como tal, nos permite dar continuidad y conectividad a la red 
+sin romper la topología de la misma. El arco virtual es fácil de ver en los depósitos donde, para dar continuidad, debemos digitalizarlo entre el depósito y la entrada/salida del mismo.
 
-**Gully**
+- Connec
 
-Representan los embornales que no se sitúan encima de arcos, los que se encuentran a cierta distancia de la red. La mayoría 
-son de este tipo; el resto son los netgully y se representan como nodos. También son elementos puntuales y, como las acometidas, 
-se pueden relacionar con la red mediante links y nodos virtuales.
+Elemento principal de la red que representa las acometidas, es decir, los elementos que conectan la red con edificios u otros elementos como, por ejemplo, fuentes. Se representan como puntos en QGIS.
 
-**Vnode**
+No se ubican directamente sobre los tramos de la red principal sino que se conectan a ella a través de los links.
 
-Son nodos virtuales, que, igual que los arcos virtuales, no existen en la realidad, pero deben existir en la red de Giswater 
-para que esta funcione correctamente. Los nodos virtuales se sitúan siempre encima de arcos, pero, al contrario que los nodos, 
-nunca dividen los arcos en dos partes.
+- Gully
 
-La función de estos elementos es la de situar encima de la red los embornales y las acometidas que se encuentran a cierta distancia. 
-Se trata de elementos puntuales que, como se ha dicho, se representan encima del arco más cercano al elemento al que hace referencia 
-el nodo virtual.
+Elemento principal específico de las redes de saneamiento y drenaje urbano que representa los imbornales y que se representa como un punto en QGIS.
 
-**Link**
+Se suelen ubicar a cierta distancia de la red y se conectan a través de los links.
 
-Los links son elementos lineales que unen los embornales y las acometidas con sus nodos virtuales encima del arco más cercano, 
+- Link
+
+Elementos lineales secundarios que unen los imbornales y las acometidas con sus nodos virtuales encima del arco más cercano, 
 por lo tanto, ejercen la función de conectar los elementos separados con la red.
 
-**Element**
+- Element
 
-Esta categoría está disponible para otros tipos de elementos puntuales no conectados con la red, que el propio usuario puede 
-personalizarse. Puede tratarse de accesorios de la red o cualquier otro elemento que sea necesario para una representación con 
-el mayor grado de realidad posible.
+Objetos puntuales que no están conectados a la red y que el usuario tiene la posibilidad personalizar.
 
-Además de todos estos elementos principales, hay algunos otros elementos que no tienen ninguna topología pero que son 
-interesantes para visualizar en el mapa:
-
-* Address: dentro de este grupo de elementos se encuentran todos los relacionados con la propia representación del territorio de la red. Normalmente se cuenta con las capas de eje de calle, límite municipal, perímetro de los edificios y portales.
-
-* Dimensions: por último, debemos hacer mención a la capa que representa las dimensiones. Esta solo se rellenará cuando el usuario utilice la herramienta específica para medir distancias entre elementos. Sirven como complemento de la red para poder ver detalladamente las acotaciones creadas.
-
-.. figure:: img/modelo-de-datos-giswater/elementos_de_red_2.png
-    
-    *Imagen .Elementos de la red segun su Nivel*
+Puede tratarse de accesorios de la red o cualquier otro elemento que sea necesario para una representación con el mayor grado de realidad posible.
 
 .. _Catalogos:
 
 Catálogos
-===============
-Los catálogos son una de las principales características y virtudes de Giswater. Estos permiten una organización 
-y orden de la información básica y hacen posible que algunas relaciones de valor estén fijadas por registros que se 
-definen en un catálogo. 
+=========
 
-Trabajan mediante el concepto de **Forgein Key:** si un valor no se encuentra en la tabla foránea 
-(tabla que define valores de manera previa), no se podrá 
-introducir. Es decir, estos catálogos permiten definir información de previo 
-para que este valor sea el único aceptado en una tabla de uso posterior.
+Son tablas de la base de datos con valores predefinidos que permiten organizar y ordenar información básica, de modo que restringen qué datos se pueden poner en ciertos campos, generando así relaciones de valores
+fijadas por los registros concretos que se definen en estos catálogos.
 
-Los catálogos representan los tipos de nodos, arcos y otros elementos que tiene en su red, así como contiene información 
-sobre sus materiales y geometrías u otras características importantes de esos elementos.
-   
-Existen diversos tipos de catálogos en Giswater:
- * Objetos de red.
- * Materiales.
- * Gestión.
- * Modelo hidráulico.
- * Elementos adicionales.
+Trabajan mediante el concepto de **clave foránea** o foreign key, muy habitual en bases de datos relacionales. Esto significa que la clave foránea establecida en una tabla no
+permitirá la introducción de ningún valor que no esté previamente definido en otra tabla, en este caso, la tabla de catálogo.
+
+Este concepto de clave foránea no solo se aplica a los catálogos sino también a muchos otros datos que deber ser trabajados por una relación fijada de valores para su adecuado funcionamiento.
+
+Existen diversos tipo de catálogos en Giswater entre los que cabe destacar los de objetos de red, los de materiales, los de gestión, los de modelo hidráulico así como los correspondientes a elementos adicionales no topológicos.
+
+**Para empezar a trabajar con Giswater debemos rellenar, como mínimo, los catálogos de objetos de red (al menos el de nodo y arco) y de materiales**.
+
+Rellenar un catálogo se hace de manera análoga a como se crea un elemento en una tabla en QGIS:
+
+- Se pone el catálogo en edición.
+- Se añade una nueva fila.
+- Se rellena con los datos necesarios.
+- Se guardan los cambios y se deja de tener el catálogo en edición.
+
+En :ref:`catalogs` podrás encontrar un listado con todos los catálogos disponibles en Giswater.
 
 .. _Zonas del mapa:
 
 Zonas del mapa
 ==============
-Para saber hasta dónde llegan las redes de abastecimiento y drenaje de agua, Giswater establece distintas zonas que limitan 
-los territorios del que forman parte. Cada una de estas zonas tiene unas características concretas y existen ciertas relaciones 
-entre ellas, gestionadas, con llaves foráneas.
 
-(La Imagen zonas del mapa) sirve para conocer el rol que juega cada una de estas zonas y los elementos con los que se relaciona.
+Son áreas geográficas definidas en la red que permiten gestionar y administrar diferentes ámbitos o secciones.
 
-ZONAS DEL MAPA **ABASTECIMIENTO**
+Hay distintas zonas, cada una de las cuales tiene características y funcionalidades concretas. No solo permiten gestionar todo el ámbito de nuestra red
+sino que también son muy útiles para establecer zonas que categoricen la red en función de determinadas características.
+Cada elemento de la red tendrá diferentes atributos según a qué zonas del mapa pertenece de tal manera que esta relación se establece mediante claves foráneas igual que en los catálogos.
 
-.. figure:: img/modelo-de-datos-giswater/zonas_mapa_1.png
+Además de relacionarse con los elementos de la red, algunas de estas zonas también se relacionan entre sí, ya que pueden tener dependencia unas de otras.
 
-ZONAS DEL MAPA **SANEAMIENTO**
+Todas ellas se deben representar geométricamente en QGIS mediante polígonos para que sean más fáciles de identificar.
 
-.. figure:: img/modelo-de-datos-giswater/zonas_mapa_2.png
+Existen cuatro grandes bloques de zonas del mapa:
 
-*Imagen . Esquema representativo de las distintas zonas del mapa y los elementos que pueden pertenecer a estas*
+- Zonas del mapa administrativas: permiten agrupar elementos en un ámbito muy general y, normalmente, hacen referencia a los límites administrativos prefijados.
+- Zonas del mapa operacionales: 
+- Zonas del mapa comerciales (ws): 
+- Zonas del mapa funcionales: son mucho más variables y, generalmente, más pequeñas. Guardan relación directa con la gestión hidráulica de la red.
 
-Las zonas principales son *Sector y Exploitation*, que sirven como cabezas del resto de zonas del mapa, cada uno dentro 
-de su actividad. Los sectores se delimitan teniendo como única condición la coherencia hidráulica y pueden tener grandes 
-diferencias en su extensión. Un solo sector puede, por ejemplo, representar una sola calle o representar todo un municipio 
-en función de las necesidades de cada entidad gestora. Lo único necesario es que el sector tenga un lugar o varios de entrada 
-de agua y un lugar o varios de salida de agua. De distinto modo, las explotaciones tienen un abasto más vinculado al territorio 
-y están formados por macrodmas y dmas.
+Cabe destacar que, además de que se pueden dibujar manualmente, Giswater permite calcularlas de manera automática
+gracias a un algoritmo que usa la configuración realizada y la trazabilidad de flujos para establecer el resultado de la zonificación sobre nuestra red.
 
-Todos los elementos principales del proyecto deben situarse tanto dentro de un sector como de una explotación. 
-Como se representa en la Imagen (La Imagen zonas del mapa), algunos sólo tienen relación con la explotación y sólo los 
-*subcatchment* deben estar indispensablemente dentro de un sector. 
-En ningún caso un elemento puede no tener relación con alguna de las zonas del mapa.
+Dado que Giswater permite gestionar redes de abastecimiento y de saneamiento y drenaje urbano, cada tipología de red tiene sus propias zonas del mapa.
+En los esquemas que están a continuación se pueden apreciar las zonas del mapa para ambos tipos de red.
 
-Reglas Topologicas
-===================
-La definición de topología geoespacial dice: “La topología expresa las relaciones espaciales entre características 
-de vectores (puntos, polilíneas y polígonos) conectados o adyacentes en un GIS.” Una vez conocido el significado, 
-veremos algunas de las principales características topológicas que son importantes para el uso de Giswater en su rama GIS.
+.. figure:: img/modelo-de-datos-giswater/zonas-mapa-ws.png
 
-Introduciendo la topología de estados
--------------------------------------------
-Antes de ver las reglas topológicas habituales, hay que tener en cuenta que Giswater tiene ciertas condiciones en 
-relación con los estados de los elementos, lo que denominamos topología de estados. En la siguiente tabla se pueden 
-ver todos los tipos de modificaciones (insert o update) entre elementos arco y nodo y si se podran llevar a cabo teniendo 
-en cuenta el estado de los elementos. Encima de la tabla se pueden ver los distintos estados disponibles para los elementos en Giswater:
+   Zonas del mapa para redes de abastecimiento.
 
-.. figure:: img/modelo-de-datos-giswater/topologia_estados.png
+.. figure:: img/modelo-de-datos-giswater/zonas-mapa-ud.png
 
-El tipo de estado que tiene unas condiciones más restrictivas es el **Planificado**. Operar con elementos en estado = 2 
-solo será posible para usuarios con el rol de masterplan o superior y hay que tener en cuenta que el manejo de estos elementos 
-puede romper la topología.
+   Zonas del mapa para redes de saneamiento y drenaje urbano.
 
-Primero de todo hay que tener como mínimo un registro en la tabla *plan_psector*, que sirve para gestionar las planificaciones. 
-También es imprescindible tener un valor por defecto para psector. Los arcos y nodos con los que se opere se irán insertando con 
-este valor por defecto en las tablas específicas: *plan_arc_x_psector* y *plan_node_x_psector*. Hay que revisar los campos state y 
-doable.
+En :ref:`zonas-mapa` podrás encontrar la definición de las zonas del mapa disponibles en Giswater.
 
-Todos los elementos, ya sean nodos o arcos, que se encuentran en estado **En servicio** y el usuario los cambie 
-manualmente a **Planificado**, se introducirán automáticamente en el psector por defecto que se tenga en este momento. 
-Aunque este cambio está permitido por las reglas topológicas, no debería ser habitual pasar un elemento de estado 
-*En servicio a Planificado*.
+Reglas de trabajo
+=================
 
-Comportamiento arc-node
--------------------------------
-Las relaciones entre arcos y nodos son seguramente las más importantes a nivel topológico dentro de Giswater, 
-en parte por el gran número de elementos que entran en juego. Para que el programa funcione correctamente hay que 
-cumplir con estas reglas topológicas, y, en este sentido, el propio programa muestra mensajes al usuario cuando hay 
-alguna regla importante que no se cumple.
+Giswater nos permite controlar dos tipos de reglas fundamentales. La primera, inherente a la topología arco-nodo de los GIS, expresa las relaciones existentes entre los puntos, líneas y polígonos
+que están conectados entre sí en QGIS. La otra, propia de Giswater, es la referente al estado de los elementos ya que, dependiendo de su estado, podremos encontrarnos con ciertas restricciones
+a la hora de insertar objetos nuevos en la red.
 
-El *plugin* de Giswater cuenta con una herramienta específica que permite detectar ciertos errores topológicos 
-relacionados con los arcos y nodos. Más adelante veremos cómo se usa esta herramienta, pero en este apartado se 
-explicarán las reglas topológicas en las que se hace hincapié:
+Para controlar estas reglas Giswater dispone de varias herramientas. Por un lado, si estamos insertando objetos nuevos en la red, si se rompe alguna de estas reglas obtendremos un aviso de la incoherencia cometida.
+Por otro lado, si la red ya la tenemos insertada pero cuenta con errores topológicos, gracias a Giswater tenemos a nuestra disposición ciertas herramientas que permiten identificar dónde están los errores.
+Este hecho es habitual cuando se migran redes de otras fuentes.
 
-* **Nodos huérfanos:** se trata de nodos que no conectan con ningún arco.
+En aquellos casos en los que sea necesario, podremos desactivar la herramienta de control topológico (opción *Topocontrol disable error*).
 
-* **Nodos duplicados:** son nodos situados exactamente en el mismo lugar y por lo tanto generan una incoherencia en el sistema.
+Las reglas de trabajo de Giswater son:
 
-* **Consistencia topológica de los nodos:** hay algunas reglas topológicas específicas de Giswater, que tienen en cuenta el tipo de nodo. Por ejemplo, hay tipos de nodos que deben tener obligatoriamente conexión con tres arcos distintos, si no es así serán marcados como erróneos.
+Comportamiento arco-nodo
+------------------------
 
-* **Arcos con el mismo nodo de inicio y fin:** los arcos siempre deben situarse entre dos nodos distintos (con *id* distinto), por lo tanto, un arco que empieza y termina en el mismo nodo es erróneo. Esto se puede configurar desde la tabla *config* y el campo *samenode_init_end_control*, donde si tenemos el valor *TRUE* el programa no permitirá arcos con el mismo nodo de inicio y de fin; si tenemos *FALSE*, estos nodos sí serán permitidos.
+Todos los nodos y arcos de la red deben estar conectados entre sí salvo contadas excepciones (por ejemplo, las ventosas en las redes de abastecimiento).
 
-* **Arco sin nodo de inicio o fin:** se trata de un arco desconectado por alguno de sus extremos.
+**Siempre** que dibujemos elementos nuevos **tendremos que configurar previamente las opciones de autoensamblado** de QGIS para asegurarnos de que la red está bien conectada.
 
-.. _Comportamiento_link:
+Si no se digitaliza de manera correcta, Giswater mostrará un mensaje de error y no permitirá insertar el objeto.
 
-Comportamiento link
---------------------
-Link es un enlace gráfico entre elementos del mapa. En este sentido, lo que hace un *link* es conectar un elemento 
-de **entrada** (*connec o gully*, llamados también conexiones en general) con un elemento de **salida** (*arc, node, connec o gully*).
+.. figure:: img/modelo-de-datos-giswater/error-arco-nodo.png
 
-Los atributos que acompañan este enlace gráfico son:
+   Error al digitalizar erróneamente un arco.
 
-* **Elemento de entrada**
-        
-   * **pjoint_id** - Identificador del punto de salida
+Giswater está configurado para que, si movemos un nodo, todos los tramos que están conectados a dicho nodo se muevan también. De esta manera, no se rompe la topología.
 
-   * **pjoint_type** - Tipo de punto de salida
+Además, en su caja de herramientas dispone de procesos específicos con los que podremos detectar, entre otros, arcos sin nodos inicial o final, nodos duplicados, nodos huérfanos...
 
-   * **arc_id** - Identificador del tramo dónde finalmente conecta el elemento de entrada. Si el pjoint_type es ARC, pjoint_id y arc_id conicidirán.
+Comportamiento link-red
+-----------------------
 
-* **Elemento de salida**
+El link es el enlace gráfico entre elementos del mapa. Lo que hace es conectar un elemento de entrada (*connec* o *gully*) con un elemento de salida (*arco*, *nodo*, *connec* o *gully*).
 
-   * Para WS los tramos tienen una pestaña con sus elementos de entrada relacionados a través de arc_id.
+Al conectar el connec/gully con la red mediante el link, captura el valor del tramo relacionado de tal manera que queda enlazado en el campo *arc_id* que hay en el connec/gully.
+En esta relación entre connec/gully, link y arco se cumplen varias reglas:
 
-   * Para UD, los tramos tienen una pestaña con sus elementos de entrada relacionados. Los nodos tienen una pestaña con sus elementos de entrada relacionados aguas arriba.
+- Respecto su elemento de entrada (que se encuentra aguas arriba), el link comparte la mayoría de sus atributos:
 
-* **Link**
+  - La visibilidad del mapa, es decir la explotación y el estado, lo toma de éste.
+  - Si se borra el elemento de entrada, se borra el link.
+  - Los atributos del link como longitud, diámetro o material, se representan y manifiestan en el modelo de datos del elemento de entrada al que pertenece.
 
-       * **feature_id** - Identificador del punto de entrada
+- Respecto su elemento de salida (el que se encuentra aguas abajo), ya no hay pertenencia sino simplemente topología. Por tanto:
+  
+  - Si se mueve el punto de salida, el link se mueve automáticamente.
+  - Si el elemento de salida es un connec/gully, su valor de *arc_id* se transmite.
+  - Si se actualiza el vértice final del link hacia otro tramo, se actualizará el campo *arc_id* del elemento de entrada.
 
-       * **feature_type** - Tipo de punto de entrada
+Por defecto, al añadir un connec/gully, éste se encuentra desconectado de la red. Para que exista topología entre la red y las conexiones, deben crearse los links.
+Esto se puede hacer de las siguientes maneras:
 
-       * **exit_id** - Identificador del punto de salida
+- Dibujar manualmente el link. Este se puede dibujar, con la forma que uno quiera, siempre que se conecte un elemento de entrada con uno de salida, mediante las herramientas habituales de dibujo en QGIS.
+- Herramienta de conectar a la red. Usando la herramienta de Giswater *Conectar a la red* se podrán conectar una o varias conexiones al mismo tiempo.
+  En este caso, el link siempre se dirigirá al tramo más cercano en línea recta.
+- Conectar automáticamente. Existen variables de configuración para que, en el momento de introducir un nuevo connec/gully, se conecte automáticamente a la red.
+  El resultado será el mismo que si se conecta mediante la herramienta del complemento.
 
-       * **exit_type** - Tipo de punto de salida
+Elementos doble geométricos
+---------------------------
 
-**Características especiales:**
+En Giswater existen objetos que, por sus características y para una mejor representación, tienen doble geometría (punto y polígono). Un ejemplo son los depósitos.
+
+En estos casos, aparte del elemento puntual, también se puede usar la geometría poligonal de tal manera que se almacenará en otra capa pensada para ello.
+Digitalizarlo será tan sencillo como dibujar el polígono alrededor del punto y quedará vinculado a él.
+El polígono solo tendrá como dato el identificador del punto, que será el que cuenta con toda la información importante.
+
+Esta relación tiene sus propias reglas topológicas:
+
+- Si se mueve el punto, el polígono también se desplaza.
+- Si alrededor de un punto se dibuja un nuevo polígono, el nuevo sustituye al antiguo.
+- No se puede dibujar un nuevo polígono sin que un punto se encuentre dentro de éste.
+- Si se elimina un punto con doble geometría, el polígono asociado también se eliminará.
+
+Para trabajar con este tipo de elementos doble geométricos es importante tener una configuración que gestione su manejo. 
+En el catálogo *cat_feature_* se puede habilitar/deshabilitar esta función mediante el campo *double_geom*.
+Para ello, estableceremos su valor en *true* o en *false* dependiendo de que queramos o no queramos que Giswater nos dibuje el polígono asociado.
+En el caso de que sí se dibuje, se representará un polígono alrededor del objeto digitalizado el cual podremos modificar según nuestras necesidades.
+
+.. note::
+  
+   Elementos doble geométricos para **ws**: *Tank*, *Register* y *Fountain*.
     
-    1. Respecto su elemento de **entrada** (que se encuentra aguas arriba), el link comparte la mayoría de sus atributos:
+   Elementos doble geométricos para **ud**: *Storage*, *Chamber*, *Wwtp*, *Netgully* y *Gully*.
 
-        * La visibilidad del mapa, es decir explotación y estado, lo toma de éste.
+Topología de estados
+====================
 
-        * Si se borra el elemento de **entrada**, se borra el link (se considera que están funcionando como una unidad integrada).
+Todos los objetos en Giswater pueden clasificarse en tres estados:
 
-        * Los atributos del link como pueden ser longitud, diámetro o material, se representan y manifiestan en el modelo de datos del elemento de **entrada** al que pertenece.
+- Obsoleto (valor 0): estado en el que se encuentran aquellos elementos que formaban parte de la red pero que ya no están en uso.
+- Operativo (valor 1): estado en el que se encuentran los elementos que conforman la red y están en funcionamiento.
+- Planificado (valor 2): estado en el que se encuentran los objetos de la red que forman parte de alguna alternativa futura. Estos objetos siempre se engloban en los llamados **psector** (sectores de planificación)
+  y nos permiten comprobar cómo funcionaría la red en el caso de realizar ciertos cambios de operativa.
 
-    2. Respecto su elemento de **salida** (el que se encuentra aguas abajo), ya no hay pertinencia sino simplemente topología, con lo cual:
+Estos son los tres estados principales de los objetos y no pueden cambiarse. Lo que sí se puede hacer es modificar los sub estados de tal manera que complementan el estado principal.
+Estos sub estados son los llamados *state_type* o tipos de estado.
 
-     * Se gestiona topología. Si se mueve el punto de **salida** se mueve también el link. Si el punto de **salida** es desplazado a otro tramo, el campo arc_id del elemento de entrada se actualiza automáticamente.
+Las reglas topológicas de estados de Giswater son:
 
-     * Si el elemento de **salida** es un *connec* o un *gully* se copia el valor arc_id del tramo padre que tenga el elemento **salida**.
-
-     * Los atributos de dma_id y fluid_type del elemento de **salida** se transmiten tanto al link cómo al elemento de **entrada**.
-
-.. attention:: 
-    Para proyectos de saneamiento (UD) los atributos dma_id y fluid_type pueden desacoplarse del elemento de salida. 
-    Para ello se deben poner en *FALSE* las variables *Connect autoupdate dma y Connect autoupdate fluid* en la configuración.
-
-**Formas de conectar con links**
-
-Por defecto, al añadir un connec o gully, este se encuentra desconectado de la red. 
-Para que exista topología entre la red y las conexiones deben crearse los links. Esto se puede hacer de las siguientes maneras:
-
-    1. **Dibujar manualmente el link.** Este se puede dibujar, con la forma que uno quiera, siempre que se conecte un elemento de 
-    entrada con uno de salida, mediante las herramientas habituales de dibujo en QGIS.
-
-    2. **Herramienta de conectar a la red.** Usando la herramienta del complemento Giswater explicada en el apartado (Conectar con la red)
-    se podran conectar una o varias conexiones al mismo tiempo. En este caso, el link siempre se dirgirá al tramo más cercano en línea recta.
-
-    3. **Conectar automáticamente.** Existen variables de configuración para que, en el momento de introducir una nueva conexión, 
-    esta se conecte automáticamente a la red. El resultado será el mismo que si conecta mediante la herramienta del complemento.
-
-.. attention:: 
-    En los formularios de las conexiones hay un botón (*Set arc_id*) que permite establecer previamente un arc_id. En caso de hacerlo, 
-    las formas de conectar nº2 y 3 daran cómo resultado la conexión al tramo establecido y no al que se encuentre más próximo.
-
-**Características de estado**
--------------------------------
-
-**EN SERVICIO y OBSOLETO**
-
-    * Sólo puede haber un link con estado EN SERVICIO para una conexión.
-
-    * Podemos tener muchos links con estado OBSOLETO para una conexión.
-
-    * Los valores de zonas del mapa, el exit_id y el exit_type se relacionan con las de la conexión.
-
-**PLANIFICADO**
-
-    * Para cada conexión en un psector se crea un link nuevo. Se puede crear manual o automáticamente.
-
-    * Si el link se crea automáticamente, este se podrá modificar en la alternativa de psector dónde trabajemos. Nunca se modificará el link original.
-
-    * No se permite eliminar el arc_id de una conexión planificada. Se deberá eliminar todo el link.
-
-    * Los valores de zonas del mapa, el exit_id y el exit_type se visualizan independientemente de la conexión original, mostrando lo que transmite el link y la conexión planificada.
-
-Elementos doble-geométricos
-------------------------------------
-Giswater hace uso de elementos doble-geométricos. Esto significa que un único elemento está formado por dos geometrías distintas, 
-en este caso siempre son puntos que también pertenecen a un polígono.
-
-Sólo algunos de los elementos de la red tienen esta particularidad, porque son tipos de elementos que pueden tener unas medidas mucho más grandes que las 
-que se representan simplemente con un punto y por lo tanto nos interesará visualizar un polígono alrededor del punto.
-
- .. note:: Elementos doble-geometricos para WS
-    **Tank, Register, Fountain**
-
- .. note:: Elementos doble-geometricos para UD
-    **Storage, Chamber , Wwtp, Netgully, Gully**
-
-Al añadir cualquier nodo nuevo de uno de estos tipos, se creará inmediatamente un polígono cuadrado asociado alrededor 
-del elemento puntual. Las principales reglas topológicas de esta relación son:
-
-    * Si se mueve el elemento nodo, el polígono asociado también se desplaza hacia la nueva posición del nodo.
-
-    * Si se dibuja un nuevo polígono, con el perímetro que el usuario desee, alrededor de un nodo del mismo tipo, el nuevo perímetro sustituye directamente al antiguo.
-
-    * No se puede dibujar un nuevo polígono sin que un nodo del mismo tipo se encuentre dentro de este.
-
-    * Si se elimina un nodo con doble-geometría, el polígono asociado también será eliminado. En cambio, sí se puede eliminar el polígono sin modificar el nodo.
-
-Para trabajar con este tipo de elementos doble-geométricos es importante tener una configuración que gestione su manejo. 
-En la tabla *config* y en el campo *insert_double_geometry* se puede habilitar o deshabilitar esta función. 
-En caso de tenerla habilitada (recomendado), mediante el campo *buffer_value* se asigna un valor por defecto 
-a la longitud del costado del cuadrado poligonal. Como ya se ha dicho, este cuadrado se puede editar y darle la forma deseada.
-
-.. figure:: img/modelo-de-datos-giswater/topologia_apunte.png
-
-Configuración de ambiente
-============================
-El boton de *Configuración*
-
-.. figure:: img/modelo-de-datos-giswater/boton_configuracion.png
- 
-Este botón permite **definir valores por defecto** y configurar algunos parámetros que se aplican en otras herramientas o procesos.
-Es importante que el usuario la conozca bien, ya que su uso es **recurrente**.
-
-.. note::  Permite establecer el valor que se considere oportuno según las necesidades del proyecto, marcar el checkbox correspondiente y aceptar.
-
-Este botón posee 5 pestañas con funciones distintas según el tipo de parámetro que se desea establecer:
-
-1. **Básico**
-    Permite configurar diferentes valores que se encuentran agrupados por Basic, O&M, Inventory, MasterPlan y Other.
-
-   A continuación, se describen los valores más relevantes:
-
-    * **State:** Define el estado por defecto de los elementos, generalmente OPERATIVE.
-     
-    * **State type:** valor asignado al tipo de estado, es configurable para cada state.
-
-    * **Workcat_id:** Establece el valor por defecto para el expediente de alta.
-     
-    * **Builtdate:** valor por defecto para fecha de alta.
-
-    * **Automatic link from connec to network:** permite dibujar el link automáticamente al añadir un nuevo connec.
- 
-    * **Force use docker for forms:** muestra formularios dockerizados.
-
-    * **Force use docker  for info:** muestra formularios dockerizados al usar la info.
-
-.. figure:: img/modelo-de-datos-giswater/config_amb_1.png
-        
-*Imagen . Configuración-Básico (Inventory-Otro)*
-
-2. **Elemento de catálogo** *(feature cat)*
-    Permite configurar **valores por defecto** del **catálogo** para distintos elementos de la red.
-    Para cada uno de los elementos disponibles en cat_feature es posible **configurar un valor por defecto.** 
-    Todo esto se aplica al utilizar la herramienta de **inserción**, donde los valores por defecto se utilizarán en el **catálogo del elemento** seleccionado.
-
-.. figure:: img/modelo-de-datos-giswater/config_amb_2.png
-
-*Imagen . Configuración-Featurecat (Elemento de catálogo)*
-
-3. **Man type**
-    Es la configuración de valores por defecto de los campos de **dominio de valor:**
-
-        * fluid_type
-        * location_type
-        * category_type
-        * function_type
-
-    Se puede configurar un valor por defecto **general para cada tipo de elemento.**
-    También se puede definir un valor por defecto **específico para un tipo de objeto concreto.**
-
-.. figure:: img/modelo-de-datos-giswater/config_amb_3.png
-
-*Imagen . Configuración-Man Type*
-
-4. **Campos adicionales** *(Addfields)*
-    Se puede incluir atributos o información personalizada en los formularios de los elementos de la red.
-    Estos campos son útiles para adaptar el modelo de datos a las necesidades específicas de un proyecto.
-
-.. figure:: img/modelo-de-datos-giswater/config_amb_4.png
-
-*Imagen . Configuración-Addfields (Campos adicionales)*
-
-5. **Admin**
-    Configuración de valores por defecto de los campos de dominio de valor:
-
-     * Topology
-        Estos ajustes garantizan la operación eficiente de las reglas topológicas, como la validación de nodos y arcos, 
-        el manejo de geometrías dobles y la eliminación de nodos huérfanos. Además, incluyen configuraciones para buffers automáticos y validación de conectividad.
-
-     * O&M (Operaciones y Mantenimiento)
-        Configura herramientas esenciales para operaciones y mantenimiento, como zonificación dinámica, revisión automática de 
-        tolerancia en nodos, cortes mínimos, y gestión avanzada de estilos para zonas de mapa.
-
-     * Other
-        Configura parámetros generales, como el manejo de unidades en modelos EPA y valores predeterminados, asegurando la 
-        flexibilidad y adaptabilidad del sistema.
-
-     * System
-        Define configuraciones globales como valores por defecto en formularios, ajustes de monedas, gestión de etiquetas personalizadas,
-         y parámetros avanzados para restricciones de usuarios y control del sistema.
-
-.. figure:: img/modelo-de-datos-giswater/config_amb_5.png
-
-        *Imagen . Configuración-Admin*
+- Para los objetos obsoletos no hay reglas, todo vale.
+- Para los objetos operativos no pueden existir un nodo encima de otro (nodos duplicados) y los tramos siempre tiene que tener nodos en sus extremos.
+- Para los objetos planificados la complejidad se incrementa por la aparición de alternativas y sus combinaciones.
