@@ -48,7 +48,8 @@ Tras especificar lo mencionado arriba, pincharemos en el botón *Aceptar* para q
 
 .. important::
 
-    Necesitas privilegios de superadministrador de PostgreSQL para trabajar con Giswater.
+    Necesitas privilegios de superadministrador de PostgreSQL para empezar a trabajar con Giswater. Por ejemplo, para crear una nueva Base de Datos.
+    Una vez empezado el proyecto, cualquier tipo de usuario podrá trabajar con Giswater siempre que tenga el rol adecuado.
 
 Creación del archivo de proyecto de QGIS
 ========================================
