@@ -239,6 +239,20 @@ Barra de herramientas relacionada con aspectos generales del proyecto. Contiene 
 Barra de herramientas *Audit*
 -----------------------------
 
+.. figure:: img/entorno-trabajo/toolbar-audit-utilities.png
+
+   Herramienta de recuperación temporal del estado de la red, incrustada en la barra de Utilidades
+
+.. figure:: img/entorno-trabajo/toolbar-audit-customform.png
+
+   Herramienta de inspección de cambios, incrustada en los formularios de los objetos de la red
+
+Las herramientas de auditoría, Audit, estan subscritas al llamado módulo **audit** de Giswater, que tiene por objetivo ser un mecanismo de trazabilidad y auditoría dentro del GIS, registrando todos los cambios hechos durante el tiempo y permitiendo acceder a ellos en cualquier momento, de una forma sencilla e incrustada en el propio QGIS como herramientas propias de Giswater.
+
+Para ver todos los detalles sobre la puesta en marcha, gestión y funcionamiento del módulo consultar la sección :ref:`additional-toolbars-audit`
+
+- Recuperación temporal del estado de la red: permite reconstruir de forma precisa el estado histórico de la red en la extensión y fecha seleccionadas. El usuario podrá ver en tablas temporales el estado de la red durante la fecha seleccionada. A través de simbología categorizada será posible comparar si el objeto ha sido modificado o eliminado respecto la fecha actual.
+- Inspección de cambios: permite consultar todas las modificaciones registradas (y auditadas) sobre el objeto en cuestión, presentando los resultados en un formulario adicional. Esta lista de versiones, ordenada cronológicamente, permite examinar la evolución completa del objeto a lo largo del tiempo.
 
 
 Barra de herramientas *Campaign manage*
