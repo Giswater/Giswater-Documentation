@@ -41,6 +41,7 @@ Por favor, echa un vistazo a uno de los documentos siguientes.
    Manual de usuario de Giswater <giswater/for-users/user-manual/index>
    Trucos de usuario de Giswater <giswater/for-users/user-tricks/index>
    Fundamentos teóricos <giswater/for-users/theoretical-foundations/introduccion>
+   Índice de características <giswater/for-users/dialogs/info-feature-index>
 
 .. toctree::
    :maxdepth: 2

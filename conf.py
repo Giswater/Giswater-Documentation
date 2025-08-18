@@ -42,6 +42,10 @@ extensions = [
     'sphinx_copybutton'
 ]
 
+# Allow raw HTML content
+html_show_sourcelink = True
+html_copy_source = True
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['./themes']
 
@@ -108,7 +112,8 @@ html_favicon = 'static/common/logo.png'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['static']
+# Include the root-level `css/` directory so custom stylesheets are available.
+html_static_path = ['static', 'css']
 
 
 # Set a bullet character for :menuselection: role
@@ -134,9 +139,12 @@ html_context = {
     'isTesting': True
 }
 
+# Load our custom CSS from the root-level `css/` static path
+html_css_files = ['css_no_border.css']
+
 # Add custom CSS when a top bar is needed to be shown (for testing or outdated versions)
 if html_context['isTesting'] or html_context['outdated']:
-    html_css_files = ['css/giswater_topbar.css']
+    html_css_files.append('css/giswater_topbar.css')
 
 # Add custom tags to allow display of text based on the branch status
 if html_context['isTesting']:
