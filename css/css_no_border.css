@@ -87,18 +87,22 @@ details:not(.toggle-details) > *:not(summary) {
 	position: relative;
 }
 
-/* Smooth connection between summary and content when open */
+/* Remove borders from expanded toggle content - no border variant */
 .toggle-details[open] > *:not(summary),
 details[open]:not(.toggle-details) > *:not(summary) {
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	margin-top: 0;
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+    background: transparent;
+    box-shadow: none;
+    padding-left: 1.5em;
 }
 
 .toggle-details[open] summary,
 details[open]:not(.toggle-details) > summary {
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
 }
 
 /* No square variant: apply class "no-square" to details element */
@@ -304,42 +308,48 @@ li:has(details) {
     list-style: none !important;
 }
 
-/* Enhanced chevron arrow for all toggle summaries */
+/* Enhanced chevron arrow for all toggle summaries - smaller size with better visibility */
 .toggle-details > summary::before,
 details:not(.toggle-details) > summary::before {
     content: '';
     display: inline-block;
     width: 0.5em;
     height: 0.5em;
-    border-right: 2.5px solid currentColor;
-    border-top: 2.5px solid currentColor;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
     margin-right: 0.75em;
+    margin-left: 0.1em;
     vertical-align: middle;
     position: relative;
     top: -0.05em;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0.8;
+    opacity: 0.7;
+    transform-origin: center;
 }
 
 /* Enhanced chevron hover effect */
 .toggle-details summary:hover::before,
 details:not(.toggle-details) > summary:hover::before {
-    opacity: 1;
-    transform: rotate(45deg) scale(1.1);
+    opacity: 0.9;
+    transform: rotate(-45deg) scale(1.05);
 }
 
-/* Rotate chevron when toggle is open */
+/* Rotate chevron when toggle is open - ensure full visibility */
 .toggle-details[open] > summary::before,
 details[open]:not(.toggle-details) > summary::before {
-    transform: rotate(135deg);
-    opacity: 1;
+    transform: rotate(45deg);
+    opacity: 0.9;
+    top: -0.02em;
+    margin-left: 0.05em;
 }
 
 /* Enhanced open state chevron hover */
 .toggle-details[open] summary:hover::before,
 details[open]:not(.toggle-details) > summary:hover::before {
-    transform: rotate(135deg) scale(1.1);
+    transform: rotate(45deg) scale(1.05);
+    top: -0.02em;
+    margin-left: 0.05em;
 }
 
 /* Special positioning for nested toggles (inside list items) */
@@ -469,25 +479,26 @@ details:not(.toggle-details) > *:not(summary) h6 {
     margin-bottom: 0.75rem;
 }
 
-/* Beautiful styling for layout section headers - borderless design */
+/* Beautiful styling for layout section headers - borderless compact non-interactive design */
 /* Enhanced styling for layout section separators */
 .layout-section,
 .layout-header,
 p.layout-header {
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%);
     border: none;
-    border-left: 4px solid var(--water-accent);
+    border-left: 3px solid var(--water-accent);
     border-radius: 0.5rem;
-    padding: 1rem 1.25rem;
-    margin: 2.5rem 0 1.5rem 0;
-    font-weight: 600;
+    padding: 0.625rem 1rem;
+    margin: 1.25rem 0 0.875rem 0;
+    font-weight: 500;
     color: var(--water-title-text);
-    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.12);
+    box-shadow: 0 3px 8px rgba(14, 165, 233, 0.1), 0 1px 3px rgba(0, 0, 0, 0.04);
     position: relative;
-    font-size: 0.9rem;
-    letter-spacing: 0.025em;
-    line-height: 1.4;
-    transition: var(--water-transition);
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+    overflow: hidden;
+    cursor: default;
 }
 
 .layout-section::before,
@@ -498,16 +509,30 @@ p.layout-header::before {
     top: 0;
     left: 0;
     right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--water-accent), transparent);
-    border-radius: 0.5rem 0.5rem 0 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--water-accent) 0%, rgba(14, 165, 233, 0.7) 60%, transparent 100%);
+    border-radius: 1rem 1rem 0 0;
 }
+
+/* Add elegant icon for borderless design */
+.layout-section::after,
+.layout-header::after,
+p.layout-header::after {
+    content: '✨';
+    position: absolute;
+    right: 0.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: var(--water-accent);
+    opacity: 0.7;
+    transition: var(--water-transition);
+}
+
+/* No hover effects for borderless layout headers - non-interactive */
 
 /* Alternative approach - style paragraphs that contain specific layout text patterns */
 /* This uses a more general approach for better browser compatibility */
-p {
-    /* Base paragraph styling remains unchanged */
-}
 
 /* Target specific paragraph patterns that appear before widget sections */
 /* Using adjacent sibling selector for paragraphs before raw HTML blocks */
@@ -515,20 +540,21 @@ div.raw-html:has(details) {
     margin-top: 1rem;
 }
 
-/* Style for section dividers between widget groups */
+/* Style for section dividers between widget groups - compact */
 .widget-section-divider {
-    background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%);
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
     border: none;
-    border-left: 4px solid var(--water-accent);
-    border-radius: 0.5rem;
-    padding: 0.75rem 1rem;
-    margin: 2rem 0 1rem 0;
-    font-weight: 600;
-    color: var(--water-title-text);
-    box-shadow: 0 3px 8px rgba(14, 165, 233, 0.1);
-    font-size: 0.85rem;
+    border-left: 3px solid #10b981;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    margin: 0.5rem 0 0.375rem 0;
+    font-weight: 500;
+    color: #065f46;
+    box-shadow: 0 2px 6px rgba(16, 185, 129, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+    font-size: 0.75rem;
     position: relative;
     transition: var(--water-transition);
+    overflow: hidden;
 }
 
 .widget-section-divider::after {
@@ -537,6 +563,137 @@ div.raw-html:has(details) {
     bottom: 0;
     left: 4px;
     right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, var(--water-accent), transparent);
+    height: 2px;
+    background: linear-gradient(90deg, #10b981 0%, rgba(16, 185, 129, 0.4) 70%, transparent 100%);
+}
+
+/* Enhanced widget divider animations */
+.widget-section-divider:hover {
+    transform: translateX(3px) scale(1.01);
+    box-shadow: 0 6px 18px rgba(16, 185, 129, 0.15), 0 3px 8px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+}
+
+/* Mobile responsive design for compact borderless layout headers */
+@media screen and (max-width: 768px) {
+    .layout-section,
+    .layout-header,
+    p.layout-header {
+        padding: 0.5rem 0.875rem;
+        margin: 1rem 0 0.625rem 0;
+        font-size: 0.75rem;
+        border-radius: 0.375rem;
+        border-left-width: 3px;
+    }
+    
+    .layout-section::after,
+    .layout-header::after,
+    p.layout-header::after {
+        right: 0.75rem;
+        font-size: 0.8rem;
+    }
+    
+    .widget-section-divider {
+        padding: 0.3rem 0.625rem;
+        margin: 0.375rem 0 0.25rem 0;
+        font-size: 0.7rem;
+        border-radius: 0.25rem;
+    }
+    
+    /* No hover effects on mobile - layout headers are non-interactive */
+}
+
+@media screen and (max-width: 480px) {
+    .layout-section,
+    .layout-header,
+    p.layout-header {
+        padding: 0.375rem 0.625rem;
+        font-size: 0.7rem;
+        border-left-width: 2px;
+        border-radius: 0.25rem;
+        margin: 0.5rem 0 0.25rem 0;
+    }
+    
+    .layout-section::before,
+    .layout-header::before,
+    p.layout-header::before {
+        height: 2px;
+    }
+    
+    .layout-section::after,
+    .layout-header::after,
+    p.layout-header::after {
+        display: none;
+    }
+    
+    .widget-section-divider {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.65rem;
+        border-left-width: 2px;
+        border-radius: 0.1875rem;
+        margin: 0.25rem 0 0.1875rem 0;
+    }
+}
+
+/* Enhanced typography for borderless design */
+.layout-section,
+.layout-header,
+p.layout-header {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-variant-ligatures: common-ligatures;
+}
+
+.widget-section-divider {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Layout headers are non-interactive - no focus states needed */
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .layout-section,
+    .layout-header,
+    p.layout-header,
+    .widget-section-divider,
+    .layout-section::after,
+    .layout-header::after,
+    p.layout-header::after {
+        transition: none;
+    }
+    
+    .layout-section:hover,
+    .layout-header:hover,
+    p.layout-header:hover,
+    .widget-section-divider:hover {
+        transform: none;
+    }
+    
+    .layout-section:hover::after,
+    .layout-header:hover::after,
+    p.layout-header:hover::after {
+        transform: translateY(-50%);
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .layout-section,
+    .layout-header,
+    p.layout-header {
+        border-left-width: 6px;
+        background: #ffffff;
+        color: #000000;
+    }
+    
+    .widget-section-divider {
+        border-left-width: 5px;
+        background: #ffffff;
+        color: #000000;
+    }
 }

@@ -140,7 +140,7 @@ html_context = {
 }
 
 # Load our custom CSS from the root-level `css/` static path
-html_css_files = ['css_plain.css']
+html_css_files = ['css_def.css']
 
 # Add custom CSS when a top bar is needed to be shown (for testing or outdated versions)
 if html_context['isTesting'] or html_context['outdated']:

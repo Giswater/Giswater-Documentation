@@ -275,6 +275,8 @@ Como son únicos para cada objeto, el nivel de personalización es tal que podre
 
 La forma de poder visualizarlo es a través del botón *Info Giswater* y funciona para nodos, arcos, connecs, gullys, visitas y acotaciones.
 
+.. _partes-del-formulario:
+
 Partes del formulario
 ---------------------
 
