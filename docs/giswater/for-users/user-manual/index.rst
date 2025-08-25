@@ -16,4 +16,3 @@ Manual de Usuario de Giswater
    digitalization
    toolbox
    export-options
-   ../dialogs/info_feature/index

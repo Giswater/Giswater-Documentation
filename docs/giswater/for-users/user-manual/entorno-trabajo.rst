@@ -128,7 +128,7 @@ Barra de herramientas *Basic*
 Barra de herramientas que contiene botones para realizar consultas básicas relacionadas con aspectos generales de la red. Contiene los siguientes botones:
 
 - Info Giswater: permite abrir el formulario de un objeto para consultar su información. **Para abrirlo no es necesario tener una capa activa en el ToC**.
-  Funciona como el botón *Identificar objeto espacial* de QGIS.
+  Funciona como el botón *Identificar objeto espacial* de QGIS. Para ver más detalles, consultar la sección :doc:`../dialogs/info_feature/index`.
 
 - Selector: permite filtrar la información que se quiere usar en diferentes ámbitos del proyecto. Se divide en varias pestañas cada una de las cuales permite activar/desactivar la visualización de elementos en el mapa.
   Para ver más detalles, consultar la sección :ref:`dialog-selector`.
