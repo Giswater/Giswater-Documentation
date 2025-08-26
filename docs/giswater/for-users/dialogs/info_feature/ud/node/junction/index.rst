@@ -11,6 +11,7 @@ Junction
 	:maxdepth: 1
 	:caption: Tabs
 
+	../../tab_connections
 	tab_data
 	../../tab_documents
 	../../tab_elements

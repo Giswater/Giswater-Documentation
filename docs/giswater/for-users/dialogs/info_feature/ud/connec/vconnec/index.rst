@@ -5,7 +5,7 @@ Vconnec
 =======
 
 
-Virtual connec
+Vconnec
 
 .. toctree::
 	:maxdepth: 1
@@ -14,7 +14,6 @@ Virtual connec
 	tab_data
 	../../tab_documents
 	../../tab_elements
-	tab_epa
 	../../tab_event
 	../../tab_hydrometer
 	../../tab_hydrometer_val

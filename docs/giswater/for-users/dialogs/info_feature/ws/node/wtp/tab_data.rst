@@ -9,7 +9,7 @@ Data
 
 
 
-Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes del formulario <entorno-trabajo>`
+Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes del formulario <partes-del-formulario>`
 
 .. raw:: html
 
@@ -18,7 +18,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Node Type:</strong> node_type - Node type. It is automatically populated based on nodecat_id</summary>
+		<summary><strong>Tipo De Nodo:</strong> node_type - Tipo de nodo. Se rellena automáticamente basándose en nodecat_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -39,7 +39,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Nodecat Id:</strong> nodecat_id - nodecat_id</summary>
+		<summary><strong>Nodecat_Id:</strong> nodecat_id - nodecat_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> Sí.</li>
@@ -83,7 +83,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Epa Type:</strong> epa_type - Type of node to use for the hydraulic model. It is not necessary to enter it, it is automatic depending on the node type.</summary>
+		<summary><strong>Tipo Epa:</strong> epa_type - Tipo de nodo a utilizar para el modelo hidráulico. No es necesario introducirlo, es automático dependiendo del tipo de nodo.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -113,7 +113,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Code:</strong> code - code</summary>
+		<summary><strong>Código:</strong> code - código</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -133,7 +133,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Top Elev:</strong> top_elev - top_elev</summary>
+		<summary><strong>Top_Elev:</strong> top_elev - top_elev</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -153,7 +153,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Depth:</strong> depth - depth</summary>
+		<summary><strong>Profundidad:</strong> depth - profundidad</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -173,7 +173,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Datasource:</strong> datasource - datasource</summary>
+		<summary><strong>Fuente De Datos:</strong> datasource - fuente de datos</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -198,7 +198,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Cat Matcat Id:</strong> cat_matcat_id - cat_matcat_id</summary>
+		<summary><strong>Cat_Matcat_Id:</strong> cat_matcat_id - cat_matcat_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -218,7 +218,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Nominal Pressure:</strong> cat_pnom - Nominal pressure of the element in atm. It cannot be refilled. The one with the pnom field in the corresponding catalog is used</summary>
+		<summary><strong>Presión Nominal:</strong> cat_pnom - Presión nominal del elemento en atm. No puede rellenarse. Se utiliza el que tenga el campo pnom en el catálogo correspondiente</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -238,7 +238,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Cat Dnom:</strong> cat_dnom - cat_dnom</summary>
+		<summary><strong>Cat_Dnom:</strong> cat_dnom - cat_dnom</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -258,7 +258,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Workcat Id:</strong> workcat_id - ID of the construction work related to node.</summary>
+		<summary><strong>Identificación Workcat:</strong> workcat_id - ID de la obra relacionada con el nodo.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -283,7 +283,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Builtdate:</strong> builtdate - builtdate</summary>
+		<summary><strong>Fecha De Construcción:</strong> builtdate - fecha de construcción</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Date.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -303,7 +303,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Ownercat Id:</strong> ownercat_id - ownercat_id</summary>
+		<summary><strong>Ownercat_Id:</strong> ownercat_id - ownercat_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -328,7 +328,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Workcat Id End:</strong> workcat_id_end - workcat_id_end</summary>
+		<summary><strong>Workcat_Id_End:</strong> workcat_id_end - workcat_id_end</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -353,7 +353,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Enddate:</strong> enddate - enddate</summary>
+		<summary><strong>Fecha Final:</strong> enddate - fecha final</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Date.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -373,7 +373,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Staticpressure:</strong> staticpressure - staticpressure</summary>
+		<summary><strong>Presión Estática:</strong> staticpressure - presión estática</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -393,7 +393,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Minsector Id:</strong> minsector_id - minsector_id</summary>
+		<summary><strong>Minsector_Id:</strong> minsector_id - minsector_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -413,7 +413,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Om State:</strong> om_state - om_state</summary>
+		<summary><strong>Om_State:</strong> om_state - om_state</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -425,7 +425,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Conserv State:</strong> conserv_state - conserv_state</summary>
+		<summary><strong>Estado_De_Conservación:</strong> conserv_state - estado_de_conservación</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -437,7 +437,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Access Type:</strong> access_type - access_type</summary>
+		<summary><strong>Tipo_Acceso:</strong> access_type - tipo_acceso</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -449,7 +449,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Placement Type:</strong> placement_type - Placement Type</summary>
+		<summary><strong>Tipo De Colocación:</strong> placement_type - Tipo de colocación</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -461,7 +461,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Name:</strong> name - Name of the element</summary>
+		<summary><strong>Nombre:</strong> name - Nombre del elemento</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -473,7 +473,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Serial Number:</strong> serial_number - serial_number</summary>
+		<summary><strong>Número_De_Serie:</strong> serial_number - número_de_serie</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -485,7 +485,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Label Quadrant:</strong> label_quadrant - label_quadrant</summary>
+		<summary><strong>Cuadrante_Etiqueta:</strong> label_quadrant - cuadrante_etiqueta</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -502,7 +502,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Macrominsector Id:</strong> macrominsector_id - macrominsector_id</summary>
+		<summary><strong>Macrominsector_Id:</strong> macrominsector_id - macrominsector_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -514,7 +514,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Cat Dint:</strong> cat_dint - cat_dint</summary>
+		<summary><strong>Cat_Dint:</strong> cat_dint - cat_dint</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -526,7 +526,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Supplyzone Id:</strong> supplyzone_id - supplyzone_id</summary>
+		<summary><strong>Zona De Suministro:</strong> supplyzone_id - id_zona_de_abastecimiento</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -538,7 +538,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Custom Top Elev:</strong> custom_top_elev - custom_top_elev</summary>
+		<summary><strong>Custom_Top_Elev:</strong> custom_top_elev - custom_top_elev</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -550,7 +550,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Lock Level:</strong> lock_level - lock_level</summary>
+		<summary><strong>Nivel_De_Bloqueo:</strong> lock_level - nivel_cierre</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -567,7 +567,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Is Scadamap:</strong> is_scadamap - is_scadamap</summary>
+		<summary><strong>Is_Scadamap:</strong> is_scadamap - is_scadamap</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Boolean.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -579,7 +579,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Pavcat Id:</strong> pavcat_id - pavcat_id</summary>
+		<summary><strong>Pavcat_Id:</strong> pavcat_id - pavcat_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -621,7 +621,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Coagulation:</strong> coagulation - Coagulation:</summary>
+		<summary><strong>Coagulación:</strong> coagulation - Coagulation:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -671,7 +671,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Disinfection:</strong> disinfection - Disinfection:</summary>
+		<summary><strong>Desinfección:</strong> disinfection - Disinfection:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -696,7 +696,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Filtration:</strong> filtration - Filtration:</summary>
+		<summary><strong>Filtración:</strong> filtration - Filtration:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -721,7 +721,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Floculation:</strong> floculation - Floculation:</summary>
+		<summary><strong>Floculación:</strong> floculation - Floculation:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -746,7 +746,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Inlet Arc:</strong> inlet_arc - Inlet arc:</summary>
+		<summary><strong>Arco_De_Entrada:</strong> inlet_arc - Inlet arc:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -782,7 +782,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Oxidation:</strong> oxidation - Oxidation:</summary>
+		<summary><strong>Oxidación:</strong> oxidation - Oxidation:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -807,7 +807,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Presendiment:</strong> presendiment - Presendiment:</summary>
+		<summary><strong>Presentación:</strong> presendiment - Presendiment:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -832,7 +832,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Screening:</strong> screening - Screening:</summary>
+		<summary><strong>Cribado:</strong> screening - Screening:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -857,7 +857,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Sediment:</strong> sediment - Sediment:</summary>
+		<summary><strong>Sedimentos:</strong> sediment - Sediment:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -882,7 +882,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Sludgeman:</strong> sludgeman - Sludgeman:</summary>
+		<summary><strong>Lodos:</strong> sludgeman - Sludgeman:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -907,7 +907,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Storage:</strong> storage - Storage:</summary>
+		<summary><strong>Almacenamiento:</strong> storage - Storage:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -932,7 +932,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Hemisphere:</strong> hemisphere - hemisphere</summary>
+		<summary><strong>Hemisferio:</strong> hemisphere - hemisferio</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -952,7 +952,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Parent Id:</strong> parent_id - parent_id</summary>
+		<summary><strong>Parent_Id:</strong> parent_id - parent_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -981,7 +981,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Soilcat Id:</strong> soilcat_id - Relacionado con el catalogo de suelos (cat_soil)</summary>
+		<summary><strong>Identificación De Soilcat:</strong> soilcat_id - Relacionado con el catalogo de suelos (cat_soil)</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1006,7 +1006,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Function Type:</strong> function_type - function_type</summary>
+		<summary><strong>Tipo_Función:</strong> function_type - tipo_función</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1031,7 +1031,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Category Type:</strong> category_type - ID of the category type related to node.</summary>
+		<summary><strong>Categoría:</strong> category_type - ID del tipo de categoría relacionado con el nodo.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1056,7 +1056,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Fluid Type:</strong> fluid_type - fluid_type</summary>
+		<summary><strong>Tipo_Fluido:</strong> fluid_type - tipo_fluido</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1081,7 +1081,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Location Type:</strong> location_type - location_type</summary>
+		<summary><strong>Tipo_Ubicación:</strong> location_type - tipo_ubicación</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1106,7 +1106,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Catalog Label:</strong> label - label</summary>
+		<summary><strong>Etiqueta Del Catálogo:</strong> label - etiqueta</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1126,7 +1126,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Label Y:</strong> label_y - label_y</summary>
+		<summary><strong>Etiqueta_Y:</strong> label_y - etiqueta_y</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1146,7 +1146,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Label X:</strong> label_x - X coordinate of the label's location</summary>
+		<summary><strong>Etiqueta X:</strong> label_x - Coordenada X de la ubicación de la etiqueta</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1166,7 +1166,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Label Rotation:</strong> label_rotation - Angle of rotation of the label</summary>
+		<summary><strong>Rotación De Etiquetas:</strong> label_rotation - Ángulo de rotación de la etiqueta</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1186,7 +1186,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Rotation:</strong> rotation - Field to use in order to rotate the symbology of the GIS canvas</summary>
+		<summary><strong>Rotación:</strong> rotation - Campo a utilizar para rotar la simbología del lienzo del SIG</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1206,7 +1206,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Verified:</strong> verified - verified</summary>
+		<summary><strong>Verificado:</strong> verified - verificado</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1231,7 +1231,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Presszone:</strong> presszone_id - presszone_id</summary>
+		<summary><strong>Zona De Presión:</strong> presszone_id - press_zone_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1312,7 +1312,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Explotation Id:</strong> expl_id - Explotation ID</summary>
+		<summary><strong>Explotación Id:</strong> expl_id - Explotación ID</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1366,7 +1366,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Workcat Id Plan:</strong> workcat_id_plan - Item planning record</summary>
+		<summary><strong>Plan De Identificación Workcat:</strong> workcat_id_plan - Registro de planificación de artículos</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1391,7 +1391,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Asset Id:</strong> asset_id - asset_id</summary>
+		<summary><strong>Asset_Id:</strong> asset_id - asset_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1403,7 +1403,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Demand Max:</strong> demand_max - demand_max</summary>
+		<summary><strong>Demanda_Max:</strong> demand_max - demanda_max</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1415,7 +1415,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Demand Min:</strong> demand_min - demand_min</summary>
+		<summary><strong>Demanda_Min:</strong> demand_min - demanda_min</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1427,7 +1427,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Demand Avg:</strong> demand_avg - demand_avg</summary>
+		<summary><strong>Demanda_Avg:</strong> demand_avg - demanda_avg</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1439,7 +1439,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Press Max:</strong> press_max - press_max</summary>
+		<summary><strong>Press_Max:</strong> press_max - press_max</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1451,7 +1451,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Press Min:</strong> press_min - press_min</summary>
+		<summary><strong>Pulse_Min:</strong> press_min - pulse_min</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1463,7 +1463,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Press Avg:</strong> press_avg - press_avg</summary>
+		<summary><strong>Press_Avg:</strong> press_avg - press_avg</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1475,7 +1475,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Head Max:</strong> head_max - head_max</summary>
+		<summary><strong>Cabeza_Max:</strong> head_max - cabeza_max</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1487,7 +1487,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Head Min:</strong> head_min - head_min</summary>
+		<summary><strong>Cabeza_Min:</strong> head_min - cabeza_min</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1499,7 +1499,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Head Avg:</strong> head_avg - head_avg</summary>
+		<summary><strong>Head_Avg:</strong> head_avg - head_avg</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1511,14 +1511,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Brand Id:</strong> brand_id - brand_id</summary>
+		<summary><strong>Marca_Id:</strong> brand_id - marca_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT id, id as idval FROM cat_brand WHERE 'WTP' = ANY(featurecat_id::text[])
+					SELECT id, id as idval FROM cat_brand WHERE 'WTP' = ANY(featurecat_id::text[]) OR featurecat_id IS NULL
 				</code>
 			</li>
 			<li>
@@ -1536,14 +1536,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Model Id:</strong> model_id - model_id</summary>
+		<summary><strong>Modelo_Id:</strong> model_id - model_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT id, id as idval FROM cat_brand_model WHERE 'WTP' = ANY(featurecat_id::text[])
+					SELECT id, id as idval FROM cat_brand_model WHERE 'WTP' = ANY(featurecat_id::text[]) OR featurecat_id IS NULL
 				</code>
 			</li>
 			<li>
@@ -1565,7 +1565,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Muni Id:</strong> muni_id - muni_id</summary>
+		<summary><strong>Muni_Id:</strong> muni_id - muni_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1590,7 +1590,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Postcode:</strong> postcode - postcode</summary>
+		<summary><strong>Código Postal:</strong> postcode - código postal</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1610,7 +1610,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>District:</strong> district_id - district_id</summary>
+		<summary><strong>Distrito:</strong> district_id - district_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1640,7 +1640,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Streetname:</strong> streetaxis_id - streetname</summary>
+		<summary><strong>Nombre De La Calle:</strong> streetaxis_id - nombre de la calle</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1670,7 +1670,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Postnumber:</strong> postnumber - postnumber</summary>
+		<summary><strong>Código Postal:</strong> postnumber - código postal</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1700,7 +1700,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Postcomplement:</strong> postcomplement - postcomplement</summary>
+		<summary><strong>Postcomplemento:</strong> postcomplement - postcomplemento</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1720,7 +1720,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Streetname2:</strong> streetaxis2_id - streetname2</summary>
+		<summary><strong>Nombredecalle2:</strong> streetaxis2_id - nombredecalle2</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1750,7 +1750,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Second Street Number:</strong> postnumber2 - Second street number</summary>
+		<summary><strong>Número De La Segunda Calle:</strong> postnumber2 - Segundo número de calle</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1780,7 +1780,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Postcomplement2:</strong> postcomplement2 - postcomplement2</summary>
+		<summary><strong>Postcomplemento2:</strong> postcomplement2 - postcomplemento2</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1800,7 +1800,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Descript:</strong> descript - descript</summary>
+		<summary><strong>Descripción:</strong> descript - Descripción</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1820,7 +1820,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Annotation:</strong> annotation - Annotations related to node. Additional information</summary>
+		<summary><strong>Anotación:</strong> annotation - anotación</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1840,7 +1840,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Observ:</strong> observ - observ</summary>
+		<summary><strong>Consulte:</strong> observ - consulte</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1860,7 +1860,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Link:</strong> link - Field to store link to information related to the node.</summary>
+		<summary><strong>Enlace:</strong> link - Campo para almacenar el enlace a la información relacionada con el nodo.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1939,7 +1939,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Dma Id:</strong> dma_id - ID of the management area related to the arc (District Meter Area)</summary>
+		<summary><strong>Dma Id:</strong> dma_id - ID del área de gestión relacionada con el arco (Área de contadores de distrito)</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1983,14 +1983,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>State:</strong> state - state</summary>
+		<summary><strong>Estado:</strong> state - estado</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					WITH check_value AS (   SELECT value::integer AS psector_value    FROM config_param_user    WHERE parameter = 'plan_psector_current'   AND cur_user = current_user ) SELECT id, name as idval  FROM value_state  WHERE id IS NOT NULL  AND CASE    WHEN (SELECT psector_value FROM check_value) IS NULL THEN id != 2    ELSE id=2  END
+					WITH psector_value AS (   		SELECT value::integer AS psector_value    		FROM config_param_user    		WHERE parameter = 'plan_psector_current' AND cur_user = current_user), 	 tg_op_value AS (   		SELECT value::text AS tg_op_value    		FROM config_param_user    		WHERE parameter = 'utils_transaction_mode' AND cur_user = current_user)   SELECT id::integer as id, name as idval FROM value_state  WHERE id IS NOT NULL  AND CASE    WHEN (SELECT tg_op_value FROM tg_op_value)!='INSERT' THEN id IN (0,1,2)   WHEN (SELECT tg_op_value FROM tg_op_value) ='INSERT' AND (SELECT psector_value FROM psector_value) IS NOT NULL THEN id = 2    ELSE id < 2  END
 				</code>
 			</li>
 			<li>
@@ -2009,7 +2009,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>State Type:</strong> state_type - The state type of the element. It allows to obtain more detail of the state. To select from those available depending on the chosen state</summary>
+		<summary><strong>Tipo De Estado:</strong> state_type - El tipo de estado del elemento. Permite obtener más detalles del estado. Para seleccionar entre los disponibles en función del estado elegido</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>

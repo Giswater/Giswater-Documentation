@@ -426,7 +426,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Add To Dscenario:</strong> add_to_dscenario - None</summary>
+		<summary><strong>Add_To_Dscenario:</strong> add_to_dscenario - None</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Unknown.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -454,7 +454,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Remove From Dsscenario:</strong> remove_from_dscenario - None</summary>
+		<summary><strong>Remove_From_Dscenario:</strong> remove_from_dscenario - None</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Unknown.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -483,7 +483,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Edit Dscenario:</strong> edit_dscenario - None</summary>
+		<summary><strong>Edit_Dscenario:</strong> edit_dscenario - None</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Unknown.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -516,7 +516,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Tabla Shortpipe:</strong> tbl_inp_shortpipe - None</summary>
+		<summary><strong>Tabla Inp Shortpipe:</strong> tbl_inp_shortpipe - None</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Unknown.</li>
 			<li><strong>Mandatory:</strong> No.</li>

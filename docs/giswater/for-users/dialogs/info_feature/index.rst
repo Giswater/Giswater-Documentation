@@ -92,66 +92,53 @@ En un proyecto de Giswater se pueden crear y editar los siguientes objetos:
 	:numbered: 4
 
 	# Arc
-	ud/arc/pipe/index
+	ud/arc/conduit/index
+	ud/arc/pump_pipe/index
+	ud/arc/siphon/index
 	ud/arc/varc/index
+	ud/arc/waccel/index
 	# Connec
-	ud/connec/fountain/index
-	ud/connec/greentap/index
-	ud/connec/tap/index
+	ud/connec/cjoin/index
 	ud/connec/vconnec/index
-	ud/connec/wjoin/index
 	# Element
 	ud/element/ecover/index
-	ud/element/ehydrant_plate/index
-	ud/element/emanhole/index
-	ud/element/emeter/index
-	ud/element/eprotect_band/index
+	ud/element/egate/index
+	ud/element/eiot_sensor/index
+	ud/element/eorifice/index
+	ud/element/eoutlet/index
+	ud/element/eprotector/index
 	ud/element/epump/index
-	ud/element/eregister/index
 	ud/element/estep/index
-	ud/element/evalve/index
+	ud/element/eweir/index
+	# Gully
+	ud/gully/ginlet/index
+	ud/gully/pgully/index
+	ud/gully/vgully/index
 	# Link
-	ud/link/pipelink/index
+	ud/link/conduitlink/index
 	ud/link/vlink/index
 	# Node
-	ud/node/adaptation/index
-	ud/node/air_valve/index
-	ud/node/bypass_register/index
-	ud/node/check_valve/index
-	ud/node/clorinathor/index
-	ud/node/control_register/index
-	ud/node/curve/index
-	ud/node/endline/index
-	ud/node/expantank/index
-	ud/node/filter/index
-	ud/node/fl_contr_valve/index
-	ud/node/flexunion/index
-	ud/node/flowmeter/index
-	ud/node/gen_purp_valve/index
-	ud/node/green_valve/index
-	ud/node/hydrant/index
+	ud/node/chamber/index
+	ud/node/change/index
+	ud/node/circ_manhole/index
+	ud/node/highpoint/index
+	ud/node/jump/index
 	ud/node/junction/index
-	ud/node/manhole/index
 	ud/node/netelement/index
-	ud/node/netsamplepoint/index
-	ud/node/outfall_valve/index
-	ud/node/pr_break_valve/index
-	ud/node/pr_reduc_valve/index
-	ud/node/pr_susta_valve/index
-	ud/node/pressure_meter/index
-	ud/node/pump/index
-	ud/node/reduction/index
+	ud/node/netgully/index
+	ud/node/netinit/index
+	ud/node/out_manhole/index
+	ud/node/outfall/index
+	ud/node/overflow_storage/index
+	ud/node/pump_station/index
+	ud/node/rect_manhole/index
 	ud/node/register/index
-	ud/node/shutoff_valve/index
-	ud/node/source/index
-	ud/node/t/index
-	ud/node/tank/index
-	ud/node/throttle_valve/index
-	ud/node/valve_register/index
-	ud/node/water_connection/index
-	ud/node/waterwell/index
-	ud/node/wtp/index
-	ud/node/x/index
+	ud/node/sandbox/index
+	ud/node/sewer_storage/index
+	ud/node/valve/index
+	ud/node/virtual_node/index
+	ud/node/weir/index
+	ud/node/wwtp/index
 
 .. raw:: html
 

@@ -14,7 +14,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Power:</strong> power - Power</summary>
+		<summary><strong>Potencia Total:</strong> power - Potencia total</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -34,7 +34,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Curve Id:</strong> curve_id - Curve id</summary>
+		<summary><strong>Curva Id:</strong> curve_id - Id de curva</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -71,7 +71,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Speed:</strong> speed - Speed</summary>
+		<summary><strong>Velocidad:</strong> speed - Velocidad</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -91,7 +91,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Pattern:</strong> pattern_id - Pattern</summary>
+		<summary><strong>Patrón:</strong> pattern_id - Patrón</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -129,7 +129,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Status:</strong> status - Status</summary>
+		<summary><strong>Estado:</strong> status - Estado</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -154,7 +154,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>To Arc:</strong> to_arc - To arc</summary>
+		<summary><strong>Para Arco:</strong> to_arc - Para arco</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -174,7 +174,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Pump Type:</strong> pump_type - Pump type</summary>
+		<summary><strong>Tipo De Bomba:</strong> pump_type - Tipo de bomba</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -199,7 +199,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Energy Price:</strong> energy_price - Energy price</summary>
+		<summary><strong>Precio De La Energía :</strong> energy_price - Precio de la energía </summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -219,7 +219,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Price Pattern:</strong> energy_pattern_id - Price pattern</summary>
+		<summary><strong>Patrón De Precios:</strong> energy_pattern_id - Patrón de precios</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -244,7 +244,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Eff. Curve:</strong> effic_curve_id - Eff. curve</summary>
+		<summary><strong>Curva Ef.:</strong> effic_curve_id - Curva ef.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -265,7 +265,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Result Id:</strong> result_id - Result id</summary>
+		<summary><strong>Id De Resultado:</strong> result_id - Identificador del resultado - result_id </summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -285,7 +285,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Flow:</strong> flow_max - Max Flow</summary>
+		<summary><strong>Caudal Máximo:</strong> flow_max - Caudal máximo</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -305,7 +305,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Min Flow:</strong> flow_min - Min Flow</summary>
+		<summary><strong>Caudal Mínimo:</strong> flow_min - Caudal mínimo</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -325,7 +325,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Velocity:</strong> vel_max - Max velocity</summary>
+		<summary><strong>Velocidad Máxima:</strong> vel_max - Velocidad máxima</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -345,7 +345,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Min Velocity:</strong> vel_min - Min velocity</summary>
+		<summary><strong>Velocidad Mínima:</strong> vel_min - Velocidad mínima</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -365,7 +365,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Headloss:</strong> headloss_max - Max headloss</summary>
+		<summary><strong>Máxima Perdida De Carga Hidráulica:</strong> headloss_max - Máxima perdida de carga hidráulica</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -385,7 +385,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Min Headloss:</strong> headloss_min - Min headloss</summary>
+		<summary><strong>Mínima Perdida Da Carga Hidráulica:</strong> headloss_min - Mínima perdida da carga hidráulica</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -405,7 +405,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Quality:</strong> quality - Quality</summary>
+		<summary><strong>Calidad:</strong> quality - Calidad</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -425,7 +425,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Usage Factor:</strong> usage_fact - Usage factor</summary>
+		<summary><strong>Factor De Uso:</strong> usage_fact - factor de uso</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -445,7 +445,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Average Efficiency:</strong> avg_effic - Average efficiency</summary>
+		<summary><strong>Eficiencia Media:</strong> avg_effic - Eficacia media</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -485,7 +485,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Average Kw:</strong> avg_kw - Average KW</summary>
+		<summary><strong>Kw Medios:</strong> avg_kw - KW medio</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -505,7 +505,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Peak Kw:</strong> peak_kw - Peak KW</summary>
+		<summary><strong>Kw Máximos:</strong> peak_kw - KW máximos</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -525,7 +525,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Cost Day:</strong> cost_day - Cost day</summary>
+		<summary><strong>Coste Diario:</strong> cost_day - Coste por día</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -549,7 +549,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Add To Dscenario:</strong> add_to_dscenario - None</summary>
+		<summary><strong>Add_To_Dscenario:</strong> add_to_dscenario - None</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Unknown.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -577,7 +577,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Remove From Dsscenario:</strong> remove_from_dscenario - None</summary>
+		<summary><strong>Remove_From_Dscenario:</strong> remove_from_dscenario - None</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Unknown.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -606,7 +606,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Edit Dscenario:</strong> edit_dscenario - None</summary>
+		<summary><strong>Edit_Dscenario:</strong> edit_dscenario - None</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Unknown.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -639,7 +639,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Tabla Pump:</strong> tbl_inp_pump - None</summary>
+		<summary><strong>Tabla Inp Pump:</strong> tbl_inp_pump - None</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Unknown.</li>
 			<li><strong>Mandatory:</strong> No.</li>

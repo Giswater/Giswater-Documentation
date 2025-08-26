@@ -5,7 +5,7 @@ Varc
 ====
 
 
-Virtual section of the pipe network. Used to connect arcs and nodes when polygons exists
+Varc
 
 .. toctree::
 	:maxdepth: 1

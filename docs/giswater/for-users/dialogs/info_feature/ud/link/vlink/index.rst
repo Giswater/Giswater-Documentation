@@ -5,7 +5,7 @@ Vlink
 =====
 
 
-Virtual link
+Vlink
 
 .. toctree::
 	:maxdepth: 1

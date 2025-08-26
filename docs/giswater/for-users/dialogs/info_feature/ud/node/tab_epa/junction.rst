@@ -14,7 +14,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Demand:</strong> demand - Demand</summary>
+		<summary><strong>Y0:</strong> y0 - y0</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -34,45 +34,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Pattern Id:</strong> pattern_id - Pattern id</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT DISTINCT (pattern_id) AS id,  pattern_id  AS idval FROM inp_pattern WHERE pattern_id IS NOT NULL
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li>
-							<details class='no-square'>
-								<summary><strong>valueRelation:</strong> </summary>
-								<ul>
-									<li>nullValue: True</li>
-									<li>layer: ve_inp_pattern</li>
-									<li>activated: True</li>
-									<li>keyColumn: pattern_id</li>
-									<li>valueColumn: pattern_id</li>
-									<li>filterExpression: None</li>
-								</ul>
-							</details>
-						</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Emitter Coefficient:</strong> emitter_coeff - Emitter coefficient</summary>
+		<summary><strong>Ysur:</strong> ysur - Altura adicional máxima sobre el nivel del suelo que el nodo puede soportar en condiciones de recargo  . (el valor predeterminado es 0)</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -92,7 +54,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Initial Quality:</strong> init_quality - Initial quality</summary>
+		<summary><strong>Área De Estanque:</strong> apond - apond</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -112,32 +74,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Source Type:</strong> source_type - Source type</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT (id) AS id,  idval  AS idval FROM inp_typevalue WHERE id IS NOT NULL AND typevalue='inp_typevalue_source'
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Source Quality:</strong> source_quality - Source quality</summary>
+		<summary><strong>Outfallparam:</strong> outfallparam - parámetro de salida</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -147,44 +84,6 @@ None
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Source Pattern:</strong> source_pattern_id - Source pattern</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT DISTINCT (pattern_id) AS id,  pattern_id  AS idval FROM inp_pattern WHERE pattern_id IS NOT NULL
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li>
-							<details class='no-square'>
-								<summary><strong>valueRelation:</strong> </summary>
-								<ul>
-									<li>nullValue: True</li>
-									<li>layer: ve_inp_pattern</li>
-									<li>activated: True</li>
-									<li>keyColumn: pattern_id</li>
-									<li>valueColumn: pattern_id</li>
-									<li>filterExpression: None</li>
-								</ul>
-							</details>
-						</li>
 					</ul>
 				</details>
 			</li>
@@ -199,7 +98,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Result Id:</strong> result_id - Result id</summary>
+		<summary><strong>Profundidad Media:</strong> depth_average - Profundidad media</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -219,7 +118,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Demand:</strong> demandmax - Max demand</summary>
+		<summary><strong>Profundidad Máxima:</strong> depth_max - Máxima profundidad</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -239,7 +138,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Min Demand:</strong> demandmin - Min demand</summary>
+		<summary><strong>Profundidad Máxima/Día:</strong> depth_max_day - Profundidad máxima por día</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -259,7 +158,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Head:</strong> headmax - Max head</summary>
+		<summary><strong>Profundidad Máxima/Hora:</strong> depth_max_hour - Profundidad máxima por hora</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -279,7 +178,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Min Head:</strong> headmin - Min head</summary>
+		<summary><strong>Recargo/Hora:</strong> surcharge_hour - Recargo por hora</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -299,7 +198,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Pressure:</strong> pressmax - Max pressure</summary>
+		<summary><strong>Altura Máxima De La Sobrecarga:</strong> surgarge_max_height - Altura máxima del cirujano</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -319,7 +218,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Min Pressure:</strong> pressmin - Min pressure</summary>
+		<summary><strong>Hora De Inundación:</strong> flood_hour - Hora de inundación</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -339,7 +238,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Quality:</strong> qualmax - Max quality</summary>
+		<summary><strong>Tasa De Inundación Máxima:</strong> flood_max_rate - Tasa de inundación máxima:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -359,7 +258,67 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Min Quality:</strong> qualmin - Min quality</summary>
+		<summary><strong>Día:</strong> time_day - Día:</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> No.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>filterSign</strong> (ILIKE): </li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Hora:</strong> time_hour - Hora</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> No.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>filterSign</strong> (ILIKE): </li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Inundación Total:</strong> flood_total - Inundación total</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> No.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>filterSign</strong> (ILIKE): </li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Inundación Estancada Máxima:</strong> flood_max_ponded - Crecida máxima del estanque</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -383,7 +342,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Add To Dscenario:</strong> add_to_dscenario - None</summary>
+		<summary><strong>Add_To_Dscenario:</strong> add_to_dscenario - None</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Unknown.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -411,7 +370,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Remove From Dsscenario:</strong> remove_from_dscenario - None</summary>
+		<summary><strong>Remove_From_Dscenario:</strong> remove_from_dscenario - None</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Unknown.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -440,7 +399,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Edit Dscenario:</strong> edit_dscenario - None</summary>
+		<summary><strong>Edit_Dscenario:</strong> edit_dscenario - None</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Unknown.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -473,7 +432,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Tabla Junction:</strong> tbl_inp_junction - None</summary>
+		<summary><strong>Tabla Inp Junction:</strong> tbl_inp_junction - None</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Unknown.</li>
 			<li><strong>Mandatory:</strong> No.</li>

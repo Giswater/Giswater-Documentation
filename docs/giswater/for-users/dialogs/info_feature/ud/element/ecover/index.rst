@@ -5,7 +5,7 @@ Ecover
 ======
 
 
-El objeto ecover no tiene descripción.
+Ecover
 
 .. toctree::
 	:maxdepth: 1

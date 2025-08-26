@@ -14,9 +14,9 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Init Level:</strong> initlevel - Initial level</summary>
+		<summary><strong>Y0:</strong> y0 - y0</summary>
 		<ul>
-			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
@@ -34,9 +34,9 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Min Level:</strong> minlevel - Minimum level</summary>
+		<summary><strong>Ysur:</strong> ysur - ysur</summary>
 		<ul>
-			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
@@ -54,9 +54,9 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Level:</strong> maxlevel - Maximum level</summary>
+		<summary><strong>Apond:</strong> apond - apond</summary>
 		<ul>
-			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
@@ -74,349 +74,14 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Diameter:</strong> diameter - Diameter</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Min Volume:</strong> minvol - Minimum volume</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Curve Id:</strong> curve_id - Curve id</summary>
+		<summary><strong>Inlet Type:</strong> inlet_type - inlet_type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT id, id AS idval FROM inp_curve WHERE id IS NOT NULL
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li>
-							<details class='no-square'>
-								<summary><strong>valueRelation:</strong> </summary>
-								<ul>
-									<li>nullValue: False</li>
-									<li>layer: ve_inp_curve</li>
-									<li>activated: True</li>
-									<li>keyColumn: id</li>
-									<li>valueColumn: id</li>
-									<li>filterExpression: None</li>
-								</ul>
-							</details>
-						</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Pattern Id:</strong> pattern_id - Pattern id</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT DISTINCT (pattern_id) AS id,  pattern_id  AS idval FROM inp_pattern WHERE pattern_id IS NOT NULL
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li>
-							<details class='no-square'>
-								<summary><strong>valueRelation:</strong> </summary>
-								<ul>
-									<li>nullValue: True</li>
-									<li>layer: ve_inp_pattern</li>
-									<li>activated: True</li>
-									<li>keyColumn: pattern_id</li>
-									<li>valueColumn: pattern_id</li>
-									<li>filterExpression: None</li>
-								</ul>
-							</details>
-						</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Overflow:</strong> overflow - Overflow</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Head:</strong> head - Head</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Mixing Model:</strong> mixing_model - Mixing model</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT id, idval FROM inp_typevalue WHERE typevalue='inp_value_mixing'
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Mixing Fraction:</strong> mixing_fraction - Mixing fraction</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Reaction Coefficient:</strong> reaction_coeff - Reaction coefficient</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Initial Quality:</strong> init_quality - Initial quality</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Source Type:</strong> source_type - Source type</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT (id) AS id,  idval  AS idval FROM inp_typevalue WHERE id IS NOT NULL AND typevalue='inp_typevalue_source'
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Source Quality:</strong> source_quality - Source quality</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Source Pattern:</strong> source_pattern_id - Source pattern</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT DISTINCT (pattern_id) AS id,  pattern_id  AS idval FROM inp_pattern WHERE pattern_id IS NOT NULL
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li>
-							<details class='no-square'>
-								<summary><strong>valueRelation:</strong> </summary>
-								<ul>
-									<li>nullValue: True</li>
-									<li>layer: ve_inp_pattern</li>
-									<li>activated: True</li>
-									<li>keyColumn: pattern_id</li>
-									<li>valueColumn: pattern_id</li>
-									<li>filterExpression: None</li>
-								</ul>
-							</details>
-						</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Demand:</strong> demand - Demand</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Demand Pattern:</strong> demand_pattern_id - Demand pattern</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT pattern_id as id, pattern_id as idval FROM inp_pattern
+					SELECT id, idval FROM inp_typevalue WHERE typevalue = 'inp_typevalue_inlet_type'
 				</code>
 			</li>
 		</ul>
@@ -426,11 +91,173 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Emitter Coef:</strong> emitter_coeff - Emitter coef</summary>
+		<summary><strong>Outlet Type:</strong> outlet_type - outlet_type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT id, idval FROM inp_typevalue WHERE typevalue = 'inp_typevalue_gully_type'
+				</code>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Gully Method:</strong> gully_method - gully_method</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT id, idval FROM inp_typevalue WHERE typevalue = 'inp_typevalue_gully_method'
+				</code>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Custom Top Elev:</strong> custom_top_elev - custom_top_elev</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Double.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>filterSign</strong> (ILIKE): </li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Custom Depth:</strong> custom_depth - custom_depth</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Double.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>filterSign</strong> (ILIKE): </li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Inlet Length:</strong> inlet_length - inlet_length</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Double.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>filterSign</strong> (ILIKE): </li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Inlet Width:</strong> inlet_width - inlet_width</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Double.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>filterSign</strong> (ILIKE): </li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Cd1:</strong> cd1 - cd1</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Double.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>filterSign</strong> (ILIKE): </li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Cd2:</strong> cd2 - cd2</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Double.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>filterSign</strong> (ILIKE): </li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Efficiency:</strong> efficiency - efficiency</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Double.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>filterSign</strong> (ILIKE): </li>
+					</ul>
+				</details>
+			</li>
 		</ul>
 	</details>
 
@@ -442,7 +269,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Result Id:</strong> result_id - Result id</summary>
+		<summary><strong>Average Depth:</strong> depth_average - Average depth</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -462,7 +289,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Demand:</strong> demandmax - Max demand</summary>
+		<summary><strong>Max Depth:</strong> depth_max - Max depth</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -482,7 +309,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Min Demand:</strong> demandmin - Min demand</summary>
+		<summary><strong>Max Depth/Day:</strong> depth_max_day - Max depth per day</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -502,7 +329,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Head:</strong> headmax - Max head</summary>
+		<summary><strong>Max Depth/Hour:</strong> depth_max_hour - Max depth per hour</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -522,7 +349,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Min Head:</strong> headmin - Min head</summary>
+		<summary><strong>Surcharge/Hour:</strong> surcharge_hour - Surcharge per hour</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -542,7 +369,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Pressure:</strong> pressmax - Max pressure</summary>
+		<summary><strong>Max Height Of Surgarge:</strong> surgarge_max_height - Max height of surgarge</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -562,7 +389,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Min Pressure:</strong> pressmin - Min pressure</summary>
+		<summary><strong>Flood Hour:</strong> flood_hour - Flood hour</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -582,7 +409,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Quality:</strong> qualmax - Max quality</summary>
+		<summary><strong>Maximum Food Rate:</strong> flood_max_rate - Maximum food rate</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -602,7 +429,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Min Quality:</strong> qualmin - Min quality</summary>
+		<summary><strong>Day:</strong> time_day - Day</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -621,29 +448,17 @@ None
 
 .. raw:: html
 
-	<p class='layout-header'>Los campos en el layout lyt_epa_dsc_1 son:</p>
-
-.. raw:: html
-
 	<details>
-		<summary><strong>Add To Dscenario:</strong> add_to_dscenario - None</summary>
+		<summary><strong>Hour:</strong> time_hour - Hour</summary>
 		<ul>
-			<li><strong>Datatype:</strong> Unknown.</li>
+			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Stylesheet:</strong> Modificaciones esteticas del campo</summary>
-					<ul>
-						<li>icon: 113</li>
-					</ul>
-				</details>
-			</li>
-			<li>
-				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
-						<li><strong>saveValue</strong> (False): </li>
+						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
 				</details>
 			</li>
@@ -654,25 +469,16 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Remove From Dsscenario:</strong> remove_from_dscenario - None</summary>
+		<summary><strong>Total Flood:</strong> flood_total - Total flood</summary>
 		<ul>
-			<li><strong>Datatype:</strong> Unknown.</li>
+			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Stylesheet:</strong> Modificaciones esteticas del campo</summary>
-					<ul>
-						<li>icon: 114</li>
-					</ul>
-				</details>
-			</li>
-			<li>
-				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
-						<li><strong>saveValue</strong> (False): </li>
-						<li><strong>onContextMenu</strong> (Delete dscenario): </li>
+						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
 				</details>
 			</li>
@@ -683,50 +489,16 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Edit Dscenario:</strong> edit_dscenario - None</summary>
+		<summary><strong>Max Ponded Flood :</strong> flood_max_ponded - Max ponded flood</summary>
 		<ul>
-			<li><strong>Datatype:</strong> Unknown.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Stylesheet:</strong> Modificaciones esteticas del campo</summary>
-					<ul>
-						<li>icon: 101</li>
-					</ul>
-				</details>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>saveValue</strong> (False): </li>
-						<li><strong>onContextMenu</strong> (Edit dscenario): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<p class='layout-header'>Los campos en el layout lyt_epa_dsc_3 son:</p>
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Tabla Inlet:</strong> tbl_inp_inlet - None</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Unknown.</li>
+			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
-						<li><strong>saveValue</strong> (False): </li>
-						<li><strong>tableUpsert</strong> (ve_inp_dscenario_inlet): </li>
+						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
 				</details>
 			</li>

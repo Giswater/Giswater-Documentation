@@ -9,7 +9,7 @@ Data
 
 
 
-Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes del formulario <entorno-trabajo>`
+Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes del formulario <partes-del-formulario>`
 
 .. raw:: html
 
@@ -18,17 +18,35 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Connec Type:</strong> connec_type - connec_type</summary>
+		<summary><strong>Tipo_Conexión:</strong> connec_type - tipo_conexión</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Mandatory:</strong> Sí.</li>
 			<li><strong>Editable:</strong> No.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT id, id as idval FROM cat_feature_connec WHERE id IS NOT NULL
+				</code>
+			</li>
 			<li>
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
 						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
 						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
+						<li>
+							<details class='no-square'>
+								<summary><strong>valueRelation:</strong> </summary>
+								<ul>
+									<li>layer: ve_cat_feature_connec</li>
+									<li>activated: True</li>
+									<li>keyColumn: id</li>
+									<li>nullValue: False</li>
+									<li>valueColumn: id</li>
+									<li>filterExpression: None</li>
+								</ul>
+							</details>
+						</li>
 					</ul>
 				</details>
 			</li>
@@ -39,7 +57,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Conneccat Id:</strong> conneccat_id - conneccat_id</summary>
+		<summary><strong>Coneccat_Id:</strong> conneccat_id - conneccat_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> Sí.</li>
@@ -51,7 +69,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			</li>
 			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
 				<code>
-					 AND connec_type
+					 AND cat_connec.connec_type IS NULL OR cat_connec.connec_type
 				</code>
 			</li>
 			<li>
@@ -83,7 +101,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Arc Id:</strong> arc_id - Arc identifier</summary>
+		<summary><strong>Arco Id:</strong> arc_id - Identificador de arco</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -108,38 +126,12 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 
 .. raw:: html
 
-	<details>
-		<summary><strong>Epa Type:</strong> epa_type - Epa type</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> Sí.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT id, id as idval FROM sys_feature_epa_type WHERE active IS TRUE AND feature_type = 'CONNEC'
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
 	<p class='layout-header'>Los campos en el layout lyt_data_1 son:</p>
 
 .. raw:: html
 
 	<details>
-		<summary><strong>Code:</strong> code - code</summary>
+		<summary><strong>Código:</strong> code - código</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -159,7 +151,47 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Top Elevation:</strong> top_elev - Elevation of the connec in ft or m.</summary>
+		<summary><strong>Omzone:</strong> dma_id - omzone_id</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Integer.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> No.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Código Cliente:</strong> customer_code - Código de cuenta</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Elevación Superior:</strong> top_elev - Elevación de la conexión en pies o metros.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -179,14 +211,87 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Datasource:</strong> datasource - datasource</summary>
+		<summary><strong>Y1:</strong> y1 - Profundidad en el punto de conexión con el edificio</summary>
 		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
+			<li><strong>Datatype:</strong> Double.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Y2:</strong> y2 - Profundidad en el punto de conexión a la red pública</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Double.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Private_Conneccat_Id:</strong> private_conneccat_id - private_conneccat_id</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li>
+							<details class='no-square'>
+								<summary><strong>valueRelation:</strong> </summary>
+								<ul>
+									<li>nullValue: False</li>
+									<li>layer: cat_connec</li>
+									<li>activated: True</li>
+									<li>keyColumn: id</li>
+									<li>valueColumn: id</li>
+									<li>filterExpression: None</li>
+								</ul>
+							</details>
+						</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Matcat_Id:</strong> matcat_id - matcat_id</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT id, idval FROM edit_typevalue WHERE typevalue = 'value_datasource'
+					SELECT id, id AS idval FROM cat_material WHERE 'ARC' = ANY(feature_type)
 				</code>
 			</li>
 			<li>
@@ -194,6 +299,19 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
 						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li>
+							<details class='no-square'>
+								<summary><strong>valueRelation:</strong> </summary>
+								<ul>
+									<li>nullValue: False</li>
+									<li>layer: cat_material</li>
+									<li>activated: True</li>
+									<li>keyColumn: id</li>
+									<li>valueColumn: descript</li>
+									<li>filterExpression: None</li>
+								</ul>
+							</details>
+						</li>
 					</ul>
 				</details>
 			</li>
@@ -204,11 +322,11 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Cat Matcat Id:</strong> cat_matcat_id - cat_matcat_id</summary>
+		<summary><strong>Solicitar:</strong> demand - solicitar</summary>
 		<ul>
-			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
@@ -224,11 +342,11 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Cat Pnom:</strong> cat_pnom - cat_pnom</summary>
+		<summary><strong>Profundidad_Conexión:</strong> connec_depth - profundidad_conexión</summary>
 		<ul>
-			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
@@ -244,27 +362,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Cat Dnom:</strong> cat_dnom - cat_dnom</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Workcat Id:</strong> workcat_id - workcat_id</summary>
+		<summary><strong>Workcat_Id:</strong> workcat_id - workcat_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -289,7 +387,27 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Builtdate:</strong> builtdate - builtdate</summary>
+		<summary><strong>Diagonal:</strong> diagonal - diagonal</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Fecha De Construcción:</strong> builtdate - fecha de construcción</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Date.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -309,7 +427,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Owner:</strong> ownercat_id - ID of the owner related to connect.</summary>
+		<summary><strong>Propietario:</strong> ownercat_id - ID del propietario relacionado con la conexión.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -334,32 +452,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Workcat Id End:</strong> workcat_id_end - ID of the  end of construction work.</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT id, id as idval FROM cat_work WHERE id IS NOT NULL AND active IS TRUE 
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Enddate:</strong> enddate - Enddate</summary>
+		<summary><strong>Fecha Final:</strong> enddate - Fecha final</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Date.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -379,221 +472,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Minsector Id:</strong> minsector_id - minsector_id</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Dqa:</strong> dqa_id - dqa_id</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT dqa_id as id, name as idval FROM dqa WHERE dqa_id IS NOT NULL  AND active IS TRUE 
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li>
-							<details class='no-square'>
-								<summary><strong>valueRelation:</strong> </summary>
-								<ul>
-									<li>nullValue: False</li>
-									<li>layer: ve_dqa</li>
-									<li>activated: True</li>
-									<li>keyColumn: dqa_id</li>
-									<li>valueColumn: name</li>
-									<li>filterExpression: None</li>
-								</ul>
-							</details>
-						</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Staticpressure:</strong> staticpressure - staticpressure</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Link:</strong> link - link</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>N Hydrometer:</strong> n_hydrometer - n_hydrometer</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Om State:</strong> om_state - om_state</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Conserv State:</strong> conserv_state - conserv_state</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Access Type:</strong> access_type - access_type</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Placement Type:</strong> placement_type - Placement Type</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Priority:</strong> priority - priority</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Valve Location:</strong> valve_location - valve_location</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Valve Type:</strong> valve_type - valve_type</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Shutoff Valve:</strong> shutoff_valve - shutoff_valve</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Plot Code:</strong> plot_code - plot_code</summary>
+		<summary><strong>Adate:</strong> adate - aguja</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -605,7 +484,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Serial Number:</strong> serial_number - serial_number</summary>
+		<summary><strong>Adescript:</strong> adescript - adescript</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -617,7 +496,43 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Label Quadrant:</strong> label_quadrant - label_quadrant</summary>
+		<summary><strong>Código De Parcela:</strong> plot_code - código_parcela</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Text.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Tipo De Colocación:</strong> placement_type - Tipo de colocación</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Text.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Tipo_Acceso:</strong> access_type - tipo_acceso</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Text.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Cuadrante_Etiqueta:</strong> label_quadrant - cuadrante_etiqueta</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -634,79 +549,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Cat Valve:</strong> cat_valve - cat_valve</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Macrominsector Id:</strong> macrominsector_id - macrominsector_id</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Cat Dint:</strong> cat_dint - cat_dint</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Supplyzone Id:</strong> supplyzone_id - supplyzone_id</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Text.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Brand:</strong> brand - brand</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Model:</strong> model - model</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Top Floor:</strong> top_floor - Top floor</summary>
+		<summary><strong>N_Hidrómetro:</strong> n_hydrometer - n_hidrómetro</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -718,19 +561,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Wjoin Type:</strong> wjoin_type - wjoin_type</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>N Inhabitants:</strong> n_inhabitants - n_inhabitants</summary>
+		<summary><strong>Minsector_Id:</strong> minsector_id - minsector_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -742,26 +573,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Lock Level:</strong> lock_level - lock_level</summary>
+		<summary><strong>Macrominsector_Id:</strong> macrominsector_id - macrominsector_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT id, idval FROM edit_typevalue WHERE typevalue = 'value_lock_level'
-				</code>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Block Code:</strong> block_code - block_code</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 		</ul>
@@ -775,27 +589,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Customer Code:</strong> customer_code - Account code</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Soilcat Id:</strong> soilcat_id - ID of the soil related to the connect.</summary>
+		<summary><strong>Identificación De Soilcat:</strong> soilcat_id - ID del suelo relacionado con la conexión.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -820,7 +614,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Category Type:</strong> category_type - category_type</summary>
+		<summary><strong>Tipo_Categoría:</strong> category_type - tipo_categoría</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -845,14 +639,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Fluid Type:</strong> fluid_type - Tipo de fluido a escoger en el desplegable personalizado por el usuario en la tabla man_type_fluid</summary>
+		<summary><strong>Tipo De Fluido:</strong> fluid_type - Tipo de fluido a escoger en el desplegable personalizado por el usuario en la tabla man_type_fluid</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
+			<li><strong>Mandatory:</strong> Sí.</li>
+			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT fluid_type as id, fluid_type as idval FROM man_type_fluid WHERE ((featurecat_id is null AND feature_type='CONNEC') ) AND active IS TRUE  OR 'VCONNEC' = ANY(featurecat_id::text[])
+					SELECT id, idval FROM om_typevalue WHERE typevalue = 'fluid_type'
 				</code>
 			</li>
 			<li>
@@ -870,7 +664,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Location Type:</strong> location_type - location_type</summary>
+		<summary><strong>Tipo_Ubicación:</strong> location_type - tipo_ubicación</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -895,7 +689,27 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Catalog Label:</strong> label - Label from the catalog of connecs, therefore it will not be editable in the form</summary>
+		<summary><strong>Rotación:</strong> rotation - rotación</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Double.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Etiqueta Del Catálogo:</strong> label - Etiqueta del catálogo de conecs, por lo tanto no será editable en el formulario</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -915,7 +729,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Label X:</strong> label_x - label_x</summary>
+		<summary><strong>Etiqueta_X:</strong> label_x - etiqueta_x</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -935,7 +749,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Label Y:</strong> label_y - label_y</summary>
+		<summary><strong>Etiqueta_Y:</strong> label_y - etiqueta_y</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -955,7 +769,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Label Rotation:</strong> label_rotation - Angle of rotation of the label</summary>
+		<summary><strong>Rotación De Etiquetas:</strong> label_rotation - Ángulo de rotación de la etiqueta</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -975,95 +789,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Rotation:</strong> rotation - rotation</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Double.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Verified:</strong> verified - verified</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT id, idval FROM edit_typevalue WHERE typevalue = 'value_verified'
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Presszone:</strong> presszone_id - Related to the pressure zone catalog</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT presszone.presszone_id as id, name as idval FROM presszone WHERE presszone_id='0' UNION SELECT presszone.presszone_id AS id, presszone.name AS idval FROM presszone WHERE presszone_id IS NOT NULL AND active IS TRUE 
-				</code>
-			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
-				<code>
-					 AND presszone.expl_id
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li>
-							<details class='no-square'>
-								<summary><strong>valueRelation:</strong> </summary>
-								<ul>
-									<li>layer: ve_presszone</li>
-									<li>activated: True</li>
-									<li>keyColumn: presszone_id</li>
-									<li>nullValue: False</li>
-									<li>valueColumn: name</li>
-									<li>filterExpression: None</li>
-								</ul>
-							</details>
-						</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Explotation Id:</strong> expl_id - Exploitation to which the element belongs. If the configuration is not changed, the program automatically selects it based on the geometry</summary>
+		<summary><strong>Explotación Id:</strong> expl_id - Explotación a la que pertenece el elemento. Si no se modifica la configuración, el programa lo selecciona automáticamente en función de la geometría</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1117,7 +843,32 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Workcat Id Plan:</strong> workcat_id_plan - workcat_id_plan</summary>
+		<summary><strong>Fin Id Workcat:</strong> workcat_id_end - ID del final de obra.</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT id, id as idval FROM cat_work WHERE id IS NOT NULL AND active IS TRUE 
+				</code>
+			</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Plan_Id_Trabajo:</strong> workcat_id_plan - plan_id_trabajo</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1142,64 +893,11 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Asset Id:</strong> asset_id - asset_id</summary>
+		<summary><strong>Asset_Id:</strong> asset_id - asset_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Press Max:</strong> press_max - press_max</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Numeric.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Press Min:</strong> press_min - press_min</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Numeric.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Press Avg:</strong> press_avg - press_avg</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Numeric.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Crmzone Id:</strong> crmzone_id - crmzone_id</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT id, name as idval FROM crmzone WHERE id IS NOT NULL AND active IS TRUE 
-				</code>
-			</li>
 		</ul>
 	</details>
 
@@ -1214,16 +912,8 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT id, id as idval FROM cat_brand WHERE 'VCONNEC' = ANY(featurecat_id::text[])
+					SELECT id, id as idval FROM cat_brand WHERE 'VCONNEC' = ANY(featurecat_id::text[]) OR featurecat_id IS NULL
 				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
 			</li>
 		</ul>
 	</details>
@@ -1239,16 +929,8 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT id, id as idval FROM cat_brand_model WHERE 'VCONNEC' = ANY(featurecat_id::text[])
+					SELECT id, id as idval FROM cat_brand_model WHERE 'VCONNEC' = ANY(featurecat_id::text[]) OR featurecat_id IS NULL
 				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
 			</li>
 		</ul>
 	</details>
@@ -1261,7 +943,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Muni Id:</strong> muni_id - muni_id</summary>
+		<summary><strong>Muni_Id:</strong> muni_id - muni_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1286,7 +968,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Postcode:</strong> postcode - Postal code of the municipality</summary>
+		<summary><strong>Código Postal:</strong> postcode - código postal - Código postal del municipio</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1306,37 +988,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>District:</strong> district_id - Identifier of the neighborhood with which the element is linked. To choose from those available in the drop-down (it is filtered according to the selected municipality)</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT a.district_id AS id, a.name AS idval FROM ext_district a JOIN ext_municipality m USING (muni_id) WHERE district_id IS NOT NULL 
-				</code>
-			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
-				<code>
-					 AND m.muni_id
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Streetname:</strong> streetaxis_id - streetname</summary>
+		<summary><strong>Calle:</strong> streetname - Identificador de la calle.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1366,7 +1018,27 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Street Number:</strong> postnumber - Street number</summary>
+		<summary><strong>Complemento Opcional Del Número De La Calle:</strong> postcomplement - Complemento opcional del número de la calle</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Número De La Calle:</strong> postnumber - Número de la calle</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1396,11 +1068,21 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Optional Complement Of The Street Number:</strong> postcomplement - Optional complement of the street number</summary>
+		<summary><strong>Número De La Segunda Calle:</strong> postnumber2 - Segundo número de calle</summary>
 		<ul>
-			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT a.postnumber AS id, a.postnumber AS idval FROM ext_address a JOIN ext_streetaxis m ON streetaxis_id=m.id WHERE a.id IS NOT NULL
+				</code>
+			</li>
+			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+				<code>
+					 AND m.name
+				</code>
+			</li>
 			<li>
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
@@ -1416,7 +1098,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Streetname2:</strong> streetaxis2_id - streetname2</summary>
+		<summary><strong>Calle 2:</strong> streetname2 - Identificador de la segunda calle.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1446,37 +1128,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Second Street Number:</strong> postnumber2 - Second street number</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT a.postnumber AS id, a.postnumber AS idval FROM ext_address a JOIN ext_streetaxis m ON streetaxis_id=m.id WHERE a.id IS NOT NULL
-				</code>
-			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
-				<code>
-					 AND m.name
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Postcomplement2:</strong> postcomplement2 - postcomplement2</summary>
+		<summary><strong>Postcomplemento2:</strong> postcomplement2 - postcomplemento2</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1496,7 +1148,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Junction Point Id:</strong> pjoint_id - Identifier of the connection point with the network</summary>
+		<summary><strong>Id Del Punto De Unión:</strong> pjoint_id - Identificador del punto de conexión con la red</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1516,7 +1168,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Pjoint Type:</strong> pjoint_type - pjoint_type</summary>
+		<summary><strong>Pjoint_Type:</strong> pjoint_type - pjoint_type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1536,11 +1188,31 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Observation:</strong> observ - Observations related to connect. Additional information</summary>
+		<summary><strong>Observación:</strong> observ - Observaciones relacionadas con connect. Información adicional</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Enlace:</strong> link - enlace</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Text.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
@@ -1560,7 +1232,51 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Sector:</strong> sector_id - Hydraulic sector identifier related to the primary key of sector table</summary>
+		<summary><strong>Omzone:</strong> omzone_id - omzone_id</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Integer.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT omzone_id as id, name as idval FROM omzone WHERE omzone_id = 0 UNION SELECT omzone_id as id, name as idval FROM omzone WHERE omzone_id IS NOT NULL AND active IS TRUE 
+				</code>
+			</li>
+			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+				<code>
+					 AND omzone.expl_id
+				</code>
+			</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
+						<li>
+							<details class='no-square'>
+								<summary><strong>valueRelation:</strong> </summary>
+								<ul>
+									<li>layer: ve_dma</li>
+									<li>activated: True</li>
+									<li>keyColumn: dma_id</li>
+									<li>nullValue: False</li>
+									<li>valueColumn: name</li>
+									<li>filterExpression: None</li>
+								</ul>
+							</details>
+						</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Sector:</strong> sector_id - Identificador hidráulico del sector relacionado con la clave primaria de la tabla de sectores</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1615,58 +1331,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Omzone:</strong> dma_id - omzone_id</summary>
+		<summary><strong>Estado:</strong> state - Valor de dominio del estado de connect.</summary>
 		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
+			<li><strong>Datatype:</strong> Smallint.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT dma_id as id, name as idval FROM dma WHERE dma_id = 0 UNION SELECT dma_id as id, name as idval FROM dma WHERE dma_id IS NOT NULL AND active IS TRUE 
-				</code>
-			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
-				<code>
-					 AND dma.expl_id
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
-						<li>
-							<details class='no-square'>
-								<summary><strong>valueRelation:</strong> </summary>
-								<ul>
-									<li>layer: ve_dma</li>
-									<li>activated: True</li>
-									<li>keyColumn: dma_id</li>
-									<li>nullValue: False</li>
-									<li>valueColumn: name</li>
-									<li>filterExpression: None</li>
-								</ul>
-							</details>
-						</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>State:</strong> state - Domain value of connect's state.</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					WITH check_value AS (   SELECT value::integer AS psector_value    FROM config_param_user    WHERE parameter = 'plan_psector_current'   AND cur_user = current_user ) SELECT id, name as idval  FROM value_state  WHERE id IS NOT NULL  AND CASE    WHEN (SELECT psector_value FROM check_value) IS NULL THEN id != 2    ELSE id=2  END
+					WITH psector_value AS (   		SELECT value::integer AS psector_value    		FROM config_param_user    		WHERE parameter = 'plan_psector_current' AND cur_user = current_user), 	 tg_op_value AS (   		SELECT value::text AS tg_op_value    		FROM config_param_user    		WHERE parameter = 'utils_transaction_mode' AND cur_user = current_user)   SELECT id::integer as id, name as idval FROM value_state  WHERE id IS NOT NULL  AND CASE    WHEN (SELECT tg_op_value FROM tg_op_value)!='INSERT' THEN id IN (0,1,2)   WHEN (SELECT tg_op_value FROM tg_op_value) ='INSERT' AND (SELECT psector_value FROM psector_value) IS NOT NULL THEN id = 2    ELSE id < 2  END
 				</code>
 			</li>
 			<li>
@@ -1685,9 +1357,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>State Type:</strong> state_type - The state type of the element. It allows to obtain more detail of the state. To select from those available depending on the chosen state</summary>
+		<summary><strong>Tipo De Estado:</strong> state_type - El tipo de estado del elemento. Permite obtener más detalles del estado. Para seleccionar entre los disponibles en función del estado elegido</summary>
 		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
+			<li><strong>Datatype:</strong> Smallint.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:

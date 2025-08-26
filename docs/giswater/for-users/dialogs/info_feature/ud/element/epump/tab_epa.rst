@@ -12,5 +12,6 @@ Los tipos de EPA que puede tener el objeto epump son:
 	:caption: EPA Types
 
 	../tab_epa/frpump
-	../tab_epa/frvalve
-	../tab_epa/frshortpipe
+	../tab_epa/frweir
+	../tab_epa/frorifice
+	../tab_epa/froutlet

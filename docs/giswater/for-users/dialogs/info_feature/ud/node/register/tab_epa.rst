@@ -12,9 +12,8 @@ Los tipos de EPA que puede tener el objeto register son:
 	:caption: EPA Types
 
 	../tab_epa/junction
-	../tab_epa/reservoir
-	../tab_epa/tank
-	../tab_epa/pump
-	../tab_epa/valve
-	../tab_epa/shortpipe
+	../tab_epa/outfall
+	../tab_epa/storage
+	../tab_epa/divider
+	../tab_epa/netgully
 	../tab_epa/inlet

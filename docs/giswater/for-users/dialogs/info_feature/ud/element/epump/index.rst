@@ -5,7 +5,7 @@ Epump
 =====
 
 
-El objeto epump no tiene descripción.
+Epump
 
 .. toctree::
 	:maxdepth: 1
