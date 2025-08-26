@@ -1,4 +1,4 @@
-.. _dialog-replace-feature:
+.. _dialog-feature-replace:
 
 =================
 Reemplazar objeto
@@ -12,7 +12,7 @@ Tras seleccionar en el desplegable del botón de la herramienta el tipo de objet
 
      Ventana de la herramienta Reemplazar objeto.
 
-Se abrirá entonces la ventana de la herramienta donde deberemos especificar el expediente de baja (*Workcat id*), fecha de sustitución (*Replace date*), tipo actual de objeto (*Current feature type*), 
+Se abrirá entonces la ventana de la herramienta donde deberemos especificar el expediente de baja (*Workcat id*), fecha de sustitución (*Replace date*), tipo actual de objeto (*Current feature type*),
 tipo nuevo de objeto (*New feature type*) y catálogo del objeto nuevo (*Catalog id*).
 
 A través de las casillas de verificación podremos decidir si mantener o no ciertos aspectos del objeto.

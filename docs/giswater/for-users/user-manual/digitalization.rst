@@ -9,15 +9,10 @@ Digitalizar una red
    .. contents::
       :local:
 
-asdgiasidhashdjsa
-   
-.. toggle:: Hola 
-  suuuuuuuuu
-
 Insertar objetos
 ================
 
-Cuando nos encontremos ante un proyecto nuevo sin datos, antes de empezar a digitalizar objetos de la red lo primero 
+Cuando nos encontremos ante un proyecto nuevo sin datos, antes de empezar a digitalizar objetos de la red lo primero
 que tendremos que hacer es rellenar los catálogos obligatorios y crear las zonas del mapa mínimas (macroexploitation, exploitation, sector y municipality).
 
 Tras esto, ya podremos digitalizar objetos utilizando las herramientas *Insertar punto* e *Insertar arco*.

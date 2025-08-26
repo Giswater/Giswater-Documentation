@@ -14,6 +14,7 @@ En un proyecto de Giswater se pueden crear y editar los siguientes objetos:
 
 .. toctree::
 	:maxdepth: 1
+	:numbered: 4
 
 	# Arc
 	ws/arc/pipe/index
@@ -88,6 +89,7 @@ En un proyecto de Giswater se pueden crear y editar los siguientes objetos:
 
 .. toctree::
 	:maxdepth: 1
+	:numbered: 4
 
 	# Arc
 	ud/arc/pipe/index
