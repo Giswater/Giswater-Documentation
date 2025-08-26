@@ -1,0 +1,174 @@
+/* 404 Page Styles */
+.error-page {
+	min-height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.error-container {
+	max-width: 800px;
+	text-align: center;
+}
+
+.error-code {
+	font-size: 8rem;
+	font-weight: bold;
+	color: #e74c3c;
+	margin-bottom: 1rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error-message h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	color: #2c3e50;
+}
+
+.error-message p {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+	color: #7f8c8d;
+	line-height: 1.6;
+}
+
+.error-suggestions,
+.error-help {
+	margin: 2rem 0;
+	text-align: left;
+}
+
+.error-suggestions h3,
+.error-help h3,
+.error-sections h3 {
+	color: #2c3e50;
+	border-bottom: 2px solid #3498db;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.error-suggestions ul,
+.error-help ul {
+	list-style: none;
+	padding: 0;
+}
+
+.error-suggestions li,
+.error-help li {
+	margin: 0.8rem 0;
+	padding: 0.5rem;
+	background: #f8f9fa;
+	border-left: 4px solid #3498db;
+	border-radius: 4px;
+}
+
+.error-suggestions a,
+.error-help a {
+	color: #3498db;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.error-suggestions a:hover,
+.error-help a:hover {
+	color: #2980b9;
+	text-decoration: underline;
+}
+
+.error-sections {
+	margin-top: 3rem;
+	text-align: left;
+}
+
+.section-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5rem;
+	margin-top: 1rem;
+}
+
+.section-card {
+	background: #ffffff;
+	border: 1px solid #e9ecef;
+	border-radius: 8px;
+	padding: 1.5rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.section-card h4 {
+	margin: 0 0 0.5rem 0;
+	color: #2c3e50;
+}
+
+.section-card h4 a {
+	color: #2c3e50;
+	text-decoration: none;
+}
+
+.section-card h4 a:hover {
+	color: #3498db;
+}
+
+.section-card p {
+	margin: 0;
+	color: #6c757d;
+	font-size: 0.9rem;
+	line-height: 1.4;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.error-code {
+		font-size: 6rem;
+	}
+
+	.error-message h1 {
+		font-size: 2rem;
+	}
+
+	.error-message p {
+		font-size: 1rem;
+	}
+
+	.section-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.error-page {
+		padding: 1rem;
+	}
+}
+
+/* Dark theme support */
+.rst-content.dark .error-page {
+	color: #e8e8e8;
+}
+
+.rst-content.dark .error-message h1,
+.rst-content.dark .error-suggestions h3,
+.rst-content.dark .error-help h3,
+.rst-content.dark .error-sections h3 {
+	color: #ffffff;
+}
+
+.rst-content.dark .section-card {
+	background: #2d3748;
+	border-color: #4a5568;
+}
+
+.rst-content.dark .section-card h4 a {
+	color: #ffffff;
+}
+
+.rst-content.dark .error-suggestions li,
+.rst-content.dark .error-help li {
+	background: #2d3748;
+	border-left-color: #3498db;
+}

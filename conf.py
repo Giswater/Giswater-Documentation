@@ -146,6 +146,11 @@ html_css_files = ['css_def.css']
 if html_context['isTesting'] or html_context['outdated']:
     html_css_files.append('css/giswater_topbar.css')
 
+# Custom 404 page configuration
+html_additional_pages = {
+    '404': '404.html'
+}
+
 # Add custom tags to allow display of text based on the branch status
 if html_context['isTesting']:
     tags.add('testing')
