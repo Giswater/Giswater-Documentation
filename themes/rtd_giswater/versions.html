@@ -22,7 +22,9 @@
 			<dt>{{ _('Versions') }}</dt>
 			{% for slug, url in versions %}
 			<dd>
-				<a href="{{ url }}/{{ language }}/{{ pagename }}.html">{{ slug }}</a>
+				<a href="{{ url }}/{{ language|replace('-', '_') }}/{{ pagename }}.html"
+					>{{ slug }}</a
+				>
 			</dd>
 			{% endfor %}
 		</dl>
