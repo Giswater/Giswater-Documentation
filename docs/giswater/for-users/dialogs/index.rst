@@ -39,6 +39,19 @@ funcionamiento y casos de uso típicos.
    create-point
    non-visual-obj
    go2epa
+   result-manager
+   result-selector
+   dscenario-manager
+   epa-tools
+   new-psector
+   psector-management
+   netscenarios
+   utils-manager
+   config
+   workspace
+   fastprint
+   gw-file-transfer-button
+   check project
 
 Además de los diálogos, se documentan los siguientes elementos:
 

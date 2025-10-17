@@ -200,7 +200,7 @@ Barra de herramientas relacionada con el modelo hidráulico. Contiene los siguie
   gestionaremos unos u otros. Para ver más detalles, consultar la sección :ref:`dialog-non-visual-obj`.
 - Go2Epa: permite establecer las opciones de exportación para los modelos hidráulicos así como si la red se simula desde el entorno de Giswater. Para ver más detalles, consultar la sección :ref:`dialog-go2epa`.
 - Gestor de resultados Epa: permite visualizar todos los resultados de las simulaciones realizados en Giswater. Para ver más detalles, consultar la sección :ref:`dialog-result-manager`.
-- Selector de resultados Epa: permite seleccionar qué resultados mostrar así como también permite comparar los resultados de una simulación con otra. Para más detalles, consultar la sección :ref:`dialog-epa-result-selector`.
+- Selector de resultados Epa: permite seleccionar qué resultados mostrar así como también permite comparar los resultados de una simulación con otra. Para más detalles, consultar la sección :ref:`dialog-result-selector`.
 - Gestor de escenarios dinámicos: permite crear y gestionar escenarios dinámicos. Dependiendo del tipo de proyecto de trabajo (ws o ud) tendremos disponibles unas u otras opciones.
   Para más detalles, consultar la sección :ref:`dialog-dscenario-manager`.
 - EPA tools: conjunto de herramientas destinadas a la gestión de la simulación hidráulica. Dependiendo del tipo de proyecto de trabajo (ws o ud) tendremos disponibles unas u otras herramientas.
@@ -216,7 +216,7 @@ Barra de herramientas *Masterplan*
 Barra de herramientas relacionada con los trabajos de planificación de red. Contiene los siguientes botones:
 
 - Nuevo sector de planificaciones: permite crear un nuevo psector. Para más detalles, consultar la sección :ref:`dialog-new-psector`.
-- Gestor de sectores de planificación: permite realizar operaciones de gestión sobre los psector tales como crear, fusionar, duplicar y borrar. Para más detalles, consultar la sección :ref:`dialog-psector-manager`.
+- Gestor de sectores de planificación: permite realizar operaciones de gestión sobre los psector tales como crear, fusionar, duplicar y borrar. Para más detalles, consultar la sección :ref:`dialog-psector-management`.
 - Gestor de escenarios de red (ws): permite plantear escenarios en la red para realizar cambios en las zonas del mapa y conseguir optimizarlas. Para más detalles, consultar la sección :ref:`dialog-netscenarios`.
 
 Barra de herramientas *Utilidades*
@@ -230,7 +230,7 @@ Barra de herramientas relacionada con aspectos generales del proyecto. Contiene 
 
 - Gestor de utilidades: incorpora varias funcionalidades entre las que cabe destacar el gestor de zonas del mapa. Para más detalles, consultar la sección :ref:`dialog-utils-manager`.
 - Configuración: permite configurar diferentes variables y valores por defecto para el usuario/sistema. Para más detalles, consultar la sección :ref:`dialog-config`.
-- Caja de herramientas: contiene procesos y reportes que permiten, entre otras cosas, detectar y corregir errores de la red. Para más detalles, consultar la sección :ref:`dialog-toolbox`.
+- Caja de herramientas: contiene procesos y reportes que permiten, entre otras cosas, detectar y corregir errores de la red. Para más detalles, consultar la sección :ref:`toolbox`.
 - Espacios de trabajo: permite crear entornos de trabajo cuya configuración se podrá recuperar. Para más detalles, consultar la sección :ref:`dialog-workspace`.
 - Impresión rápida: permite extraer fácilmente un mapa usando composiciones disponibles en QGIS. Para más detalles, consultar la sección :ref:`dialog-fastprint`.
 - GW file transfer button: permite importar datos de archivos csv usando funciones preconfiguradas. Para más detalles, consultar la sección :ref:`dialog-gwfiletransferbutton`.
