@@ -25,7 +25,7 @@ html_last_updated_fmt = '%Y %b %d, %H:%M %z'
 # built documents.
 #
 # The short X.Y version.
-version = 'testing'
+version = '4.5'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -136,7 +136,7 @@ html_context = {
     'outdated': False,
     # When a new Giswater version is released, set this to False to remove the disclaimer
     # information message on the top of the page.
-    'isTesting': True
+    'isTesting': False
 }
 
 # Load our custom CSS from the root-level `css/` static path
