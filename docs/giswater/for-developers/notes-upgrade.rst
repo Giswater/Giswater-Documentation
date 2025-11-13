@@ -1,45 +1,44 @@
 ===============
-Notas de actualización de Giswater
+Giswater update notes
 ===============
 
-Este apartado de la documentación está dedicado a proporcionar información detallada sobre los procesos de actualización de Giswater.
-Aquí se documentan los cambios significativos entre versiones, consideraciones importantes durante la migración,
-y pasos específicos que los desarrolladores y administradores deben seguir para garantizar una actualización exitosa.
+This section of the documentation is dedicated to providing detailed information about the Giswater update processes.
+Here we document significant changes between versions, important considerations during migration,
+and specific steps that developers and administrators must follow to ensure a successful update.
 
-La documentación incluye:
+The documentation includes:
 
-- Cambios estructurales en la base de datos
-- Modificaciones en la API y funcionalidades
-- Procedimientos recomendados para la actualización
-- Soluciones a problemas comunes durante la migración
-- Notas sobre compatibilidad entre versiones
+- Structural changes to the database
+- Modifications to the API and functionalities
+- Recommended procedures for updating
+- Solutions to common problems during migration
+- Notes on compatibility between versions
 
-Esta sección es especialmente útil para los equipos técnicos responsables de mantener y actualizar instalaciones de Giswater en entornos de producción.
+This section is particularly useful for technical teams responsible for maintaining and updating Giswater installations in production environments.
 
-
-Actualización desde la versión 36016
+Update from version 36016
 ------------------------------------
 
-Cuando se actualiza el plugin de Giswater desde la versión 36016 a una versión superior, hay que tener en cuenta un posible error en la actualización.
+When updating the Giswater plugin from version 36016 to a higher version, please be aware of a possible error in the update.
 
 .. note::
-   Este error puede no presentarse en todas las instalaciones. Su aparición depende de si las vistas mencionadas existen en la base de datos y si contienen la columna con el nombre incorrecto.
-   Antes de ejecutar las consultas de corrección, es recomendable verificar la estructura actual de las vistas afectadas.
+   This error may not occur in all installations. Its appearance depends on whether the mentioned views exist in the database and whether they contain the incorrect column name.
+   Before executing the correction queries, it is recommended to verify the current structure of the affected views.
 
-El error específico está relacionado con el nombre de la columna `preszone_name` que debe ser renombrada a `presszone_name` en varias vistas. Para solucionar este problema, ejecuta las siguientes consultas SQL:
+The specific error is related to the column name `preszone_name` that must be renamed to `presszone_name` in several views. To solve this problem, execute the following SQL queries:
 
 .. code-block:: sql
 
-   -- Renombrar columna en vistas de nodos
+   -- Rename column in node views
    ALTER VIEW vu_node RENAME COLUMN preszone_name TO presszone_name;
    ALTER VIEW v_edit_node RENAME COLUMN preszone_name TO presszone_name;
 
-   -- Renombrar columna en vistas de arcos
+   -- Rename column in arc views
    ALTER VIEW vu_arc RENAME COLUMN preszone_name TO presszone_name;
    ALTER VIEW v_edit_arc RENAME COLUMN preszone_name TO presszone_name;
 
-Después de ejecutar estas consultas SQL para corregir el nombre de la columna, el proceso de actualización desde la versión 36016 debería proceder sin problemas. Es importante realizar este paso previo a la actualización para evitar errores durante el proceso.
+After executing these SQL queries to correct the column name, the update from version 36016 should proceed without problems. It is important to perform this step before the update to avoid errors during the process.
 
-Una vez completada esta corrección, puedes proceder con normalidad a la actualización del plugin y la base de datos siguiendo el procedimiento estándar de actualización de Giswater.
+Once this correction is completed, you can proceed with the normal update of the plugin and database following the standard update procedure of Giswater.
 
-Si durante la actualización encuentras algún otro problema, haznoslo saber.
+If you encounter any other problem during the update, please let us know.

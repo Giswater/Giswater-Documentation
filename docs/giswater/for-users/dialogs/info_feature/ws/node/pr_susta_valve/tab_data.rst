@@ -9,7 +9,7 @@ Datos
 
 
 
-Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes del formulario <partes-del-formulario>`
+Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes del formulario <form-parts>`
 
 .. raw:: html
 

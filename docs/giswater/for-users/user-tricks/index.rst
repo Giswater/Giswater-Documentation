@@ -1,5 +1,5 @@
 =============================
-Trucos de Usuario de Giswater
+User tricks for Giswater
 =============================
 
 .. toctree::

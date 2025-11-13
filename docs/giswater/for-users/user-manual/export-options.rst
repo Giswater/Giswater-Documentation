@@ -1,7 +1,7 @@
 .. _export-options:
 
 =======================
-Opciones de exportación
+Export options
 =======================
 
 .. only:: html
@@ -9,5 +9,5 @@ Opciones de exportación
    .. contents::
       :local:
 
-Opciones de exportación de proyectos ws y ud.
+Export options for ws and ud projects.
 

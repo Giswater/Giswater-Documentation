@@ -1,5 +1,5 @@
 ====================
-Fundamentos teóricos
+Theoretical foundations
 ====================
 
 .. only:: html
@@ -7,6 +7,6 @@ Fundamentos teóricos
    .. contents::
       :local:
 
-Aquí encontrarás la explicación de ciertos fundamentos teóricos útiles para comprender mejor el funcionamiento de Giswater.
+Here you will find the explanation of certain theoretical foundations useful to better understand the operation of Giswater.
 
 

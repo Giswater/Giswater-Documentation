@@ -1,5 +1,5 @@
 =====================
-Guía de inicio rápido
+Quickstart guide
 =====================
 
 .. only:: html
@@ -7,61 +7,61 @@ Guía de inicio rápido
    .. contents::
       :local:
 
-Esta guía te ayudará a crear un nuevo proyecto, asumiendo que tienes todos los programas requeridos instalados y una conexión de base de datos correctamente configurada con todas las extensiones necesarias.
-Si no fuera así, puedes consultar las secciones :ref:`instalacion-puesta-marcha` y :ref:`creacion-conexiones-previas`.
+This guide will help you create a new project, assuming that you have all the required programs installed and a correctly configured database connection with all the necessary extensions.
+If not, you can consult the sections :ref:`installation-startup` and :ref:`creation-previous-connections`.
 
 .. hint::
 
-    Recomendamos crear un proyecto de ejemplo primero. Esto proporciona una referencia que puedes usar cuando surjan preguntas.
+    We recommend creating an example project first. This provides a reference that you can use when questions arise.
 
-Creación del esquema del proyecto de base de datos
+Creation of the database project schema
 ==================================================
 
-Sobre un proyecto en blanco de QGIS, empezaremos por pinchar en el único botón de Giswater que tenemos disponible por el momento para que se abra la siguiente ventana:
+On a blank QGIS project, we will start by clicking on the only button of Giswater that we have available at the moment to open the following window:
 
 .. figure:: img/gestor-pytos.png
    
-    Ventana del gestor de proyectos Giswater.
+    Giswater projects manager window.
 
-A continuación, seleccionaremos qué tipo de esquema queremos crear en el desplegable *Tipo de proyecto* (ws para abastecimiento o ud para saneamiento)
-y pincharemos en el botón *Crear esquema proyecto BBDD* para que se abra la ventana de creación del esquema:
+Next, we will select what type of schema we want to create in the *Project type* dropdown (ws for supply or ud for sanitation)
+and click on the *Create database project schema* button to open the creation window:
 
 .. figure:: img/crear-esquema.png
   
-    Ventana de creación de esquema nuevo.
+    New schema creation window.
 
-En la ventana anterior tendremos que especificar:
+In the previous window we will have to specify:
 
-- Tipo de proyecto: tipo de proyecto que vamos a crear (ws para abastecimiento o ud para saneamiento).
-- Idioma: idioma en el que se creará el esquema. Podremos elegir uno de los disponibles en el desplegable.
-  Si vamos a crear uno de los ejemplos disponibles (*Ejemplo inventario* o *Ejemplo completo*) **obligatoriamente tendremos que seleccionar el idioma English (USA)**.
-- Nombre proyecto: indicaremos el nombre del esquema de proyecto. **No puede contener letras mayúsculas**.
-- Descripción: breve descripción del proyecto.
-- Filtrar SRID: sistema de referencia de coordenadas de la zona donde se creará el esquema.
-- Fuente de datos: tenemos disponibles tres opciones:
+- Project type: type of project we are going to create (ws for supply or ud for sanitation).
+- Language: language in which the schema will be created. We can choose one of the available in the dropdown.
+  If we are going to create one of the available examples (*Example inventory* or *Example complete*) **we will have to select the English (USA) language**.
+- Project name: we will indicate the name of the project schema. **It cannot contain uppercase letters**.
+- Description: brief description of the project.
+- Filter SRID: coordinate system of the zone where the schema will be created.
+- Data source: we have three options available:
 
-    - Sin datos: opción seleccionada para crear un esquema en blanco.
-    - Ejemplo inventario: opción seleccionada para tener un esquema de ejemplo **solo con datos de inventario**.
-    - Ejemplo completo: opción seleccionada para tener un esquema de ejemplo con **datos completos (inventario y EPA)**.
+    - No data: option selected to create a blank schema.
+    - Example inventory: option selected to have an example schema **only with inventory data**.
+    - Example complete: option selected to have an example schema with **complete data (inventory and EPA)**.
 
-Tras especificar lo mencionado arriba, pincharemos en el botón *Aceptar* para que se inicie la creación del esquema.
+After specifying the above, click on the *Accept* button to start the schema creation.
 
 .. important::
 
-    Necesitas privilegios de superadministrador de PostgreSQL para empezar a trabajar con Giswater. Por ejemplo, para crear una nueva Base de Datos.
-    Una vez empezado el proyecto, cualquier tipo de usuario podrá trabajar con Giswater siempre que tenga el rol adecuado.
+    You need PostgreSQL superadministrator privileges to start working with Giswater. For example, to create a new database.
+    Once the project has started, any type of user can work with Giswater as long as they have the appropriate role.
 
-Creación del archivo de proyecto de QGIS
+Creation of the QGIS project file
 ========================================
 
-Con el esquema de proyecto creado, el siguiente paso es crear el proyecto de QGIS. Para ello, en la ventana del gestor de proyectos, pincharemos sobre el botón *Crear archivo proyecto QGIS*.
-En la ventana emergente especificaremos el nombre del proyecto de QGIS, la ruta donde se guardará el proyecto así como deberemos marcar o desmarcar la casilla *Exportar contraseña usuario*.
+With the project schema created, the next step is to create the QGIS project. For this, in the projects manager window, click on the *Create QGIS project file* button.
+In the popup window we will specify the name of the QGIS project, the path where the project will be saved as well as we will have to mark or unmark the *Export user password* checkbox.
 
 .. figure:: img/crear-pyto.png
    
-    Ventana de creación de proyecto QGIS.
+    QGIS project creation window.
 
-El proyecto de QGIS se cargará tras ser creado y ya podremos empezar a trabajar con Giswater.
+The QGIS project will load after being created and we can start working with Giswater.
 
 
 

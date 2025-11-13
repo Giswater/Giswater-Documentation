@@ -1,304 +1,286 @@
 ===============================
-Escenarios de red (netscenario)
+Red scenarios (netscenario)
 ===============================
 
-Giswater permite realizar distintos **cambios en las zonas del mapa y con esto es posible optimizarlas.**
-Por ejemplo, si en las DMA los resultados obtenidos no son los esperados, 
-**es posible plantear más zonas e ir reduciendo y detectando las pérdidas cada vez con más precisión.**
+Giswater allows performing different **changes in the map zones and with this it is possible to optimize them.**
+For example, if the results obtained in the DMA are not as expected,
+**it is possible to propose more zones and reduce and detect losses each time with more precision.**
 
-Si además de esto, hemos detectado zonas con pérdidas (físicas) muy elevadas, 
-**podemos regular la presión en las mismas** y disminuir el desperdicio de agua, según las necesidades de la red.
-Para esto, podemos hacer uso de las *Presszone,* de igual manera, modificarlas mediante escenarios, y con esto determinar 
-qué presiones estáticas tendremos en diferentes puntos, sin necesidad de efectuar cambios en el inventario.
+If, in addition to this, we have detected zones with very high physical losses,
+**we can regulate the pressure in the same ones** and reduce water waste, according to the needs of the network.
+To do this, we can use the *Presszone,* in the same way, modify them through scenarios, and with this determine
+what static pressures we will have in different points, without the need to make changes in the inventory.
 
 .. note::
-   Conforme más cantidad de fugas tengamos en nuestro sistema y mayor sea la presión, 
-   las pérdidas de agua que tendremos en la red serán mayores.
+   The more leaks we have in our system and the higher the pressure,
+   the more water losses we will have in the network.
 
-Para poder realizar **diferentes escenarios de las** ***mapzones,*** utilizaremos la herramienta de *Netscenarios.*
-Es una funcionalidad similar a la de los dscenarios pero, en este caso, son escenarios de 
-zonas del mapa. Es decir, nos permite definir *headers* y *stoppers* distintos a los existentes en el inventario y con esto, tener diferentes propuestas de 
-zonificación sin alterar la inventariada.
+To be able to perform **different scenarios of the** ***mapzones,*** we will use the *Netscenarios* tool.
+It is a functionality similar to the dscenarios but, in this case, they are scenarios of
+map zones. That is, it allows us to define *headers* and *stoppers* different from those existing in the inventory and with this, to have different proposals of
+zoning without altering the inventory.
 
 .. attention::
    
-   Al igual que los dscenarios, para el caso de los netscenarios **no es estrictamente obligatorio utilizarlos** ni es la única 
-   manera de lograr los objetivos deseados, pero **sí es la manera más recomendable de hacerlo,** ya 
-   que nos permite mantener una diferencia entre los valores de inventario y los modificados para hacer 
-   pruebas o crear escenario dentro de la misma red.
+   As with the dscenarios, for the case of the netscenarios **it is not strictly necessary to use them** nor is the only
+   way to achieve the desired objectives, but **it is the most recommended way to do it,** because it allows us to maintain a difference between the inventory values and the modified ones to make
+   tests or create a scenario within the same network.
  
-Algunas de sus ventajas se mencionan a continuación:
+Some of its advantages are mentioned below:
 
-- Al ser escenarios, permite iterar las veces que sea necesario y hace que la modificación de las zonas sea sencilla.
+- As they are scenarios, it allows iterating as many times as necessary and makes it easy to modify the zones.
 
-- No se modifica la zonificación actual, es decir, los cambios se generan de manera paralela a lo que se encuentra en el inventario.
+- The current zoning is not modified, that is, the changes are generated in parallel to what is found in the inventory.
 
-- Además de las capas temporales, se pueden cargar capas como la *netscenario_ arc, netsceario_connec* o *netscenario_valve* 
-que permiten ver cambios en estos elementos según la zonificación.
+- In addition to the temporal layers, we can load layers like the *netscenario_ arc, netsceario_connec* or *netscenario_valve* 
+that allow us to see changes in these elements according to the zoning.
 
-- Facilita la generación de mapas temáticos con diferentes propuestas de zonificación y elementos 
-involucrados en la misma tales como connecs, válvulas o tuberías.
+- It facilitates the generation of thematic maps with different proposals of zoning and elements 
+involved in the same such as connecs, valves or pipes.
 
 .. |icon_ns| image:: img/img_escenarios/icon_ns.png
-Los *Netscenarios* se crean y administran desde el *Gestor de Netscenarios* |icon_ns| . 
+The *Netscenarios* are created and managed from the *Netscenario manager* |icon_ns| . 
 
-A través de este botón se pueden **crear** nuevos escenarios, **duplicar, actualizar** y/o **borrar.**
+Through this button we can **create** new scenarios, **duplicate, update** and/or **delete.**
 
 .. figure:: img/img_escenarios/netscenario_manager.png
 
-   Ventana del Gestor de Netscenarios de Giswater.
+   Window of the Netscenario manager of Giswater.
 
-En la creación de los *netscenarios* se nos solicitarán cosas básicas como el **nombre** a dar, 
-una leve **descripción**, el **tipo** (que puede ser DMA o PRESSZONE), si deseamos que esté **activo** o 
-no y la explotación a la que lo queremos asignar.
+In the creation of the *netscenarios* we will be asked for basic things like the **name** to give, 
+a slight **description**, the **type** (which can be DMA or PRESSZONE), if we want it to be **active** or 
+not and the exploitation to which we want to assign it.
 
 .. figure:: img/img_escenarios/netscenario_creado.png
 
-   Creación de un empty netscenario de ejemplo.
+   Creation of an empty netscenario example.
 
-**Gestión de escenarios**
+**Scenario management**
 
-Es importante mencionar que podemos tener **distintas zonas del mapa** dentro de nuestro *Gestor de Netscenarios* y, 
-para administrarlas de una mejor manera, tenemos algunas opciones:
+It is important to mention that we can have **different map zones** within our *Netscenario manager* and, 
+to manage them in a better way, we have some options:
 
 .. |icon_play| image:: img/img_escenarios/icon_execute_mapzones.png
-- **Show inactive:** muestra las zonas del mapa que están definidas con active False.
-- **Current netscenario:** es el netscenario que se tiene activo en ese momento y el que **simularía.**Se muestra justo a la izquierda, en este caso presszones.
-- **Toggle active:** al seleccionar un netscenario y pinchar sobre este botón, lo hace activo.
-- **Execute mapzones analysis:** es el disparador de las zonas del mapa .. |icon_play| .
-- **Cargar capas Giswater:** nos permite cargar capas asociadas al netscenario.
+- **Show inactive:** shows the map zones that are defined with active False.
+- **Current netscenario:** is the netscenario that is active at that moment and the one that **simulates.**It is shown just to the left, in this case presszones.
+- **Toggle active:** when selecting a netscenario and clicking on this button, it makes it active.
+- **Execute mapzones analysis:** is the trigger of the map zones .. |icon_play| .
+- **Load Giswater layers:** allows loading layers associated with the netscenario.
 
 .. figure:: img/img_escenarios/gestion_netscenario.png
 
-   Creación de escenarios.
+   Creation of scenarios.
 
-Escenario de red - Mapzone
+Netscenario - Mapzone
 ==========================
 
 .. figure:: img/img_escenarios/presszones.png
 
-   Creación de un mapzone.
+   Creation of a mapzone.
 
-**Configuración del graph**
+**Graph configuration**
 
 .. figure:: img/img_escenarios/config_presszones.png
 
-   Botón *Config* dentro del escenario.
+   *Config* button within the scenario.
 
-- nodeParent: es el *header* de la zona. Con el selector, se elige el punto directamente 
-desde el inventario. Puede ser uno o varios nodos.
-- toArc: dirección del flujo en el header.
+- nodeParent: is the *header* of the zone. With the selector, we choose the point directly
+from the inventory. It can be one or several nodes.
+- toArc: direction of the flow in the header.
 - ignore:
-- forceClosed: esta funcionalidad es de suma importancia ya que, como se mencionó, las válvulas 
-cerradas son los verdaderos *stoppers* pero, cuando no tenemos, podemos definir cualquier nodo que esté 
-sobre la red como *stopper* forzándolo a que se cierre.
+- forceClosed: this functionality is of great importance because, as mentioned, the closed valves are the true *stoppers* but, when we don't have them, we can define any node that is
+on the network as a *stopper* forcing it to close.
 
 .. figure:: img/img_escenarios/config_parameters.png
 
-   Opciones a configurar del *graphconfig*.
+   Options to configure the *graphconfig*.
 
-**Update de un mapzone**
+**Update of a mapzone**
 
-Otro de los botones importantes a utilizar es *Update*. 
-Este último es importante ya que si queremos **agregar** o **quitar** *headers* o 
-nodos en *force closed* lo debemos hacer desde aquí.
+Another important button to use is *Update*.
+This last one is important because if we want to **add** or **remove** *headers* or
+nodes in *force closed* we must do it from here.
 
 .. figure:: img/img_escenarios/update_presszones.png
 
-   Ventana *Update*.
+   *Update* window.
 
-**Cerrado de válvulas en netscenario**
+**Closing valves in netscenario**
 
-Hemos visto que con el *forceClosed* en la configuración del grafo (de forma permanente) o 
-con el *Force Closed Nodes* en diálogo de ejecución de algoritmo (de forma efímera) se puede forzar 
-el paro del algoritmo. Sin modificar inventario, existe una tercera opción: hacerlo en el escenario 
-trabajando en capa de válvulas.
+We have seen that with the *forceClosed* in the graph configuration (permanently) or
+with the *Force Closed Nodes* in the algorithm execution dialog (temporarily) we can force
+the stop of the algorithm. Without modifying the inventory, there is a third option: doing it in the scenario
+working on the valves layer.
 
-1. Cargar capa netscenario valve en ToC
+1. Load netscenario valve layer in ToC
 
 .. figure:: img/img_escenarios/capa_netscenario_valve.png
 
-   Agregar la capa desde el botón *Cargar capas Giswater*.
+   Add the layer from the *Load Giswater layers* button.
 
 
-2. Click botón derecho *Info de Giswater*.
+2. Click right *Info Giswater*.
 
-Esto hace que nuestro inventario permanezca más ordenado y el escenario quede más completo, 
-tanto con las zonas del mapa, como con las válvulas que se definirían como cerradas en un futuro 
-inventario de la red.
+This makes our inventory remain more ordered and the scenario more complete,
+both with the map zones, as with the valves that would be defined as closed in the future
+inventory of the network.
 
-**Ejecución del algoritmo**
+**Execution of the algorithm**
 
-Una vez configuradas las zonas, se procede a su ejecución. Esto lo hacemos desde el 
-*Netscenario manager* donde hay ciertas opciones que debemos saber definir bien:
+Once the zones are configured, we proceed to their execution. We do this from the
+*Netscenario manager* where there are certain options that we must know to define well:
 
-- **Create mapzones for netscenario:** se completa de manera automática según el 
-*nescenario* que esté seleccionado como *current*.
-- **Flood only one mapzone:** en caso de sólo querer simular una de las *presszones* 
-seleccionadas, insertamos su id.
-- **Force open nodes:** en caso de querer forzar abrir un elemento para que no funcione como *stopper*.
-- **Force closed nodes:** se pueden cerrar nodos para que actúen como *stoppers*, igual que se hace desde la configuración.
-- **Use selected psectors:** no hay que activarla.
-- **Mapzone constructor method:** la manera en la que queremos que se construya nuestra *mapzone*.
-- **Pipe buffer:** el tamaño del *buffer* alrededor de la tubería que queremos.
+- **Create mapzones for netscenario:** it is completed automatically according to the
+*nescenario* that is selected as *current*.
+- **Flood only one mapzone:** if we only want to simulate one of the selected *presszones*, we insert its id.
+- **Force open nodes:** if we want to force open an element so that it does not work as a *stopper*.
+- **Force closed nodes:** we can close nodes so that they act as *stoppers*, just as we do from the configuration.
+- **Use selected psectors:** not to activate.
+- **Mapzone constructor method:** the way we want our *mapzone* to be built.
+- **Pipe buffer:** the size of the *buffer* around the pipe we want.
 
 .. figure:: img/img_escenarios/algoritmo.png
 
-   Herramienta de Giswater *Mapzones Netscenario analysis*.
+   Giswater *Mapzones Netscenario analysis* tool.
 
 **Mapzone construct method**
 
-- **None**: No genera ninguna geometría.
-- **Concave Polygon**: Genera un polígono con forma cóncava.
-- **Pipe Buffer**: Realiza un buffer alrededor de la tubería, del tamaño seleccionado en las 
-opciones de simulación.
-- **Plot & Pipe Buffer**: Además de realizar un buffer alrededor de la tubería, pinta las capas de edificios 
-que estén cargadas en el proyecto.
-- **Link & Pipe Buffer**: Además de pintar el buffer alrededor de las tuberías, pinta todos los links del proyecto.
+- **None**: Does not generate any geometry.
+- **Concave Polygon**: Generates a concave polygon.
+- **Pipe Buffer**: Performs a buffer around the pipe, of the size selected in the simulation options.
+- **Plot & Pipe Buffer**: In addition to performing a buffer around the pipe, paints the buildings layers
+that are loaded in the project.
+- **Link & Pipe Buffer**: In addition to painting the buffer around the pipes, paints all the links of the project.
 
-**Objetos de estudio**
+**Study objects**
 
-Si lo que andamos buscando es tener zonas de presión que **cumplan con ciertas** características 
-como, por ejemplo, un rango de presiones, se puede empezar un proceso iterativo con el *Head* de la 
-creación de las *presszone*. Esto va a permitir ir variando la presión en la zona deseada hasta obtener el valor buscado.
+If what we are looking for is to have pressure zones that **meet certain** characteristics
+like, for example, a pressure range, we can start an iterative process with the *Head* of the
+creation of the *presszone*. This will allow us to vary the pressure in the desired zone until we obtain the desired value.
 
-Además es importante mencionar que, al igual que los *dscenarios*, los **netscenarios** cuentan 
-con capas Giswater que pueden servir para el análisis deseado. Capas como *Netscenario 
-Presszone* que nos muestra las zonas ejecutadas, *Netscenario conne*c o *Netscenario valve*, 
-nos permiten realizar mapas temáticos con **elementos de red dentro del escenario**, que han 
-intervenido para obtener los resultados deseados.
+It is also important to mention that, like the *dscenarios*, the **netscenarios** have Giswater layers that can serve for the desired analysis. Layers like *Netscenario
+Presszone* that shows the executed zones, *Netscenario conne*c or *Netscenario valve*,
+allow us to create thematic maps with **red elements within the scenario**, that have
+intervened to obtain the desired results.
 
-También es importante mencionar que estos elementos de las capas se pueden visualizar 
-desde la selección de nuestra zona, los atributos y cantidad de estos elementos, 
-envueltos en nuestro escenario de zona del mapa.
+It is also important to mention that these elements of the layers can be visualized
+from the selection of our zone, the attributes and the amount of these elements,
+enveloped in our scenario of map zone.
 
-Escenario de red - Presszones
+Netscenario - Presszones
 =============================
 
-Para determinar las presiones y optimizarlas según sea la necesidad de la red, utilizaremos 
-las *presszones.*
-Estas son zonas del mapa que tienen como cabecera un depósito o las válvulas de control 
-hidráulico (en el caso teórico), y **mediante la diferencia entre la carga y la elevación 
-de los nodos**, determina la presión estática a lo largo de la red.
+To determine the pressures and optimize them according to the needs of the network, we will use
+the *presszones.*
+These are map zones that have a header as a reservoir or hydraulic control valves (in the theoretical case), and **through the difference between the load and the elevation
+of the nodes**, determines the static pressure along the network.
 
-Por ejemplo, si se nos solicita que ciertas zonas del mapa tengan máximos y mínimos de 
-presión por necesidades hidráulicas o para reducir las pérdidas como se mencionó anteriormente, 
-es posible mediante una definición e iteración de las *presszones* hasta obtener la presión deseada.
+For example, if we are asked that certain map zones have maximum and minimum pressures for hydraulic needs or to reduce losses as mentioned above,
+it is possible through a definition and iteration of the *presszones* until we obtain the desired pressure.
 
 .. attention::
    
-   Al ser un algoritmo topológico, las *presszones* solamente determinan la presión estática mediante 
-   diferencia de cargas y elevaciones, **no tiene en cuenta aspectos como rugosidad de las tuberías o 
-   pérdidas locales por elementos de la red.**
+   As it is a topological algorithm, the *presszones* only determine the static pressure through
+   difference of loads and elevations, **does not take into account aspects such as pipe roughness or
+   local losses by network elements.**
 
-Para poder gestionar de forma más eficiente las presiones, podemos generar 
-un escenario de PRESSZONES (zonas de operación).
+To manage pressures more efficiently, we can generate a PRESSZONES (operation zones) scenario.
 
-Para trabajar las *presszones* desde los *netscenarios*, lo primero que se tiene que 
-hacer es crear uno de la misma forma con los Mapzones.
-Al dar doble clic sobre nuestro netscenario tendremos la opción de hacerla activa 
-(*Toggle active*), **configurar, crear, actualizar** o **eliminar**.
+To work with the *presszones* from the *netscenarios*, the first thing that has to be done is to create one in the same way with the Mapzones.
+By double clicking on our netscenario we will have the option to make it active 
+(*Toggle active*), **configure, create, update** or **delete**.
 
-En la creación de las presszones dentro del escenario debemos definir:
+When creating the presszones within the scenario we must define:
 
-- **Netscenario_id:** un número consecutivo que se asigna automáticamente.
-- **Presszone_id:** el identificador numérico de la DMA.
-- **Name:** el nombre que le queremos dar a nuestra DMA.
-- **Head:** Valor de la carga de salida del header.
-- **Graphconfig:** se completará más adelante al configurar la zona.
-- **Active:** si queremos activarla o no.
+- **Netscenario_id:** a consecutive number that is assigned automatically.
+- **Presszone_id:** the numerical identifier of the DMA.
+- **Name:** the name we want to give to our DMA.
+- **Head:** Value of the load output of the header.
+- **Graphconfig:** it will be completed later when configuring the zone.
+- **Active:** if we want to activate it or not.
 
 .. figure:: img/img_escenarios/create_presszone.png
 
-   Opciones en la creación de las presszones.
+   Options in the creation of the presszones.
 
-**Configuración del graph**
+**Graph configuration**
 
-En temas de configuración, estas zonas funcionan de la misma manera que las Mapzone
-tenemos que definir el *nodeParent* (que en este caso es la cabecera) y los *forceClosed* 
-(que serán los *stoppers* definidos según los intereses de quien modela la red).
+In terms of configuration, these zones work in the same way as the Mapzone
+we have to define the *nodeParent* (which in this case is the header) and the *forceClosed*
+(which will be the *stoppers* defined according to the interests of the one who models the network).
 
-**Ejecución del algoritmo**
+**Execution of the algorithm**
 
 .. |icon_execute_mapzones| image:: img/img_escenarios/icon_execute_mapzones.png
-Para la ejecución del algoritmo para PRESSZONES: desde el botón *Execute mapzones análisis* |icon_execute_mapzones| 
-el cual nos desplegará las mismas opciones que se han mencionado anteriormente.
+For the execution of the algorithm for PRESSZONES: from the *Execute mapzones analysis* button |icon_execute_mapzones|
+which will show the same options as mentioned above.
 
-Sectorización hidrométrica
+Hydrometric sectorization
 ==========================
 
-El proceso de sectorización por DMA implica dividir la red en áreas más pequeñas y gestionables. 
-Detallamos algunos de los pasos típicos involucrados en este proceso:
+The hydrometric sectorization process involves dividing the network into smaller and manageable areas.
+We detail some of the typical steps involved in this process:
 
-1. Definición de DMAs: selección de límites, basándose en el análisis hidráulico y los datos de consumo, 
-establecer límites para las DMAs que dividan la red en áreas más pequeñas y coherentes en términos de 
-flujo de agua y demanda. Estas nuevas zonas siempre deberán tener al menos un caudalímetro por el cual les entre agua.
+1. Definition of DMAs: selection of limits, based on hydraulic analysis and consumption data,
+set limits for the DMAs that divide the network into smaller and more coherent areas in terms of
+water flow and demand. These new zones must always have at least one flow meter through which they enter water.
 
-2. Instalación de infraestructura: instalación de válvulas y caudalímetros sectoriales, 
-en los puntos estratégicos de la red definidos en el apartado anterior.
+2. Installation of infrastructure: installation of sectorial valves and flow meters,
+in the strategic points of the network defined in the previous section.
 
-3. Implementación y monitoreo: pruebas y ajustes, que consistirán en realizar pruebas operativas 
-para asegurar que las DMAs estén correctamente definidas y que la infraestructura funcione 
-según lo previsto. Realizar ajustes según sea necesario.
+3. Implementation and monitoring: tests and adjustments, which will consist of performing operational tests
+to ensure that the DMAs are correctly defined and that the infrastructure works as expected. Make adjustments as necessary.
 
-4. Mantenimiento: realizar mantenimiento preventivo de la infraestructura de las DMAs, incluyendo 
-la limpieza y calibración de válvulas y medidores.
+4. Maintenance: perform preventive maintenance of the infrastructure of the DMAs, including
+cleaning and calibration of valves and meters.
 
-Para poder obtener la cantidad de agua que entra y sale de una zona determinada, en Giswater utilizamos las DMA (zonas de medición).
-Son zonas que poseen como *header* teórico uno o varios **caudalímetros** y como *stoppers* **válvulas cerradas** 
-o elementos que definamos como *Force closed*.
-Este proceso será iterativo y, al igual que con las *presszones*, para las DMA podemos trabajar con escenarios desde el *Netscenario.*
+To obtain the amount of water that enters and leaves a determined area, in Giswater we use the DMA (measurement zones).
+They are zones that have a theoretical *header* with one or several **flow meters** and *stoppers* **closed valves**
+or elements that we define as *Force closed*.
+This process will be iterative and, just as with the *presszones*, we can work with scenarios from the *Netscenario.*
 
-Dentro de las creaciones de las DMA, en el escenario debemos definir:
-- **Netscenario_id:** un número consecutivo que se asigna automáticamente.
-- **Dma_id:** el identificador numérico de la DMA.
-- **Name:** el nombre que le queremos dar a nuestra DMA.
-- **Pattern_id:** opción para asignar un pattern de demanda, aunque no es necesario.
-- **Graphconfig:** se completará más adelante al configurar la zona.
-- **Active:** si queremos activarla o no.
+Within the creation of the DMAs, in the scenario we must define:
+- **Netscenario_id:** a consecutive number that is assigned automatically.
+- **Dma_id:** the numerical identifier of the DMA.
+- **Name:** the name we want to give to our DMA.
+- **Pattern_id:** option to assign a demand pattern, although not necessary.
+- **Graphconfig:** it will be completed later when configuring the zone.
+- **Active:** if we want to activate it or not.
 
 .. figure:: img/img_escenarios/opcitions_new_dma.png
 
-   Opciones en la creación de las DMA.
+   Options in the creation of the DMAs.
 
-En temas de **configuración**, estas zonas funcionan de la **misma manera que las presszones.** 
-Tenemos que definir el *nodeParent* (que en este caso es la cabecera) y los *forceClosed* 
-(que serán los *stoppers* definidos según los intereses de quien modela la red).
+In terms of **configuration**, these zones work in the **same way as the presszones.**
+We have to define the *nodeParent* (which in this case is the header) and the *forceClosed*
+(which will be the *stoppers* defined according to the interests of the one who models the network).
 
-Para la ejecución de las DMA se hace igual que para las presszones: desde el botón *Execute mapzones analisis* 
-el cual nos desplegará las mismas opciones que se han mencionado anteriormente.
+For the execution of the DMAs it is the same as for the presszones: from the *Execute mapzones analysis* button
+which will show the same options as mentioned above.
 
 
-Zonas de intermitencias del servicio
+Intermittent service areas
 ====================================
 
-Como se ha venido comentando, si bien las cabeceras y los *stoppers* están bien definidos de manera teórica para 
-cada una de las mapzones, **Giswater tiene flexibilidad en este aspecto.**
+As it has been commented, although the headers and *stoppers* are well defined theoretically for
+each of the mapzones, **Giswater has flexibility in this aspect.**
 
-Por lo que, a pesar de que se espera contar en un futuro con la incorporación del IWSA (*Intermitent Water Supply 
-Areas*) de momento, podemos utilizar las mismas DMA para definir zonas importantes como lo son las **Zonas de 
-Rotación.**
+Although we expect to count with the incorporation of the IWSA (*Intermitent Water Supply Areas*) in the future, we can use the same DMAs to define important areas like the **Intermittent Water Supply Areas.**
 
-Estas son zonas que han sido identificadas con escasez severa de agua y se le realizarán racionamientos 
-eventualmente. Es así, como definiendo las cabeceras como válvulas de corte, podemos simular áreas en las 
-cuales se realizarán racionamientos del servicio. Su *header* es una válvula de corte ya que será la que se 
-deberá manipular para regular el flujo.
-Este es sólo un ejemplo de las muchas aplicaciones que pueden tener estas áreas y lo útiles que son en la 
-operación y mantenimiento de las redes de abastecimiento.
+These are areas that have been identified with severe water shortage and will eventually be rationed.
+As such, by defining the headers as cut valves, we can simulate areas in which rationing will be carried out. Its *header* is a cut valve because it will be the one that should be manipulated to regulate the flow.
+This is only an example of the many applications that these areas can have and how useful they are in the operation and maintenance of water supply networks.
 
-**Verificación con modelo hidráulico**
+**Verification with hydraulic model**
 
-Una vez realizadas las tareas de diseño como cumplir con rangos de presión o generar DMA con 
-características específicas, podemos simular nuestras redes y realizar análisis cruzados entre lo que hemos 
-diseñado y los resultados de la modelación.
+Once the design tasks have been carried out, such as meeting pressure ranges or generating DMAs with specific characteristics, we can simulate our networks and perform cross-analyses between what we have designed and the results of the modeling.
 
-Comparaciones entre presiones estáticas y presiones dinámicas podrían permitir analizar y entender la red desde 
-otras perspectivas.
+Comparisons between static and dynamic pressures could allow analyzing and understanding the network from other perspectives.
 
 
 .. figure:: img/img_escenarios/model.png
 
-   Simulación con SWWM.
+   Simulation with SWMM.
 
 
 
