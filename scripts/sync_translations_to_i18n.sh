@@ -40,33 +40,27 @@ I18N_REPO_FULL_URL="https://${I18N_TOKEN}@${I18N_REPO_URL}"
 echo "Syncing translation files to the i18n repository for version $VERSION..."
 
 # If the i18n repository does not exist locally, clone it
-if [ ! -d "$I18N_REPO_PATH/.git" ]; then
-    echo "Cloning i18n repository from $I18N_REPO_URL..."
+if [ ! -d "$I18N_REPO_PATH" ]; then
+    echo "Cloning i18n repository from $I18N_REPO_FULL_URL..."
     git clone "$I18N_REPO_FULL_URL" "$I18N_REPO_PATH"
+else
+    echo "Updating i18n repository..."
+    cd "$I18N_REPO_PATH"
+    git pull origin master
+    cd "$MAIN_REPO_PATH"
 fi
 
-cd "$I18N_REPO_PATH"
-echo "Fetching updates from i18n repository..."
-git fetch origin
-
-# Check if the branch exists on the remote. If not, create it from master.
-if ! git show-ref --verify --quiet "refs/remotes/origin/$VERSION"; then
-    echo "Branch '$VERSION' not found. Creating it based on 'master'."
-    # Assumes 'master' exists on the remote
-    git checkout -b "$VERSION" "origin/master"
-    git push -u origin "$VERSION"
+# Ensure that the specified version folder exists in the i18n repository.
+if [ ! -d "$I18N_REPO_PATH/$VERSION" ]; then
+    echo "Error: Version folder '$VERSION' does not exist in the i18n repository."
+    exit 1
 fi
 
-echo "Switching to branch '$VERSION'..."
-git checkout "$VERSION"
-git reset --hard "origin/$VERSION" # Ensure it matches the remote state
-cd "$MAIN_REPO_PATH"
-
-echo "Syncing local translations to the i18n repository for version $VERSION..."
+echo "Syncing translations from the i18n repository for version $VERSION..."
 
 for lang in "${LANGUAGES[@]}"; do
     SOURCE_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
-    TARGET_DIR="$I18N_REPO_PATH/locale/$lang/LC_MESSAGES"
+    TARGET_DIR="$I18N_REPO_PATH/$VERSION/locale/$lang/LC_MESSAGES"
     if [ -d "$SOURCE_DIR" ]; then
         mkdir -p "$TARGET_DIR"
         rsync -av --checksum --delete "$SOURCE_DIR"/ "$TARGET_DIR"/
@@ -89,8 +83,8 @@ git config user.name "Giswater Admin"
 if [ -n "$(git status --porcelain)" ]; then
     git add .
     git commit -m "chore: auto-sync translations for version $VERSION"
-    git push origin "$VERSION"
-    echo "Changes committed and pushed to the i18n repository on branch '$VERSION'."
+    git push origin master
+    echo "Changes committed and pushed to the i18n repository."
 else
     echo "No changes to commit in the i18n repository."
 fi
