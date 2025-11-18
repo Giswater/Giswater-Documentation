@@ -50,8 +50,8 @@ git fetch origin
 
 # Check if the branch exists on the remote
 if ! git show-ref --verify --quiet "refs/remotes/origin/$VERSION"; then
-    echo "Error: Branch '$VERSION' does not exist in the i18n repository."
-    exit 1
+    echo "Warning: Branch '$VERSION' does not exist in the i18n repository. Skipping sync from i18n, as this might be the first push for this version."
+    exit 0 # Exit successfully, there's nothing to sync
 fi
 
 echo "Switching to branch '$VERSION'..."
