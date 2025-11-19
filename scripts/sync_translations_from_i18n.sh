@@ -65,7 +65,6 @@ for lang in "${LANGUAGES[@]}"; do
         rsync -av --checksum --delete "$SOURCE_DIR"/ "$TARGET_DIR"/
         echo "Copied files for language '$lang' to $TARGET_DIR"
     else
-        
         echo "Warning: Source directory for language '$lang' does not exist in version '$VERSION'."
     fi
 done
