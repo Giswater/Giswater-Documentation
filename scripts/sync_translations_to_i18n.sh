@@ -61,12 +61,26 @@ echo "Syncing translations from the i18n repository for version $VERSION..."
 for lang in "${LANGUAGES[@]}"; do
     SOURCE_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
     TARGET_DIR="$I18N_REPO_PATH/$VERSION/locale/$lang/LC_MESSAGES"
-    if [ -d "$SOURCE_DIR" ]; then
+
+    # For no_TR, or if a language directory does not exist, use 'en' as a fallback.
+    if [ ! -d "$SOURCE_DIR" ]; then
+        echo "Warning: Source directory for language '$lang' does not exist. Using 'en' as fallback."
+
+        SOURCE_DIR_EN="$LOCALE_DIR/en/LC_MESSAGES"
+        if [ -d "$SOURCE_DIR_EN" ]; then
+            mkdir -p "$TARGET_DIR"
+            rsync -av --checksum --delete "$SOURCE_DIR_EN"/ "$TARGET_DIR"/
+            echo "Copied 'en' files to '$lang' for version '$VERSION' in $TARGET_DIR"
+        else
+            # This is a critical issue if 'en' is missing, as it's the fallback.
+            echo "Error: Source directory for 'en' language does not exist. Cannot create fallback for '$lang'."
+            exit 1
+        fi
+    else
+        # Existing logic for languages with an existing source directory
         mkdir -p "$TARGET_DIR"
         rsync -av --checksum --delete "$SOURCE_DIR"/ "$TARGET_DIR"/
         echo "Copied files for language '$lang' to $TARGET_DIR"
-    else
-        echo "Warning: Source directory for language '$lang' does not exist in version '$VERSION'."
     fi
 done
 
