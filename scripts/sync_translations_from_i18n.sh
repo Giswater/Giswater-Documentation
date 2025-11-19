@@ -39,26 +39,30 @@ I18N_REPO_PATH="../Giswater-Documentation-i18n"
 I18N_REPO_FULL_URL="https://${I18N_TOKEN}@${I18N_REPO_URL}"
 
 # Clone or update the i18n repository
-if [ ! -d "$I18N_REPO_PATH" ]; then
-    echo "Cloning i18n repository from $I18N_REPO_FULL_URL..."
+if [ ! -d "$I18N_REPO_PATH/.git" ]; then
+    echo "Cloning i18n repository from $I18N_REPO_URL..."
     git clone "$I18N_REPO_FULL_URL" "$I18N_REPO_PATH"
-else
-    echo "Updating i18n repository..."
-    cd "$I18N_REPO_PATH"
-    git pull origin master
-    cd "$MAIN_REPO_PATH"
 fi
 
-# Ensure that the specified version folder exists in the i18n repository.
-if [ ! -d "$I18N_REPO_PATH/$VERSION" ]; then
-    echo "Error: Version folder '$VERSION' does not exist in the i18n repository."
-    exit 1
+cd "$I18N_REPO_PATH"
+echo "Fetching updates from i18n repository..."
+git fetch origin
+
+# Check if the branch exists on the remote
+if ! git show-ref --verify --quiet "refs/remotes/origin/$VERSION"; then
+    echo "Warning: Branch '$VERSION' does not exist in the i18n repository. Skipping sync from i18n, as this might be the first push for this version."
+    exit 0 # Exit successfully, there's nothing to sync
 fi
+
+echo "Switching to branch '$VERSION'..."
+git checkout "$VERSION"
+git reset --hard "origin/$VERSION" # Ensure it matches the remote state
+cd "$MAIN_REPO_PATH"
 
 echo "Syncing translations from the i18n repository for version $VERSION..."
 
 for lang in "${LANGUAGES[@]}"; do
-    SOURCE_DIR="$I18N_REPO_PATH/$VERSION/locale/$lang/LC_MESSAGES"
+    SOURCE_DIR="$I18N_REPO_PATH/locale/$lang/LC_MESSAGES"
     TARGET_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
     if [ -d "$SOURCE_DIR" ]; then
         mkdir -p "$TARGET_DIR"
