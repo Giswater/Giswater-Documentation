@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 LANG            = es_CR
 # currently we are building for the following languages, if you want yours to be build: ask!
-LANGUAGES       = es_CR es_ES ca en # pt_PT pt_BR
+LANGUAGES       = es_CR # es_ES ca en pt_PT pt_BR
 SPHINXOPTS      =
 # Use the tag i18n to filter text based on whether we are translating or not
 SPHINXINTLOPTS  = $(SPHINXOPTS) -D language=$(LANG) -t i18n
