@@ -27,7 +27,7 @@ if [ -z "$I18N_REPO_URL" ]; then
 fi
 
 VERSION=$1
-LANGUAGES=("es_CR" "es_ES" "en" "ca")
+LANGUAGES=("es_CR" "es_ES" "en" "ca" "no_TR")
 
 # Directories (adjust these paths if needed)
 MAIN_REPO_PATH=$(pwd)  # Main repository (current directory)
