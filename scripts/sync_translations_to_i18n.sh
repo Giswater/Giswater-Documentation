@@ -60,7 +60,7 @@ echo "Syncing translations from the i18n repository for version $VERSION..."
 
 for lang in "${LANGUAGES[@]}"; do
     SOURCE_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
-    TARGET_DIR="$I18N_REPO_PATH/$VERSION/locale/$lang/LC_MESSAGES"
+    TARGET_DIR="$I18N_REPO_PATH/locale/$lang/LC_MESSAGES"
     if [ -d "$SOURCE_DIR" ]; then
         mkdir -p "$TARGET_DIR"
         rsync -av --checksum --delete "$SOURCE_DIR"/ "$TARGET_DIR"/
