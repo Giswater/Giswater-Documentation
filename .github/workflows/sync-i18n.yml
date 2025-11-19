@@ -3,8 +3,7 @@ name: Sync Translations to i18n
 on:
   push:
     branches:
-      - master
-      - 'release/*' # Triggers on pushes to master and any branch starting with 'v'
+      - master # Change to "testing" if that's your branch name
 
 jobs:
   sync-translations:
@@ -13,10 +12,6 @@ jobs:
     steps:
       - name: Checkout Documentation Repository
         uses: actions/checkout@v3
-
-      - name: Get branch name
-        id: branch-name
-        run: echo "version=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_OUTPUT
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -42,7 +37,7 @@ jobs:
       - name: Sync latest translations from i18n repository
         run: |
           source venv/bin/activate
-          make sync-from-i18n VERSION=${{ steps.branch-name.outputs.version }}
+          make sync-from-i18n VERSION=testing
         env:
           I18N_TOKEN: ${{ secrets.I18N_TOKEN }}
           I18N_REPO_URL: ${{ secrets.I18N_REPO_URL }}
@@ -55,7 +50,7 @@ jobs:
       - name: Sync Translations to i18n Repository
         run: |
           source venv/bin/activate
-          make sync-to-i18n VERSION=${{ steps.branch-name.outputs.version }}
+          make sync-to-i18n VERSION=testing
         env:
           I18N_TOKEN: ${{ secrets.I18N_TOKEN }}
           I18N_REPO_URL: ${{ secrets.I18N_REPO_URL }}
