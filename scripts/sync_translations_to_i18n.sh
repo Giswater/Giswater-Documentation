@@ -82,7 +82,18 @@ for lang in "${LANGUAGES[@]}"; do
     fi
 done
 
-
+# Sync .pot files
+POT_SOURCE_DIR="$MAIN_REPO_PATH/build/gettext"
+if [ -d "$POT_SOURCE_DIR" ]; then
+    for lang in "${LANGUAGES[@]}"; do
+        POT_TARGET_DIR="$I18N_REPO_PATH/$VERSION/gettext/$lang"
+        mkdir -p "$POT_TARGET_DIR"
+        rsync -av --checksum --delete "$POT_SOURCE_DIR"/ "$POT_TARGET_DIR"/
+        echo "Synced .pot files for $lang to $POT_TARGET_DIR"
+    done
+else
+    echo "Warning: .pot source directory '$POT_SOURCE_DIR' not found. Skipping .pot file sync."
+fi
 
 echo "Sync completed for version $VERSION."
 
