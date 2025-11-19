@@ -37,11 +37,11 @@ Por favor, echa un vistazo a uno de los documentos siguientes.
    :maxdepth: 2
    :caption: PARA USUARIOS
 
-   Guía de inicio rápido <giswater/for-users/quickstart/steps-to-create-a-new-project>
-   Manual de usuario de Giswater <giswater/for-users/user-manual/index>
-   Trucos de usuario de Giswater <giswater/for-users/user-tricks/index>
-   Fundamentos teóricos <giswater/for-users/theoretical-foundations/introduccion>
-   Diálogos <giswater/for-users/dialogs/index>
+   Quick start guide <giswater/for-users/quickstart/steps-to-create-a-new-project>
+   Giswater User Manual <giswater/for-users/user-manual/index>
+   Giswater user tips <giswater/for-users/user-tricks/index>
+   Theoretical foundations <giswater/for-users/theoretical-foundations/introduccion>
+   Dialogs <giswater/for-users/dialogs/index>
 
 .. toctree::
    :maxdepth: 2
