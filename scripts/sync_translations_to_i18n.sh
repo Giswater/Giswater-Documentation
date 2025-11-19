@@ -52,8 +52,8 @@ fi
 
 # Ensure that the specified version folder exists in the i18n repository.
 if [ ! -d "$I18N_REPO_PATH/$VERSION" ]; then
-    echo "Error: Version folder '$VERSION' does not exist in the i18n repository."
-    exit 1
+    echo "Version folder '$VERSION' does not exist in the i18n repository. Creating it..."
+    mkdir -p "$I18N_REPO_PATH/$VERSION"
 fi
 
 echo "Syncing translations from the i18n repository for version $VERSION..."
@@ -64,7 +64,7 @@ for lang in "${LANGUAGES[@]}"; do
     if [ -d "$SOURCE_DIR" ]; then
         mkdir -p "$TARGET_DIR"
         rsync -av --checksum --delete "$SOURCE_DIR"/ "$TARGET_DIR"/
-        echo "Copied files for language '$lang' to $TARGET_DIR"
+        echo "Copied files for language '$lang'from $SOURCE_DIR to $TARGET_DIR"
     else
         echo "Warning: Source directory for language '$lang' does not exist in version '$VERSION'."
     fi
