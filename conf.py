@@ -60,7 +60,7 @@ exclude_patterns = [
 
 # -- Internationalisation ----------------------------------------------------
 
-language = 'en'
+language = 'es_CR'
 locale_dirs = ['locale/']   # path is example but recommended.
 gettext_compact = False     # optional.
 
