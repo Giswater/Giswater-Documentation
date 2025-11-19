@@ -52,7 +52,7 @@ fi
 # Ensure that the specified version folder exists in the i18n repository.
 if [ ! -d "$I18N_REPO_PATH/$VERSION" ]; then
     echo "Error: Version folder '$VERSION' does not exist in the i18n repository."
-    exit 0
+    exit 1
 fi
 
 echo "Syncing translations from the i18n repository for version $VERSION..."
