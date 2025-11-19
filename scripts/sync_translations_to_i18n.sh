@@ -64,7 +64,7 @@ for lang in "${LANGUAGES[@]}"; do
     if [ ! -d "$SOURCE_DIR" ]; then
         echo "Warning: Source directory for language '$lang' does not exist. Using 'en' as fallback."
 
-        SOURCE_DIR_EN="$LOCALE_DIR/en/LC_MESSAGES"
+        SOURCE_DIR_EN="$LOCALE_DIR/es_CR/LC_MESSAGES"
         if [ -d "$SOURCE_DIR_EN" ]; then
             mkdir -p "$TARGET_DIR"
             rsync -av --checksum --delete "$SOURCE_DIR_EN"/ "$TARGET_DIR"/
