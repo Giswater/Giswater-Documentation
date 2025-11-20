@@ -56,28 +56,6 @@ if [ ! -d "$I18N_REPO_PATH/$VERSION" ]; then
     mkdir -p "$I18N_REPO_PATH/$VERSION"
 fi
 
-# Clean up obsolete .po files before syncing
-echo "Cleaning up obsolete translation files..."
-for lang in "${LANGUAGES[@]}"; do
-    LANG_PO_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
-    if [ -d "$LANG_PO_DIR" ]; then
-        # Find all .po files
-        find "$LANG_PO_DIR" -type f -name "*.po" | while read po_file; do
-            # Derive the relative path from the LC_MESSAGES directory
-            relative_po_path="${po_file#$LANG_PO_DIR/}"
-            
-            # Construct the potential source file paths (checking .rst and .md)
-            # Note: This assumes the structure in LC_MESSAGES mirrors the source dir
-            base_source_path="$MAIN_REPO_PATH/${relative_po_path%.po}"
-            
-            if [ ! -f "${base_source_path}.rst" ] && [ ! -f "${base_source_path}.md" ]; then
-                echo "Removing obsolete file: $po_file (Source ${base_source_path}.rst/.md not found)"
-                rm "$po_file"
-            fi
-        done
-    fi
-done
-
 echo "Syncing translations from the i18n repository for version $VERSION..."
 
 for lang in "${LANGUAGES[@]}"; do
@@ -101,6 +79,45 @@ for lang in "${LANGUAGES[@]}"; do
         mkdir -p "$TARGET_DIR"
         rsync -av --checksum --delete "$SOURCE_DIR"/ "$TARGET_DIR"/
         echo "Copied files for language '$lang' to $TARGET_DIR"
+    fi
+done
+
+# Clean up obsolete .po files before syncing
+echo "Cleaning up obsolete translation files..."
+
+# Define excluded files that should not be deleted
+EXCLUDED_FILES=("sphinx.po" "searchindex.po")
+
+for lang in "${LANGUAGES[@]}"; do
+    LANG_PO_DIR="$LOCALE_DIR/$VERSION/$lang/LC_MESSAGES"
+    if [ -d "$LANG_PO_DIR" ]; then
+        # Find all .po files
+        find "$LANG_PO_DIR" -type f -name "*.po" | while read po_file; do
+            # Derive the relative path from the LC_MESSAGES directory
+            relative_po_path="${po_file#$LANG_PO_DIR/}"
+            
+            # Check if file is in excluded list
+            skip_file=false
+            for excluded in "${EXCLUDED_FILES[@]}"; do
+                if [[ "$relative_po_path" == "$excluded" ]]; then
+                    skip_file=true
+                    break
+                fi
+            done
+            
+            if [ "$skip_file" = true ]; then
+                continue
+            fi
+            
+            # Construct the potential source file paths (checking .rst and .md)
+            # Note: This assumes the structure in LC_MESSAGES mirrors the source dir
+            base_source_path="$MAIN_REPO_PATH/${relative_po_path%.po}"
+            
+            if [ ! -f "${base_source_path}.rst" ] && [ ! -f "${base_source_path}.md" ] && [ ! -f "${base_source_path}.txt" ]; then
+                echo "Removing obsolete file: $po_file (Source ${base_source_path}.rst/.md/.txt not found)"
+                rm "$po_file"
+            fi
+        done
     fi
 done
 
