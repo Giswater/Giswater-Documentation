@@ -263,6 +263,17 @@ Barra de herramientas *Campaign manage*
 Barra de herramientas *Asset manage*
 ------------------------------------
 
+.. figure:: img/entorno-trabajo/toolbar-asset-manage.png
+
+   Barra de herramientas Asset manage.
+
+Barra de herramientas relacionada con la gestión de assets. Contiene los siguientes botones:
+
+- Herramienta de administración: Agrupa varias funcionalidades avanzadas relacionadas con la gestión de la red. Incluye la asignación de fugas y el cálculo de prioridad (Global). Para más detalles, consultar la sección :ref:`dialog-am-administrative-tool`.
+- Cálculo de prioridad por selección: Permite ejecutar el cálculo de prioridad de forma directa sobre la selección de elementos o sobre los conjuntos definidos. Para más detalles, consultar la sección :ref:`dialog-am-prioirity-calculation-by-selection`.
+- Gestor de resultados: Proporciona un acceso centralizado a los resultados generados por los distintos procesos, facilitando su consulta, organización y exportación. Para más detalles, consultar la sección :ref:`dialog-am-result-manager`.
+- Selector de resultados: Permite filtrar y seleccionar de manera rápida los resultados disponibles, optimizando la revisión y comparación de escenarios. Para más detalles, consultar la sección :ref:`dialog-am-result-selector`.
+
 
 Formularios de los elementos
 ============================
