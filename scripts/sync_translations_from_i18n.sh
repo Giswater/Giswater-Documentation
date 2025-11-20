@@ -65,7 +65,15 @@ for lang in "${LANGUAGES[@]}"; do
         rsync -av --checksum --delete "$SOURCE_DIR"/ "$TARGET_DIR"/
         echo "Copied files for language '$lang' to $TARGET_DIR"
     else
-        echo "Warning: Source directory for language '$lang' does not exist in version '$VERSION'."
+        echo "Warning: Source directory for language '$lang' does not exist in version '$VERSION'. Using 'en' as fallback."
+        SOURCE_DIR_EN="$I18N_REPO_PATH/$VERSION/locale/en/LC_MESSAGES"
+        if [ -d "$SOURCE_DIR_EN" ]; then
+            mkdir -p "$TARGET_DIR"
+            rsync -av --checksum --delete "$SOURCE_DIR_EN"/ "$TARGET_DIR"/
+            echo "Copied 'en' files to '$lang' from i18n repository."
+        else
+            echo "Error: Fallback 'en' directory not found in i18n repository for version '$VERSION'."
+        fi
     fi
 done
 
