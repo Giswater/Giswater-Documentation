@@ -56,6 +56,28 @@ if [ ! -d "$I18N_REPO_PATH/$VERSION" ]; then
     mkdir -p "$I18N_REPO_PATH/$VERSION"
 fi
 
+# Clean up obsolete .po files before syncing
+echo "Cleaning up obsolete translation files..."
+for lang in "${LANGUAGES[@]}"; do
+    LANG_PO_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
+    if [ -d "$LANG_PO_DIR" ]; then
+        # Find all .po files
+        find "$LANG_PO_DIR" -type f -name "*.po" | while read po_file; do
+            # Derive the relative path from the LC_MESSAGES directory
+            relative_po_path="${po_file#$LANG_PO_DIR/}"
+            
+            # Construct the potential source file paths (checking .rst and .md)
+            # Note: This assumes the structure in LC_MESSAGES mirrors the source dir
+            base_source_path="$MAIN_REPO_PATH/${relative_po_path%.po}"
+            
+            if [ ! -f "${base_source_path}.rst" ] && [ ! -f "${base_source_path}.md" ]; then
+                echo "Removing obsolete file: $po_file (Source ${base_source_path}.rst/.md not found)"
+                rm "$po_file"
+            fi
+        done
+    fi
+done
+
 echo "Syncing translations from the i18n repository for version $VERSION..."
 
 for lang in "${LANGUAGES[@]}"; do
@@ -64,7 +86,7 @@ for lang in "${LANGUAGES[@]}"; do
     if [ ! -d "$SOURCE_DIR" ]; then
         echo "Warning: Source directory for language '$lang' does not exist. Using 'en' as fallback."
 
-        SOURCE_DIR_EN="$LOCALE_DIR/es_CR/LC_MESSAGES"
+        SOURCE_DIR_EN="$LOCALE_DIR/en/LC_MESSAGES"
         if [ -d "$SOURCE_DIR_EN" ]; then
             mkdir -p "$TARGET_DIR"
             rsync -av --checksum --delete "$SOURCE_DIR_EN"/ "$TARGET_DIR"/
