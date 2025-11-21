@@ -11,7 +11,7 @@
 set -e
 
 if [ $# -lt 1 ]; then
-    echo "Usage: $0 <release_version>"
+    echo "Usage: $0 <release_version> [branch_name]"
     exit 1
 fi
 
@@ -28,6 +28,7 @@ if [ -z "$I18N_REPO_URL" ]; then
 fi
 
 VERSION=$1
+BRANCH=${2:-$VERSION}
 LANGUAGES=("es_CR" "es_ES" "en" "ca")
 
 # Directories (adjust these paths if needed)
@@ -42,12 +43,24 @@ I18N_REPO_FULL_URL="https://${I18N_TOKEN}@${I18N_REPO_URL}"
 if [ ! -d "$I18N_REPO_PATH" ]; then
     echo "Cloning i18n repository from $I18N_REPO_FULL_URL..."
     git clone "$I18N_REPO_FULL_URL" "$I18N_REPO_PATH"
+    cd "$I18N_REPO_PATH"
 else
     echo "Updating i18n repository..."
     cd "$I18N_REPO_PATH"
-    git pull origin master
-    cd "$MAIN_REPO_PATH"
+    git fetch origin
 fi
+
+# Checkout the version-specific branch
+if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
+    echo "Checking out existing branch '$BRANCH'..."
+    git checkout "$BRANCH" || git checkout -b "$BRANCH" "origin/$BRANCH"
+    git pull origin "$BRANCH"
+else
+    echo "Error: Branch '$BRANCH' does not exist in the i18n repository."
+    exit 1
+fi
+
+cd "$MAIN_REPO_PATH"
 
 # Ensure that the specified version folder exists in the i18n repository.
 if [ ! -d "$I18N_REPO_PATH/$VERSION" ]; then

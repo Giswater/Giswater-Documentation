@@ -10,7 +10,7 @@
 set -e
 
 if [ $# -lt 1 ]; then
-    echo "Usage: $0 <release_version>"
+    echo "Usage: $0 <release_version> [branch_name]"
     exit 1
 fi
 
@@ -27,6 +27,7 @@ if [ -z "$I18N_REPO_URL" ]; then
 fi
 
 VERSION=$1
+BRANCH=${2:-$VERSION}
 LANGUAGES=("es_CR" "es_ES" "en" "ca")
 
 # Directories (adjust these paths if needed)
@@ -43,12 +44,24 @@ echo "Syncing translation files to the i18n repository for version $VERSION..."
 if [ ! -d "$I18N_REPO_PATH" ]; then
     echo "Cloning i18n repository from $I18N_REPO_FULL_URL..."
     git clone "$I18N_REPO_FULL_URL" "$I18N_REPO_PATH"
+    cd "$I18N_REPO_PATH"
 else
     echo "Updating i18n repository..."
     cd "$I18N_REPO_PATH"
-    git pull origin master
-    cd "$MAIN_REPO_PATH"
+    git fetch origin
 fi
+
+# Checkout the version-specific branch
+if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
+    echo "Checking out existing branch '$BRANCH'..."
+    git checkout "$BRANCH" || git checkout -b "$BRANCH" "origin/$BRANCH"
+    git pull origin "$BRANCH"
+else
+    echo "Branch '$BRANCH' does not exist. Creating it..."
+    git checkout -b "$BRANCH"
+fi
+
+cd "$MAIN_REPO_PATH"
 
 # Ensure that the specified version folder exists in the i18n repository.
 if [ ! -d "$I18N_REPO_PATH/$VERSION" ]; then
@@ -62,7 +75,7 @@ for lang in "${LANGUAGES[@]}"; do
     SOURCE_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
     TARGET_DIR="$I18N_REPO_PATH/$VERSION/locale/$lang/LC_MESSAGES"
     if [ ! -d "$SOURCE_DIR" ]; then
-        echo "Warning: Source directory for language '$lang' does not exist. Using 'en' as fallback."
+        echo "WarWning: Source directory for language '$lang' does not exist. Using 'en' as fallback."
 
         SOURCE_DIR_EN="$LOCALE_DIR/en/LC_MESSAGES"
         if [ -d "$SOURCE_DIR_EN" ]; then
@@ -134,8 +147,8 @@ git config user.name "Giswater Admin"
 if [ -n "$(git status --porcelain)" ]; then
     git add .
     git commit -m "chore: auto-sync translations for version $VERSION"
-    git push origin master
-    echo "Changes committed and pushed to the i18n repository."
+    git push origin "$BRANCH"
+    echo "Changes committed and pushed to the i18n repository branch $BRANCH."
 else
     echo "No changes to commit in the i18n repository."
 fi
