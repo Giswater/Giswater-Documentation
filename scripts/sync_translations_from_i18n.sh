@@ -57,7 +57,8 @@ if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
     git pull origin "$BRANCH"
 else
     echo "Error: Branch '$BRANCH' does not exist in the i18n repository."
-    exit 1
+    git checkout master || git checkout -b master "origin/master"
+    git pull origin master
 fi
 
 cd "$MAIN_REPO_PATH"
