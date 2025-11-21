@@ -59,6 +59,7 @@ if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
 else
     echo "Branch '$BRANCH' does not exist. Creating it..."
     git checkout -b "$BRANCH"
+    git push -u origin "$BRANCH"
 fi
 
 cd "$MAIN_REPO_PATH"
