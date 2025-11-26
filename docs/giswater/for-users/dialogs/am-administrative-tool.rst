@@ -1,7 +1,7 @@
 .. _dialog-am-administrative-tool:
 
 ==============================
-Herramienta de administración
+Administrative tool
 ==============================
 
 .. only:: html
@@ -9,13 +9,13 @@ Herramienta de administración
    .. contents::
       :local:
 
-Herramienta que agrupa varias funcionalidades avanzadas relacionadas con la gestión de la red. Incluye la asignación de fugas y el cálculo de prioridades (Global).
+Tool that groups several advanced functionalities related to the management of the network. It includes the assignment of leaks and the priority calculation (Global).
 
 .. figure:: img/am/administrative-tool.png
 
-   Ventana de la herramienta de administración.
+   Window of the administrative tool.
 
-La ventana contiene los siguientes botones:
+The window contains the following buttons:
 
-- Asignación de fugas: permite asignar fugas a los elementos seleccionados en la vista principal de QGIS. Al pinchar sobre él se abre una nueva ventana donde se pueden definir los parámetros de la asignación de fugas. Para más detalles, consultar la sección :ref:`dialog-am-breakdown-assignation`.
-- Cálculo de prioridad (Global): permite ejecutar el cálculo de prioridad de forma global sobre toda la red. Para más detalles, consultar la sección :ref:`dialog-am-prioirity-calculation-global`.
+- Leak assignment: allows assigning leaks to the selected elements in the main QGIS view. By clicking on it a new window opens where the parameters of the leak assignment can be defined. For more details, see the section :ref:`dialog-am-breakdown-assignation`.
+- Priority calculation (Global): allows executing the priority calculation globally over the entire network. For more details, see the section :ref:`dialog-am-prioirity-calculation-global`.

@@ -14,7 +14,7 @@
 		<dl>
 			<dt>{{ _('Languages') }}</dt>
 			{% for slug, url in supported_languages %}
-			<dd><a href="{{ url }}/{{ pagename }}.html">{{ slug }}</a></dd>
+			<dd><a href="../../{{ slug }}/{{ pagename }}.html">{{ slug }}</a></dd>
 			{% endfor %}
 		</dl>
 
@@ -22,9 +22,7 @@
 			<dt>{{ _('Versions') }}</dt>
 			{% for slug, url in versions %}
 			<dd>
-				<a href="{{ url }}/{{ language|replace('-', '_') }}/{{ pagename }}.html"
-					>{{ slug }}</a
-				>
+				<a href="../../../{{ slug }}/{{ language }}/{{ pagename }}.html">{{ slug }}</a>
 			</dd>
 			{% endfor %}
 		</dl>

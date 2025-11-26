@@ -1,7 +1,7 @@
 .. _dialog-am-result-manager:
 
 =================================
-Gestor de resultados Asset Manage
+Result manager
 =================================
 
 .. only:: html
@@ -9,20 +9,20 @@ Gestor de resultados Asset Manage
    .. contents::
       :local:
 
-Herramienta que permite gestionar los resultados de las asset manage.
+Tool that allows managing the results of Asset Manage.
 
 .. figure:: img/am/result-manager.png
 
-   Ventana de la herramienta Gestor de resultados Asset manage.
+   Window of the result manager tool.
 
-La ventana contiene los siguientes botones:
+The window contains the following buttons:
 
-- Filtrar por: Nombre del resultado: permite filtrar los resultados por *Nombre*. 
-- Tipo: permite filtrar los resultados por *Tipo*.
-- Explotación: permite filtrar los resultados por *Explotación*.
-- Estado: permite filtrar los resultados por *Estado*.
-- Hacer corporativo: permite definir un resultado como corporativo.
-- Editar: permite editar el campo *Descripción*.
-- Duplicar: permite duplicar el resultado seleccionado.
-- Cambiar estado: permite cambiar el estado del resultado seleccionado.
-- Borrar: permite borrar un resultado.
+- Filter by: Name of the result: allows filtering the results by *Name*. 
+- Type: allows filtering the results by *Type*.
+- Exploitation: allows filtering the results by *Exploitation*.
+- State: allows filtering the results by *State*.
+- Make corporate: allows defining a result as corporate.
+- Edit: allows editing the *Description* field.
+- Duplicate: allows duplicating the selected result.
+- Change state: allows changing the state of the selected result.
+- Delete: allows deleting a result.

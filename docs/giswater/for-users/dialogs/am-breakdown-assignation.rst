@@ -1,7 +1,7 @@
 .. _dialog-am-breakdown-assignation:
 
 ==================================
-Herramienta de asignación de fugas
+Breakdown assignation tool
 ==================================
 
 .. only:: html
@@ -9,26 +9,26 @@ Herramienta de asignación de fugas
    .. contents::
       :local:
 
-Herramienta que permite asignar fugas sobre la red.
+Tool that allows assigning leaks over the network.
 
 .. figure:: img/am/breakdown-assignation.png
 
-   Ventana de la herramienta Asignación de fugas.
+   Window of the breakdown assignation tool.
 
-La ventana contiene los siguientes botones:
+The window contains the following buttons:
 
-**Fugas**
+**Leaks**
 
-- Distancia de seguridad (m): radio de búsqueda alrededor de cada fuga.
-- Años para calcular: límite temporal para el análisis.
-- Utilizar todas las fugas: ignora el filtro de años y usa todas las fugas registradas.
+- Safety distance (m): search radius around each leak.
+- Years to calculate: temporal limit for the analysis.
+- Use all leaks: ignores the year filter and uses all registered leaks.
 
-**Tuberías**
+**Pipes**
 
-- Distancia máxima (m): distancia máxima entre fuga y tubería.
-- Longitud del racimo (m): longitud mínima del tramo agrupado.
-- Filtrar por material: activa el filtro según el material de la tubería.
-- Filtrar por diámetro: activa el filtro por diámetro.
-- Rango de diámetros: intervalo de diámetros permitidos.
-- Filtrar por fecha de construcción: activa el filtro por año de construcción.
-- Rango de fechas de construcción (años): define el rango temporal para las tuberías.
+- Maximum distance (m): maximum distance between leak and pipe.
+- Cluster length (m): minimum length of the grouped section.
+- Filter by material: activates the filter by material of the pipe.
+- Filter by diameter: activates the filter by diameter.
+- Diameter range: allowed diameter range.
+- Filter by construction date: activates the filter by construction year.
+- Construction date range (years): defines the temporal range for the pipes.

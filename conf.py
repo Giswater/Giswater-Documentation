@@ -159,17 +159,17 @@ if html_context['outdated']:
 
 supported_languages = cfg['supported_languages'].split()
 version_list = cfg['version_list'].replace(' ', '').split(',')
-docs_url = 'https://docs.giswater.org/'
 
 
 if version not in version_list:
     raise ValueError('Giswater version is not in version list',
                      version, version_list)
 
-
 context = {
-    'versions': [[v, docs_url+v] for v in version_list],
-    'supported_languages': [[l, docs_url+version+'/'+l] for l in supported_languages],
+    # Ejemplo: [['latest', '../latest'], ['master', '../master']]
+    'versions': [[v, '../{}'.format(v)] for v in version_list],
+    # Ejemplo: [['es_CR', './es_CR']]
+    'supported_languages': [[l, './{}'.format(l)] for l in supported_languages],
 
     # Do not display for outdated releases
     'display_github': not html_context['outdated'],

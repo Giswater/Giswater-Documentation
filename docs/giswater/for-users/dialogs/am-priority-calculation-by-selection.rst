@@ -1,7 +1,7 @@
 .. _dialog-am-prioirity-calculation-by-selection:
 
 ====================================
-Cálculo de prioridad por selección
+Priority calculation by selection
 ====================================
 
 .. only:: html
@@ -9,29 +9,29 @@ Cálculo de prioridad por selección
    .. contents::
       :local:
 
-Herramienta que permite ejecutar el cálculo de prioridades de forma directa sobre la selección de elementos o sobre los conjuntos definidos.
+Tool that allows executing the priority calculation directly on the selection of elements or on the defined sets.
 
 .. figure:: img/am/priority-calculation-by-selection.png
 
-   Ventana de la herramienta Cálculo de prioridad por selección.
+   Window of the priority calculation by selection tool.
 
-La ventana contiene los siguientes botones:
+The window contains the following buttons:
 
-**Cálculo**
+**Calculation**
 
-- Nombre del resultado: nombre del cálculo que se va a generar.
-- Descripción: información adicional del cálculo (opcional).
-- Estado: fase del proceso, por defecto ON PLANNING.
+- Name of the result: name of the calculation that will be generated.
+- Description: additional information of the calculation (optional).
+- State: process phase, by default ON PLANNING.
 
-**Selección de características**
+**Selection of features**
 
-- Seleccione las características del lienzo: permite seleccionar los elementos directamente desde el mapa.
-- Explotación: filtra por explotación o sector operativo.
-- Zona de prensa: filtra por zona específica de trabajo.
-- Diámetro: filtra por diámetro de tubería.
-- Material: filtra por tipo de material.
+- Select the features of the canvas: allows selecting the elements directly from the map.
+- Exploitation: filters by exploitation or operational sector.
+- Press zone: filters by specific working zone.
+- Diameter: filters by diameter of pipe.
+- Material: filters by type of material.
 
-**Parámetros de cálculo**
+**Calculation parameters**
 
-- Presupuesto anual: presupuesto disponible para actuaciones.
-- Año horizonte: año límite para el análisis económico.
+- Annual budget: budget available for actions.
+- Horizon year: year limit for the economic analysis.

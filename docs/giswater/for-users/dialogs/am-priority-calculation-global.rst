@@ -1,7 +1,7 @@
 .. _dialog-am-prioirity-calculation-global:
 
 ===============================
-Cálculo de prioridad (Global)
+Priority calculation (Global)
 ===============================
 
 .. only:: html
@@ -9,21 +9,21 @@ Cálculo de prioridad (Global)
    .. contents::
       :local:
 
-Herramienta que permite ejecutar el cálculo de prioridades de forma global sobre toda la red.
+Tool that allows executing the priority calculation globally over the entire network.
 
 .. figure:: img/am/priority-calculation-global.png
 
-   Ventana de la herramienta Cálculo de prioridad (Global).
+   Window of the priority calculation (Global) tool.
 
-La ventana contiene los siguientes botones:
+The window contains the following buttons:
 
-**Cálculo**
+**Calculation**
 
-- Nombre del resultado: nombre del cálculo que se va a generar.
-- Descripción: información adicional del cálculo (opcional).
-- Estado: fase del proceso, por defecto ON PLANNING.
+- Name of the result: name of the calculation that will be generated.
+- Description: additional information of the calculation (optional).
+- State: process phase, by default ON PLANNING.
 
-**Parámetros de cálculo**
+**Calculation parameters**
 
-- Presupuesto anual: presupuesto disponible para actuaciones.
-- Año horizonte: año límite para el análisis económico.
+- Annual budget: budget available for actions.
+- Horizon year: year limit for the economic analysis.

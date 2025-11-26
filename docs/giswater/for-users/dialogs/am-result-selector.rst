@@ -1,7 +1,7 @@
 .. _dialog-am-result-selector:
 
 ====================================
-Selector de resultados Asset Manage
+Result selector
 ====================================
 
 .. only:: html
@@ -9,10 +9,10 @@ Selector de resultados Asset Manage
    .. contents::
       :local:
 
-Herramienta que permite filtrar y seleccionar de manera rápida los resultados disponibles, optimizando la revisión y comparación de escenarios.
+Tool that allows filtering and selecting the available results quickly, optimizing the review and comparison of scenarios.
 
 .. figure:: img/am/result-selector.png
 
-   Ventana de la herramienta Selector de resultados Asset manage.
+   Window of the result selector tool.
 
-En el apartado *Resultado a mostrar* indicaremos el resultado a mostrar y en *Resultado a comparar*, el resultado con el cual queremos comparar.
+In the *Result to show* section we will indicate the result to show and in *Result to compare*, the result with which we want to compare.
