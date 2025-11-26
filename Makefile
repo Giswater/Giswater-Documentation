@@ -42,7 +42,7 @@ update-po: gettext
 
 sync-to-i18n:
 	@echo "Syncing i18n files for languages: $(LANGUAGES)"
-	./scripts/sync_translations_to_i18n.sh $(VERSION) $(BRANCH)
+	./scripts/sync_translations_to_i18n.sh $(VERSION)
 
 sync-from-i18n:
 	@# Check if vars are missing and .env exists, then source it
@@ -52,7 +52,7 @@ sync-from-i18n:
 	fi; \
 	if [ -n "$${I18N_TOKEN}" ] && [ -n "$${I18N_REPO_URL}" ]; then \
 		echo "Syncing i18n files from i18n to gettext"; \
-		./scripts/sync_translations_from_i18n.sh $(VERSION) $(BRANCH); \
+		./scripts/sync_translations_from_i18n.sh $(VERSION); \
 	else \
 		echo "Skipping sync-from-i18n: I18N_TOKEN or I18N_REPO_URL not defined (checked env and .env)"; \
 	fi
