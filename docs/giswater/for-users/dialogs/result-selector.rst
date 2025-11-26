@@ -1,7 +1,7 @@
 .. _dialog-result-selector:
 
 ============================
-Comparador de resultados EPA
+Result selector
 ============================
 
 .. only:: html
@@ -9,10 +9,10 @@ Comparador de resultados EPA
    .. contents::
       :local:
 
-Herramienta que permite comparar los resultados de dos simulaciones EPA.
+Tool that allows comparing the results of two EPA simulations.
 
 .. figure:: img/epa/result-selector.png
 
-     Ventana de la herramienta Comparador de resultados EPA.
+     Window of the Result selector tool.
 
-En el apartado *Result name (to show)* indicaremos el resultado a mostrar y en *Result name (to compare)*, el resultado con el cual queremos comparar.
+In the *Result name (to show)* section we will indicate the result to show and in *Result name (to compare)*, the result with which we want to compare.

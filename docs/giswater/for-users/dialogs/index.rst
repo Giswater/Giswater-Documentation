@@ -1,14 +1,14 @@
 ==========================
-Diálogos de Giswater
+Dialogs of Giswater
 ==========================
 
-En esta sección se documentan todos los diálogos y formularios disponibles en Giswater.
-Estos diálogos permiten realizar operaciones específicas sobre la red,
-desde consultas básicas hasta análisis avanzados y tareas de mantenimiento.
+In this section all the dialogs and forms available in Giswater are documented.
+These dialogs allow performing specific operations on the network,
+from basic queries to advanced analysis and maintenance tasks.
 
-Los diálogos están organizados por funcionalidad y pueden accederse a través de las diferentes
-barras de herramientas o menús contextuales. Cada diálogo incluye una descripción detallada de sus parámetros,
-funcionamiento y casos de uso típicos.
+The dialogs are organized by functionality and can be accessed through the different
+toolbars or contextual menus. Each dialog includes a detailed description of its parameters,
+functionality and typical use cases.
 
 .. toctree::
    :maxdepth: 2
@@ -53,7 +53,7 @@ funcionamiento y casos de uso típicos.
    gw-file-transfer-button
    check project
 
-Además de los diálogos, se documentan los siguientes elementos:
+In addition to the dialogs, the following elements are documented:
 
 .. toctree::
    :maxdepth: 1

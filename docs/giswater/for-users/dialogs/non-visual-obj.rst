@@ -1,7 +1,7 @@
 .. _dialog-non-visual-obj:
 
 =============================
-Gestor de objetos no visuales
+Non-visual objects manager
 =============================
 
 .. only:: html
@@ -9,113 +9,112 @@ Gestor de objetos no visuales
    .. contents::
       :local:
 
-Herramienta que permite gestionar todos los objetos no visuales que se necesitan para la modelación hidráulica.
+Tool that allows managing all the non-visual objects that are needed for the hydraulic modeling.
 
 .. figure:: img/epa/non-visual-obj-ws.png
 
-     Ventana de la herramienta Gestor de objetos no visuales para esquemas ws.
+     Window of the Non-visual objects manager tool for ws schemes.
 
-Dependiendo de si estamos con un proyecto ws o ud, las pestañas disponibles serán unas u otras.
+Depending on whether we are working with a ws or ud project, the tabs available will be one or the other.
 
-Los objetos a gestionar son *Roughness* (rugosidad), *Curves* (curvas), *Patterns* (patrones), *Timeseries* (series temporales), *Controls* (controles), *Rules* (reglas) y *Lids* (SUDS).
+The objects to manage are *Roughness* (roughness), *Curves* (curves), *Patterns* (patterns), *Timeseries* (time series), *Controls* (controls), *Rules* (rules) and *Lids* (SUDS).
 
-Para crear un objeto no visual concreto tendremos que situarnos sobre la pestaña correspondiente, pinchar sobre el botón *Crear* y rellenar los datos necesarios en la ventana emergente.
+To create a specific non-visual object we will have to position ourselves on the corresponding tab, click on the *Create* button and fill in the necessary data in the popup window.
 
 Roughness (ws)
 ==============
 
-Permite crear rugosidades de materiales.
+Tool that allows creating roughness of materials.
 
 .. figure:: img/epa/roughness.png
 
-     Formulario para crear rugosidades.
+     Window to create roughness.
 
-En la ventana emergente tendremos que especificar el material, las edades inicial y final, el valor de la rugosidad así como marcar la casilla *Activo* para poder tenerla disponible.
+In the popup window we will have to specify the material, the initial and final ages, the roughness value as well as mark the *Active* box to be able to have it available.
 
 Curves
 ======
 
-Permite crear distintos tipos de curva en función de las necesidades del proyecto.
+Tool that allows creating different types of curves according to the needs of the project.
 
 .. figure:: img/epa/curves.png
 
-     Formulario para crear curvas.
+     Window to create curves.
 
-En la parte superior de la ventana emergente tendremos que indicar el ID de la curva así como el tipo de curva que queremos crear. Dependiendo de si estamos con un proyecto de ws o ud tendremos disponibles unos tipos de curva u otros.
+In the top part of the popup window we will have to indicate the ID of the curve as well as the type of curve we want to create. Depending on whether we are working with a ws or ud project, we will have available one or the other types of curve.
 
-Seleccionado el tipo de curva tendremos que asignarle pares de valores para construirla en la tabla que tenemos en la propia ventana. Disponemos de una representación de la curva para poder visualizarla una vez introducida.
+Selected the type of curve we will have to assign pairs of values to build it in the table that we have in the own window. We have a representation of the curve to be able to visualize it once introduced.
 
 Patterns
 ========
 
-Permite crear patrones para proyectos ws y ud.
+Tool that allows creating patterns for ws and ud projects.
 
 Patterns ws
 -----------
 
 .. figure:: img/epa/pattern-ws.png
 
-     Formulario para crear patrones ws.
+     Window to create ws patterns.
 
-Tendremos que indicar el nombre del patrón en el campo *Pattern ID* y rellenar los valores correspondientes. Una vez rellenados todos los valores los veremos representados en el gráfico ubicado en la parte inferior de la ventana.
+We will have to indicate the name of the pattern in the *Pattern ID* field and fill in the corresponding values. Once all the values have been filled in, we will see them represented in the graph located in the bottom part of the window.
 
-Los patrones de 24 horas deberán introducirse en dos filas de 12 valores.
+The 24 hours patterns should be entered in two rows of 12 values.
 
 Patterns ud
 -----------
 
 .. figure:: img/epa/pattern-ud.png
 
-     Formulario para crear patrones ud.
+     Window to create ud patterns.
 
-Tendremos que indicar el nombre del patrón en el campo *Pattern ID*, especificar su tipo y rellenar los valores correspondientes. Una vez rellenados todos los valores los veremos representados en el gráfico ubicado en la parte inferior de la ventana.
+We will have to indicate the name of the pattern in the *Pattern ID* field, specify its type and fill in the corresponding values. Once all the values have been filled in, we will see them represented in the graph located in the bottom part of the window.
 
 Timeseries (ud)
 ===============
 
-Permite crear series temporales de distintos tipos.
+Tool that allows creating time series of different types.
 
 .. figure:: img/epa/timeseries.png
 
-     Formulario para crear series temporales.
+     Window to create time series.
 
-Tendremos que indicar el nombre de la serie temporal en el campo *Time Series ID*, el tipo de serie temporal en *Time Series Type*, el tipo de tiempo en *Times Type*, rellenar los valores de la serie temporal así 
-como marcar la casilla *Activo* para poder tenerla disponible.
+We will have to indicate the name of the time series in the *Time Series ID* field, the type of time series in *Time Series Type*, the type of time in *Times Type*, fill in the values of the time series as well as mark the *Active* box to be able to have it available.
 
 Controls
 ========
 
-Permite introducir controles.
+Tool that allows introducing controls.
 
 .. figure:: img/epa/controls.png
 
-     Formulario para crear controles.
+     Window to create controls.
 
-Tendremos que indicar el sector al que pertenecerá el control, indicar si está activo y escribirlo en el cuadro de texto que tenemos disponible.
+We will have to indicate the sector to which the control belongs, indicate if it is active and write it in the text box that we have available.
 
 Rules (ws)
 ==========
 
-Permite introducir reglas.
+Tool that allows introducing rules.
 
 .. figure:: img/epa/rules.png
 
-     Formulario para crear reglas.
+     Window to create rules.
 
-Tendremos que indicar el sector al que pertenecerá la regla, indicar si está activa y escribirla en el cuadro de texto que tenemos disponible.
+We will have to indicate the sector to which the rule belongs, indicate if it is active and write it in the text box that we have available.
 
 Lids (ud)
 =========
 
-Permite introducir los *Low Impact Developments*, (desarrollos de bajo impacto, también llamados SUDS o sistemas urbanos de drenaje sostenible).
+Tool that allows introducing the *Low Impact Developments*, (low impact developments, also called SUDS or sustainable urban drainage systems).
 
 .. figure:: img/epa/lids.png
 
-     Formulario para crear lids.
+     Window to create lids.
 
-Para crear un Lid tendremos que seleccionar uno de los disponibles en el desplegable *LID Type* y rellenar sus datos en las pestañas correspondientes que se encuentran a la derecha.
-Dependiendo del tipo de Lid escogido tendremos unas pestañas u otras.
+To create a Lid we will have to select one of the available in the dropdown *LID Type* and fill in its data in the corresponding tabs that are found on the right.
+Depending on the type of Lid chosen we will have one or the other tabs.
 
 .. note::
 
-     Los Lids disponibles en Giswater son los que están disponibles en SWMM.
+     The Lids available in Giswater are the ones available in SWMM.

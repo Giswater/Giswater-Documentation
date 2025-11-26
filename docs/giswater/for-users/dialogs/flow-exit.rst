@@ -1,17 +1,17 @@
 .. _dialog-flow-exit:
 
 ===============
-Salida de flujo
+Flow Exit
 ===============
 
-Herramienta que permite determinar todo lo que está aguas abajo de un nodo establecido. 
+Tool that allows determining everything that is downstream of a established node. 
 
 .. warning::
 
-    Para que el análisis resulte exitoso, **la red debe tener continuidad y estar digitalizada en el sentido de las aguas**
-    (de aguas arriba hacia aguas abajo).
+    To make the analysis successful, **the network must have continuity and be digitized in the direction of the water**
+    (from upstream to downstream).
 
-Para poder realizar el análisis, tras clicar en la herramienta, solo será necesario pinchar sobre el nodo en cuestión. Si la red es continua el algoritmo de cálculo
-se detendrá en el nodo de desagüe. En caso contrario, se verá una discontinuidad.
+To be able to perform the analysis, after clicking on the tool, it will only be necessary to click on the node in question. If the network is continuous the calculation algorithm
+will stop at the drain node. Otherwise, a discontinuity will be seen.
 
-Tras realizarse el análisis se cargarán un conjunto de **capas temporales** en el ToC con los resultados donde se mostrarán todos los elementos (nodos, arcos, connecs y gullys) que están aguas abajo del nodo de estudio.
+After the analysis is performed, a set of **temporal layers** will be loaded in the ToC with the results where all the elements (nodes, arcs, connecs and gullies) that are downstream of the study node will be shown.

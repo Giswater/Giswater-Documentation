@@ -28,7 +28,7 @@ fi
 
 VERSION=$1
 BRANCH=${2:-$VERSION}
-LANGUAGES=("es_CR" "es_ES" "en" "ca")
+LANGUAGES=("en")
 
 # Directories (adjust these paths if needed)
 MAIN_REPO_PATH=$(pwd)  # Main repository (current directory)

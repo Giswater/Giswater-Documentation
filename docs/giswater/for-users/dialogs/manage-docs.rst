@@ -1,13 +1,13 @@
 .. _dialog-manage-docs:
 
 ====================
-Gestor de documentos
+Manage Docs
 ====================
 
-Herramienta que permite gestionar los documentos que están vinculados con los elementos de la red.
+Tool that allows managing the documents that are linked with the elements of the network.
 
 .. figure:: img/edit/manage-docs.png
 
-     Ventana de la herramienta Gestor de documentos.
+     Window of the Manage Docs tool.
 
-Cuando queramos eliminar un documento de manera definitiva tendremos que hacerlo mediante el gestor de documentos.
+When we want to delete a document definitively we will have to do it through the manage docs tool.

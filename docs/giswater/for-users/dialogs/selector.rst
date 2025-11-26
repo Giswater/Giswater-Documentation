@@ -4,21 +4,21 @@
 Selector
 ========
 
-Herramienta que permite filtrar la información que se quiere usar en diferentes ámbitos del proyecto.
+Tool that allows filtering the information that we want to use in different scopes of the project.
 
 .. figure:: img/basic/selector-expl.png
 
-    Ventana de la pestaña Expl en el Selector para un proyecto ws.
+    Window of the Expl tab in the Selector for a ws project.
 
-Se divide en las pestañas:
+It is divided into the following tabs:
 
-- Expl: muestra un listado de todas las explotaciones que tenemos en el proyecto. Al pinchar sobre una de ellas se activará o desactivará su visualización.
-  Al activar cualquiera de ellas, se desactivarán todas las demás. Para visualizar varias hay que pulsar la tecla *Shift* del teclado a la vez que pinchamos sobre las explotaciones a visualizar.
-- Sector: muestra un listado de todos los sectores hidráulicos del proyecto. Su funcionamiento es idéntico al de las explotaciones.
-  Los que estén seleccionados serán los que se exporten en el archivo INP y, por tanto, los que se simularán hidráulicamente.
-- State: estado de los objetos a mostrar en el mapa. Se pueden visualizar los objetos operativos y/o los obsoletos.
-- Dscenario: listado de los escenarios de demanda contenidos en el proyecto. Aquellos que estén seleccionados serán los que se exportarán en el archivo INP y, por tanto, serán los que se simulen.
-- Hydro (WS): muestra un listado de los estados de los abonados que se quiere consultar. Solo se verá reflejado en la pestaña *Hydrometer* de los connec.
-- Psector: listado de los sectores de planificación contenidos en el proyecto. Aquellos que estén seleccionados se verán directamente en el mapa y serán lo que se exporten en el archivo INP.
+- Expl: shows a list of all theexplotations that we have in the project. By clicking on one of them, its display will be activated or deactivated.
+  By activating any of them, all the others will be deactivated. To view several, the *Shift* key of the keyboard has to be pressed at the same time as clicking on theexplotations to be viewed.
+- Sector: shows a list of all the hydraulic sectors of the project. Its operation is identical to that of theexplotations.
+  The ones that are selected will be the ones that will be exported in the INP file and, therefore, the ones that will be simulated hydraulically.
+- State: state of the objects to be displayed on the map. We can visualize the operative and/or obsolete objects.
+- Dscenario: list of the demand scenarios contained in the project. Those that are selected will be exported in the INP file and, therefore, will be the ones that will be simulated.
+- Hydro (WS): shows a list of the states of the subscribers that we want to consult. Only it will be reflected in the *Hydrometer* tab of the connec.
+- Psector: list of the planning sectors contained in the project. Those that are selected will be directly visible on the map and will be the ones that will be exported in the INP file.
 
 

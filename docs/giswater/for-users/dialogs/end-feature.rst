@@ -1,16 +1,16 @@
 .. _dialog-end-feature:
 
 ===========
-Dar de baja
+End Feature
 ===========
 
-Herramienta que permite cambiar a estado *Obsoleto* uno o varios elementos de la red asociándolo a un expediente de obra.
+Tool that allows changing the *Obsolete* status of one or more elements of the network by associating them with a construction file.
 
 .. figure:: img/edit/end-feature.png
 
-     Ventana de la herramienta Dar de baja.
+     Window of the End Feature tool.
 
-La ventana está formada por la pestaña *Expediente* donde tendremos que indicar los datos para dar de baja el objeto, la pestaña *Relaciones* donde tendremos que seleccionar qué tipo de objeto queremos dar de baja para luego seleccionarlo
-con el botón *Selección* y la pestaña *Info log* donde veremos un breve resumen de la operación llevada a cabo.
+The window is formed by the *File* tab where we will have to indicate the data to end the object, the *Relations* tab where we will have to select what type of object we want to end for then selecting it
+with the *Selection* button and the *Info log* tab where we will see a brief summary of the operation carried out.
 
 

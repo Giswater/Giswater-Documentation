@@ -1,17 +1,17 @@
 .. _dialog-date-selector:
 
 ==================
-Selector de fechas
+Date Selector
 ==================
 
-Herramienta que permite fijar unos valores de fechas concretos.
+Tool that allows setting specific date values.
 
 .. figure:: img/om/date-selector.png
 
-    Ventana de la herramienta Selector de fechas.
+    Window of the Date Selector tool.
 
-Al establecer las fechas de inicio y fin, se aplicará el cambio en la tabla *selector_date* de la base de datos para nuestro usuario.
+Once the start and end dates are established, the change will be applied to the *selector_date* table in the database for our user.
 
-Con esta herramienta los usuarios pueden crear consultas o vistas sobre datos con carácter temporal y relacionarlas con la tabla *selector_date*.
-Una vez cargadas estas consultas como capas en QGIS, se podrán filtrar de forma dinámica gracias a este botón, lo que puede ofrecer un gran valor añadido a la visualización 
-de ciertos datos en el mapa.
+With this tool, users can create queries or views on temporal data and relate them to the *selector_date* table.
+Once these queries are loaded as layers in QGIS, they can be filtered dynamically thanks to this button, which can offer a great added value to the visualization 
+of certain data on the map.

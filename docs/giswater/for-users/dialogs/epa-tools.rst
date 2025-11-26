@@ -9,13 +9,13 @@ EPA tools
    .. contents::
       :local:
 
-Conjunto de herramientas utilizadas en la gestión de la simulación hidráulica de las redes.
+Set of tools used in the management of the hydraulic simulation of the networks.
 
-En función de que estemos trabajando con un proyecto de abastecimiento o de saneamiento y drenaje urbano, tendremos disponibles
-unas herramientas u otras:
+Depending on whether we are working with a water supply or sanitation and urban drainage project, we will have available
+some tools or others:
 
-- Additional demand check (ws): herramienta de verificación de demanda adicional para hidrantes.
-- EPA multicalls (ws y ud): herramienta de ejecución recurrente de archivos inp.
-- Emitter calibration (ws): herramienta de calibración de emisores.
-- Static calibration (ws): herramienta de calibración estática.
-- Load IberGIS GPKG project (ud): herramienta para cargar un gpgk de un proyecto de IberGIS.
+- Additional demand check (ws): tool for checking additional demand for fire hydrants.
+- EPA multicalls (ws and ud): tool for recurring execution of inp files.
+- Emitter calibration (ws): tool for calibrating emitters.
+- Static calibration (ws): tool for static calibration.
+- Load IberGIS GPKG project (ud): tool to load a gpgk of a IberGIS project.

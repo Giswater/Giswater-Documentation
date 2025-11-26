@@ -1,7 +1,7 @@
 .. _dialog-utils-manager:
 
 ====================
-Gestor de utilidades
+Utils manager
 ====================
 
 .. only:: html
@@ -9,40 +9,39 @@ Gestor de utilidades
    .. contents::
       :local:
 
-Herramienta que incorpora las siguientes utilidades.
+Tool that incorporates the following utilities.
 
-Gestor de zonas del mapa
+Map zones manager
 ========================
 
-Herramienta para gestionar todas las zonas del mapa contenidas en el proyecto.
+Tool that allows managing all the map zones contained in the project.
 
 .. figure:: img/utils/mapzones-manager.png
 
-   Ventana del Gestor de zonas del mapa.
+   Window of the Map zones manager tool.
 
-En las distintas pestañas tenemos disponibles las zonas del mapa contenidas en el proyecto.
-Podremos configurarlas, hacerlas activas/inactivas, crearlas, actualizarlas o borrarlas.
+In the different tabs we have available the map zones contained in the project.
+We can configure them, make them active/inactive, create them, update them or delete them.
 
-Gestor de expedientes de obra
+Workcat manager
 =============================
 
-Herramienta para gestionar los expedientes de obra contenidos en el proyecto.
+Tool that allows managing the workcat files contained in the project.
 
 .. figure:: img/utils/workcat-management.png
 
-   Ventana del Gestor de expedientes de obra.
+   Window of the Workcat manager tool.
 
-Desde aquí se podrán crear y borrar expedientes de obra.
+From here we can create and delete workcat files.
 
-Haciendo doble clic sobre alguno de ellos, se abrirá en pantalla una ventana emergente con detalle de los objetos
-contenidos en el expediente seleccionado. Además, los visualizaremos seleccionados en el canvas de QGIS.
+By double clicking on one of them, a popup window will open with the details of the objects contained in the selected workcat. Additionally, we will see them selected in the QGIS canvas.
 
-Gestor de estilos
+Style manager
 =================
 
-Herramienta que nos permite gestionar los estilos de las capas del proyecto.
+Tool that allows managing the styles of the layers of the project.
 
 .. figure:: img/utils/style-management.png
 
-   Ventana del Gestor de estilos.
+   Window of the Style manager tool.
 

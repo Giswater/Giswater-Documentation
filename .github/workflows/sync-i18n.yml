@@ -37,7 +37,7 @@ jobs:
       - name: Sync latest translations from i18n repository
         run: |
           source venv/bin/activate
-          make sync-from-i18n VERSION=testing BRANCH=${GITHUB_REF_NAME}
+          make sync-from-i18n VERSION=master BRANCH=${GITHUB_REF_NAME}
         env:
           I18N_TOKEN: ${{ secrets.I18N_TOKEN }}
           I18N_REPO_URL: ${{ secrets.I18N_REPO_URL }}
@@ -50,7 +50,7 @@ jobs:
       - name: Sync Translations to i18n Repository
         run: |
           source venv/bin/activate
-          make sync-to-i18n VERSION=testing BRANCH=${GITHUB_REF_NAME}
+          make sync-to-i18n VERSION=master BRANCH=${GITHUB_REF_NAME}
         env:
           I18N_TOKEN: ${{ secrets.I18N_TOKEN }}
           I18N_REPO_URL: ${{ secrets.I18N_REPO_URL }}

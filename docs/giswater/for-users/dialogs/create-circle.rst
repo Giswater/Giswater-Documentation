@@ -1,17 +1,17 @@
 .. _dialog-create-circle:
 
 =============
-Crear círculo
+Create Circle
 =============
 
-Herramienta que permite dibujar círculos auxiliares con los que ayudarse para digitalizar con mayor precisión.
+Tool that allows drawing auxiliary circles with which to help digitize with greater precision.
 
 .. figure:: img/edit/create-circle.png
 
-     Ventana de la herramienta Crear círculo.
+     Window of the Create Circle tool.
 
-Lo único que tendremos que hacer para dibujar el círculo es establecer el punto sobre el cual lo queremos e indicar su radio.
+The only thing we have to do to draw the circle is to set the point on which we want it and indicate its radius.
 
-Dependiendo de dónde queramos dibujar el círculo tendremos que configurar las opciones de autoensamblado.
+Depending on where we want to draw the circle we will have to configure the autoassembly options.
 
-El círculo creado se añade a la capa *v_edit_cad_auxcircle* la cual se cargará en el ToC.
+The created circle is added to the *v_edit_cad_auxcircle* layer which will be loaded in the ToC.

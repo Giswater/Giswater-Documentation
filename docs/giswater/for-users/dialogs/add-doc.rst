@@ -1,17 +1,17 @@
 .. _dialog-add-doc:
 
 ================
-Añadir documento
+Add Document
 ================
 
-Herramienta que permite añadir información contenida en documentos tipo Word, Excel, fotos...
+Tool that allows adding information contained in documents of type Word, Excel, photos...
 
 .. figure:: img/edit/add-doc.png
 
-     Ventana de la herramienta Añadir documento.
+     Window of the Add Document tool.
 
-Para añadir un documento podremos hacerlo a través del botón *Añadir documento* de la barra de herramientas *Edit*, mediante el formulario de atributos del objeto yendo a la pestaña *Documento* y pinchando en el botón *Documento nuevo* o 
-con el *Gestor de documentos*.
+To add a document we can do it through the *Add Document* button in the *Edit* toolbar, through the object attribute form going to the *Document* tab and clicking on the *New Document* button or 
+with the *Document Manager*.
 
-En el formulario para añadir un documento especificaremos su tipo en el desplegable *Tipo doc* así como la ruta del mismo en la pestaña *Documento*.
-A continuación, en la pestaña *Relaciones* seleccionaremos el objeto al cual queremos añadir el documento.
+In the form to add a document we will specify its type in the *Document Type* dropdown and the path in the *Document* tab.
+Next, in the *Relations* tab we will select the object to which we want to add the document.

@@ -1,25 +1,25 @@
 .. _dialog-profile-tool:
 
 =====================
-Herramienta de perfil
+Profile tool
 =====================
 
-Herramienta que permite dibujar el perfil longitudinal existente entre dos nodos.
+Tool that allows drawing the longitudinal profile existing between two nodes.
 
 .. figure:: img/om/profile-tool.png
 
-    Ventana de la Herramienta de perfil.
+    Window of the Profile tool.
 
-Pinchando sobre el botón *Set nodes* podremos seleccionar los dos nodos respecto de los cuales queremos dibujar el perfil longitudinal.
-Una vez establecidos, veremos listados todos los arcos que se dibujarán y podremos representarlo pinchando sobre el botón *Draw profile*.
+Clicking on the *Set nodes* button we will be able to select the two nodes regarding which we want to draw the longitudinal profile.
+Once established, we will see listed all the arcs that will be drawn and we will be able to represent it by clicking on the *Draw profile* button.
 
-Si queremos, podremos guardar un perfil pinchando en el botón *Save profile*. Para recuperarlo pincharemos en el botón *Load profile* y para borrarlo y poder calcular otro pincharemos en el botón *Clear profile*.
+If we want, we can save a profile by clicking on the *Save profile* button. To recover it we will have to click on the *Load profile* button and to delete it and be able to calculate another one we will have to click on the *Clear profile* button.
 
-Todos los perfiles se guardan en la tabla *om_profile* de la base de datos.
+All the profiles are saved in the *om_profile* table of the database.
 
-Además, en la herramienta podremos especificar una distancia mínima entre conexiones para ser representadas en el perfil en *Vnode Min Dist* junto con un título y una fecha.
+In addition, in the tool we will be able to specify a minimum distance between connections to be represented in the profile in *Vnode Min Dist* together with a title and a date.
 
-Una vez representado el perfil podremos ver valores de interés como elevaciones máximas de los nodos, material, diámetro y pendiente de los arcos...
+Once the profile has been represented we will be able to see interesting values such as the maximum elevations of the nodes, material, diameter and slope of the arcs...
 
-Los textos mostrados en la guitarra del perfil se pueden personalizar en la pestaña *Admin* a través del botón *Configuración* de Giswater en el apartado *Profile guitar legend configuration* 
-en el apartado O&M.
+The texts shown in the guitar of the profile can be customized in the *Admin* tab through the *Configuration* button of Giswater in the *Profile guitar legend configuration* 
+in the O&M section.

@@ -1,18 +1,18 @@
 .. _dialog-manage-visit:
 
 =================
-Gestor de visitas
+Manage Visit
 =================
 
-Herramienta que permite gestionar las visitas existentes.
+Tool that allows managing the existing visits.
 
 .. figure:: img/om/manage-visit.png
 
-    Ventana de la herramienta Gestor de visitas.
+Window of the Manage Visit tool.
 
-El formulario contiene una tabla con todas las visitas realizadas en el proyecto así como sus datos.
+The form contains a table with all the visits performed in the project as well as their data.
 
-Desde aquí podemos abrir o borrar una visita utilizando los botones correspondientes así como crear una nueva. También podemos filtrar por el campo *ext_code*.
+From here we can open or delete a visit using the corresponding buttons as well as create a new one. We can also filter by the *ext_code* field.
 
-En aquellos casos en los que una visita tenga geometría, también podremos abrirla utilizando el botón *Info Giswater*.
+In those cases where a visit has geometry, we can also open it using the *Info Giswater* button.
 

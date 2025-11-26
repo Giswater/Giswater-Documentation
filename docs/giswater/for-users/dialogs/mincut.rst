@@ -1,23 +1,22 @@
 .. _dialog-mincut:
 
 =================
-Polígono de corte
+Mincut
 =================
 
-Herramienta que permite calcular el tamaño de red afectada y las válvulas a cerrar en el caso de querer dejar sin abastecimiento de agua un punto concreto.
+Tool that allows calculating the size of the affected network and the valves to close in case we want to leave a specific point without water supply.
 
 .. figure:: img/om/mincut.png
 
-    Ventana de la herramienta Polígono de corte.
+    Window of the Mincut tool.
 
-Para que el polígono de corte funcione correctamente se deben cumplir unos requisitos:
+To make the mincut work correctly, some requirements must be met:
 
-- La topología arco-nodo debe ser correcta, es decir, todos los arcos deben tener informado los campos *node_1* y *node_2*.
-- Los campos *closed* y *broken* de las válvulas no pueden tener valor *NULL*.
-- En la tabla *config_graph_mincut* hay que configurar los nodos que aportan agua al sistema (generalmente, los depósitos). Si alguno de los tramos que llega a este nodo es el de 
-  la red de alta, hay que configurarlo en la columna *paramenters* como *inletArc*. Todos los que no estén en esta tabla se considerarán tramos de salida.
-- En la tabla *cat_feature_node* hay que establecer qué tipo de válvulas se pueden utilizar para realizar el cierre. Hay que poner el valor *MINSECTOR* en la columna *graph_delimiter*.
+- The arc-node topology must be correct, that is, all arcs must have the *node_1* and *node_2* fields filled in.
+- The *closed* and *broken* fields of the valves cannot have a *NULL* value.
+- In the *config_graph_mincut* table we have to configure the nodes that provide water to the system (usually, the tanks). If any of the sections that reach this node is the high network, it has to be configured in the *paramenters* column as *inletArc*. All those that are not in this table will be considered as output sections.
+- In the *cat_feature_node* table we have to set what type of valves can be used to perform the closure. We have to put the value *MINSECTOR* in the *graph_delimiter* column.
 
-Podremos calcular el polígono de corte si, tras clicar sobre el botón *Polígono de corte automático*, pinchamos en el punto de la red afectado.
+We can calculate the mincut if, after clicking on the *Automatic mincut* button, we click on the affected point of the network.
 
-Se mostrará en pantalla la zona afectada así como las válvulas sobre las que hay que operar. En el ToC aparecerá un grupo de capas con el resultado.
+The affected area as well as the valves on which we have to operate will be displayed on screen. A group of layers with the result will appear in the ToC.

@@ -2,9 +2,9 @@
 #
 
 # You can set these variables from the command line.
-LANG            = es_CR
+LANG            = en
 # currently we are building for the following languages, if you want yours to be build: ask!
-LANGUAGES       = es_CR en # es_ES ca # pt_PT pt_BR
+LANGUAGES       = en # es_ES ca # pt_PT pt_BR
 SPHINXOPTS      =
 # Use the tag i18n to filter text based on whether we are translating or not
 SPHINXINTLOPTS  = $(SPHINXOPTS) -D language=$(LANG) -t i18n
@@ -14,7 +14,7 @@ SOURCEDIR       = .
 BUILDDIR        = build
 # to be able to run the Makefile in a docker you have to mount (with -v) your site dir on /site
 SITEDIR         = ./site
-VERSION         = feat/change-main-language
+VERSION         = master
 
 # needed for Sphinx > 4.5?
 export LC_ALL=C.UTF-8

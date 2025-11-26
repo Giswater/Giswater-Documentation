@@ -1,13 +1,13 @@
 .. _dialog-manage-element:
 
 ===================
-Gestor de elementos
+Manage Element
 ===================
 
-Herramienta que permite gestionar los elementos que están vinculados con los elementos de la red.
+Tool that allows managing the elements that are linked with the elements of the network.
 
 .. figure:: img/edit/manage-element.png
 
-     Ventana de la herramienta Gestor de elementos.
+     Window of the Manage Element tool.
 
-Cuando queramos eliminar un elemento de manera definitiva tendremos que hacerlo mediante el gestor de elementos.
+When we want to delete an element definitively we will have to do it through the manage element tool.

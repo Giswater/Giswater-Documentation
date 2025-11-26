@@ -2,18 +2,6 @@
 Giswater Documentation |version|
 ===================================
 
-.. only:: testing
-
-  .. attention::  You are reading the test version of the Giswater documentation,
-    a work in progress that includes the latest changes in the software and may
-    document features not yet available or compatible with Giswater.
-
-.. only:: not testing
-
-  .. hint:: Looking for documentation for newer versions than
-    |version|? Check out the
-    `test documentation <https://docs.giswater.org/testing/es_CR/>`_.
-
 .. note:: Giswater documentation is available in several languages and versions.
   Expand the :guilabel:`Giswater Documentation` menu at the bottom of the
   sidebar to see the list.
