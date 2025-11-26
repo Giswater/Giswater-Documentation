@@ -1,7 +1,7 @@
 .. _dialog-config:
 
 =========================
-Configuración de Giswater
+Config
 =========================
 
 .. only:: html
@@ -9,17 +9,17 @@ Configuración de Giswater
    .. contents::
       :local:
 
-Herramienta donde podremos configurar distintos aspectos de Giswater.
+Tool where we can configure different aspects of Giswater.
 
-La ventana está formada por cinco pestañas, en cada una de las cuales podremos
-establecer la configuración de Giswater.
+The window is formed by five tabs, in each of which we can
+establecer the configuration of Giswater.
 
-Herramienta para gestionar todas las zonas del mapa contenidas en el proyecto.
+Tool to manage all the zones of the map contained in the project.
 
 .. figure:: img/utils/config.png
 
-   Ventana de la Configuración de Giswater.
+   Window of the Config tool.
 
 .. warning::
   
-   Dependiendo de los permisos del usuario podría no estar disponible alguna de las pestañas.
+   Depending on the user's permissions, some of the tabs may not be available.

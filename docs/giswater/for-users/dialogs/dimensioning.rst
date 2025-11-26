@@ -1,17 +1,17 @@
 .. _dialog-dimensioning:
 
 ===========
-Acotaciones
+Dimensioning
 ===========
 
 .. warning::
 
-     Antes de crear una acotación tendremos que configurar **obligatoriamente** las opciones de autoensamblado.
+     Before creating a dimensioning we will have to configure **obligatorily** the autoassembly options.
 
-Herramienta que permite crear acotaciones que se utilizan como apoyo sobre el mapa.
+Tool that allows creating dimensionings that are used as support on the map.
 
 .. figure:: img/edit/dimensioning.png
 
-     Ventana de la herramienta Acotaciones.
+     Window of the Dimensioning tool.
 
-Tras haber dibujado la línea de acotación, rellenaremos la ventana emergente con los datos necesarios.
+After having drawn the dimensioning line, we will fill in the pop-up window with the necessary data.

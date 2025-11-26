@@ -1,7 +1,7 @@
 .. _additional-toolbars-audit:
 
 ======
-Módulo Audit
+Audit Module
 ======
 
 .. only:: html
@@ -9,116 +9,116 @@ Módulo Audit
    .. contents::
       :local:
 
-El módulo de auditoría en Giswater está basando en la incorporación de un nuevo esquema en la base de datos, el cual llamaremos **audit**. En este documento se explicará como se pone en marcha y como se usan las herramientas vinculadas a este esquema, el cual irá almacenando información de los cambios hechos en nuestros esquemas de trabajos Giswater.
+The audit module in Giswater is based on the addition of a new schema in the database, which we will call **audit**. In this document we will explain how to set it up and how to use the tools linked to this schema, which will store information about the changes made in our Giswater work schemas.
 
 
-Inicialización y gestión del esquema audit
+Initialization and management of the audit schema
 ======
 
-La primera fase en la implementación del entorno de auditoría consiste en la configuración del esquema audit en la base de datos PostgreSQL. Para facilitar este proceso y garantizar una gestión eficiente, se ha desarrollado una herramienta avanzada de administración dentro del plugin Giswater. Esta funcionalidad está disponible exclusivamente para usuarios con privilegios de administración y se encuentra en la pestaña “Avanzado” del panel de gestión de esquemas.
+The first phase in the implementation of the audit environment consists in the configuration of the audit schema in the PostgreSQL database. To facilitate this process and ensure efficient management, an advanced management tool has been developed within the Giswater plugin. This functionality is available exclusively for users with administrative privileges and is located in the “Advanced” tab of the schema management panel.
 
 .. figure:: img/gw-audit-manager.png
 
-   Formulario para gestionar esquema audit
+   Form for managing audit schema
 
-La herramienta se compone de tres funcionalidades principales, cada una accesible mediante un botón específico:
-1. **Crear esquema de auditoría de base de datos.** Esta opción ejecuta el proceso de creación del esquema audit, utilizando los recursos contenidos en las carpetas del plugin ``giswater\dbmodel\audit\structure`` y ``giswater\dbmodel\audit\audit_checkproject``. Los recursos utilizados incluyen:
+The tool consists of three main functionalities, each accessible through a specific button:
+1. **Create database audit schema.** This option executes the process of creating the audit schema, using the resources contained in the plugin folders ``giswater\dbmodel\audit\structure`` and ``giswater\dbmodel\audit\audit_checkproject``. The resources used include:
 
-    - Archivos DDL y DDLVIEW: Definen la estructura de tablas y vistas necesarias.
-    - Archivos DML: Establecen los procedimientos para la manipulación de datos en las tablas de auditoría.
-    - Scripts de tipo Report: Incorporan funcionalidades complementarias a la caja de herramientas de Giswater.
-    - Definiciones de Roles: Configuran los permisos requeridos para una correcta gestión del esquema.
+    - DDL and DDLVIEW files: Define the necessary table and view structures.
+    - DML files: Establish procedures for data manipulation in audit tables.
+    - Report type scripts: Incorporate complementary functionalities to the Giswater toolbar.
+    - Role definitions: Configure the required permissions for proper schema management.
 
-2. **Activar entorno de auditoría.** Esta funcionalidad permite activar el entorno audit para el esquema GIS actualmente en uso. Para ello, se utilizan los scripts disponibles en la carpeta ``giswater\dbmodel\audit\activate``.
-Antes de completar la activación, la herramienta genera automáticamente una imagen de la red operativa en el esquema audit, la cual servirá como punto de referencia inicial. Esta imagen constituirá el estado más antiguo consultable durante los procesos de auditoría.
-El esquema GIS objetivo de la activación se determina en función de la conexión activa del usuario, visible en la interfaz del panel.
+2. **Activate audit environment.** This functionality allows activating the audit environment for the currently used GIS schema. To do this, the scripts available in the folder ``giswater\dbmodel\audit\activate`` are used.
+Before completing the activation, the tool automatically generates an image of the operational network in the audit schema, which will serve as the initial reference point. This image will constitute the oldest consultable state during the audit processes.
+The GIS schema target of the activation is determined based on the active user connection, visible in the panel interface.
 
-3. **Actualizar auditoría.** Esta opción permite aplicar cambios sobre una instancia de GIS previamente configurada con el entorno de auditoría. Nos permite actualizar los parámetros de configuración o incorporar nuevas capas auditadas, sin necesidad de reiniciar el esquema completo.
+3. **Update audit.** This option allows applying changes over a previously configured GIS instance with the audit environment. It allows updating the configuration parameters or incorporating new audit layers, without the need to restart the entire schema.
 
-4. **Activar herramientas adicionales en el complemento Giswater**. Cuando el módulo ya esté en marcha, será el momento de activar la visualización de las 2 herramientas desarrolladas para la consulta de datos de auditoría. Estas se integran en las barras de herramientas existentes en Giswater, pero en proyectos dónde no se ha activado el módulo de auditoría, se recomienda mantenerlas escondidas, pues no serían para nada funcionales.
-Para activarlas hay que ir al menú Giswater, en el apartado Avanzado, y cambiar el valor a True de la variable ``audit_active`` dentro del grupo ``toolbars_add``. Esto habrá que hacerlo en cada cliente de QGIS.
+4. **Activate additional tools in the Giswater plugin**. When the module is already running, it is time to activate the visualization of the 2 tools developed for the audit data query. These are integrated into the existing Giswater toolbars, but in projects where the audit module has not been activated, it is recommended to keep them hidden, as they would not be functional at all.
+To activate them, you have to go to the Giswater menu, in the Advanced section, and change the value to True of the ``audit_active`` variable within the ``toolbars_add`` group. This will have to be done in each QGIS client.
 
 .. figure:: img/advanced-menu-audit.png
 
-   Configuración avanzada dónde activar las herramientas del módulo audit
+   Advanced configuration where to activate the audit module tools
 
-Previo a la puesta en marcha, el administrador del sistema debe realizar una configuración detallada del entorno audit, ajustando los parámetros según los requerimientos téc-nicos del proyecto. Los parámetros configurables son los siguientes:
+Before starting, the system administrator must perform a detailed configuration of the audit environment, adjusting the parameters according to the technical requirements of the project. The configurable parameters are the following:
 
-- Frecuencia de generación de imágenes de red: Determina el intervalo de días a partir del cual se genera automáticamente una nueva imagen completa del es-tado de la red.
-- Retención de imágenes de red: Establece el número de días durante los cuales cada imagen histórica permanecerá disponible. Al superar este umbral, las imá-genes se eliminan del sistema de forma automática.
-- Elementos GIS auditables: Define qué elementos de la red deben ser objeto de seguimiento. Para ello, se especifican las tablas concretas que se incluirán en el proceso de auditoría.
+- Frequency of network image generation: Determines the interval of days from which an automatically generated new complete image of the network state is generated.
+- Retention of network images: Sets the number of days during which each historical image will remain available. When this threshold is exceeded, the images are automatically deleted from the system.
+- GIS elements auditables: Define which elements of the network must be subject to tracking. For this, the specific tables that will be included in the audit process are specified.
 
-Todos estos valores son modificables en cualquier momento por parte del administrador. Cualquier cambio realizado deberá ser aplicado mediante la funcionalidad “Actualizar auditoría”, a fin de que el sistema adopte la nueva configuración de forma efectiva e inmediata.
+All these values can be modified at any time by the administrator. Any change made should be applied through the “Update audit” functionality, so that the system adopts the new configuration in an effective and immediate manner.
 
-Implicaciones de la activación del entorno audit
+Implications of the activation of the audit environment
 ======
-La activación del entorno de auditoría en Giswater implica la integración de un mecanismo transversal de trazabilidad dentro del GIS, que registra de forma estructurada todos los cambios efectuados sobre los datos geoespaciales. Este registro se realiza automáticamente en la tabla **log** ubicada en el esquema audit, lo que garantiza un control exhaustivo sobre la evolución de la red.
-A partir de este momento, cualquier operación de modificación ejecutada sobre las capas del modelo —ya sea una inserción, una actualización o una eliminación— genera una entrada correspondiente en dicha tabla, permitiendo la reconstrucción precisa de cada estado anterior de los objetos gestionados.
-El comportamiento es el siguiente según el tipo de operación:
-- **Inserción**: Se registra el nombre del esquema y de la tabla afectada, el usuario que realiza la operación, el tipo de acción (INSERT), los datos actuales del objeto insertado (en formato JSON), el comando ejecutado y la fecha/hora de la operación.
-- **Actualización**: Se registra la información del esquema, tabla, usuario y tipo de acción (UPDATE), así como los datos anteriores y actuales del objeto (ambos en formato JSON), junto con el comando SQL ejecutado y la marca temporal correspondiente.
-- **Eliminación**: Se conserva el esquema y tabla afectados, el usuario, el tipo de acción (DELETE), los datos anteriores del objeto (JSON), el comando ejecutado y la fecha/hora de ejecución.
+The activation of the audit environment in Giswater implies the integration of a transversal tracking mechanism within the GIS, which records all changes made on spatial data in a structured manner. This record is automatically made in the **log** table located in the audit schema, which guarantees an exhaustive control over the evolution of the network.
+From this moment on, any modification operation executed on the model layers —whether an insertion, an update or a deletion— generates a corresponding entry in this table, allowing the precise reconstruction of each previous state of the managed objects.
+The behavior is as follows according to the type of operation:
+- **Insertion**: The name of the affected schema and table, the user performing the operation, the action type (INSERT), the current data of the inserted object (in JSON format), the executed command and the date/time of the operation are recorded.
+- **Update**: The schema, table, user and action type (UPDATE) information, as well as the previous and current object data (both in JSON format), together with the executed SQL command and the corresponding timestamp are recorded.
+- **Deletion**: The affected schema and table, user, action type (DELETE), previous object data (JSON), executed command and execution date/time are recorded.
 
-La columna de datos en formato JSON proporciona una representación estructurada del objeto completo, incluyendo todos los atributos existentes en la tabla en el momento de la operación. Esta característica permite no solo conocer qué valores han cambiado, sino también reproducir con total fidelidad el estado anterior o posterior de cualquier entidad, tanto en términos alfanuméricos como geométricos.
+The JSON data column provides a structured representation of the complete object, including all attributes existing in the table at the time of the operation. This feature allows not only knowing which values have changed, but also reproducing with total fidelity the previous or subsequent state of any entity, both in alphanumeric and geometric terms.
 
 .. figure:: img/log-table.png
 
-   Table log con registros de modificaciones hechas
+   Table log with records of modifications made
 
-Este mecanismo de almacenamiento constituye la base para la gestión de versionado dentro del GIS, ya que permite realizar consultas históricas, auditorías de cambios, y procesos de restauración de versiones anteriores de forma selectiva y controlada. La información contenida en el esquema audit se convierte, por tanto, en un activo estratégico para garantizar integridad, trazabilidad y capacidad de recuperación ante errores o modificaciones no deseadas.
+This storage mechanism constitutes the basis for versioning management within the GIS, as it allows performing historical queries, change audits, and restoration processes of previous versions in a selective and controlled manner. The information contained in the audit schema therefore becomes a strategic asset to ensure integrity, traceability and recovery capacity in the face of errors or unwanted modifications.
 
-Herramienta de inspección de cambios
+Change inspection tool
 ======
-Una vez almacenada la información relativa a las operaciones realizadas sobre los objetos del GIS, se habilita la posibilidad de consultar versiones históricas directamente desde la interfaz de usuario.
+Once the information related to the operations performed on the GIS objects has been stored, it is possible to query historical versions directly from the user interface.
 
-Para ello, se incorpora una nueva funcionalidad en los formularios de los objetos, accesible mediante un botón específico en el conjunto de herramientas. Al activar esta opción, el sistema realiza una consulta en el esquema audit, localizando todas las operaciones registradas sobre el objeto en cuestión —identificado por su clave primaria— y presentando los resultados en un formulario adicional. Esta lista de versiones, ordenada cronológicamente, permite examinar la evolución completa del objeto a lo largo del tiempo.
+To do this, a new functionality is incorporated into the object forms, accessible through a specific button in the toolbar. When this option is activated, the system performs a query in the audit schema, locating all operations registered on the object in question —identified by its primary key— and presenting the results in an additional form. This list of versions, ordered chronologically, allows examining the complete evolution of the object over time.
 
 .. figure:: img/audit-custom-form.png
 
-   Botón para la herramienta de inspección de cambios
+   Button for the change inspection tool
 
-Cada entrada en la lista representa un instante histórico vinculado a una operación concreta (inserción, modificación o eliminación), e incluye tanto los atributos del objeto como su geometría, reflejando fielmente el estado del mismo en ese momento. 
+Each entry in the list represents a historical instant linked to a specific operation (insertion, modification or deletion), and includes both the object attributes and its geometry, faithfully reflecting the state of the object at that moment. 
 
 .. figure:: img/audit-object-manager.png
 
-   Formulario de la herramienta de inspección de cambios
+   Form for the change inspection tool
 
-Esta herramienta no solo potencia la trazabilidad, sino que constituye la base para acciones de inspección detallada y restauración selectiva, mediante las siguientes utilidades:
-- Botón **Abrir**: Permite seleccionar un registro de la lista y visualizar en un formulario auxiliar los valores de los atributos afectados por la operación, mostrando tanto el estado anterior como el nuevo. Esto facilita, de forma clara e inmediata, la comprensión del cambio aplicado y su impacto.
-- Botón **Fecha abierta**: Ofrece la posibilidad de seleccionar una fecha en la que existan registros de modificación, mostrando en un único formulario auxiliar todos los cambios auditados en ese día. Esta funcionalidad resulta especialmente útil para comparar el estado del objeto antes del inicio y después del cierre de la jornada laboral, permitiendo una revisión completa de las modificaciones efectuadas en la fecha seleccionada.
+This tool not only strengthens traceability, but constitutes the basis for detailed inspection and selective restoration actions, through the following utilities:
+- **Open**: Allows selecting a record from the list and viewing in an auxiliary form the values of the attributes affected by the operation, showing both the previous and new state. This facilitates, in a clear and immediate way, the understanding of the applied change and its impact.
+- **Open date**: Offers the possibility of selecting a date on which there are modification records, showing in a single auxiliary form all the audit changes made on that day. This functionality is particularly useful for comparing the object state before and after the end of the working day, allowing a complete review of the modifications made on the selected date.
 
 .. figure:: img/audit-object-values.png
 
-   Formulario de la herramienta de inspección de cambios con un registro seleccionado para ver específicamente qué cambios se hicieron
+   Form for the change inspection tool with a record selected to specifically see what changes were made
 
-Herramienta de recuperación temporal del estado de la red
+Temporal recovery tool for the network state
 ======
-A partir de la información registrada por el entorno de auditoría, se ha desarrollado una nueva utilidad dentro de Giswater que permite reconstruir de forma precisa el estado histórico de la red en una fecha concreta, facilitando así tareas de análisis, diagnóstico o auditoría avanzada.
+Based on the information registered by the audit environment, a new utility within Giswater has been developed that allows reconstructing the historical state of the network on a specific date in a precise manner, facilitating analysis, diagnosis or advanced audit tasks.
 
-Al tratarse de una herramienta útil para cualquier usuario de Giswater, se ha incrustado en la barra de herramientas de Utilidades (previa activación necesaria).
+Since this tool is useful for any Giswater user, it has been embedded in the Utilities toolbar (necessary activation required).
 
 .. figure:: img/toolbar-audit-utilities.png
 
-   Herramienta de recuperación temporal del estado de la red, incrustada en la barra de Utilidades
+   Temporal recovery tool for the network state, embedded in the Utilities toolbar
 
 Esta funcionalidad permite al usuario configurar una serie de parámetros clave a través de un formulario específico:
-- Fecha de referencia: Permite seleccionar el momento temporal del cual se desea recuperar el estado de la red.
-- Extensión espacial: Se puede definir el área geográfica de análisis de dos maneras: mediante una herramienta de dibujo sobre el lienzo de QGIS o reutilizando la extensión visible actual del mapa.
-- Elementos a recuperar: El usuario puede seleccionar uno o varios tipos de objeto sobre los cuales se desea aplicar la reconstrucción: arcos, nodos, conexiones, links, elementos o documentos.
+- Reference date: Allows selecting the temporal moment from which the network state is to be recovered.
+- Spatial extension: The geographical area of analysis can be defined in two ways: using a drawing tool on the QGIS canvas or reusing the current visible map extent.
+- Elements to recover: The user can select one or more types of object on which the reconstruction is to be applied: arcs, nodes, connections, links, elements or documents.
 
 .. figure:: img/audit-network-manager.png
 
-   Formulario de la herramienta de recuperación temporal del estado de la red
+   Form for the temporal recovery tool for the network state
 
-Una vez establecidos los parámetros, el proceso se encarga de identificar la imagen de red más cercana anterior a la fecha seleccionada y aplica, de forma secuencial, todos los cambios registrados entre dicha imagen y la fecha objetivo. De este modo, se genera una reconstrucción fiel del estado de la red tal como se encontraba en ese momento.
+Once the parameters are set, the process identifies the closest previous network image to the selected date and applies, sequentially, all the changes registered between that image and the target date. This way, a faithful reconstruction of the network state as it was at that moment is generated.
 
-El resultado se almacena en tablas temporales, que son cargadas automáticamente en QGIS con una simbología personalizada. Esta simbología incluye categorías de color y estilo diferenciadas que permiten identificar visualmente qué elementos han sido **modificados** (naranja), cuáles han sido **eliminados** (rojo) y cuáles permanecen **sin cambios** (azul). Además, esta capa reconstruida es completamente consultable, permitiendo al usuario explorar en detalle las propiedades de cada elemento tal como estaban en la fecha seleccionada.
+The result is stored in temporary tables, which are automatically loaded in QGIS with a customized symbology. This symbology includes differentiated color and style categories that allow visually identifying which elements have been **modified** (orange), which have been **deleted** (red) and which remain **unchanged** (blue). Additionally, this reconstructed layer is completely consultable, allowing the user to explore in detail the properties of each element as they were on the selected date.
 
 .. figure:: img/audit-network-result.png
 
-   Resultado del proceso de recuperación temporal, mostrando los cambios realizados a través de distintas capas y simbologías
+   Result of the temporal recovery process, showing the changes made through different layers and symbologies
 
-Esta herramienta amplía de manera significativa las capacidades analíticas de Giswater, proporcionando una visión histórica detallada del comportamiento y evolución de la red, sin alterar la integridad de los datos operativos actuales.
+This tool significantly expands the analytical capabilities of Giswater, providing a detailed historical view of the behavior and evolution of the network, without altering the integrity of the current operational data.
 
 
 

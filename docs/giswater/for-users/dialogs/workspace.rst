@@ -1,7 +1,7 @@
 .. _dialog-workspace:
 
 ===================
-Espacios de trabajo
+Workspace
 ===================
 
 .. only:: html
@@ -9,11 +9,10 @@ Espacios de trabajo
    .. contents::
       :local:
 
-Herramienta que permite crear espacios de trabajo donde se mantendrán las selecciones
-hechas en los diferentes selectores y opciones de exportación, facilitando moverse entre
-escenarios de trabajo preconfigurados sin tener que marcar/desmarcar opciones.
+Tool that allows creating workspaces where the selections made in the different selectors and export options will be kept, 
+facilitating moving between preconfigured work scenarios without having to mark/unmark options.
 
 .. figure:: img/utils/workspace.png
 
-   Ventana de los Espacios de trabajo.
+   Window of the Workspace tool.
 

@@ -1,17 +1,17 @@
 .. _dialog-connect-to-net:
 
 =================
-Conectar a la red
+Connect to Net
 =================
 
-Herramienta que permite conectar automáticamente los connec/gully a la red mediante un link.
+Tool that allows automatically connecting the connec/gully to the network through a link.
 
 .. figure:: img/edit/connect-to-net.png
 
-     Ventana de la herramienta Conectar a la red.
+Window of the Connect to Net tool.
 
-Tras clicar en la herramienta se abrirá una ventana en la que tendremos que indicar el diámetro de la tubería (*Pipe diameter*), la distancia máxima (*Maximum distance*) y el catálogo del link (*Link catalog*).
+After clicking on the tool a window will open in which we will have to indicate the diameter of the pipe (*Pipe diameter*), the maximum distance (*Maximum distance*) and the catalog of the link (*Link catalog*).
 
-Para indicar el connec/gully a conectar podremos escribir su id en el recuadro *Connec id* y pinchar en el botón *+* para que se añada a la lista de connecs a conectar o utilizar el botón *Seleccionar en el canvas*.
+We can write its id in the *Connec id* box and click on the *+* button to add it to the list of connecs to connect or use the *Select on the canvas* button.
 
-En cuanto cliquemos en el botón *Aceptar* se habrá conectado nuestro connec/gully a la red.
+When we click on the *Accept* button, our connec/gully will be connected to the network.

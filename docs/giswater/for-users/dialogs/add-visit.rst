@@ -1,24 +1,24 @@
 .. _dialog-add-visit:
 
 =============
-Añadir visita
+Add Visit
 =============
 
-Herramienta que permite añadir una nueva visita y vincularla a elementos de la red.
+Tool that allows adding a new visit and linking it to elements of the network.
 
 .. figure:: img/om/add-visit.png
 
-     Ventana de la herramienta Añadir visita.
+     Window of the Add Visit tool.
 
-Estas visitas sirven para mantener un registro de las veces en las que los elementos de la red se han visitado en campo.
+These visits are used to keep a record of the times that the elements of the network have been visited in the field.
 
-En cada visita se pueden recoger varios parámetros de información o eventos.
+In each visit we can collect several parameters of information or events.
 
-El formulario está dividido en varias pestañas:
+The form is divided into several tabs:
 
-- Visita: recoge datos básicos sobre la visita.
-- Relaciones: muestra el elemento con el que se vincula la visita. Podremos añadirlo directamente escribiendo su id o utilizando el botón de selección. Dependiendo del elemento a añadir (arco, nodo, connec, gully o link) utilizaremos una u otra pestaña.
-- Evento: indica los parámetros e información relacionada con la visita.
-- Documento: para vincular documentos externos a la visita.
+- Visit: collects basic data about the visit.
+- Relations: shows the element with which the visit is linked. We can add it directly by writing its id or using the selection button. Depending on the element to add (arc, node, connection, gully or link) we will use one or the other tab.
+- Event: indicates the parameters and information related to the visit.
+- Document: to link external documents to the visit.
 
-También se pueden añadir visitas desde el formulario de los elementos.
+We can also add visits from the elements' form.

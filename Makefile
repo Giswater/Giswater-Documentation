@@ -2,9 +2,9 @@
 #
 
 # You can set these variables from the command line.
-LANG            = es_CR
+LANG            = en
 # currently we are building for the following languages, if you want yours to be build: ask!
-LANGUAGES       = es_CR # es_ES ca en pt_PT pt_BR
+LANGUAGES       = en es_ES ca es_ES #pt_PT pt_BR
 SPHINXOPTS      =
 # Use the tag i18n to filter text based on whether we are translating or not
 SPHINXINTLOPTS  = $(SPHINXOPTS) -D language=$(LANG) -t i18n
@@ -42,15 +42,24 @@ update-po: gettext
 
 sync-to-i18n:
 	@echo "Syncing i18n files for languages: $(LANGUAGES)"
-	./scripts/sync_translations_to_i18n.sh $(VERSION)
+	./scripts/sync_translations_to_i18n.sh $(VERSION) $(BRANCH)
 
 sync-from-i18n:
-	@echo "Syncing i18n files from i18n to gettext"
-	./scripts/sync_translations_from_i18n.sh $(VERSION)
+	@# Check if vars are missing and .env exists, then source it
+	@if [ -z "$${I18N_TOKEN}" ] && [ -f .env ]; then \
+		echo "Loading variables from .env"; \
+		set -a; . ./.env; set +a; \
+	fi; \
+	if [ -n "$${I18N_TOKEN}" ] && [ -n "$${I18N_REPO_URL}" ]; then \
+		echo "Syncing i18n files from i18n to gettext"; \
+		./scripts/sync_translations_from_i18n.sh $(VERSION) $(BRANCH); \
+	else \
+		echo "Skipping sync-from-i18n: I18N_TOKEN or I18N_REPO_URL not defined (checked env and .env)"; \
+	fi
 
 html:
 	echo "$(SPHINXOPTS) $(SPHINXINTLOPTS)"
-	if [ $(LANG) != "es_CR" ]; then \
+	if [ $(LANG) != "en" ]; then \
 		$(SPHINXBUILD) -b html "$(SOURCEDIR)" "$(BUILDDIR)/html/$(LANG)" $(SPHINXINTLOPTS) $(0); \
 	else \
 		$(SPHINXBUILD) -b html -n --keep-going "$(SOURCEDIR)" "$(BUILDDIR)/html/$(LANG)" $(SPHINXOPTS) $(0); \
@@ -71,7 +80,7 @@ full: html zip
 
 # this will build ALL languages, AND tries to rsync them to the web dir on qgis2
 # to be able to run this you will need a key on the server
-all: springclean
+all: springclean sync-from-i18n
 	@for LANG in $(LANGUAGES) ; do \
 		make LANG=$$LANG site; \
 	done

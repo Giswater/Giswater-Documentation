@@ -1,7 +1,7 @@
 .. _dialog-psector-management:
 
 ===================================
-Gestor de sectores de planificación
+Psector manager
 ===================================
 
 .. only:: html
@@ -9,9 +9,9 @@ Gestor de sectores de planificación
    .. contents::
       :local:
 
-Herramienta que permite gestionar los psector. Podremos establecer como actual, hacerlo activo, restaurarlo, crear, fusionar, duplicar, mostrar o borrar un psector.
+Tool that allows managing the psectors. We can set as current, make it active, restore it, create, merge, duplicate, show or delete a psector.
 
 .. figure:: img/masterplan/psector-management.png
 
-    Ventana de la herramienta Gestor de sectores de planificación.
+    Window of the Psector manager tool.
 

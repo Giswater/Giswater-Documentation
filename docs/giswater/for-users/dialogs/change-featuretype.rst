@@ -1,29 +1,29 @@
 .. _dialog-change-featuretype:
 
 ===========================
-Cambiar el tipo de elemento
+Change Feature Type
 ===========================
 
-Herramienta que permite cambiar el tipo de elemento de un objeto de la red por otro de un tipo distinto.
+Tool that allows changing the type of element of an object of the network by another of a different type.
 
 .. figure:: img/edit/change-feature-type.png
    
-   Ventana de la herramienta Cambiar el tipo de elemento.
+   Window of the Change Feature Type tool.
 
-El cambio lo podemos hacer entre arcos, nodos, connecs y gullys. Una vez seleccionado el elemento a cambiar, en la ventana emergente obligatoriamente deberemos especificar:
+The change can be made between arcs, nodes, connections and gullies. Once the element to change is selected, in the pop-up window we must specify:
 
-- Current feature type: tipo de elemento actual. Se selecciona por defecto.
-- New feature type: tipo de elemento al cual queremos cambiar. Seleccionaremos uno en el desplegable.
-  Tendremos disponibles todos aquellos que en el "Node feature catalog" tengan el valor *verdadero* en el campo *active*.
-- Catalog id: catálogo del nuevo elemento. Pinchando en el botón adyacente se abrirá una ventana donde especificaremos:
+- Current feature type: current element type. It is selected by default.
+- New feature type: type of element to which we want to change. We will select one in the dropdown.
+  We will have all those that in the "Node feature catalog" have the value *true* in the *active* field.
+- Catalog id: catalog of the new element. Clicking on the adjacent button will open a window where we will specify:
 
 .. figure:: img/edit/change-feature-type-catalog.png
    
-   Ventana para cambiar el catálogo al nuevo elemento.
+   Window to change the catalog to the new element.
 
-- Material: material del elemento.
-- Pn: presión nominal del elemento.
-- Dn: diámetro nominal del elemento.
-- Id: identificador del elemento.
+- Material: material of the element.
+- Pn: nominal pressure of the element.
+- Dn: nominal diameter of the element.
+- Id: identifier of the element.
 
-Además, si disponemos de información acerca del tipo de fluido, localización, categoría y función podremos seleccionarlo en *Fluid*, *Location*, *Category* y *Function*.
+Additionally, if we have information about the fluid type, location, category and function we can select it in *Fluid*, *Location*, *Category* and *Function*.

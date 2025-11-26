@@ -1,44 +1,44 @@
 ===================================
-Documentación de Giswater |version|
+Giswater Documentation |version|
 ===================================
 
-.. note:: La documentación de Giswater está disponible en varios idiomas y versiones.
-  Expande el menú :guilabel:`Documentación de Giswater` en la parte inferior de la
-  barra lateral para ver la lista.
+.. note:: Giswater documentation is available in several languages and versions.
+  Expand the :guilabel:`Giswater Documentation` menu at the bottom of the
+  sidebar to see the list.
 
 
-Bienvenido a la documentación oficial de `Giswater <https://www.giswater.org>`_,
-una guía optimizada y personalizada para el uso de Giswater en tu organización.
-Rápida, dinámica y construida para adaptarse a tus necesidades, esta documentación está
-estructurada para darte la mejor experiencia mientras navegas por las funciones de Giswater.
+Welcome to the official documentation of `Giswater <https://www.giswater.org>`_,
+an optimized and personalized guide for using Giswater in your organization.
+Fast, dynamic, and built to adapt to your needs, this documentation is
+structured to provide you the best experience while navigating Giswater's features.
 
 
-.. note:: Bienvenido a Giswater, el primer software libre con el objetivo de
-   realizar una gestión integrada del ciclo del agua (abastecimiento y saneamiento).
+.. note:: Welcome to Giswater, the first free software aimed at
+   integrated management of the water cycle (supply and sanitation).
 
-    * Envía un reporte o pull request en el `repositorio de GitHub
+    * Submit a report or pull request at the `GitHub repository
       <https://github.com/giswater/giswater/>`_.
 
-Por favor, echa un vistazo a uno de los documentos siguientes.
+Please take a look at one of the following documents.
 
 .. toctree::
    :maxdepth: 2
-   :caption: PARA USUARIOS
+   :caption: FOR USERS
 
-   Guía de inicio rápido <giswater/for-users/quickstart/steps-to-create-a-new-project>
-   Manual de usuario de Giswater <giswater/for-users/user-manual/index>
-   Trucos de usuario de Giswater <giswater/for-users/user-tricks/index>
-   Fundamentos teóricos <giswater/for-users/theoretical-foundations/introduccion>
-   Diálogos <giswater/for-users/dialogs/index>
-
-.. toctree::
-   :maxdepth: 2
-   :caption: PARA DESARROLLADORES
-
-   Documentación para desarrolladores <giswater/for-developers/index>
+   Quick Start Guide <giswater/for-users/quickstart/steps-to-create-a-new-project>
+   Giswater User Manual <giswater/for-users/user-manual/index>
+   Giswater User Tricks <giswater/for-users/user-tricks/index>
+   Theoretical Foundations <giswater/for-users/theoretical-foundations/introduccion>
+   Dialogs <giswater/for-users/dialogs/index>
 
 .. toctree::
    :maxdepth: 2
-   :caption: PARA ADMINISTRADORES
+   :caption: FOR DEVELOPERS
 
-   Documentación para administradores <giswater/for-admins/index>
+   Developer Documentation <giswater/for-developers/index>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: FOR ADMINISTRATORS
+
+   Administrator Documentation <giswater/for-admins/index>

@@ -1,7 +1,7 @@
 .. _toolbox:
 
 ================================
-Caja de herramientas de Giswater
+Giswater toolbox
 ================================
 
 .. only:: html
@@ -9,51 +9,50 @@ Caja de herramientas de Giswater
    .. contents::
       :local:
 
-La caja de herramientas contiene un conjunto de procesos propios de Giswater con los cuales podemos, entre otras cosas, detectar y corregir errores de la red.
+The toolbox contains a set of processes propios of Giswater with which we can, among other things, detect and correct errors in the network.
 
 .. figure:: img/toolbox/toolbox.png
 
-      Ventana de la Caja de herramientas de Giswater.
+      Giswater toolbox window.
 
-Al clicar sobre su botón se abrirá una ventana en la cual veremos que hay dos grandes grupos: *Procesos* y *Reportes*, cada uno de los cuales tiene unos subgrupos.
+When clicking on its button an window will open in which we will see that there are two large groups: *Processes* and *Reports*, each of which has some subgroups.
 
-Dentro de *Procesos* encontraremos herramientas orientadas a operaciones y mantenimiento (*om*), edición (*edit*), simulación hidráulica (*epa*), gestión de alternativas (*master*) y administración de la red (*admin*).
+Within *Processes* we will find tools oriented to operations and maintenance (*om*), editing (*edit*), hydraulic simulation (*epa*), alternative management (*master*) and network administration (*admin*).
 
-Dentro de *Reportes* encontraremos herramientas orientadas a informes sobre aspectos básicos de la red (*basic*) y operaciones y mantenimiento (*om*).
+Within *Reports* we will find tools oriented to reports on basic aspects of the network (*basic*) and operations and maintenance (*om*).
 
-Para ejecutar un proceso solo hay que hacer doble clic en su nombre en la caja de herramientas.
+To execute a process only double click on its name in the toolbox.
 
-Cuadro de diálogo del proceso
+Process dialog
 =============================
 
-Tras hacer doble clic sobre el proceso se abrirá un diálogo similar al mostrado en la siguiente figura.
+After double clicking on the process an dialog similar to the one shown in the following figure will open.
 
 .. figure:: img/toolbox/toolbox-dialog.png
 
-      Diálogo del proceso Check nodes duplicated de un esquema ws.
+      Process dialog for checking duplicated nodes in a ws schema.
 
-El diálogo muestra dos pestañas a la izquierda (*Config* y *Info log*), la descripción del proceso a la derecha (*Info*) y un conjunto de botones en la parte inferior.
+The dialog shows two tabs on the left (*Config* and *Info log*), the process description on the right (*Info*) and a set of buttons at the bottom.
 
-Pestaña *Config*
+Tab *Config*
 ----------------
 
-En esta pestaña debemos establecer los valores de entrada que el proceso necesita para ser ejecutado así como los parámetros de configuración que es necesario especificar.
+In this tab we must set the input values that the process needs to be executed as well as the configuration parameters that are necessary to specify.
 
-Los valores de entrada van a depender del proceso que se esté ejecutando de tal manera que el cuadro de diálogo será distinto para cada proceso.
+The input values will depend on the process that is being executed so that the dialog will be different for each process.
 
-Pestaña *Info Log*
+Tab *Info Log*
 ------------------
 
-Muestra un resumen del proceso que se ha llevado a cabo.
+Shows a summary of the process that has been carried out.
 
 .. figure:: img/toolbox/toolbox-infolog.png
 
-      Ejemplo de resumen de un proceso.
+      Example of a process summary.
 
-Resultados del proceso
+Process results
 ======================
 
-La ejecución de ciertos procesos lleva pareja la creación de unas capas temporales con los resultados. Dichas capas se cargarán en el ToC en un grupo llamado *GW Temporal Layers* y su geometría va a depender 
-de la geometría de la capa de entrada.
+The execution of certain processes involves the creation of some temporary layers with the results. These layers will be loaded in the ToC in a group called *GW Temporal Layers* and their geometry will depend on the geometry of the input layer.
 
-Para obtener información acerca de la capa resultante podremos abrir su tabla de atributos.
+To obtain information about the resulting layer we can open its attribute table.

@@ -1,7 +1,7 @@
 .. _dialog-dscenario-manager:
 
 ====================
-Escenarios dinámicos
+Dynamic Scenarios Manager
 ====================
 
 .. only:: html
@@ -9,57 +9,57 @@ Escenarios dinámicos
    .. contents::
       :local:
 
-Herramienta que permite crear escenarios de objetos de red donde podremos modificar cualquier parámetro de cualquier objeto
-sin que ello conlleve modificar datos en el inventario.
+Tool that allows creating dynamic scenarios of network objects where we can modify any parameter of any object
+without modifying data in the inventory.
 
 .. figure:: img/epa/dscenario-ws.png
 
-     Ventana de la herramienta Escenarios dinámicos para proyectos ws.
+     Window of the Dynamic Scenarios Manager tool for ws projects.
 
-Para proyectos de saneamiento y drenaje urbano tendremos disponible un menú desplegable en el botón para poder seleccionar si queremos crear
-un escenario de objetos de red (opción *Dscenario manager*), un escenario de hidrología (opción *Hydrology scenario manager*) o un escenario 
-en tiempo seco (opción *DWF scenario manager*).
+For projects of sanitation and urban drainage we will have a dropdown menu in the button to be able to select if we want to create
+a scenario of network objects (option *Dscenario manager*), a hydrology scenario (option *Hydrology scenario manager*) or a scenario 
+in dry weather (option *DWF scenario manager*).
 
 Dscenario manager (ws y ud)
 ===========================
 
-Opción a elegir cuando queramos crear un escenario de un objeto cualquiera de la red.
+Option to choose when we want to create a scenario of any object of the network.
 
-Para crearlo pincharemos en el desplegable del botón *Create* y seleccionaremos alguna de las siguientes opciones:
+To create it we will click on the dropdown of the *Create* button and select one of the following options:
 
-- Create valve dscenario from mincut (ws): permite crear un escenario de válvulas para un polígono de corte. Requiere tener creado previamente un polígono de corte.
-- Create Demand Dscenario from CRM (ws): permite crear un escenario de demanda con datos provenientes de un CRM.
-- Create Demand Dscenario from ToC (ws): permite crear un escenario de demanda con datos de la ToC de nuestro proyecto.
-- Create empty Dscenario (ws y ud): permite crear un escenario vacío.
-- Create Network Dscenario from ToC (ws): permite crear un escenario de red con datos de la ToC de nuestro proyecto.
-- Create Dscenario with values from ToC (ud): permite crear un escenario de red con datos de la ToC de nuestro proyecto.
+- Create valve dscenario from mincut (ws): allows creating a valve scenario for a cut polygon. It requires having created a cut polygon beforehand.
+- Create Demand Dscenario from CRM (ws): allows creating a demand scenario with data from a CRM.
+- Create Demand Dscenario from ToC (ws): allows creating a demand scenario with data from the ToC of our project.
+- Create empty Dscenario (ws and ud): allows creating an empty scenario.
+- Create Network Dscenario from ToC (ws): allows creating a network scenario with data from the ToC of our project.
+- Create Dscenario with values from ToC (ud): allows creating a network scenario with data from the ToC of our project.
 
-En función de la opción elegida habrá que especificar distintas opciones. Para que podamos tener el escenario disponible es **obligatorio** activar la casilla *Active*.
-Una vez creado el escenario, lo veremos listado en el gestor de escenarios.
+Depending on the option chosen we will have to specify different options. To be able to have the scenario available is **obligatory** to activate the *Active* box.
+Once the scenario is created, we will see it listed in the scenario manager.
 
-Para añadir objetos al escenario y así poder modificar sus campos, lo tendremos que seleccionar con la herramienta de selección que se encuentra dentro del propio escenario.
+To add objects to the scenario and thus be able to modify their fields, we will have to select it with the selection tool that is inside the own scenario.
 
-Los datos de los objetos se podrán modificar de tres maneras distintas: a través del gestor de escenarios, accediendo a la pestaña EPA del objeto mediante el botón *Info Giswater* y
-mediante la tabla de atributos de la capa del dscenario correspondiente.
+The data of the objects can be modified in three different ways: through the scenario manager, accessing the EPA tab of the object through the *Info Giswater* button and
+through the attributes table of the layer of the corresponding dscenario.
 
 Hydrology scenario manager (ud)
 ===============================
 
-Opción a elegir cuando queramos crear un escenario de hidrología.
+Option to choose when we want to create a hydrology scenario.
 
-Para crearlo pincharemos en el desplegable del *Create* y seleccionaremos la opción *Create empty Hydrology scenario*.
+To create it we will click on the dropdown of the *Create* button and select the *Create empty Hydrology scenario* option.
 
-En la ventana emergente tendremos que indicar el nombre del escenario, el método de infiltración, la explotación y si lo queremos activo o no.
+In the pop-up window we will have to indicate the name of the scenario, the infiltration method, the exploitation and if we want it active or not.
 
-Con el escenario creado ya se podrá construir la hidrología a utilizar.
+With the scenario created we can already build the hydrology to use.
 
 DWF scenario manager (ud)
 =========================
 
-Opción a elegir cuando queremos crear un escenario de caudales en tiempo seco (DWF).
+Option to choose when we want to create a scenario of flow in dry weather (DWF).
 
-Para crearlo pincharemos en el desplegable del *Create* y seleccionaremos la opción *Create empty DWF scenario*.
+To create it we will click on the dropdown of the *Create* button and select the *Create empty DWF scenario* option.
 
-En la ventana emergente tendremos que indicar el nombre del escenario, la explotación y si lo queremos activo o no.
+In the pop-up window we will have to indicate the name of the scenario, the exploitation and if we want it active or not.
 
-Con el escenario creado ya se podrán añadir los datos de caudal en tiempo seco.
+With the scenario created we can already add the flow data in dry weather.

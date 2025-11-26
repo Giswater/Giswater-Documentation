@@ -1,7 +1,7 @@
 .. _dialog-fastprint:
 
 ================
-Impresión rápida
+Fast Print
 ================
 
 .. only:: html
@@ -9,10 +9,10 @@ Impresión rápida
    .. contents::
       :local:
 
-Herramienta que permite, una vez que hayamos creado una composición de impresión,
-realizar mapas de manera rápida.
+Tool that allows, once we have created a print composition,
+to print maps quickly.
 
 .. figure:: img/utils/fastprint.png
 
-   Ventana de Impresión rápida.
+   Window of the Fast Print tool.
 

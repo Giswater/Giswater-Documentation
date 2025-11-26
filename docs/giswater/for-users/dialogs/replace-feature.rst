@@ -1,18 +1,18 @@
 .. _dialog-feature-replace:
 
 =================
-Reemplazar objeto
+Replace feature
 =================
 
-Herramienta que permite reemplazar un nodo, arco, connec o gully por uno nuevo sin afectar la topología. El objeto reemplazado pasa a tener estado obsoleto.
+Tool that allows replacing a node, arc, connec or gully by a new one without affecting the topology. The replaced object passes to have obsolete status.
 
-Tras seleccionar en el desplegable del botón de la herramienta el tipo de objeto a reemplazar, pincharemos sobre el objeto en cuestión.
+After selecting in the dropdown of the tool button the type of object to replace, we will click on the object in question.
 
 .. figure:: img/edit/replace-feature.png
 
-     Ventana de la herramienta Reemplazar objeto.
+     Window of the Replace feature tool.
 
-Se abrirá entonces la ventana de la herramienta donde deberemos especificar el expediente de baja (*Workcat id*), fecha de sustitución (*Replace date*), tipo actual de objeto (*Current feature type*),
-tipo nuevo de objeto (*New feature type*) y catálogo del objeto nuevo (*Catalog id*).
+Then the tool window will open where we will have to specify the withdrawal file (*Workcat id*), replacement date (*Replace date*), current type of object (*Current feature type*),
+new type of object (*New feature type*) and new object catalog (*Catalog id*).
 
-A través de las casillas de verificación podremos decidir si mantener o no ciertos aspectos del objeto.
+Through the checkboxes we will be able to decide whether to keep or not certain aspects of the object.

@@ -1,14 +1,14 @@
 ===============
-Guía del Desarrollador de Giswater
+Giswater Developer Guide
 ===============
 
-Guía para desarrolladores de Giswater.
+Guide for Giswater developers.
 
 .. TODO: Add index here
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contenido:
+   :caption: Content:
 
    notes-upgrade
 

@@ -1,7 +1,7 @@
 ===============
-Guía del Administrador de Giswater
+Giswater Administrator Guide
 ===============
 
-Guía para administradores de Giswater.
+Guide for Giswater administrators.
 
 .. TODO: Add index here

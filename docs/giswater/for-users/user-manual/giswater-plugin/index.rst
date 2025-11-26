@@ -1,29 +1,27 @@
 ===============
-Giswater Plugin
+Giswater plugin
 ===============
 
-Una de las mejoras más grandes y notables de la cuarta versión de Giswater, en comparación con las versiones anteriores,
-se puede encontrar en las herramientas del plugin. No solo se han añadido nuevas capacidades, sino que las herramientas existentes se han mejorado una a una.
+One of the most significant and notable improvements in the fourth version of Giswater, compared to previous versions,
+can be found in the tools of the plugin. Not only have new capabilities been added, but the existing tools have been improved one by one.
 
-El plugin de Giswater es la parte del software con la que el usuario debe familiarizarse más,
-ya que la mayoría de las acciones que desea realizar se pueden hacer utilizando las herramientas disponibles en el plugin.
-De una manera u otra, todo lo que desee hacer en su red se puede realizar utilizando el plugin y los botones que incorpora.
+The Giswater plugin is the part of the software with which the user must be most familiar,
+since most of the actions they want to perform can be done using the tools available in the plugin.
+In any way, everything they want to do in their network can be done using the plugin and the buttons it includes.
 
-Actualmente, Giswater tiene hasta 38 herramientas disponibles, divididas en diferentes barras de herramientas que deben asociarse con los seis roles que existen en Giswater.
-Además de estas herramientas de gestión dentro de los proyectos, a partir de la versión 3.1.105, se ha incorporado un botón que incluye las funcionalidades de crear,
-modificar y actualizar esquemas.
-
-Botón aparte de las barras de herramientas del plugin:
+Currently, Giswater has up to 38 tools available, divided into different toolbars that must be associated with the six roles that exist in Giswater.
+In addition to these management tools within projects, since version 3.1.105, a button has been added that includes the functionality of creating,
+modifying and updating schemas.
 
 .. figure:: img/giswater-plugin-toolbar.png
 
-A continuación se detallará la funcionalidad y objetivo de cada una de las herramientas.
+Next, the functionality and objective of each of the tools will be detailed.
 
 .. TODO: Añadir cada sección separada con su toctree
 
 .. toctree::
    :maxdepth: 2
-   :caption: Botones de edición
+   :caption: Editing buttons
 
    
    

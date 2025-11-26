@@ -1,7 +1,7 @@
 .. _dialog-check-project:
 
 ==================
-Verificar proyecto
+Check Project
 ==================
 
 .. only:: html
@@ -9,19 +9,19 @@ Verificar proyecto
    .. contents::
       :local:
 
-Herramienta que permite seleccionar distintas verificaciones para que Giswater realice comprobaciones
-a los datos del proyecto.
+Tool that allows selecting different verifications for Giswater to perform checks
+on the project data.
 
 .. figure:: img/utils/check-project.png
 
-   Ventana de Verificar proyecto.
+   Window of the Check Project tool.
 
-Las verificaciones disponibles son:
+The verifications available are:
 
-- Versions: chequea las versiones del software.
-- Qgis project: chequea las variables del proyecto de QGIS.
-- Check om data: chequea los datos para las operaciones y mantenimento.
-- Check graph data: chequea los datos para el grafo.
-- Check epa data: chequea los datos para la simulación epa.
-- Check plan data: chequea los datos para planificación.
-- Check admin data: chequea los datos para administración.
+- Versions: checks the versions of the software.
+- Qgis project: checks the variables of the QGIS project.
+- Check om data: checks the data for operations and maintenance.
+- Check graph data: checks the data for the graph.
+- Check epa data: checks the data for the epa simulation.
+- Check plan data: checks the data for planning.
+- Check admin data: checks the data for administration.

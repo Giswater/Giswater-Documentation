@@ -1,7 +1,7 @@
 .. _catalogs:
 
 =========
-Catálogos
+Catalogs
 =========
 
 .. only:: html
@@ -9,4 +9,4 @@ Catálogos
    .. contents::
       :local:
 
-Los catálogos que contiene Giswater son los mostrados a continuación.
+The catalogs that Giswater contains are shown below.

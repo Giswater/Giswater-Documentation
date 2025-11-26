@@ -1,15 +1,15 @@
 .. _dialog-create-point:
 
 ===========
-Crear punto
+Create Point
 ===========
 
-Herramienta que permite dibujar puntos auxiliares con los que ayudarse para digitalizar con mayor precisión en base a una recta auxiliar previamente dibujada con la propia herramienta.
+Tool that allows drawing auxiliary points with which to help digitize with greater precision based on a previously drawn auxiliary line with the own tool.
 
 .. figure:: img/edit/create-point.png
 
-     Ventana de la herramienta Crear punto.
+     Window of the Create Point tool.
 
-Una vez establecidos los puntos de la recta de apoyo, indicaremos las distancias X e Y respecto del punto inicial o final para dibujar el punto.
+Once the points of the support line are established, we will indicate the X and Y distances with respect to the initial or final point to draw the point.
 
-El punto representado se añade a la capa *v_edit_cad_auxpoint* la cual se cargará en el ToC.
+The represented point is added to the *v_edit_cad_auxpoint* layer which will be loaded in the ToC.

@@ -1,5 +1,5 @@
 =============================
-Manual de Usuario de Giswater
+User manual for Giswater
 =============================
 
 
@@ -7,12 +7,12 @@ Manual de Usuario de Giswater
    :maxdepth: 2
    :numbered: 4
 
-   introduccion
-   que-es-giswater
-   instalacion-puesta-marcha
-   creacion-conexiones-previas
-   modelo-de-datos-giswater
-   entorno-trabajo
+   introduction   
+   what-is-giswater
+   installation-and-startup
+   previous-connections-creation
+   data-model-giswater
+   work-environment
    digitalization
    toolbox
-   export-options
+   -optionsexport

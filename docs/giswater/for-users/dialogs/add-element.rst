@@ -1,14 +1,14 @@
 .. _dialog-add-element:
 
 ===============
-Añadir elemento
+Add Element
 ===============
 
-Herramienta que permite incorporar elementos asociados con los objetos de la red.
+Tool that allows incorporating elements associated with the objects of the network.
 
-Se pueden añadir dos tipos distintos de elementos:
+We can add two different types of elements:
 
-- Elementos reguladores de flujo: aquellos que regulan el flujo de un nodo a otro.
-- Elementos de carácter general: aquellos que aportan información adicional a los objetos de la red.
+- Flow regulating elements: those that regulate the flow from one node to another.
+- General elements: those that provide additional information to the objects of the network.
 
 

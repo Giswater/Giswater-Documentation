@@ -9,23 +9,23 @@ Go2Epa
    .. contents::
       :local:
 
-Herramienta que permite establecer qué sector o sectores de la red se simulan hidráulicamente así como cuáles son sus opciones de exportación.
+Tool that allows establishing which sectors or sectors of the network are simulated hydraulically as well as their export options.
 
-Desde aquí podremos exportar la red a INP para luego simularla en EPANET o SWMM o realizar el ciclo completo de simulación (exportación-simulación-importación de resultados) en el entorno de QGIS.
+From here we can export the network to INP to then simulate it in EPANET or SWMM or perform the complete simulation cycle (export-simulation-import of results) in the QGIS environment.
 
 .. figure:: img/epa/go2epa.png
 
-     Ventana de la herramienta Go2Epa.
+     Window of the Go2Epa tool.
 
-La ventana está formada por tres partes: la superior (1), la central (2) y la inferior (3).
+The window is formed by three parts: the upper part (1), the central part (2) and the lower part (3).
 
-En la parte superior, gracias a los dos botones disponibles, seleccionaremos qué zonas de la red simularemos (sector, escenario de demanda, psector...) y estableceremos sus opciones de exportación.
-Las opciones de exportación se pueden ver en detalle en la sección :ref:`export-options`.
+In the upper part, thanks to the two available buttons, we will select which areas of the network we will simulate (sector, demand scenario, psector...) and establish their export options.
+The export options can be seen in detail in the :ref:`export-options` section.
 
-En la parte central especificaremos un nombre para el resultado y marcaremos las casillas correspondientes en función del tipo de exportación que queramos realizar. Si solo queremos exportar el INP marcaremos solo la casilla correspondiente.
-Si por el contrario queremos realizar el ciclo completo, marcaremos todas las casillas e indicaremos una ruta y un nombre para los archivos INP y RPT que se generarán.
+In the central part we will specify a name for the result and mark the boxes corresponding to the type of export we want to perform. If we only want to export the INP we will mark only the corresponding box.
+If on the other hand we want to perform the complete cycle, we will mark all the boxes and indicate a path and a name for the INP and RPT files that will be generated.
 
-En la parte inferior se encuentran los botones correspondientes a las acciones aceptar, cancelar, cerrar y ayuda de esta ventana.
+In the lower part there are the buttons corresponding to the accept, cancel, close and help actions of this window.
 
-Durante la exportación del archivo INP Giswater realiza comprobaciones para verificar que el estado de la red es correcto y que no contiene ningún error. Si todas las comprobaciones se realizan con éxito, devolverá un resumen sobre el 
-análisis realizado. En caso contrario mostrará un resumen en el que veremos una serie de errores críticos (*CRITICAL ERRORS*) que habrá que corregir. Para ello podremos hacer uso de las herramientas de la caja de herramientas de Giswater.
+During the export of the INP file Giswater performs checks to verify that the state of the network is correct and that it does not contain any errors. If all the checks are successful, it will return a summary about the 
+analysis performed. In case of failure, it will show a summary in which we will see a series of critical errors (*CRITICAL ERRORS*) that we will have to correct. For this we can use the tools of the Giswater toolbox.

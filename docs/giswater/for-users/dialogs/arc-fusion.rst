@@ -1,16 +1,16 @@
 .. _dialog-arc-fusion:
 
 =============
-Fusionar arco
+Fuse Arc
 =============
 
-Herramienta que permite fusionar dos tramos existentes en un único tramo.
+Tool that allows fusing two existing arcs into a single arc.
 
 .. warning::
 
-    Los dos tramos a fusionar deben tener el mismo catálogo. Si no, la fusión no se realizará.
+    The two arcs to fuse must have the same catalog. If not, the fusion will not be performed.
 
-Al clicar sobre el botón de la herramienta y tras seleccionar el nodo a través del cual se realizará la fusión, aparecerá una ventana donde tendremos que seleccionar qué acción realizar sobre el nodo 
-(mantenerlo operativo, darlo de baja o eliminarlo).
+After clicking on the tool button and selecting the node through which the fusion will be performed, a window will appear where we will have to select what action to perform on the node 
+(keep it operational, deactivate it or delete it).
 
-Tras la fusión aparecerá una ventana resumen con información sobre el proceso.
+After the fusion, a summary window will appear with information about the process.

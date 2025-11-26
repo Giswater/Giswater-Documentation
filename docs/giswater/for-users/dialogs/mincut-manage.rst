@@ -1,13 +1,13 @@
 .. _dialog-mincut-manage:
 
 ============================
-Gestor de polígonos de corte
+Mincut Manager
 ============================
 
-Herramienta que permite hacer una gestión activa de los polígonos de corte planificados, en curso e históricos.
+Tool that allows making an active management of the planned, in progress and historical cut polygons.
 
 .. figure:: img/om/mincut-manage.png
 
-     Ventana de la herramienta Gestor de polígonos de corte.
+     Window of the Mincut Manager tool.
 
-Haciendo doble clic sobre uno de ellos podemos recuperarlo y volverlo a ver en pantalla. También podemos filtrar en base a distintos estados o tipos así como cancelar o eliminar un polígono.
+By double-clicking on one of them we can recover it and see it on screen again. We can also filter based on different states or types as well as cancel or delete a polygon.

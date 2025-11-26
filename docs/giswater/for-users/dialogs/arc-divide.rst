@@ -1,14 +1,14 @@
 .. _dialog-arc-divide:
 
 ============
-Dividir arco
+Divide Arc
 ============
 
-Herramienta que permite dividir un tramo existente con un nodo, generando dos tramos nuevos, siempre que el nodo tenga valor *verdadero* en el campo *isarcdivide* en el catálogo *Node feature catalog*.
+Tool that allows dividing an existing arc with a node, generating two new arcs, always that the node has value *true* in the *isarcdivide* field in the *Node feature catalog*.
 
-Hay dos opciones disponibles:
+There are two options available:
 
-- Arrastrar-Soltar: permite desplazar un nodo que está desconectado de la red sobre el arco que queremos dividir.
-- Seleccionado: permite seleccionar un nodo desconectado que ya está sobre el arco a dividir.
+- Drag-Drop: allows moving a node that is disconnected from the network over the arc we want to divide.
+- Selected: allows selecting a disconnected node that is already on the arc to divide.
 
-Tras realizar la operación aparecerá una ventana resumen con información sobre la operación llevada a cabo.
+After performing the operation, a summary window will appear with information about the operation carried out.

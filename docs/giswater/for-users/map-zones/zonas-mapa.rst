@@ -1,7 +1,7 @@
 .. _zonas-mapa:
 
 ==============
-Zonas del mapa
+Map zones
 ==============
 
 .. only:: html
@@ -9,49 +9,49 @@ Zonas del mapa
    .. contents::
       :local:
 
-La definición de las zonas del mapa que existen en Giswater son:
+The definition of the map zones that exist in Giswater are:
 
-Zonas del mapa administrativas
+Map administrative zones
 ==============================
 
 - Region: 
 - Province:
-- Municipality: límites municipales con los que se crearán todos los municipios que se encuentren en el ámbito de la red de estudio.
+- Municipality: municipal limits with which all municipalities that are within the scope of the study network will be created.
   En el ToC, es la única zona del mapa que no está dentro del grupo *MAP ZONES* sino que está en el grupo *BASEMAP*.
 - District:
 
-Zonas del mapa operacionales
+Map operational zones
 ============================
 
-- Macroexploitation: agrupa las explotaciones y será útil cuando se pretendan gestionar muchas de ellas.
-  Es obligatoria para todos los proyectos, no tiene geometría asociada y ya viene creada una por defecto.
-- Exploitation: es la entidad básica de gestión en los proyectos Giswater y permite delimitar zonas para que sean gestionadas de manera diferenciada.
-  Habitualmente, coinciden con los términos municipales aunque no tiene que ser así obligatoriamente. Mediante la herramienta *Selector* podemos filtrar qué explotaciones ver.
-  Es **obligatorio** crear al menos una para poder empezar a trabajar y, **obligatoriamente**, tiene que tener asociada una macroexplotación.
+- Macroexploitation: groups theexplotations and will be useful when many of them are to be managed.
+  It is mandatory for all projects, no has geometry associated and already comes created one by default.
+- Exploitation: is the basic management entity in Giswater projects and allows delimiting zones to be managed differently.
+  Usually, they coincide with municipal terms although it is not necessarily mandatory. Through the *Selector* tool we can filter whichexplotations to see.
+  It is **mandatory** to create at least one and **mandatory** to have an associated macroexploitation.
 - Macroomzone:
 - Omzone:
 
-Zonas del mapa comerciales (ws)
+Map commercial zones (ws)
 ===============================
 
 - Macrocrmzone:
 - Crmzone:
 
-Zonas del mapa funcionales
+Map functional zones
 ==========================
 
-- Macrosector: agrupa los sectores y permite gestionar los sectores hidráulicos en grandes grupos.
-- Sector: zona del mapa vinculada directamente con el modelo hidráulico. Su delimitación responde directamente a conceptos hidráulicos lo cual puede dar como resultado sectores muy grandes o muy pequeños.
-  En este sentido, un sector hidráulico puede ser solo una calle o todo un municipio. El único requisito que tiene que tener es que tenga coherencia hidráulica.
-- Presszone (ws): son zonas de la red que tienen todas la misma presión permitiendo calcular la máxima y mínima **presión estática** en la red. Sus cabeceras habituales serán los depósitos y las válvulas reductoras de presión.
-- Macrodma (ws):agrupación de las distintas DMA.
-- DMA (ws): son zonas de medición (District Meter Area) que tienen como cabecera un caudalímetro y como límite otros caudalímetros o válvulas que estén cerradas.
-  Sirven para generar agrupaciones de consumo, útiles para el cálculo de balances hidráulicos.
-- Macrodqa (ws): agrupación de las distintas DQA.
-- DQA (ws): son zonas de calidad de agua (District Quality Area) y representan aquellas zonas de la red que tienen la misma calidad de agua, seccionadas a través de sensores de muestreo y calidad.
-  Sirven para calcular el tiempo de permanencia y la evolución de parámetros de calidad en sectores de consumo.
+- Macrosector: groups the sectors and allows managing the hydraulic sectors in large groups.
+- Sector: map zone linked directly with the hydraulic model. Its delimitation responds directly to hydraulic concepts which can result in very large or very small sectors.
+  In this sense, a hydraulic sector can be only a street or an entire municipality. The only requirement it has to have is that it has hydraulic coherence.
+- Presszone (ws): are network zones that have all the same pressure allowing to calculate the maximum and minimum **static pressure** in the network. Their usual headers will be the reservoirs and the pressure reducing valves.
+- Macrodma (ws): grouping of the different DMA.
+- DMA (ws): are measurement zones (District Meter Area) that have a meter as a header and other meters or valves that are closed as a limit.
+  They are useful for generating consumption groups, useful for calculating hydraulic balances.
+- Macrodqa (ws): grouping of the different DQA.
+- DQA (ws): are quality zones (District Quality Area) and represent those zones of the network that have the same water quality, sectioned through sampling and quality sensors.
+  They are useful for calculating the time of residence and the evolution of quality parameters in consumption sectors.
 - Supplyzone (ws):
-- Minsector (ws): sector mínimo afectado por un corte en la red. Todos los elementos que pertenecen a un sector mínimo pueden actuar como un sector propiamente dicho ya que están conectados. El elemento que los delimita son las válvulas de corte.
-- Drainzone (ud): zona del mapa que **permite determinar todo lo que está aguas arriba de un nodo** o una serie de nodos que previamente han sido configurados con este fin.
-  Para ello, **la red debe tener continuidad y estar digitalizada en el sentido de las aguas (de aguas arriba hacia aguas abajo)**.
+- Minsector (ws): minimum sector affected by a cut in the network. All elements that belong to a minimum sector can act as a properly sector since they are connected. The element that delimitates them are the cut valves.
+- Drainzone (ud): map zone that **allows determining everything that is upstream of a node** or a series of nodes that have previously been configured with this purpose.
+  For this, **the network must have continuity and be digitalized in the direction of the water (from upstream to downstream)**.
 - Dwfzone: (ud):

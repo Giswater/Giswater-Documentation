@@ -1,7 +1,7 @@
 .. _dialog-gwfiletransferbutton:
 
 ===========================================
-Botón de transferencia de archivos Giswater
+Giswater File Transfer Button
 ===========================================
 
 .. only:: html
@@ -9,20 +9,20 @@ Botón de transferencia de archivos Giswater
    .. contents::
       :local:
 
-Herramienta que permite importar y exportar archivos desde Giswater.
+Tool that allows importing and exporting files from Giswater.
 
-Posee un importador de archivos CSV el cual permite importar distintos tipos de archivos utilizando
-funciones preconfiguradas.
+It has a CSV file importer which allows importing different types of files using
+preconfigured functions.
 
 .. figure:: img/utils/import-csv.png
 
-   Ventana del importador de CSV.
+   Window of the CSV importer.
 
-Para importar un archivo primero tendremos que seleccionar en el desplegable *Import type* el tipo de 
-archivo a importar.
+To import a file we will first have to select in the dropdown *Import type* the type of 
+file to import.
 
-A continuación, seleccionaremos el archivo pinchando en el botón de exploración en el apartado *File*.
+Next, we will select the file by clicking on the search button in the *File* section.
 
-Posteriormente, configuraremos el importador especificando la codificación de los caracteres (*Set of characters*),
-si ignoramos las cabeceras del archivo (*Ignore headers*), cual es el delimitador de separación (*Delimiter*), así
-como cuál es el separador decimal.
+Next, we will configure the importer specifying the character encoding (*Set of characters*),
+if we ignore the headers of the file (*Ignore headers*), which is the separator (*Delimiter*), as
+well as which is the decimal separator.

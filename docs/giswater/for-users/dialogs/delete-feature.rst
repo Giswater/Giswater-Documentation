@@ -1,30 +1,30 @@
 .. _dialog-delete-feature:
 
 ========================
-Eliminar elemento de red
+Delete Feature
 ========================
 
 .. warning::
   
-   Extremar la precaución al eliminar objetos; borrarlos puede acarrear errores graves en la red porque puede romperse la topología.
+   Take extreme caution when deleting objects; deleting them can cause serious errors in the network because it can break the topology.
 
 
-Herramienta que permite borrar de manera definitiva un elemento de la red.
+Tool that allows deleting a feature of the network definitively.
 
 .. figure:: img/edit/delete-feature.png
    
-   Ventana de la herramienta Eliminar elemento de red.
+   Window of the Delete Feature tool.
 
-Podremos eliminar arcos, nodos, connecs o gullys. En la ventana emergente deberemos especificar:
+We can delete arcs, nodes, connecs or gullys. In the pop-up window we will have to specify:
 
-- Tipo de elemento: seleccionaremos del desplegable el tipo de objeto a eliminar (arco, nodo, connec o gully).
-- Id elemento: identificador del elemento a eliminar. Si lo desconocemos podremos hacer uso del botón *Seleccionar objeto* que está a la derecha para seleccionarlo.
-- Botón *Mostrar relaciones del elemento*: pincharemos sobre él para ver las relaciones del objeto con el resto de la red.
-  Para poder eliminar un elemento deberemos pinchar obligatoriamente sobre él y solo se pueden borrar objetos de uno en uno.
-- Botón *Borrar elemento seleccionado*: pincharemos sobre él para eliminar definitivamente el objeto y solo estará disponible tras haber pinchado en el botón *Mostrar relaciones del elemento*.
+- Element type: we will select the type of object to delete from the dropdown (arc, node, connec or gully).
+- Element id: identifier of the element to delete. If we do not know it, we can use the *Select object* button on the right to select it.
+- *Show element relations* button: click on it to see the relationships of the object with the rest of the network.
+  To be able to delete an element we must click on it obligatorily and only objects can be deleted one at a time.
+- *Delete selected element* button: click on it to delete the object definitively and it will only be available after clicking on the *Show element relations* button.
 
-Tras eliminar el elemento veremos en la pestaña *Info log* un resumen de las operaciones realizadas.
+After deleting the element we will see in the *Info log* tab a summary of the operations performed.
 
 .. important::
 
-   Los objetos solo se pueden borrar de uno en uno y si tras borrar uno queremos borrar otro, tendremos que pinchar en el botón *Eliminar otro elemento* que estará disponible en la pestaña *Info log*.
+   The objects can only be deleted one at a time and if after deleting one we want to delete another, we will have to click on the *Delete another element* button which will be available in the *Info log* tab.
