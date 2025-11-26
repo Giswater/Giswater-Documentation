@@ -3,7 +3,7 @@ name: Sync Translations to i18n
 on:
   push:
     branches:
-      - feat/*
+      - master
 
 jobs:
   sync-translations:
