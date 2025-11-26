@@ -1,5 +1,3 @@
-.. _tab-epa-frpump
-
 ======
 Frpump
 ======
@@ -144,26 +142,6 @@ Epa
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
 						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>To Arc:</strong> to_arc - To arc</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
 				</details>
 			</li>

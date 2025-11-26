@@ -1,5 +1,3 @@
-.. _tab-epa-inlet
-
 =====
 Inlet
 =====

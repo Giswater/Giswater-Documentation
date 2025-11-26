@@ -1,5 +1,3 @@
-.. _tab-epa-conduit
-
 =======
 Conduit
 =======
@@ -14,7 +12,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Barriles:</strong> barrels - Barril</summary>
+		<summary><strong>Barrels:</strong> barrels - barrels</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -54,7 +52,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Kentrada:</strong> kentry - kentry</summary>
+		<summary><strong>Kentry:</strong> kentry - kentry</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -74,7 +72,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Ksalida:</strong> kexit - kexit</summary>
+		<summary><strong>Kexit:</strong> kexit - kexit</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -94,7 +92,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Kavg:</strong> kavg - lucha</summary>
+		<summary><strong>Kavg:</strong> kavg - kavg</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -114,7 +112,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Compuerta:</strong> flap - solapa</summary>
+		<summary><strong>Flap:</strong> flap - flap</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -159,7 +157,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Máximo:</strong> qmax - qmax</summary>
+		<summary><strong>Qmax:</strong> qmax - qmax</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -179,7 +177,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Ver Página:</strong> seepage - Ver página</summary>
+		<summary><strong>Seepage:</strong> seepage - seepage</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -199,7 +197,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Custom_N:</strong> custom_n - por defecto n</summary>
+		<summary><strong>Custom N:</strong> custom_n - custom_n</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -223,7 +221,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Flujo Máximo:</strong> max_flow - Flujo máximo - max_flow </summary>
+		<summary><strong>Max Flow:</strong> max_flow - max_flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -243,7 +241,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Tiempo En Días:</strong> time_days - tiempo_días</summary>
+		<summary><strong>Time Days:</strong> time_days - time_days</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -263,7 +261,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Tiempo En Horas:</strong> time_hour - hora</summary>
+		<summary><strong>Time Hour:</strong> time_hour - time_hour</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -283,7 +281,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Velocidad Máxima:</strong> max_veloc - Velocidad máxima - max_velocity </summary>
+		<summary><strong>Max Veloc:</strong> max_veloc - max_veloc</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -303,7 +301,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Mfull_Flow:</strong> mfull_flow - mfull_flow</summary>
+		<summary><strong>Mfull Flow:</strong> mfull_flow - mfull_flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -323,7 +321,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Mfull_Profundidad:</strong> mfull_depth - mfull_profundidad</summary>
+		<summary><strong>Mfull Depth:</strong> mfull_depth - mfull_depth</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>

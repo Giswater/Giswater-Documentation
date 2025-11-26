@@ -1,5 +1,3 @@
-.. _tab-epa-junction
-
 ========
 Junction
 ========
@@ -34,7 +32,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Ysur:</strong> ysur - Altura adicional máxima sobre el nivel del suelo que el nodo puede soportar en condiciones de recargo  . (el valor predeterminado es 0)</summary>
+		<summary><strong>Ysur:</strong> ysur - ysur</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -54,7 +52,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Área De Estanque:</strong> apond - apond</summary>
+		<summary><strong>Apond:</strong> apond - apond</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -74,7 +72,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Outfallparam:</strong> outfallparam - parámetro de salida</summary>
+		<summary><strong>Outfallparam:</strong> outfallparam - outfallparam</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -98,7 +96,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Profundidad Media:</strong> depth_average - Profundidad media</summary>
+		<summary><strong>Average Depth:</strong> depth_average - Average depth</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -118,7 +116,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Profundidad Máxima:</strong> depth_max - Máxima profundidad</summary>
+		<summary><strong>Max Depth:</strong> depth_max - Max depth</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -138,7 +136,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Profundidad Máxima/Día:</strong> depth_max_day - Profundidad máxima por día</summary>
+		<summary><strong>Max Depth/Day:</strong> depth_max_day - Max depth per day</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -158,7 +156,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Profundidad Máxima/Hora:</strong> depth_max_hour - Profundidad máxima por hora</summary>
+		<summary><strong>Max Depth/Hour:</strong> depth_max_hour - Max depth per hour</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -178,7 +176,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Recargo/Hora:</strong> surcharge_hour - Recargo por hora</summary>
+		<summary><strong>Surcharge/Hour:</strong> surcharge_hour - Surcharge per hour</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -198,7 +196,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Altura Máxima De La Sobrecarga:</strong> surgarge_max_height - Altura máxima del cirujano</summary>
+		<summary><strong>Max Height Of Surgarge:</strong> surgarge_max_height - Max height of surgarge</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -218,7 +216,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Hora De Inundación:</strong> flood_hour - Hora de inundación</summary>
+		<summary><strong>Flood Hour:</strong> flood_hour - Flood hour</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -238,7 +236,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Tasa De Inundación Máxima:</strong> flood_max_rate - Tasa de inundación máxima:</summary>
+		<summary><strong>Maximum Food Rate:</strong> flood_max_rate - Maximum food rate</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -258,7 +256,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Día:</strong> time_day - Día:</summary>
+		<summary><strong>Day:</strong> time_day - Day</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -278,7 +276,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Hora:</strong> time_hour - Hora</summary>
+		<summary><strong>Hour:</strong> time_hour - Hour</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -298,7 +296,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Inundación Total:</strong> flood_total - Inundación total</summary>
+		<summary><strong>Total Flood:</strong> flood_total - Total flood</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -318,7 +316,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Inundación Estancada Máxima:</strong> flood_max_ponded - Crecida máxima del estanque</summary>
+		<summary><strong>Max Ponded Flood :</strong> flood_max_ponded - Max ponded flood</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>

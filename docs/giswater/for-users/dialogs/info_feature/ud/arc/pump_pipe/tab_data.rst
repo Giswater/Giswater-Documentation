@@ -18,7 +18,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Arco:</strong> arc_type - Tipo de arco. Se rellena automáticamente a partir de arccat_id</summary>
+		<summary><strong>Arc Type:</strong> arc_type - Type of arc. It is auto-populated based on the arccat_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> Sí.</li>
@@ -57,7 +57,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Arccat Id:</strong> arccat_id - Se seleccionará del catálogo de arcos. Es independiente del tipo de arco</summary>
+		<summary><strong>Arccat Id:</strong> arccat_id - To be selected from the catalog of arcs. It is independent of the type of arch</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> Sí.</li>
@@ -101,7 +101,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo_Epa:</strong> epa_type - tipo_epa</summary>
+		<summary><strong>Epa Type:</strong> epa_type - epa_type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -131,7 +131,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Nodo_1:</strong> node_1 - nodo_1</summary>
+		<summary><strong>Node 1:</strong> node_1 - node_1</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -160,7 +160,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
-						<li><strong>autoupdateReloadFields</strong> (['node_1', 'y1', 'custom_y1', 'custom_elev1', 'sys_y1', 'sys_elev1', 'z1', 'r1', 'slope']): Recarga al momento otros campos en caso de que uno sea modificado. Actua en combinación con isautoupdate</li>
+						<li><strong>autoupdateReloadFields</strong> (['node_1', 'y1', 'custom_y1', 'custom_elev1', 'sys_y1', 'sys_elev1', 'z1', 'r1', 'node_2', 'y2', 'custom_y2', 'custom_elev2', 'sys_y2', 'sys_elev2', 'z2', 'r2', 'slope']): Recarga al momento otros campos en caso de que uno sea modificado. Actua en combinación con isautoupdate</li>
 					</ul>
 				</details>
 			</li>
@@ -171,7 +171,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Custom_Y1:</strong> custom_y1 - personalizado_y1</summary>
+		<summary><strong>Custom Y1:</strong> custom_y1 - custom_y1</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -180,7 +180,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
-						<li><strong>autoupdateReloadFields</strong> (['node_1', 'y1', 'custom_y1', 'custom_elev1', 'sys_y1', 'sys_elev1', 'z1', 'r1', 'slope']): Recarga al momento otros campos en caso de que uno sea modificado. Actua en combinación con isautoupdate</li>
+						<li><strong>autoupdateReloadFields</strong> (['node_1', 'y1', 'custom_y1', 'custom_elev1', 'sys_y1', 'sys_elev1', 'z1', 'r1', 'node_2', 'y2', 'custom_y2', 'custom_elev2', 'sys_y2', 'sys_elev2', 'z2', 'r2', 'slope']): Recarga al momento otros campos en caso de que uno sea modificado. Actua en combinación con isautoupdate</li>
 					</ul>
 				</details>
 			</li>
@@ -191,7 +191,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Sys_Y1:</strong> sys_y1 - sys_y1</summary>
+		<summary><strong>Sys Y1:</strong> sys_y1 - sys_y1</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -211,7 +211,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Custom_Elev1:</strong> custom_elev1 - custom_elev1</summary>
+		<summary><strong>Custom Elev1:</strong> custom_elev1 - custom_elev1</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -220,7 +220,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
-						<li><strong>autoupdateReloadFields</strong> (['node_1', 'y1', 'custom_y1', 'custom_elev1', 'sys_y1', 'sys_elev1', 'z1', 'r1', 'slope']): Recarga al momento otros campos en caso de que uno sea modificado. Actua en combinación con isautoupdate</li>
+						<li><strong>autoupdateReloadFields</strong> (['node_1', 'y1', 'custom_y1', 'custom_elev1', 'sys_y1', 'sys_elev1', 'z1', 'r1', 'node_2', 'y2', 'custom_y2', 'custom_elev2', 'sys_y2', 'sys_elev2', 'z2', 'r2', 'slope']): Recarga al momento otros campos en caso de que uno sea modificado. Actua en combinación con isautoupdate</li>
 					</ul>
 				</details>
 			</li>
@@ -231,7 +231,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Sys_Elev1:</strong> sys_elev1 - sys_elev1</summary>
+		<summary><strong>Sys Elev1:</strong> sys_elev1 - sys_elev1</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -271,7 +271,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>R1:</strong> r1 - Revestimiento. Distancia entre la generatriz superior y la superficie en el nodo 1.</summary>
+		<summary><strong>R1:</strong> r1 - Coating. Distance between the upper generatrix and the surface at node 1</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -291,7 +291,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Código:</strong> code - Código utilizado anteriormente por la empresa. Se utilizará en muchas herramientas de Giswater. Si se deja vacío, se rellenará con el id del elemento</summary>
+		<summary><strong>Code:</strong> code - Code previously used by the company. This will be used in many Giswater tools. If left empty, it will be filled with the element's id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -311,7 +311,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Material:</strong> matcat_id - Material del elemento. No se puede rellenar. Se utiliza el del campo matcat_id del catálogo correspondiente</summary>
+		<summary><strong>Material:</strong> matcat_id - Material of the element. It cannot be filled in. The one with the matcat_id field of the corresponding catalog is used</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -349,7 +349,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Omzone:</strong> dma_id - omzone_id</summary>
+		<summary><strong>Dma:</strong> dma_id - dma_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -369,7 +369,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Cat_Geom1:</strong> cat_geom1 - cat_geom1</summary>
+		<summary><strong>Cat Geom1:</strong> cat_geom1 - cat_geom1</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -389,7 +389,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Medida Interior Horizontal:</strong> cat_geom2 - Medida interior horizontal</summary>
+		<summary><strong>Horizontal Inside Measurement:</strong> cat_geom2 - Horizontal inside measurement</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -409,7 +409,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Gis_Length:</strong> gis_length - gis_length</summary>
+		<summary><strong>Gis Length:</strong> gis_length - gis_length</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -429,7 +429,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Pendiente:</strong> slope - pendiente</summary>
+		<summary><strong>Slope:</strong> slope - slope</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -449,7 +449,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Inicio De Flujos Derivados:</strong> inverted_slope - Este campo es de suma importancia puesto que identifica aquellos tramos de red que son inicio de de flujo de caudales en tiempo de lluvia. Esta propiedad les convierte en ser frontera entre las DWFzones y la Drainzones</summary>
+		<summary><strong>Inverted Slope:</strong> inverted_slope - inverted_slope</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Boolean.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -469,7 +469,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Identificación Workcat:</strong> workcat_id - Relacionado con el catálogo de ficheros de trabajo (cat_work). Fichero que registra el elemento</summary>
+		<summary><strong>Workcat Id:</strong> workcat_id - Related to the catalog of work files (cat_work). File that registers the element</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -494,7 +494,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Fecha De Construcción:</strong> builtdate - fecha de construcción</summary>
+		<summary><strong>Builtdate:</strong> builtdate - builtdate</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Date.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -514,7 +514,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Ownercat_Id:</strong> ownercat_id - ownercat_id</summary>
+		<summary><strong>Ownercat Id:</strong> ownercat_id - ownercat_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -539,7 +539,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Fecha Final:</strong> enddate - Fecha de finalización del elemento. Solo se rellenará si el elemento está en estado de baja.</summary>
+		<summary><strong>Enddate:</strong> enddate - End date of the element. It will only be filled in if the element is in a deregistration state.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Date.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -559,7 +559,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Desplazamiento_Entrada:</strong> inlet_offset - desplazamiento_entrada</summary>
+		<summary><strong>Inlet Offset:</strong> inlet_offset - inlet_offset</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -571,7 +571,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Aguja:</strong> adate - aguja</summary>
+		<summary><strong>Adate:</strong> adate - adate</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -595,7 +595,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Visitabilidad:</strong> visitability - visitabilidad</summary>
+		<summary><strong>Visitability:</strong> visitability - visitability</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -607,7 +607,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Etiqueta_Cuadrante:</strong> label_quadrant - cuadrante_etiqueta</summary>
+		<summary><strong>Label Quadrant:</strong> label_quadrant - label_quadrant</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -624,7 +624,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Minsector_Id:</strong> minsector_id - minsector_id</summary>
+		<summary><strong>Minsector Id:</strong> minsector_id - minsector_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -636,7 +636,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Macrominsector_Id:</strong> macrominsector_id - macrominsector_id</summary>
+		<summary><strong>Macrominsector Id:</strong> macrominsector_id - macrominsector_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -648,7 +648,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Número_De_Serie:</strong> serial_number - número_de_serie</summary>
+		<summary><strong>Serial Number:</strong> serial_number - serial_number</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -660,7 +660,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Desplazamiento Negativo:</strong> negative_offset - negativeoffset</summary>
+		<summary><strong>Negativeoffset:</strong> negative_offset - negativeoffset</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Boolean.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -672,7 +672,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Código_Conducto:</strong> conduit_code - Conduit code:</summary>
+		<summary><strong>Conduit Code:</strong> conduit_code - conduit_code</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -684,7 +684,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Pipa Param_1:</strong> pumpipe_param_1 - Ppipe param 1:</summary>
+		<summary><strong>Ppipe Param 1:</strong> pumpipe_param_1 - Ppipe param_1</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Boolean.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -696,7 +696,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Pipa Param_2:</strong> pumpipe_param_2 - Ppipe param 2:</summary>
+		<summary><strong>Ppipe Param 2:</strong> pumpipe_param_2 - Ppipe param_2</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -732,7 +732,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Nodo 2:</strong> node_2 - Nodo situado al final del arco</summary>
+		<summary><strong>Node 2:</strong> node_2 - Node located at the end of the arc</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -752,7 +752,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Y2:</strong> y2 - Profundidad del conducto en el nodo final</summary>
+		<summary><strong>Y2:</strong> y2 - Depth of the conduit at end node</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -761,7 +761,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
-						<li><strong>autoupdateReloadFields</strong> (['node_2', 'y2', 'custom_y2', 'custom_elev2', 'sys_y2', 'sys_elev2', 'z2', 'r2', 'slope']): Recarga al momento otros campos en caso de que uno sea modificado. Actua en combinación con isautoupdate</li>
+						<li><strong>autoupdateReloadFields</strong> (['node_1', 'y1', 'custom_y1', 'custom_elev1', 'sys_y1', 'sys_elev1', 'z1', 'r1', 'node_2', 'y2', 'custom_y2', 'custom_elev2', 'sys_y2', 'sys_elev2', 'z2', 'r2', 'slope']): Recarga al momento otros campos en caso de que uno sea modificado. Actua en combinación con isautoupdate</li>
 					</ul>
 				</details>
 			</li>
@@ -772,7 +772,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Personalizado_Y2:</strong> custom_y2 - personalizado_y2</summary>
+		<summary><strong>Custom Y2:</strong> custom_y2 - custom_y2</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -781,7 +781,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
-						<li><strong>autoupdateReloadFields</strong> (['node_2', 'y2', 'custom_y2', 'custom_elev2', 'sys_y2', 'sys_elev2', 'z2', 'r2', 'slope']): Recarga al momento otros campos en caso de que uno sea modificado. Actua en combinación con isautoupdate</li>
+						<li><strong>autoupdateReloadFields</strong> (['node_1', 'y1', 'custom_y1', 'custom_elev1', 'sys_y1', 'sys_elev1', 'z1', 'r1', 'node_2', 'y2', 'custom_y2', 'custom_elev2', 'sys_y2', 'sys_elev2', 'z2', 'r2', 'slope']): Recarga al momento otros campos en caso de que uno sea modificado. Actua en combinación con isautoupdate</li>
 					</ul>
 				</details>
 			</li>
@@ -792,7 +792,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Sys_Y2:</strong> sys_y2 - sys_y2</summary>
+		<summary><strong>Sys Y2:</strong> sys_y2 - sys_y2</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -812,7 +812,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Altitud_Personal2:</strong> custom_elev2 - altitud_personal2</summary>
+		<summary><strong>Custom Elev2:</strong> custom_elev2 - custom_elev2</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -821,7 +821,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
 					<ul>
-						<li><strong>autoupdateReloadFields</strong> (['node_2', 'y2', 'custom_y2', 'custom_elev2', 'sys_y2', 'sys_elev2', 'z2', 'r2', 'slope']): Recarga al momento otros campos en caso de que uno sea modificado. Actua en combinación con isautoupdate</li>
+						<li><strong>autoupdateReloadFields</strong> (['node_1', 'y1', 'custom_y1', 'custom_elev1', 'sys_y1', 'sys_elev1', 'z1', 'r1', 'node_2', 'y2', 'custom_y2', 'custom_elev2', 'sys_y2', 'sys_elev2', 'z2', 'r2', 'slope']): Recarga al momento otros campos en caso de que uno sea modificado. Actua en combinación con isautoupdate</li>
 					</ul>
 				</details>
 			</li>
@@ -832,7 +832,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Sys Elev 2:</strong> sys_elev2 - Nivel de entrada del nodo final seleccionado para el cálculo</summary>
+		<summary><strong>Elevation Of The Selected Node 2:</strong> sys_elev2 - Input level of the final node selected for the calculation</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -892,14 +892,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Función:</strong> function_type - Tipo de función a elegir del desplegable personalizado por el usuario en la tabla man_type_function</summary>
+		<summary><strong>Function Type:</strong> function_type - Type of function to choose from the user-customized dropdown in the man_type_function table</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT function_type as id, function_type as idval FROM man_type_function WHERE ((featurecat_id is null AND feature_type='ARC') ) AND active IS TRUE  OR 'PUMP_PIPE' = ANY(featurecat_id::text[])
+					SELECT function_type as id, function_type as idval FROM man_type_function WHERE ((featurecat_id is null AND 'ARC'=ANY(feature_type)) ) AND active IS TRUE  OR 'PUMP_PIPE' = ANY(featurecat_id::text[])
 				</code>
 			</li>
 			<li>
@@ -917,14 +917,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo_Categoría:</strong> category_type - tipo_categoría</summary>
+		<summary><strong>Category Type:</strong> category_type - category_type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT category_type as id, category_type as idval FROM man_type_category WHERE ((featurecat_id is null AND feature_type='ARC')) AND active IS TRUE  OR 'PUMP_PIPE' = ANY(featurecat_id::text[])
+					SELECT category_type as id, category_type as idval FROM man_type_category WHERE ((featurecat_id is null AND 'ARC'=ANY(feature_type))) AND active IS TRUE  OR 'PUMP_PIPE' = ANY(featurecat_id::text[])
 				</code>
 			</li>
 			<li>
@@ -942,7 +942,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo_Fluido:</strong> fluid_type - tipo_fluido</summary>
+		<summary><strong>Fluid Type:</strong> fluid_type - fluid_type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -967,14 +967,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo_Ubicación:</strong> location_type - tipo_ubicación</summary>
+		<summary><strong>Location Type:</strong> location_type - location_type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT location_type as id, location_type as idval FROM man_type_location WHERE ((featurecat_id is null AND feature_type='ARC') ) AND active IS TRUE  OR 'PUMP_PIPE' = ANY(featurecat_id::text[])
+					SELECT location_type as id, location_type as idval FROM man_type_location WHERE ((featurecat_id is null AND 'ARC'=ANY(feature_type)) ) AND active IS TRUE  OR 'PUMP_PIPE' = ANY(featurecat_id::text[])
 				</code>
 			</li>
 			<li>
@@ -992,7 +992,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Etiqueta Del Catálogo:</strong> label - Etiqueta del catálogo de arcos, por lo tanto no será editable en el formulario</summary>
+		<summary><strong>Catalog Label:</strong> label - Label from the catalog of arcs, therefore it will not be editable in the form</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1012,7 +1012,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Rotación De Etiquetas:</strong> label_rotation - Ángulo de rotación de la etiqueta</summary>
+		<summary><strong>Label Rotation:</strong> label_rotation - Angle of rotation of the label</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1032,7 +1032,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Pavcat_Id:</strong> pavcat_id - pavcat_id</summary>
+		<summary><strong>Pavcat Id:</strong> pavcat_id - pavcat_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1049,7 +1049,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Explotación:</strong> expl_id - expl_id</summary>
+		<summary><strong>Exploitation:</strong> expl_id - expl_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1103,7 +1103,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Fin Id Workcat:</strong> workcat_id_end - ID del final de obra.</summary>
+		<summary><strong>Workcat Id End:</strong> workcat_id_end - Id of the  end of construction work.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1128,7 +1128,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Plan De Identificación Workcat:</strong> workcat_id_plan - Registro de planificación de artículos</summary>
+		<summary><strong>Workcat Id Plan:</strong> workcat_id_plan - Item planning record</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1153,7 +1153,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Asset_Id:</strong> asset_id - asset_id</summary>
+		<summary><strong>Asset Id:</strong> asset_id - asset_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1165,7 +1165,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Colocación:</strong> placement_type - Tipo de colocación</summary>
+		<summary><strong>Placement Type:</strong> placement_type - Placement Type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1177,7 +1177,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Marca_Id:</strong> brand_id - marca_id</summary>
+		<summary><strong>Brand:</strong> brand_id - brand_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1202,7 +1202,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Model_Id:</strong> model_id - model_id</summary>
+		<summary><strong>Model:</strong> model_id - model_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1231,7 +1231,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Muni_Id:</strong> muni_id - muni_id</summary>
+		<summary><strong>Muni Id:</strong> muni_id - muni_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1256,7 +1256,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Código Postal:</strong> postcode - código postal - Código postal del municipio</summary>
+		<summary><strong>Postcode:</strong> postcode - Postal code of the municipality</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1276,87 +1276,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Nombre De La Calle:</strong> streetname - nombre de la calle</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT id AS id, a.descript AS idval FROM v_ext_streetaxis a JOIN ext_municipality m USING (muni_id) WHERE id IS NOT NULL
-				</code>
-			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
-				<code>
-					 AND m.name
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Número De La Calle:</strong> postnumber - Número de la calle</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT a.postnumber AS id, a.postnumber AS idval FROM ext_address a JOIN ext_streetaxis m ON streetaxis_id=m.id WHERE a.id IS NOT NULL
-				</code>
-			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
-				<code>
-					 AND m.name
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Complemento Opcional Del Número De La Calle:</strong> postcomplement - Complemento opcional del número de la calle</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Nombredecalle2:</strong> streetname2 - nombredecalle2</summary>
+		<summary><strong>Streetname:</strong> streetname - streetname</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1386,7 +1306,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Número De La Segunda Calle:</strong> postnumber2 - Segundo número de calle</summary>
+		<summary><strong>Street Number:</strong> postnumber - Street number</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1416,7 +1336,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Complemento Opcional Del Segundo Número De Calle:</strong> postcomplement2 - Complemento opcional del segundo número de calle</summary>
+		<summary><strong>Optional Complement Of The Street Number:</strong> postcomplement - Optional complement of the street number</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1436,7 +1356,67 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Descript:</strong> descript - Campo para almacenar información adicional sobre la característica.</summary>
+		<summary><strong>Streetname2:</strong> streetname2 - streetname2</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT id AS id, a.descript AS idval FROM v_ext_streetaxis a JOIN ext_municipality m USING (muni_id) WHERE id IS NOT NULL
+				</code>
+			</li>
+			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+				<code>
+					 AND m.name
+				</code>
+			</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Second Street Number:</strong> postnumber2 - Second street number</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Integer.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT a.postnumber AS id, a.postnumber AS idval FROM ext_address a JOIN ext_streetaxis m ON streetaxis_id=m.id WHERE a.id IS NOT NULL
+				</code>
+			</li>
+			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+				<code>
+					 AND m.name
+				</code>
+			</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Optional Complement Of The Second Street Number:</strong> postcomplement2 - Optional complement of the second street number</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1456,7 +1436,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Anotación:</strong> annotation - Anotaciones relacionadas con el arco. Información adicional</summary>
+		<summary><strong>Descript:</strong> descript - Field to store additional information about the feature.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1476,7 +1456,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Observación:</strong> observ - Campo opcional para añadir observaciones sobre el elemento</summary>
+		<summary><strong>Annotation:</strong> annotation - Annotations related to arc. Additional information</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1496,7 +1476,27 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Enlace:</strong> link - URL del enlace que se abrirá al pulsar el botón en la barra de formulario. Debe editarse desde la base de datos. link_path (de las tablas de tipos) + link se concatena.</summary>
+		<summary><strong>Observation:</strong> observ - Optional field to add observations about the element</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Link:</strong> link - URL of the link that will open when clicking the button in the form bar. It must be edited from the database. link_path (from type tables) + link is concatenated</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -1520,58 +1520,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Omzone:</strong> omzone_id - omzone_id</summary>
+		<summary><strong>Sector Id:</strong> sector_id - Hydraulic sector identifier related to the primary key of sector table</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT omzone_id as id, name as idval FROM omzone WHERE omzone_id = 0 UNION SELECT omzone_id as id, name as idval FROM omzone WHERE omzone_id IS NOT NULL AND active IS TRUE 
-				</code>
-			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
-				<code>
-					 AND omzone.expl_id
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
-						<li>
-							<details class='no-square'>
-								<summary><strong>valueRelation:</strong> </summary>
-								<ul>
-									<li>layer: ve_dma</li>
-									<li>activated: True</li>
-									<li>keyColumn: dma_id</li>
-									<li>nullValue: False</li>
-									<li>valueColumn: name</li>
-									<li>filterExpression: None</li>
-								</ul>
-							</details>
-						</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Sector Id:</strong> sector_id - Identificador hidráulico del sector relacionado con la clave primaria de la tabla de sectores</summary>
-		<ul>
-			<li><strong>Datatype:</strong> Integer.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT sector_id as id,name as idval FROM sector WHERE sector_id IS NOT NULL AND active IS TRUE 
+					SELECT s.sector_id AS id, s.name AS idval FROM sector s WHERE s.sector_id IS NOT NULL AND s.active IS TRUE ORDER BY CASE WHEN s.sector_id = 0 THEN 1 WHEN s.sector_id = -1 THEN 3 ELSE 2 END, s.sector_id
 				</code>
 			</li>
 			<li>
@@ -1619,11 +1575,55 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Estado:</strong> state - Valor de dominio del estado del arco (en servicio, planificado, obsoleto)</summary>
+		<summary><strong>Dwfzone:</strong> dwfzone_id - dwfzone_id</summary>
+		<ul>
+			<li><strong>Datatype:</strong> Integer.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT dwfzone_id as id, name as idval FROM dwfzone WHERE dwfzone_id = 0 UNION SELECT dwfzone_id as id, name as idval FROM dwfzone WHERE dwfzone_id IS NOT NULL AND active IS TRUE
+				</code>
+			</li>
+			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+				<code>
+					 AND dwfzone.expl_id
+				</code>
+			</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
+						<li>
+							<details class='no-square'>
+								<summary><strong>valueRelation:</strong> </summary>
+								<ul>
+									<li>layer: ve_dma</li>
+									<li>activated: True</li>
+									<li>keyColumn: dma_id</li>
+									<li>nullValue: False</li>
+									<li>valueColumn: name</li>
+									<li>filterExpression: None</li>
+								</ul>
+							</details>
+						</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>State:</strong> state - Domain value of arc's state (on service, planified, obsolete)</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Smallint.</li>
 			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Editable:</strong> No.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
 					WITH psector_value AS (   		SELECT value::integer AS psector_value    		FROM config_param_user    		WHERE parameter = 'plan_psector_current' AND cur_user = current_user), 	 tg_op_value AS (   		SELECT value::text AS tg_op_value    		FROM config_param_user    		WHERE parameter = 'utils_transaction_mode' AND cur_user = current_user)   SELECT id::integer as id, name as idval FROM value_state  WHERE id IS NOT NULL  AND CASE    WHEN (SELECT tg_op_value FROM tg_op_value)!='INSERT' THEN id IN (0,1,2)   WHEN (SELECT tg_op_value FROM tg_op_value) ='INSERT' AND (SELECT psector_value FROM psector_value) IS NOT NULL THEN id = 2    ELSE id < 2  END
@@ -1645,7 +1645,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Estado:</strong> state_type - El tipo de estado del elemento. Permite obtener más detalles del estado. Para seleccionar entre los disponibles en función del estado elegido</summary>
+		<summary><strong>State Type:</strong> state_type - The state type of the element. It allows to obtain more detail of the state. To select from those available depending on the chosen state</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Smallint.</li>
 			<li><strong>Mandatory:</strong> No.</li>

@@ -1,5 +1,3 @@
-.. _tab-elements
-
 ========
 Elements
 ========

@@ -1,5 +1,3 @@
-.. _tab-event
-
 =====
 Event
 =====

@@ -1,5 +1,3 @@
-.. _tab-epa-pipe
-
 ====
 Pipe
 ====
@@ -14,7 +12,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Perdida Menor:</strong> minorloss - Perdida menor</summary>
+		<summary><strong>Minorloss:</strong> minorloss - Minorloss</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -34,7 +32,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Estado:</strong> status - status</summary>
+		<summary><strong>Status:</strong> status - Status</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -59,7 +57,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Material:</strong> cat_matcat_id - Material</summary>
+		<summary><strong>Builtdate:</strong> builtdate - Builtdate</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -71,7 +69,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Fecha De Construcción:</strong> builtdate - Fecha de construcción</summary>
+		<summary><strong>Cat Roughness:</strong> cat_roughness - Cat roughness</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -83,19 +81,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Rugosidad Del Gato:</strong> cat_roughness - Rugosidad del gato</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Rugosidad Personalizada:</strong> custom_roughness - Rugosidad personalizada</summary>
+		<summary><strong>Custom Roughness:</strong> custom_roughness - Custom roughness</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -115,19 +101,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Gato Dint:</strong> cat_dint - Gato dint</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Dint Personalizado:</strong> custom_dint - Dint personalizado</summary>
+		<summary><strong>Custom Dint:</strong> custom_dint - Custom dint</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -147,7 +121,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Parámetro De Reacción:</strong> reactionparam - Parámetro de reacción</summary>
+		<summary><strong>Reaction Parameter:</strong> reactionparam - Reaction parameter</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -172,7 +146,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Valor De Reacción:</strong> reactionvalue - Valor de reacción</summary>
+		<summary><strong>Reaction Value:</strong> reactionvalue - Reaction value</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -192,7 +166,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Coeficiente Buk:</strong> bulk_coeff - Coeficiente Buk</summary>
+		<summary><strong>Bulk Coefficient:</strong> bulk_coeff - Bulk coefficient</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -212,7 +186,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Coeficiente De Pared:</strong> wall_coeff - Coeficiente de pared</summary>
+		<summary><strong>Wall Coefficient:</strong> wall_coeff - Wall coefficient</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -236,7 +210,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Resultado:</strong> result_id - Identificador del resultado - result_id </summary>
+		<summary><strong>Result Id:</strong> result_id - Result id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -256,7 +230,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Máximo:</strong> flow_max - Caudal máximo</summary>
+		<summary><strong>Max Flow:</strong> flow_max - Max Flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -276,7 +250,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Mínimo:</strong> flow_min - Caudal mínimo</summary>
+		<summary><strong>Min Flow:</strong> flow_min - Min Flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -296,7 +270,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Velocidad Máxima:</strong> vel_max - Velocidad máxima</summary>
+		<summary><strong>Max Velocity:</strong> vel_max - Max velocity</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -316,7 +290,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Velocidad Mínima:</strong> vel_min - Velocidad mínima</summary>
+		<summary><strong>Min Velocity:</strong> vel_min - Min velocity</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -336,7 +310,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Máxima Perdida De Carga Hidráulica:</strong> headloss_max - Máxima perdida de carga hidráulica</summary>
+		<summary><strong>Max Headloss:</strong> headloss_max - Max headloss</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -356,7 +330,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Mínima Perdida Da Carga Hidráulica:</strong> headloss_min - Mínima perdida da carga hidráulica</summary>
+		<summary><strong>Min Headloss:</strong> headloss_min - Min headloss</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -376,7 +350,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Configuración Máxima:</strong> setting_max - Configuración máxima</summary>
+		<summary><strong>Max Reaction:</strong> reaction_max - Max reaction</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -396,7 +370,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Configuración Mínima:</strong> setting_min - Ajuste mínimo</summary>
+		<summary><strong>Min Reaction:</strong> reaction_min - Min reaction</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -416,7 +390,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Reacción Máxima:</strong> reaction_max - Reacción máxima</summary>
+		<summary><strong>Max Ffactor:</strong> ffactor_max - Max Ffactor</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -436,7 +410,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Reacción Mínima:</strong> reaction_min - Reacción mínima</summary>
+		<summary><strong>Min Ffactor:</strong> ffactor_min - Min Ffactor</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -456,7 +430,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Ffactor Máximo:</strong> ffactor_max - Factor F máx.</summary>
+		<summary><strong>Max Tot Headloss:</strong> tot_headloss_max - Max Tot Headloss</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -476,47 +450,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Ffactor Mínimo:</strong> ffactor_min - Ffactor mínimo</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Máxima Pérdida De Carga Total:</strong> tot_headloss_max - Máxima pérdida total de carga</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Min Tot Headloss:</strong> tot_headloss_min - Pérdida de carga total mínima</summary>
+		<summary><strong>Min Tot Headloss:</strong> tot_headloss_min - Min Tot Headloss</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>

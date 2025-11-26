@@ -1,5 +1,3 @@
-.. _tab-epa-tank
-
 ====
 Tank
 ====
@@ -14,7 +12,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Nivel Inicial:</strong> initlevel - Nivel inicial</summary>
+		<summary><strong>Init Level:</strong> initlevel - Initial level</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -34,7 +32,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Nivel Mínimo:</strong> minlevel - Nivel mínimo de agua. . (pies o m)</summary>
+		<summary><strong>Min Level:</strong> minlevel - Minimum level</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -54,7 +52,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Nivel Máximo:</strong> maxlevel - Nivel máximo</summary>
+		<summary><strong>Max Level:</strong> maxlevel - Maximum level</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -74,7 +72,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Diámetro:</strong> diameter - Diámetro en pulgadas o mm.</summary>
+		<summary><strong>Diameter:</strong> diameter - Diameter</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -94,7 +92,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Volumen Mínimo:</strong> minvol - Volumen mínimo</summary>
+		<summary><strong>Min Volume:</strong> minvol - Minimum volume</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -114,7 +112,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Curva:</strong> curve_id - Identificador de la curva - curve_id </summary>
+		<summary><strong>Curve Id:</strong> curve_id - Curve id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -151,7 +149,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Desbordamiento:</strong> overflow - Desbordamiento</summary>
+		<summary><strong>Overflow:</strong> overflow - Overflow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -171,7 +169,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Modelo De Mezcla:</strong> mixing_model - Modelo de mezcla</summary>
+		<summary><strong>Mixing Model:</strong> mixing_model - Mixing model</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -196,7 +194,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Fracción De Mezcla:</strong> mixing_fraction - Fracción de mezcla</summary>
+		<summary><strong>Mixing Fraction:</strong> mixing_fraction - Mixing fraction</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -216,7 +214,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Calidad Inicial:</strong> init_quality - Calidad inicial</summary>
+		<summary><strong>Reaction Coefficient:</strong> reaction_coeff - Reaction coefficient</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -236,7 +234,27 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Fuente:</strong> source_type - Tipo de fuente</summary>
+		<summary><strong>Initial Quality:</strong> init_quality - Initial quality</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>filterSign</strong> (ILIKE): </li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Source Type:</strong> source_type - Source type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -261,7 +279,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Calidad De La Fuente:</strong> source_quality - Calidad de la fuente</summary>
+		<summary><strong>Source Quality:</strong> source_quality - Source quality</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -281,7 +299,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Patrón Fuente:</strong> source_pattern_id - Patrón fuente</summary>
+		<summary><strong>Source Pattern:</strong> source_pattern_id - Source pattern</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -323,7 +341,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Resultado:</strong> result_id - Identificador del resultado - result_id </summary>
+		<summary><strong>Result Id:</strong> result_id - Result id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -343,7 +361,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Demanda Máxima:</strong> demandmax - Demanda máxima</summary>
+		<summary><strong>Max Demand:</strong> demandmax - Max demand</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -363,7 +381,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Demanda Mínima:</strong> demandmin - Demanda mínima</summary>
+		<summary><strong>Min Demand:</strong> demandmin - Min demand</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -383,7 +401,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Máxima Carga Hidráulica:</strong> headmax - Cabeza máxima</summary>
+		<summary><strong>Max Head:</strong> headmax - Max head</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -403,7 +421,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Mínima Carga Hidráulica:</strong> headmin - Mínima carga hidráulica</summary>
+		<summary><strong>Min Head:</strong> headmin - Min head</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -423,7 +441,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Nivel Promedio:</strong> headavg - Nivel promedio - Avg head</summary>
+		<summary><strong>Avg Head:</strong> headavg - Avg demand</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -443,7 +461,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Presión Máxima:</strong> pressmax - Presión máxima</summary>
+		<summary><strong>Max Pressure:</strong> pressmax - Max pressure</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -463,7 +481,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Presión Mínima:</strong> pressmin - Presión mínima</summary>
+		<summary><strong>Min Pressure:</strong> pressmin - Min pressure</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -483,7 +501,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Calidad Máxima:</strong> qualmax - Calidad máxima</summary>
+		<summary><strong>Max Quality:</strong> qualmax - Max quality</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -503,7 +521,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Calidad Mínima:</strong> qualmin - Calidad mínima</summary>
+		<summary><strong>Min Quality:</strong> qualmin - Min quality</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>

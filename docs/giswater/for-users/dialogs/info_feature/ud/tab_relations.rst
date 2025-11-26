@@ -1,5 +1,3 @@
-.. _tab-relations
-
 =========
 Relations
 =========

@@ -105,7 +105,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Enlace Id:</strong> link_id - Enlace ID</summary>
+		<summary><strong>Link Id:</strong> link_id - Link Id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -125,7 +125,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Función:</strong> feature_type - Tipo de función</summary>
+		<summary><strong>Feature Type:</strong> feature_type - Feature type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -150,7 +150,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Salida:</strong> exit_type - Tipo de salida</summary>
+		<summary><strong>Exit Type:</strong> exit_type - Exit type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -175,7 +175,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Salida:</strong> exit_id - ID de salida</summary>
+		<summary><strong>Exit Id:</strong> exit_id - Exit Id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -195,7 +195,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De La Zona Om:</strong> omzone_id - ID de la zona OM</summary>
+		<summary><strong>Omzone Id:</strong> omzone_id - Omzone Id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -233,7 +233,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo_Fluido:</strong> fluid_type - tipo_fluido</summary>
+		<summary><strong>Fluid Type:</strong> fluid_type - fluid_type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> Sí.</li>
@@ -258,7 +258,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Longitud Gis:</strong> gis_length - Longitud Gis</summary>
+		<summary><strong>Gis Length:</strong> gis_length - Gis length</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -282,7 +282,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Es_Operativo:</strong> is_operative - Is operative:</summary>
+		<summary><strong>Is Operative:</strong> is_operative - is_operative</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Boolean.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -302,7 +302,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Identificación Connecat:</strong> conneccat_id - A seleccionar del catálogo de acometida. Es independiente del tipo de acometida</summary>
+		<summary><strong>Connecat Id:</strong> conneccat_id - A seleccionar del catálogo de acometida. Es independiente del tipo de acometida</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -340,7 +340,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Identificación Workcat:</strong> workcat_id - Relacionado con el catálogo de ficheros de trabajo (cat_work). Fichero que registra el elemento</summary>
+		<summary><strong>Workcat Id:</strong> workcat_id - Related to the catalog of work files (cat_work). File that registers the element</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -365,7 +365,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Fin Id Workcat:</strong> workcat_id_end - ID del final de obra.</summary>
+		<summary><strong>Workcat Id End:</strong> workcat_id_end - Id of the  end of construction work.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -390,7 +390,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Fecha De Construcción:</strong> builtdate - Fecha en la que se añadió el elemento. En la inserción de nuevos elementos se muestra la fecha del día</summary>
+		<summary><strong>Builtdate:</strong> builtdate - Date the element was added. In insertion of new elements the date of the day is shown</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Date.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -410,7 +410,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Fecha Final:</strong> enddate - Fecha de finalización del elemento. Solo se rellenará si el elemento está en estado de baja.</summary>
+		<summary><strong>Enddate:</strong> enddate - End date of the element. It will only be filled in if the element is in a deregistration state.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Date.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -430,7 +430,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Mejor Estudiante 1:</strong> top_elev1 - cota_máxima1</summary>
+		<summary><strong>Top Elev 1:</strong> top_elev1 - top_elev1</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -470,7 +470,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Elevación1:</strong> elevation1 - elevación1</summary>
+		<summary><strong>Elevation1:</strong> elevation1 - elevation1</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -490,7 +490,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Alumno Superior 2:</strong> top_elev2 - cota_máxima2</summary>
+		<summary><strong>Top Elev 2:</strong> top_elev2 - top_elev2</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -530,7 +530,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Elevación2:</strong> elevation2 - elevación2</summary>
+		<summary><strong>Elevation2:</strong> elevation2 - elevation2</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -550,7 +550,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Explotación Id:</strong> expl_id - Explotación a la que pertenece el elemento. Si no se modifica la configuración, el programa lo selecciona automáticamente en función de la geometría</summary>
+		<summary><strong>Exploitation Id:</strong> expl_id - Exploitation to which the element belongs. If the configuration is not changed, the program automatically selects it based on the geometry</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -608,14 +608,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Sector Id:</strong> sector_id - Identificador del sector.</summary>
+		<summary><strong>Sector Id:</strong> sector_id - Sector identifier.</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> No.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT sector_id as id, name as idval FROM sector WHERE sector_id IS NOT NULL
+					SELECT s.sector_id AS id, s.name AS idval FROM sector s WHERE s.sector_id IS NOT NULL AND s.active IS TRUE ORDER BY CASE WHEN s.sector_id = 0 THEN 1 WHEN s.sector_id = -1 THEN 3 ELSE 2 END, s.sector_id
 				</code>
 			</li>
 			<li>
@@ -663,11 +663,11 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Estado:</strong> state - Estado:</summary>
+		<summary><strong>State:</strong> state - State:</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Editable:</strong> No.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
 					WITH psector_value AS (   		SELECT value::integer AS psector_value    		FROM config_param_user    		WHERE parameter = 'plan_psector_current' AND cur_user = current_user), 	 tg_op_value AS (   		SELECT value::text AS tg_op_value    		FROM config_param_user    		WHERE parameter = 'utils_transaction_mode' AND cur_user = current_user)   SELECT id::integer as id, name as idval FROM value_state  WHERE id IS NOT NULL  AND CASE    WHEN (SELECT tg_op_value FROM tg_op_value)!='INSERT' THEN id IN (0,1,2)   WHEN (SELECT tg_op_value FROM tg_op_value) ='INSERT' AND (SELECT psector_value FROM psector_value) IS NOT NULL THEN id = 2    ELSE id < 2  END

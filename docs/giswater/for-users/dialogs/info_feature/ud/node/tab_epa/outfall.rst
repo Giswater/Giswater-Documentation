@@ -1,5 +1,3 @@
-.. _tab-epa-outfall
-
 =======
 Outfall
 =======
@@ -14,7 +12,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Emisario:</strong> outfall_type - Tipo de vertido</summary>
+		<summary><strong>Outfall Type:</strong> outfall_type - Outfall type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -39,7 +37,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Etapa:</strong> stage - escenario</summary>
+		<summary><strong>Stage:</strong> stage - stage</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -59,7 +57,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Curva:</strong> curve_id - Identificador de la curva - curve_id </summary>
+		<summary><strong>Curve Id:</strong> curve_id - curve_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -97,7 +95,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Serie Temporal:</strong> timser_id - timser_id</summary>
+		<summary><strong>Timser Id:</strong> timser_id - timser_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -135,7 +133,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Puerta:</strong> gate - puerta</summary>
+		<summary><strong>Gate:</strong> gate - gate</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -159,7 +157,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Frecuencia De Flujo:</strong> flow_freq - Frecuencia de flujo</summary>
+		<summary><strong>Flow Frequency:</strong> flow_freq - Flow frequency</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -179,7 +177,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Medio:</strong> avg_flow - Caudal medio</summary>
+		<summary><strong>Average Flow:</strong> avg_flow - Average flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -199,7 +197,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Flujo Máximo:</strong> max_flow - Flujo máximo - max_flow </summary>
+		<summary><strong>Max Flow:</strong> max_flow - Max flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -219,7 +217,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Volumen Total:</strong> total_vol - Volumen total</summary>
+		<summary><strong>Total Volume:</strong> total_vol - Total volume</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>

@@ -1,5 +1,3 @@
-.. _tab-epa-frshortpipe
-
 ===========
 Frshortpipe
 ===========
@@ -10,26 +8,6 @@ Epa
 .. raw:: html
 
 	<p class='layout-header'>Los campos en el layout lyt_epa_data_1 son:</p>
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Nodarc Id:</strong> nodarc_id - Nodarc id</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
 
 .. raw:: html
 
@@ -54,31 +32,16 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>To Arc:</strong> to_arc - To arc</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
 		<summary><strong>Status:</strong> status - Status</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT DISTINCT (id) AS id,  idval  AS idval FROM inp_typevalue WHERE typevalue='inp_value_status_shortpipe_dscen'
+				</code>
+			</li>
 			<li>
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
@@ -94,7 +57,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Buk Coefficient:</strong> bulk_coeff - Buk coefficient</summary>
+		<summary><strong>Bulk Coefficient:</strong> bulk_coeff - Bulk coefficient</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>

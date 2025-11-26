@@ -12,5 +12,5 @@ Eprotector
 	:caption: Tabs
 
 	tab_data
-	../../tab_documents
-	../../tab_features
+	tab_documents
+	tab_features

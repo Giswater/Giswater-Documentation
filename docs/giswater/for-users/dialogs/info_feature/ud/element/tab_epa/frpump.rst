@@ -1,5 +1,3 @@
-.. _tab-epa-frpump
-
 ======
 Frpump
 ======
@@ -14,11 +12,16 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Curva:</strong> curve_id - ID de curva</summary>
+		<summary><strong>Curve Id:</strong> curve_id - Curve Id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT id, id AS idval FROM inp_curve WHERE id IS NOT NULL
+				</code>
+			</li>
 			<li>
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
@@ -34,11 +37,16 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Estado:</strong> status - Estado</summary>
+		<summary><strong>Status:</strong> status - Status</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT  id, idval FROM inp_typevalue WHERE id IS NOT NULL AND typevalue='inp_value_status'
+				</code>
+			</li>
 			<li>
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
@@ -54,7 +62,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Puesta En Marcha:</strong> startup - Puesta en marcha</summary>
+		<summary><strong>Startup:</strong> startup - Startup</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -74,7 +82,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Cierre:</strong> shutoff - Cierre</summary>
+		<summary><strong>Shutoff:</strong> shutoff - Shutoff</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -98,7 +106,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Porcentaje:</strong> percent - Porcentaje</summary>
+		<summary><strong>Percent:</strong> percent - Percent</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -118,7 +126,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Número De Empresas:</strong> num_startup - Número de empresas</summary>
+		<summary><strong>Number Of Startups:</strong> num_startup - Number of Startups</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -138,7 +146,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Mínimo:</strong> min_flow - Caudal mínimo</summary>
+		<summary><strong>Minimum Flow:</strong> min_flow - Minimum Flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -158,7 +166,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Medio:</strong> avg_flow - Caudal medio</summary>
+		<summary><strong>Average Flow:</strong> avg_flow - Average Flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -178,7 +186,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Máximo:</strong> max_flow - Caudal máximo</summary>
+		<summary><strong>Maximum Flow:</strong> max_flow - Maximum Flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -198,7 +206,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Volumen (Litros):</strong> vol_ltr - Volumen (litros)</summary>
+		<summary><strong>Volume (Liters):</strong> vol_ltr - Volume (Liters)</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -218,7 +226,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Consumo De Energía (Kwh):</strong> powus_kwh - Consumo de energía (kWh)</summary>
+		<summary><strong>Power Usage (Kwh):</strong> powus_kwh - Power Usage (kWh)</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -238,7 +246,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Tiempo Libre Mínimo:</strong> timoff_min - Tiempo libre mínimo</summary>
+		<summary><strong>Time Off Minimum:</strong> timoff_min - Time Off Minimum</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -258,7 +266,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Tiempo Libre Máximo:</strong> timoff_max - Tiempo libre máximo</summary>
+		<summary><strong>Time Off Maximum:</strong> timoff_max - Time Off Maximum</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>

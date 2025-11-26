@@ -1,5 +1,3 @@
-.. _tab-epa-storage
-
 =======
 Storage
 =======
@@ -14,7 +12,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Almacenamiento:</strong> storage_type - Tipo de almacenamiento - storage_type </summary>
+		<summary><strong>Storage Type:</strong> storage_type - Storage type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -39,7 +37,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Curva:</strong> curve_id - Identificador de la curva - curve_id </summary>
+		<summary><strong>Curve Id:</strong> curve_id - curve_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -137,7 +135,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Fracción De Evaporación:</strong> fevap - fevap</summary>
+		<summary><strong>Fevap:</strong> fevap - fevap</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -157,7 +155,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Succió De Càrrega Hidràulica:</strong> sh - sh</summary>
+		<summary><strong>Sh:</strong> sh - sh</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -237,7 +235,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Ysur:</strong> ysur - Altura adicional máxima sobre el nivel del suelo que el nodo puede soportar en condiciones de recargo  . (el valor predeterminado es 0)</summary>
+		<summary><strong>Ysur:</strong> ysur - ysur</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -261,7 +259,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Volumen Medio:</strong> aver_vol - aver_vol</summary>
+		<summary><strong>Aver Vol:</strong> aver_vol - aver_vol</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -281,7 +279,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Porcentage Medio En Lleno:</strong> avg_full - avg_full</summary>
+		<summary><strong>Avg Full :</strong> avg_full - avg_full</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -301,7 +299,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Pérdida De Ei:</strong> ei_loss - ei_pérdida</summary>
+		<summary><strong>Ei Loss:</strong> ei_loss - ei_loss</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -321,7 +319,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Volumen Máximo:</strong> max_vol - Volumen máximo - max_volume </summary>
+		<summary><strong>Max Vol:</strong> max_vol - max_vol</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -341,7 +339,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Max_Full:</strong> max_full - max_full</summary>
+		<summary><strong>Max Full:</strong> max_full - max_full</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -361,7 +359,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Tiempo En Días:</strong> time_days - tiempo_días</summary>
+		<summary><strong>Time Days:</strong> time_days - time_days</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -381,7 +379,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Tiempo En Horas:</strong> time_hour - hora</summary>
+		<summary><strong>Time Hour:</strong> time_hour - time_hour</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -401,7 +399,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Salida Máxima:</strong> max_out - max_out</summary>
+		<summary><strong>Max Out:</strong> max_out - max_out</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>

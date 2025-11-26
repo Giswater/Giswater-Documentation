@@ -1,5 +1,3 @@
-.. _tab-epa-virtual
-
 =======
 Virtual
 =======
@@ -14,7 +12,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Nodo De Fusión:</strong> fusion_node - nodo_fusión</summary>
+		<summary><strong>Fusion Node:</strong> fusion_node - fusion_node</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -39,7 +37,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Agregar Longitud:</strong> add_length - añadir_longitud</summary>
+		<summary><strong>Add Length:</strong> add_length - add_length</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Boolean.</li>
 			<li><strong>Mandatory:</strong> No.</li>

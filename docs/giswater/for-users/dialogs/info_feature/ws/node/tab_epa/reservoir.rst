@@ -1,5 +1,3 @@
-.. _tab-epa-reservoir
-
 =========
 Reservoir
 =========
@@ -14,7 +12,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Patrón:</strong> pattern_id - Patrón</summary>
+		<summary><strong>Pattern:</strong> pattern_id - Pattern</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -52,7 +50,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Carga Hidráulica:</strong> head - Cabeza</summary>
+		<summary><strong>Head:</strong> head - Head</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -72,7 +70,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Calidad Inicial:</strong> init_quality - Calidad inicial</summary>
+		<summary><strong>Initial Quality:</strong> init_quality - Initial quality</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -92,7 +90,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Fuente:</strong> source_type - Tipo de fuente</summary>
+		<summary><strong>Source Type:</strong> source_type - Source type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -117,7 +115,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Calidad De La Fuente:</strong> source_quality - Calidad de la fuente</summary>
+		<summary><strong>Source Quality:</strong> source_quality - Source quality</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -137,7 +135,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Patrón Fuente:</strong> source_pattern_id - Patrón fuente</summary>
+		<summary><strong>Source Pattern:</strong> source_pattern_id - Source pattern</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -179,7 +177,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Resultado:</strong> result_id - Identificador del resultado - result_id </summary>
+		<summary><strong>Result Id:</strong> result_id - Result id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -199,7 +197,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Demanda Máxima:</strong> demandmax - Demanda máxima</summary>
+		<summary><strong>Max Demand:</strong> demandmax - Max demand</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -219,7 +217,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Demanda Mínima:</strong> demandmin - Demanda mínima</summary>
+		<summary><strong>Min Demand:</strong> demandmin - Min demand</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -239,7 +237,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Máxima Carga Hidráulica:</strong> headmax - Cabeza máxima</summary>
+		<summary><strong>Max Head:</strong> headmax - Max head</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -259,7 +257,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Mínima Carga Hidráulica:</strong> headmin - Mínima carga hidráulica</summary>
+		<summary><strong>Min Head:</strong> headmin - Min head</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -279,7 +277,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Presión Máxima:</strong> pressmax - Presión máxima</summary>
+		<summary><strong>Max Pressure:</strong> pressmax - Max pressure</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -299,7 +297,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Presión Mínima:</strong> pressmin - Presión mínima</summary>
+		<summary><strong>Min Pressure:</strong> pressmin - Min pressure</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -319,7 +317,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Calidad Máxima:</strong> qualmax - Calidad máxima</summary>
+		<summary><strong>Max Quality:</strong> qualmax - Max quality</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -339,7 +337,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Calidad Mínima:</strong> qualmin - Calidad mínima</summary>
+		<summary><strong>Min Quality:</strong> qualmin - Min quality</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>

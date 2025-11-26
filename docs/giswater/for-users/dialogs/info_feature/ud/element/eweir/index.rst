@@ -12,5 +12,5 @@ Eweir
 	:caption: Tabs
 
 	tab_data
-	../../tab_documents
-	tab_epa
+	tab_documents
+	tab_epa/index

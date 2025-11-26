@@ -1,5 +1,3 @@
-.. _tab-connections
-
 ===========
 Connections
 ===========

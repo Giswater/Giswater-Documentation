@@ -1,5 +1,3 @@
-.. _tab-epa-pump
-
 ====
 Pump
 ====
@@ -14,7 +12,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Curva Id:</strong> curve_id - Id de curva</summary>
+		<summary><strong>Curve Id:</strong> curve_id - curve_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -39,7 +37,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Estado:</strong> status - Estado</summary>
+		<summary><strong>Status:</strong> status - status</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -64,7 +62,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Profundidad En El Nodo De Entrada :</strong> startup - inicio</summary>
+		<summary><strong>Startup:</strong> startup - startup</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -84,7 +82,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Apagar:</strong> shutoff - cierre</summary>
+		<summary><strong>Shutoff:</strong> shutoff - shutoff</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -108,7 +106,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Porcentaje:</strong> percent - Porcentaje</summary>
+		<summary><strong>Percent:</strong> percent - percent</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -128,7 +126,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Número De Inicio:</strong> num_startup - número_inicio</summary>
+		<summary><strong>Num Startup :</strong> num_startup - num_startup</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -148,7 +146,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Flujo Mínimo:</strong> min_flow - Flujo mínimo - min_flow </summary>
+		<summary><strong>Min Flow:</strong> min_flow - min_flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -168,7 +166,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Medio:</strong> avg_flow - flujo_avg</summary>
+		<summary><strong>Avg Flow:</strong> avg_flow - avg_flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -188,7 +186,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Flujo Máximo:</strong> max_flow - Flujo máximo - max_flow </summary>
+		<summary><strong>Max Flow:</strong> max_flow - max_flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -208,7 +206,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Volumen (L):</strong> vol_ltr - vol_ltr</summary>
+		<summary><strong>Vol Ltr:</strong> vol_ltr - vol_ltr</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -228,7 +226,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Powus_Kwh:</strong> powus_kwh - powus_kwh</summary>
+		<summary><strong>Powus Kwh:</strong> powus_kwh - powus_kwh</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -248,7 +246,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Timoff_Min:</strong> timoff_min - timoff_min</summary>
+		<summary><strong>Timoff Min:</strong> timoff_min - timoff_min</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -268,7 +266,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Timoff_Max:</strong> timoff_max - timoff_max</summary>
+		<summary><strong>Timoff Max:</strong> timoff_max - timoff_max</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>

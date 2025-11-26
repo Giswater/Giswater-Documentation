@@ -12,9 +12,9 @@ Virtual connec
 	:caption: Tabs
 
 	tab_data
-	../../tab_documents
-	../../tab_elements
-	tab_epa
-	../../tab_event
-	../../tab_hydrometer
-	../../tab_hydrometer_val
+	tab_documents
+	tab_elements
+	tab_epa/index
+	tab_event
+	tab_hydrometer
+	tab_hydrometer_val

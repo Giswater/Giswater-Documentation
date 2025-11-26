@@ -1,9 +1,7 @@
-.. _tab-hydrometer
-
 ==========
 Hydrometer
 ==========
 
 
-List of consumption values
+List of hydrometers
 

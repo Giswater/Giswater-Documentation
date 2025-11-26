@@ -1,5 +1,3 @@
-.. _tab-epa-outlet
-
 ======
 Outlet
 ======
@@ -14,7 +12,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Salida:</strong> outlet_type - Una salida puede ser: TABULAR / PROFUNDIDAD, TABULAR / CABEZAL, FUNCIONALÂ / PROFUNDIDAD o FUNCIONAL / CABEZAL.</summary>
+		<summary><strong>Outlet Type:</strong> outlet_type - outlet_type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -39,7 +37,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Compensación:</strong> offsetval - Desplazamiento</summary>
+		<summary><strong>Offset:</strong> offsetval - offsetval</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -59,7 +57,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Curva:</strong> curve_id - Identificador de la curva - curve_id </summary>
+		<summary><strong>Curve Id:</strong> curve_id - curve_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -97,7 +95,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Cd1:</strong> cd1 - Coeficiente de una función de descarga FUNCIONAL</summary>
+		<summary><strong>Cd1:</strong> cd1 - cd1</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -117,7 +115,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Cd2:</strong> cd2 - Exponente de una función de descarga FUNCIONAL</summary>
+		<summary><strong>Cd2:</strong> cd2 - cd2</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -137,7 +135,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Compuerta:</strong> flap - SÍ si el conducto tiene una compuerta que impide el reflujo, NO en caso contrario (por defecto es NO).</summary>
+		<summary><strong>Flap:</strong> flap - flap</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -166,7 +164,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Flujo Máximo:</strong> max_flow - Flujo máximo - max_flow </summary>
+		<summary><strong>Max Flow:</strong> max_flow - max_flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -186,7 +184,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Tiempo En Días:</strong> time_days - tiempo_días</summary>
+		<summary><strong>Time Days:</strong> time_days - time_days</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -206,7 +204,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Tiempo En Horas:</strong> time_hour - hora</summary>
+		<summary><strong>Time Hour:</strong> time_hour - time_hour</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -226,7 +224,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Velocidad Máxima:</strong> max_veloc - Velocidad máxima - max_velocity </summary>
+		<summary><strong>Max Veloc:</strong> max_veloc - max_veloc</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -246,7 +244,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Mfull_Flow:</strong> mfull_flow - mfull_flow</summary>
+		<summary><strong>Mfull Flow:</strong> mfull_flow - mfull_flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -266,7 +264,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Mfull_Profundidad:</strong> mfull_depth - mfull_profundidad</summary>
+		<summary><strong>Mfull Depth:</strong> mfull_depth - mfull_depth</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>

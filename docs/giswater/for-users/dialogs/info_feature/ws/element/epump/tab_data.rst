@@ -18,7 +18,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Catálogo:</strong> elementcat_id - Catálogo</summary>
+		<summary><strong>Element Catalog:</strong> elementcat_id - Element Catalog</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> Sí.</li>
@@ -86,7 +86,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Código:</strong> code - Código:</summary>
+		<summary><strong>Code:</strong> code - Code</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -106,7 +106,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Número De Elemento:</strong> num_elements - Número de elemento</summary>
+		<summary><strong>Number Of Elements:</strong> num_elements - Number of Elements</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -126,14 +126,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Función:</strong> function_type - Tipo de función</summary>
+		<summary><strong>Function Type:</strong> function_type - Function Type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT function_type as id, function_type as idval FROM man_type_function WHERE feature_type = 'ELEMENT' OR 'EPUMP' = ANY(featurecat_id::text[])
+					SELECT function_type as id, function_type as idval FROM man_type_function WHERE 'ELEMENT'=ANY(feature_type) OR 'EPUMP' = ANY(featurecat_id::text[])
 				</code>
 			</li>
 			<li>
@@ -151,14 +151,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Categoría:</strong> category_type - Categoría</summary>
+		<summary><strong>Category Type:</strong> category_type - Category Type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT category_type as id, category_type as idval FROM man_type_category WHERE feature_type = 'ELEMENT' OR 'EPUMP' = ANY(featurecat_id::text[])
+					SELECT category_type as id, category_type as idval FROM man_type_category WHERE 'ELEMENT'=ANY(feature_type) OR 'EPUMP' = ANY(featurecat_id::text[])
 				</code>
 			</li>
 			<li>
@@ -176,14 +176,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Ubicación:</strong> location_type - Tipo de ubicación</summary>
+		<summary><strong>Location Type:</strong> location_type - Location Type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT location_type as id, location_type as idval FROM man_type_location WHERE feature_type = 'ELEMENT' OR 'EPUMP' = ANY(featurecat_id::text[])
+					SELECT location_type as id, location_type as idval FROM man_type_location WHERE 'ELEMENT'=ANY(feature_type) OR 'EPUMP' = ANY(featurecat_id::text[])
 				</code>
 			</li>
 			<li>
@@ -201,32 +201,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Workcat:</strong> workcat_id - Workcat</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
-				<code>
-					SELECT id, id as idval FROM cat_work WHERE id IS NOT NULL AND active IS TRUE
-				</code>
-			</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Fin Id Workcat:</strong> workcat_id_end - Fin ID Workcat</summary>
+		<summary><strong>Workcat Id:</strong> workcat_id - Workcat Id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -251,7 +226,32 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Fecha De Construcción:</strong> builtdate - Fecha de construcción:</summary>
+		<summary><strong>Workcat Id End:</strong> workcat_id_end - Workcat Id End</summary>
+		<ul>
+			<li><strong>Datatype:</strong> String.</li>
+			<li><strong>Mandatory:</strong> No.</li>
+			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT id, id as idval FROM cat_work WHERE id IS NOT NULL AND active IS TRUE
+				</code>
+			</li>
+			<li>
+				<details class='no-square'>
+					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<ul>
+						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</details>
+
+
+.. raw:: html
+
+	<details>
+		<summary><strong>Built Date:</strong> builtdate - Built Date</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Date.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -271,7 +271,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Fecha Final:</strong> enddate - Fecha final</summary>
+		<summary><strong>End Date:</strong> enddate - End Date</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Date.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -291,7 +291,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Propietario:</strong> ownercat_id - Relacionado con el catálogo de propietarios (cat_owner)</summary>
+		<summary><strong>Owner Catalog:</strong> ownercat_id - Owner Catalog</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -350,7 +350,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Rotación:</strong> rotation - Rotación:</summary>
+		<summary><strong>Rotation:</strong> rotation - Rotation</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -370,7 +370,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Elevación Superior:</strong> top_elev - Elevación del nodo en pies o m.</summary>
+		<summary><strong>Top Elevation:</strong> top_elev - Top Elevation</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -418,7 +418,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Funcionamiento:</strong> expl_id - Funcionamiento</summary>
+		<summary><strong>Exploitation Id:</strong> expl_id - Exploitation Id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -488,7 +488,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Observación:</strong> observ - Observación</summary>
+		<summary><strong>Observations:</strong> observ - Observations</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -512,14 +512,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Sector Id:</strong> sector_id - Sector ID</summary>
+		<summary><strong>Sector Id:</strong> sector_id - Sector Id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT sector_id as id, name as idval FROM sector WHERE sector_id IS NOT NULL
+					SELECT s.sector_id AS id, s.name AS idval FROM sector s WHERE s.sector_id IS NOT NULL AND s.active IS TRUE ORDER BY CASE WHEN s.sector_id = 0 THEN 1 WHEN s.sector_id = -1 THEN 3 ELSE 2 END, s.sector_id
 				</code>
 			</li>
 			<li>
@@ -554,7 +554,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Estado:</strong> state - Estado:</summary>
+		<summary><strong>State:</strong> state - State</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -580,7 +580,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Estado:</strong> state_type - Tipo de Estado</summary>
+		<summary><strong>State Type:</strong> state_type - State Type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>

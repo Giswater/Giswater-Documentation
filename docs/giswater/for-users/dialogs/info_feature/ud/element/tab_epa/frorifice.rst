@@ -1,5 +1,3 @@
-.. _tab-epa-frorifice
-
 =========
 Frorifice
 =========
@@ -14,14 +12,14 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Orificio:</strong> orifice_type - Tipo de orificio</summary>
+		<summary><strong>Orifice Type:</strong> orifice_type - Orifice Type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
 			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
 				<code>
-					SELECT id, id as idval FROM sys_feature_epa_type WHERE active AND feature_type = 'ELEMENT'
+					SELECT id, idval FROM inp_typevalue WHERE id IS NOT NULL AND  typevalue = 'inp_typevalue_orifice'
 				</code>
 			</li>
 			<li>
@@ -39,7 +37,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Valor De Desplazamiento:</strong> offsetval - Valor de desplazamiento</summary>
+		<summary><strong>Offset Value:</strong> offsetval - Offset Value</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -59,7 +57,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Coeficiente De Descarga:</strong> cd - Coeficiente de descarga</summary>
+		<summary><strong>Discharge Coefficient:</strong> cd - Discharge Coefficient</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -79,7 +77,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Tasa De Orificio:</strong> orate - Tasa de orificio</summary>
+		<summary><strong>Orifice Rate:</strong> orate - Orifice Rate</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -99,11 +97,16 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Solapa:</strong> flap - Solapa</summary>
+		<summary><strong>Flap:</strong> flap - Flap</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Boolean.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT id, idval FROM inp_typevalue WHERE id IS NOT NULL AND typevalue='inp_value_yesno' 
+				</code>
+			</li>
 			<li>
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
@@ -119,11 +122,16 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Forma:</strong> shape - Forma</summary>
+		<summary><strong>Shape:</strong> shape - Shape</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT id, idval FROM inp_typevalue WHERE id IS NOT NULL AND typevalue='inp_value_orifice' 
+				</code>
+			</li>
 			<li>
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
@@ -223,7 +231,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Máximo:</strong> max_flow - Caudal máximo</summary>
+		<summary><strong>Maximum Flow:</strong> max_flow - Maximum Flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -243,7 +251,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Tiempo Días:</strong> time_days - Tiempo Días</summary>
+		<summary><strong>Time Days:</strong> time_days - Time Days</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -263,7 +271,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Hora:</strong> time_hour - Hora</summary>
+		<summary><strong>Time Hour:</strong> time_hour - Time Hour</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -283,7 +291,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Velocidad Máxima:</strong> max_veloc - Velocidad máxima</summary>
+		<summary><strong>Maximum Velocity:</strong> max_veloc - Maximum Velocity</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -303,7 +311,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Flujo Total:</strong> mfull_flow - Flujo total</summary>
+		<summary><strong>Full Flow:</strong> mfull_flow - Full Flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -323,7 +331,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Profundidad Total:</strong> mfull_depth - Profundidad total</summary>
+		<summary><strong>Full Depth:</strong> mfull_depth - Full Depth</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -343,7 +351,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Cizallamiento Máximo:</strong> max_shear - Cizallamiento máximo</summary>
+		<summary><strong>Maximum Shear:</strong> max_shear - Maximum Shear</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -363,7 +371,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Radio Hidráulico Máximo:</strong> max_hr - Radio hidráulico máximo</summary>
+		<summary><strong>Maximum Hydraulic Radius:</strong> max_hr - Maximum Hydraulic Radius</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -383,7 +391,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Pendiente Máxima:</strong> max_slope - Pendiente máxima</summary>
+		<summary><strong>Maximum Slope:</strong> max_slope - Maximum Slope</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -403,7 +411,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Día Máximo:</strong> day_max - Día Máximo</summary>
+		<summary><strong>Day Maximum:</strong> day_max - Day Maximum</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -423,7 +431,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Tiempo Máximo:</strong> time_max - Tiempo Máximo</summary>
+		<summary><strong>Time Maximum:</strong> time_max - Time Maximum</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -443,7 +451,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Cizallamiento Mínimo:</strong> min_shear - Cizallamiento mínimo</summary>
+		<summary><strong>Minimum Shear:</strong> min_shear - Minimum Shear</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -463,7 +471,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Día Mínimo:</strong> day_min - Día Mínimo</summary>
+		<summary><strong>Day Minimum:</strong> day_min - Day Minimum</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -483,7 +491,7 @@ Epa
 .. raw:: html
 
 	<details>
-		<summary><strong>Tiempo Mínimo:</strong> time_min - Tiempo Mínimo</summary>
+		<summary><strong>Time Minimum:</strong> time_min - Time Minimum</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>

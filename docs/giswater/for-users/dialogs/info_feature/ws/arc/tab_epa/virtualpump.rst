@@ -1,5 +1,3 @@
-.. _tab-epa-virtualpump
-
 ===========
 Virtualpump
 ===========
@@ -18,7 +16,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Potencia Total:</strong> power - Potencia total</summary>
+		<summary><strong>Power:</strong> power - Power</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -38,7 +36,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Curva:</strong> curve_id - Identificador de la curva - curve_id </summary>
+		<summary><strong>Curve Id:</strong> curve_id - Curve id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -75,7 +73,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Velocidad:</strong> speed - Velocidad</summary>
+		<summary><strong>Speed:</strong> speed - Speed</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -95,7 +93,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Patrón:</strong> pattern_id - Patrón</summary>
+		<summary><strong>Pattern:</strong> pattern_id - Pattern</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -133,7 +131,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Estado:</strong> status - status</summary>
+		<summary><strong>Status:</strong> status - Status</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -158,7 +156,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Bomba:</strong> pump_type - Tipo de bomba</summary>
+		<summary><strong>Pump Type:</strong> pump_type - Pump type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -183,7 +181,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Curva De Eficiencia:</strong> effic_curve_id - effic_curve_id</summary>
+		<summary><strong>Effic Curve Id:</strong> effic_curve_id - effic_curve_id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -221,7 +219,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Precio De La Energía :</strong> energy_price - Precio de la energía </summary>
+		<summary><strong>Energy Price:</strong> energy_price - Energy price</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -241,7 +239,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Patrón De Energía:</strong> energy_pattern_id - Patrón de energía</summary>
+		<summary><strong>Price Pattern:</strong> energy_pattern_id - Price pattern</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -283,7 +281,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Resultado:</strong> result_id - Identificador del resultado - result_id </summary>
+		<summary><strong>Result Id:</strong> result_id - Result id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -303,7 +301,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Máximo:</strong> flow_max - Caudal máximo</summary>
+		<summary><strong>Max Flow:</strong> flow_max - Max Flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -323,7 +321,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Mínimo:</strong> flow_min - Caudal mínimo</summary>
+		<summary><strong>Min Flow:</strong> flow_min - Min Flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -343,7 +341,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Velocidad Máxima:</strong> vel_max - Velocidad máxima</summary>
+		<summary><strong>Max Velocity:</strong> vel_max - Max velocity</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -363,7 +361,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Velocidad Mínima:</strong> vel_min - Velocidad mínima</summary>
+		<summary><strong>Min Velocity:</strong> vel_min - Min velocity</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -383,7 +381,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Máxima Perdida De Carga Hidráulica:</strong> headloss_max - Máxima perdida de carga hidráulica</summary>
+		<summary><strong>Max Headloss:</strong> headloss_max - Max headloss</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -403,7 +401,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Mínima Perdida Da Carga Hidráulica:</strong> headloss_min - Mínima perdida da carga hidráulica</summary>
+		<summary><strong>Min Headloss:</strong> headloss_min - Min headloss</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -423,7 +421,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Calidad:</strong> quality - Calidad</summary>
+		<summary><strong>Quality:</strong> quality - Quality</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -443,7 +441,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Factor De Uso:</strong> usage_fact - factor de uso</summary>
+		<summary><strong>Usage Factor:</strong> usage_fact - Usage factor</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -463,7 +461,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Eficiencia Media:</strong> avg_effic - Eficacia media</summary>
+		<summary><strong>Average Efficiency:</strong> avg_effic - Average efficiency</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -503,7 +501,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Kw Medios:</strong> avg_kw - KW medio</summary>
+		<summary><strong>Average Kw:</strong> avg_kw - Average KW</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -523,7 +521,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Kw Máximos:</strong> peak_kw - KW máximos</summary>
+		<summary><strong>Peak Kw:</strong> peak_kw - Peak KW</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -543,7 +541,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Coste Diario:</strong> cost_day - Coste por día</summary>
+		<summary><strong>Cost Day:</strong> cost_day - Cost day</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>

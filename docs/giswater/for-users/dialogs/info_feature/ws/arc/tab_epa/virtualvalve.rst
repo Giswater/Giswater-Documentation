@@ -1,5 +1,3 @@
-.. _tab-epa-virtualvalve
-
 ============
 Virtualvalve
 ============
@@ -14,7 +12,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Id Del Nodarc:</strong> nodarc_id - Nodarc id</summary>
+		<summary><strong>Nodarc Id:</strong> nodarc_id - Nodarc id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -34,11 +32,16 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Válvula:</strong> valve_type - Tipo de válvula</summary>
+		<summary><strong>Valve Type:</strong> valve_type - Valve type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
+			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+				<code>
+					SELECT id, idval FROM inp_typevalue WHERE typevalue='inp_typevalue_valve'
+				</code>
+			</li>
 			<li>
 				<details class='no-square'>
 					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
@@ -74,7 +77,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Diámetro:</strong> diameter - Diámetro en pulgadas o mm.</summary>
+		<summary><strong>Diameter:</strong> diameter - Diameter</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -94,7 +97,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Curva:</strong> curve_id - Identificador de la curva - curve_id </summary>
+		<summary><strong>Curve Id:</strong> curve_id - Curve id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -131,7 +134,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Perdida Menor:</strong> minorloss - Perdida menor</summary>
+		<summary><strong>Minorloss:</strong> minorloss - Minorloss</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -151,7 +154,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Estado:</strong> status - status</summary>
+		<summary><strong>Status:</strong> status - Status</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -176,27 +179,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Para Arco:</strong> to_arc - Para arco</summary>
-		<ul>
-			<li><strong>Datatype:</strong> String.</li>
-			<li><strong>Mandatory:</strong> No.</li>
-			<li><strong>Editable:</strong> No.</li>
-			<li>
-				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
-					<ul>
-						<li><strong>filterSign</strong> (ILIKE): </li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</details>
-
-
-.. raw:: html
-
-	<details>
-		<summary><strong>Calidad Inicial:</strong> init_quality - Calidad inicial</summary>
+		<summary><strong>Initial Quality:</strong> init_quality - Initial quality</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -220,7 +203,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Id De Resultado:</strong> result_id - Identificador del resultado - result_id </summary>
+		<summary><strong>Result Id:</strong> result_id - Result id</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -240,7 +223,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Máximo:</strong> flow_max - Caudal máximo</summary>
+		<summary><strong>Max Flow:</strong> flow_max - Max Flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -260,7 +243,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Caudal Mínimo:</strong> flow_min - Caudal mínimo</summary>
+		<summary><strong>Min Flow:</strong> flow_min - Min Flow</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -280,7 +263,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Velocidad Máxima:</strong> vel_max - Velocidad máxima</summary>
+		<summary><strong>Max Velocity:</strong> vel_max - Max velocity</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -300,7 +283,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Velocidad Mínima:</strong> vel_min - Velocidad mínima</summary>
+		<summary><strong>Min Velocity:</strong> vel_min - Min velocity</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -320,7 +303,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Máxima Perdida De Carga Hidráulica:</strong> headloss_max - Máxima perdida de carga hidráulica</summary>
+		<summary><strong>Max Headloss:</strong> headloss_max - Max headloss</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -340,7 +323,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Mínima Perdida Da Carga Hidráulica:</strong> headloss_min - Mínima perdida da carga hidráulica</summary>
+		<summary><strong>Min Headloss:</strong> headloss_min - Max headloss</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -360,7 +343,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Max Uheadloss:</strong> uheadloss_max - Pérdida de carga máxima</summary>
+		<summary><strong>Max Uheadloss:</strong> uheadloss_max - Max headloss</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -400,7 +383,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Configuración Máxima:</strong> setting_max - Configuración máxima</summary>
+		<summary><strong>Max Setting:</strong> setting_max - Max setting</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -420,7 +403,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Configuración Mínima:</strong> setting_min - Ajuste mínimo</summary>
+		<summary><strong>Min Setting:</strong> setting_min - Min setting</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -440,7 +423,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Reacción Máxima:</strong> reaction_max - Reacción máxima</summary>
+		<summary><strong>Max Reaction:</strong> reaction_max - Max reaction</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -460,7 +443,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Reacción Mínima:</strong> reaction_min - Reacción mínima</summary>
+		<summary><strong>Min Reaction:</strong> reaction_min - Min reaction</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -480,7 +463,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Ffactor Máximo:</strong> ffactor_max - Factor F máx.</summary>
+		<summary><strong>Max Ffactor:</strong> ffactor_max - Max Ffactor</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -500,7 +483,7 @@ List of Result EPA values
 .. raw:: html
 
 	<details>
-		<summary><strong>Ffactor Mínimo:</strong> ffactor_min - Ffactor mínimo</summary>
+		<summary><strong>Min Ffactor:</strong> ffactor_min - Min Ffactor</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>

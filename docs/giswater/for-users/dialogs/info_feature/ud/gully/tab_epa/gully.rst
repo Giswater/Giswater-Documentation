@@ -1,5 +1,3 @@
-.. _tab-epa-gully
-
 =====
 Gully
 =====
@@ -14,7 +12,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Tipo De Salida:</strong> outlet_type - Tipo de salida</summary>
+		<summary><strong>Outlet Type:</strong> outlet_type - outlet_type</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -31,7 +29,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Custom_Top_Elev:</strong> custom_top_elev - custom_top_elev</summary>
+		<summary><strong>Custom Top Elev:</strong> custom_top_elev - custom_top_elev</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -51,7 +49,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Anchura Personalizada:</strong> custom_width - Anchura personalizada</summary>
+		<summary><strong>Custom Width:</strong> custom_width - custom_width</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -63,7 +61,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Longitud Personalizada:</strong> custom_length - Longitud personalizada:</summary>
+		<summary><strong>Custom Length:</strong> custom_length - custom_length</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -75,7 +73,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Profundidad Personalizada:</strong> custom_depth - Profundidad personalizada</summary>
+		<summary><strong>Custom Depth:</strong> custom_depth - custom_depth</summary>
 		<ul>
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -104,7 +102,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Weir Cd:</strong> weir_cd - Weir cd</summary>
+		<summary><strong>Weir Cd:</strong> weir_cd - weir_cd</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -116,7 +114,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Orificio Cd:</strong> orifice_cd - Orificio cd</summary>
+		<summary><strong>Orifice Cd:</strong> orifice_cd - orifice_cd</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Numeric.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -128,7 +126,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Personalizar Un Parámetro:</strong> custom_a_param - Personalizar un parámetro</summary>
+		<summary><strong>Custom A Param:</strong> custom_a_param - custom_a_param</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -148,7 +146,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Parámetro B Personalizado:</strong> custom_b_param - Parámetro b personalizado</summary>
+		<summary><strong>Custom B Param:</strong> custom_b_param - custom_b_param</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>
@@ -168,7 +166,7 @@ None
 .. raw:: html
 
 	<details>
-		<summary><strong>Eficacia:</strong> efficiency - Eficacia</summary>
+		<summary><strong>Efficiency:</strong> efficiency - efficiency</summary>
 		<ul>
 			<li><strong>Datatype:</strong> Double.</li>
 			<li><strong>Mandatory:</strong> No.</li>

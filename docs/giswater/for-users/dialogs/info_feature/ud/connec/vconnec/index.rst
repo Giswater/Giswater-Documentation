@@ -12,8 +12,8 @@ Vconnec
 	:caption: Tabs
 
 	tab_data
-	../../tab_documents
-	../../tab_elements
-	../../tab_event
-	../../tab_hydrometer
-	../../tab_hydrometer_val
+	tab_documents
+	tab_elements
+	tab_event
+	tab_hydrometer
+	tab_hydrometer_val

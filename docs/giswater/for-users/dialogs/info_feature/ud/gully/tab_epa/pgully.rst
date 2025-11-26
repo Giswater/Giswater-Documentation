@@ -1,5 +1,3 @@
-.. _tab-epa-pgully
-
 ======
 Pgully
 ======
