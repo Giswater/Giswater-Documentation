@@ -4,39 +4,37 @@ css_files = css_files + ["_static/css/404.css"] %} {% block body %}
 	<div class="error-container">
 		<div class="error-code">404</div>
 		<div class="error-message">
-			<h1>{{ _('Página no encontrada') }}</h1>
+			<h1>{{ _('Page not found') }}</h1>
 			<p>
-				{{ _('Lo siento, la página que estás buscando no existe o aún no ha sido
-				documentada.') }}
+				{{ _('Sorry, the page you are looking for does not exist or has not yet been documented.') }}
 			</p>
 		</div>
 
 		<div class="error-suggestions">
-			<h3>{{ _('¿Qué puedes hacer?') }}</h3>
+			<h3>{{ _('What can you do?') }}</h3>
 			<ul>
 				<li>
 					<a href="{{ pathto('docs/index') }}"
-						>{{ _('Ir a la página principal') }}</a
+						>{{ _('Go to the main page') }}</a
 					>
 				</li>
 				<li>
 					<a href="{{ pathto('search') }}"
-						>{{ _('Buscar en la documentación') }}</a
+						>{{ _('Search the documentation') }}</a
 					>
 				</li>
 				<li>
 					<a href="{{ pathto('genindex') }}"
-						>{{ _('Ver el índice general') }}</a
+						>{{ _('View the general index') }}</a
 					>
 				</li>
 			</ul>
 		</div>
 
 		<div class="error-help">
-			<h3>{{ _('¿No encuentras lo que buscas?') }}</h3>
+			<h3>{{ _('Can't find what you are looking for?') }}</h3>
 			<p>
-				{{ _('Esta documentación está en constante desarrollo. Si crees que
-				debería existir documentación para esta página:') }}
+				{{ _('This documentation is constantly being developed. If you think there should be documentation for this page:') }}
 			</p>
 			<ul>
 				<li>
@@ -44,52 +42,52 @@ css_files = css_files + ["_static/css/404.css"] %} {% block body %}
 						href="https://github.com/Giswater/Giswater-Documentation/issues/new"
 						target="_blank"
 					>
-						{{ _('Reporta el contenido faltante en GitHub') }}
+						{{ _('Report missing content on GitHub') }}
 					</a>
 				</li>
 				<li>
 					<a href="https://www.giswater.org/community/" target="_blank">
-						{{ _('Únete a la comunidad de Giswater') }}
+						{{ _('Join the Giswater community') }}
 					</a>
 				</li>
 			</ul>
 		</div>
 
 		<div class="error-sections">
-			<h3>{{ _('Secciones principales') }}</h3>
+			<h3>{{ _('Main sections') }}</h3>
 			<div class="section-grid">
 				<div class="section-card">
 					<h4>
 						<a href="{{ pathto('giswater/for-users/user-manual/index') }}"
-							>{{ _('Manual de Usuario') }}</a
+							>{{ _('User Manual') }}</a
 						>
 					</h4>
-					<p>{{ _('Guías completas para usar Giswater') }}</p>
+					<p>{{ _('Complete guides to use Giswater') }}</p>
 				</div>
 				<div class="section-card">
 					<h4>
 						<a href="{{ pathto('giswater/for-users/dialogs/index') }}"
-							>{{ _('Diálogos') }}</a
+							>{{ _('Dialogs') }}</a
 						>
 					</h4>
-					<p>{{ _('Documentación de ventanas y herramientas') }}</p>
+					<p>{{ _('Documentation for windows and tools') }}</p>
 				</div>
 				<div class="section-card">
 					<h4>
 						<a
 							href="{{ pathto('giswater/for-users/quickstart/steps-to-create-a-new-project') }}"
-							>{{ _('Guía de Inicio') }}</a
+							>{{ _('Quick Start Guide') }}</a
 						>
 					</h4>
-					<p>{{ _('Primeros pasos con Giswater') }}</p>
+					<p>{{ _('First steps with Giswater') }}</p>
 				</div>
 				<div class="section-card">
 					<h4>
 						<a href="{{ pathto('giswater/for-developers/index') }}"
-							>{{ _('Para Desarrolladores') }}</a
+							>{{ _('For Developers') }}</a
 						>
 					</h4>
-					<p>{{ _('Documentación técnica y API') }}</p>
+					<p>{{ _('Technical documentation and API') }}</p>
 				</div>
 			</div>
 		</div>
