@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 LANG            = en
 # currently we are building for the following languages, if you want yours to be build: ask!
-LANGUAGES       = en es_ES ca es_ES #pt_PT pt_BR
+LANGUAGES       = en es_CR es_ES ca #pt_PT pt_BR
 SPHINXOPTS      =
 # Use the tag i18n to filter text based on whether we are translating or not
 SPHINXINTLOPTS  = $(SPHINXOPTS) -D language=$(LANG) -t i18n
@@ -52,7 +52,13 @@ sync-from-i18n:
 	fi; \
 	if [ -n "$${I18N_TOKEN}" ] && [ -n "$${I18N_REPO_URL}" ]; then \
 		echo "Syncing i18n files from i18n to gettext"; \
-		./scripts/sync_translations_from_i18n.sh $(VERSION); \
+		if [ -z "$${LANG}" ]; then \
+			echo "LANG is not defined, using default languages"; \
+			./scripts/sync_translations_from_i18n.sh "$(VERSION)"; \
+		else \
+			echo "LANG is defined, using $$LANG"; \
+			./scripts/sync_translations_from_i18n.sh "$(VERSION)" "$${LANG}"; \
+		fi; \
 	else \
 		echo "Skipping sync-from-i18n: I18N_TOKEN or I18N_REPO_URL not defined (checked env and .env)"; \
 	fi
