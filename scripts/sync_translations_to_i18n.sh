@@ -62,11 +62,9 @@ for lang in "${LANGUAGES[@]}"; do
     SOURCE_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
     TARGET_DIR="$I18N_REPO_PATH/$VERSION/locale/$lang/LC_MESSAGES"
 
-    # If a language directory does not exist locally, skip it instead of falling back to 'en'.
+    # For no_TR, or if a language directory does not exist, use 'en' as a fallback.
     if [ ! -d "$SOURCE_DIR" ]; then
-        echo "Warning: Source directory for language '$lang' does not exist locally. Skipping."
-        continue
-    fi
+        echo "Warning: Source directory for language '$lang' does not exist. Using 'en' as fallback."
 
         SOURCE_DIR_EN="$LOCALE_DIR/en/LC_MESSAGES"
         if [ -d "$SOURCE_DIR_EN" ]; then
