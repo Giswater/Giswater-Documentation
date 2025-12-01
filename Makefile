@@ -52,13 +52,7 @@ sync-from-i18n:
 	fi; \
 	if [ -n "$${I18N_TOKEN}" ] && [ -n "$${I18N_REPO_URL}" ]; then \
 		echo "Syncing i18n files from i18n to gettext"; \
-		if [ -z "$${LANG}" ]; then \
-			echo "LANG is not defined, using default languages"; \
-			./scripts/sync_translations_from_i18n.sh "$(VERSION)"; \
-		else \
-			echo "LANG is defined, using $$LANG"; \
-			./scripts/sync_translations_from_i18n.sh "$(VERSION)" "$${LANG}"; \
-		fi; \
+		./scripts/sync_translations_from_i18n.sh $(VERSION); \
 	else \
 		echo "Skipping sync-from-i18n: I18N_TOKEN or I18N_REPO_URL not defined (checked env and .env)"; \
 	fi
@@ -77,7 +71,7 @@ zip:
 	zip -r Giswater-$(VERSION)-Documentation-$(LANG).zip $(LANG)/;)
 	mv $(BUILDDIR)/html/Giswater-$(VERSION)-Documentation-$(LANG).zip $(BUILDDIR)/zip/;
 
-site: html zip
+site: sync-from-i18n html zip
 	@mkdir -p $(SITEDIR)/$(VERSION)/$(LANG)/docs
 	rsync -hvrzc --delete --progress $(BUILDDIR)/html/$(LANG)/* $(SITEDIR)/$(VERSION)/$(LANG)
 
@@ -86,7 +80,7 @@ full: html zip
 
 # this will build ALL languages, AND tries to rsync them to the web dir on qgis2
 # to be able to run this you will need a key on the server
-all: springclean sync-from-i18n
+all: springclean
 	@for LANG in $(LANGUAGES) ; do \
 		make LANG=$$LANG site; \
 	done

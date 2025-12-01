@@ -56,15 +56,17 @@ if [ ! -d "$I18N_REPO_PATH/$VERSION" ]; then
     exit 1
 fi
 
-echo "Syncing translations from the i18n repository for version $VERSION..."
+echo "Syncing translations to the i18n repository for version $VERSION..."
 
 for lang in "${LANGUAGES[@]}"; do
     SOURCE_DIR="$LOCALE_DIR/$lang/LC_MESSAGES"
     TARGET_DIR="$I18N_REPO_PATH/$VERSION/locale/$lang/LC_MESSAGES"
 
-    # For no_TR, or if a language directory does not exist, use 'en' as a fallback.
+    # If a language directory does not exist locally, skip it instead of falling back to 'en'.
     if [ ! -d "$SOURCE_DIR" ]; then
-        echo "Warning: Source directory for language '$lang' does not exist. Using 'en' as fallback."
+        echo "Warning: Source directory for language '$lang' does not exist locally. Skipping."
+        continue
+    fi
 
         SOURCE_DIR_EN="$LOCALE_DIR/en/LC_MESSAGES"
         if [ -d "$SOURCE_DIR_EN" ]; then
