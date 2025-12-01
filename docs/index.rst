@@ -42,3 +42,5 @@ Please take a look at one of the following documents.
    :caption: FOR ADMINISTRATORS
 
    Administrator Documentation <giswater/for-admins/index>
+
+This is a test to verify the correct workflow of the sync-i18n process.
