@@ -1,3 +1,7 @@
+{% set page_depth = pagename.split('/') | length %}
+{% set to_lang_root = '../' * page_depth %}
+{% set to_version_root = '../' * (page_depth + 1) %}
+{% set to_site_root = '../' * (page_depth + 2) %}
 <div
 	class="rst-versions"
 	data-toggle="rst-versions"
@@ -14,7 +18,7 @@
 		<dl>
 			<dt>{{ _('Languages') }}</dt>
 			{% for slug, url in supported_languages %}
-			<dd><a href="../../{{ slug }}/{{ pagename }}.html">{{ slug }}</a></dd>
+			<dd><a href="{{ to_site_root }}{{ version }}/{{ slug }}/{{ pagename }}.html">{{ slug }}</a></dd>
 			{% endfor %}
 		</dl>
 
@@ -22,7 +26,7 @@
 			<dt>{{ _('Versions') }}</dt>
 			{% for slug, url in versions %}
 			<dd>
-				<a href="../../../{{ slug }}/{{ language }}/{{ pagename }}.html">{{ slug }}</a>
+				<a href="{{ to_site_root }}{{ slug }}/{{ language|replace('-', '_') }}/{{ pagename }}.html">{{ slug }}</a>
 			</dd>
 			{% endfor %}
 		</dl>

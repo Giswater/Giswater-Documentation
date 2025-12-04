@@ -1,3 +1,3 @@
 version_list: latest, master
 # Fill this list with the languages we build for the release, space separated
-supported_languages: en es_ES ca es_ES #pt_PT pt_BR
+supported_languages: en es_ES ca es_CR #pt_PT pt_BR
