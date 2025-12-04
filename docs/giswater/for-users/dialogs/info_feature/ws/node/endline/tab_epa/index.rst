@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto endline son:
+The EPA types that the object endline can have are:
 
 .. toctree::
 	:maxdepth: 1

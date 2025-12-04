@@ -1,16 +1,16 @@
 .. _info-feature-index
 
-===================
-Objetos de Giswater
-===================
+================
+Giswater Objects
+================
 
 
-En un proyecto de Giswater se pueden crear y editar los siguientes objetos:
+In a Giswater project, the following objects can be created and edited:
 
 .. raw:: html
 
 	<details class='toggle-details'>
-		<summary><strong class="info_feture_project_type">Objetos Water Supply (WS)</strong></summary>
+		<summary><strong class="info_feture_project_type">Water Supply Objects (WS)</strong></summary>
 
 .. toctree::
 	:maxdepth: 1
@@ -85,7 +85,7 @@ En un proyecto de Giswater se pueden crear y editar los siguientes objetos:
 .. raw:: html
 
 	<details class='toggle-details'>
-		<summary><strong class="info_feture_project_type">Objetos Urban Drainage (UD)</strong></summary>
+		<summary><strong class="info_feture_project_type">Urban Drainage Objects (UD)</strong></summary>
 
 .. toctree::
 	:maxdepth: 1

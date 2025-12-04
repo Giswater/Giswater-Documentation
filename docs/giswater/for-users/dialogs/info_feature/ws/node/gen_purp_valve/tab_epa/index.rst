@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto gen_purp_valve son:
+The EPA types that the object gen_purp_valve can have are:
 
 .. toctree::
 	:maxdepth: 1

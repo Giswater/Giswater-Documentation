@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto wjoin son:
+The EPA types that the object wjoin can have are:
 
 .. toctree::
 	:maxdepth: 1

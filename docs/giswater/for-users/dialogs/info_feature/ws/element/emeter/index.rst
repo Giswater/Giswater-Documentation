@@ -5,7 +5,7 @@ Emeter
 ======
 
 
-El objeto emeter no tiene descripción.
+The object emeter has no description.
 
 .. toctree::
 	:maxdepth: 1

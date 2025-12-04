@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto wtp son:
+The EPA types that the object wtp can have are:
 
 .. toctree::
 	:maxdepth: 1

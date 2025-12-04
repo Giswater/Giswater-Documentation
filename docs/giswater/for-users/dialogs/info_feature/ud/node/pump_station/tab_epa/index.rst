@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto pump_station son:
+The EPA types that the object pump_station can have are:
 
 .. toctree::
 	:maxdepth: 1

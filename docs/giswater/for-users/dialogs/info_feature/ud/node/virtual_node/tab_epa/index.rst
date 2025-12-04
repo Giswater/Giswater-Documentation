@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto virtual_node son:
+The EPA types that the object virtual_node can have are:
 
 .. toctree::
 	:maxdepth: 1

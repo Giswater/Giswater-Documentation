@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto circ_manhole son:
+The EPA types that the object circ_manhole can have are:
 
 .. toctree::
 	:maxdepth: 1

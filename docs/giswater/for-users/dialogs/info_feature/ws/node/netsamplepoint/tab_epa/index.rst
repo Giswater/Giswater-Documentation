@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto netsamplepoint son:
+The EPA types that the object netsamplepoint can have are:
 
 .. toctree::
 	:maxdepth: 1

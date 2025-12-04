@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto pump_pipe son:
+The EPA types that the object pump_pipe can have are:
 
 .. toctree::
 	:maxdepth: 1

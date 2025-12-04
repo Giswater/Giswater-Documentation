@@ -9,11 +9,11 @@ Data
 
 
 
-Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes del formulario <form-parts>`
+If you want to check the layout distribution, you can go to :ref:`Form Parts <partes-del-formulario>`
 
 .. raw:: html
 
-	<p class='layout-header'>Los campos en el layout lyt_top_1 son:</p>
+	<p class='layout-header'>The fields in the layout lyt_top_1 are:</p>
 
 .. raw:: html
 
@@ -25,10 +25,10 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
+						<li><strong>labelPosition</strong> (top): If this value is defined [top, left, none], the label will occupy the relative position with respect to the widget. By default, left is understood. If the label field is empty, labelPosition is omitted.</li>
 					</ul>
 				</details>
 			</li>
@@ -44,22 +44,22 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> Sí.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, id as idval FROM cat_node WHERE id IS NOT NULL AND active IS TRUE 
 				</code>
 			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+			<li><strong>Filterc:</strong> The previous query is filtered by:
 				<code>
 					 AND node_type
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
+						<li><strong>labelPosition</strong> (top): If this value is defined [top, left, none], the label will occupy the relative position with respect to the widget. By default, left is understood. If the label field is empty, labelPosition is omitted.</li>
 						<li>
 							<details class='no-square'>
 								<summary><strong>valueRelation:</strong> </summary>
@@ -88,17 +88,17 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, id as idval FROM sys_feature_epa_type WHERE active AND feature_type = 'NODE'
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
+						<li><strong>labelPosition</strong> (top): If this value is defined [top, left, none], the label will occupy the relative position with respect to the widget. By default, left is understood. If the label field is empty, labelPosition is omitted.</li>
 					</ul>
 				</details>
 			</li>
@@ -108,7 +108,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 
 .. raw:: html
 
-	<p class='layout-header'>Los campos en el layout lyt_data_1 son:</p>
+	<p class='layout-header'>The fields in the layout lyt_data_1 are:</p>
 
 .. raw:: html
 
@@ -120,9 +120,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -140,9 +140,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -160,9 +160,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -178,16 +178,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, idval FROM edit_typevalue WHERE typevalue = 'value_datasource'
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -205,9 +205,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -225,9 +225,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -245,9 +245,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -263,16 +263,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, id as idval FROM cat_work WHERE id IS NOT NULL AND active IS TRUE 
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -290,9 +290,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -308,16 +308,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, id as idval FROM cat_owner WHERE id IS NOT NULL AND active IS TRUE 
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -333,16 +333,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, id as idval FROM cat_work WHERE id IS NOT NULL AND active IS TRUE 
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -360,9 +360,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -380,9 +380,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -400,9 +400,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -550,7 +550,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					select id, idval from edit_typevalue where typevalue = 'label_quadrant'
 				</code>
@@ -615,7 +615,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, idval FROM edit_typevalue WHERE typevalue = 'value_lock_level'
 				</code>
@@ -644,7 +644,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, id AS idval FROM cat_pavement WHERE id IS NOT NULL
 				</code>
@@ -685,7 +685,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, idval FROM edit_typevalue WHERE typevalue = 'man_tank_fencetype'
 				</code>
@@ -726,7 +726,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, idval FROM edit_typevalue WHERE typevalue = 'man_tank_shape'
 				</code>
@@ -781,9 +781,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -799,16 +799,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT node_id AS id, node_id AS idval FROM node WHERE node_id IS NOT NULL
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -818,7 +818,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 
 .. raw:: html
 
-	<p class='layout-header'>Los campos en el layout lyt_data_2 son:</p>
+	<p class='layout-header'>The fields in the layout lyt_data_2 are:</p>
 
 .. raw:: html
 
@@ -828,16 +828,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, id as idval FROM cat_soil WHERE id IS NOT NULL AND active IS TRUE 
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -853,16 +853,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT function_type as id, function_type as idval FROM man_type_function WHERE ((featurecat_id is null AND 'NODE'=ANY(feature_type)) ) AND active IS TRUE  OR 'TANK' = ANY(featurecat_id::text[])
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -878,16 +878,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT category_type as id, category_type as idval FROM man_type_category WHERE ((featurecat_id is null AND 'NODE'=ANY(feature_type))) AND active IS TRUE  OR 'TANK' = ANY(featurecat_id::text[])
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -903,16 +903,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> No.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT fluid_type as id, fluid_type as idval FROM man_type_fluid WHERE ((featurecat_id is null AND 'NODE'=ANY(feature_type)) ) AND active IS TRUE  OR 'TANK' = ANY(featurecat_id::text[])
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -928,16 +928,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT location_type as id, location_type as idval FROM man_type_location WHERE ((featurecat_id is null AND 'NODE'=ANY(feature_type)) ) AND active IS TRUE  OR 'TANK' = ANY(featurecat_id::text[])
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -955,9 +955,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -975,9 +975,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -995,9 +995,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1015,9 +1015,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1035,9 +1035,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1053,16 +1053,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, idval FROM edit_typevalue WHERE typevalue = 'value_verified'
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1078,21 +1078,21 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT presszone.presszone_id as id, name as idval FROM presszone WHERE presszone_id='0' UNION SELECT presszone.presszone_id AS id, presszone.name AS idval FROM presszone WHERE presszone_id IS NOT NULL AND active IS TRUE 
 				</code>
 			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+			<li><strong>Filterc:</strong> The previous query is filtered by:
 				<code>
 					 AND presszone.expl_id
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 						<li>
 							<details class='no-square'>
 								<summary><strong>valueRelation:</strong> </summary>
@@ -1121,16 +1121,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> No.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT dqa_id as id, name as idval FROM dqa WHERE dqa_id IS NOT NULL  AND active IS TRUE 
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 						<li>
 							<details class='no-square'>
 								<summary><strong>valueRelation:</strong> </summary>
@@ -1159,14 +1159,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT expl_id as id, name as idval FROM exploitation WHERE expl_id IS NOT NULL
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Stylesheet:</strong> Modificaciones esteticas del campo</summary>
+					<summary><strong>Stylesheet:</strong> Aesthetic modifications of the field</summary>
 					<ul>
 						<li>
 							<details class='no-square'>
@@ -1182,9 +1182,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 						<li>
 							<details class='no-square'>
 								<summary><strong>valueRelation:</strong> </summary>
@@ -1213,16 +1213,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, id as idval FROM cat_work WHERE id IS NOT NULL
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1358,16 +1358,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, id as idval FROM cat_brand WHERE 'TANK' = ANY(featurecat_id::text[]) OR featurecat_id IS NULL
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1383,16 +1383,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Text.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, id as idval FROM cat_brand_model WHERE 'TANK' = ANY(featurecat_id::text[]) OR featurecat_id IS NULL
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1402,7 +1402,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 
 .. raw:: html
 
-	<p class='layout-header'>Los campos en el layout lyt_data_3 son:</p>
+	<p class='layout-header'>The fields in the layout lyt_data_3 are:</p>
 
 .. raw:: html
 
@@ -1412,16 +1412,16 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT muni_id as id, name as idval from v_ext_municipality WHERE muni_id IS NOT NULL
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1439,9 +1439,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1457,21 +1457,21 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT a.district_id AS id, a.name AS idval FROM ext_district a JOIN ext_municipality m USING (muni_id) WHERE district_id IS NOT NULL 
 				</code>
 			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+			<li><strong>Filterc:</strong> The previous query is filtered by:
 				<code>
 					 AND m.muni_id
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1487,21 +1487,21 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id AS id, a.descript AS idval FROM v_ext_streetaxis a JOIN ext_municipality m USING (muni_id) WHERE id IS NOT NULL
 				</code>
 			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+			<li><strong>Filterc:</strong> The previous query is filtered by:
 				<code>
 					 AND m.name
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1517,21 +1517,21 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT a.postnumber AS id, a.postnumber AS idval FROM ext_address a JOIN ext_streetaxis m ON streetaxis_id=m.id WHERE a.id IS NOT NULL
 				</code>
 			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+			<li><strong>Filterc:</strong> The previous query is filtered by:
 				<code>
 					 AND m.name
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1549,9 +1549,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1567,21 +1567,21 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id AS id, a.descript AS idval FROM v_ext_streetaxis a JOIN ext_municipality m USING (muni_id) WHERE id IS NOT NULL
 				</code>
 			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+			<li><strong>Filterc:</strong> The previous query is filtered by:
 				<code>
 					 AND m.name
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1597,21 +1597,21 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT a.postnumber AS id, a.postnumber AS idval FROM ext_address a JOIN ext_streetaxis m ON streetaxis_id=m.id WHERE a.id IS NOT NULL
 				</code>
 			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+			<li><strong>Filterc:</strong> The previous query is filtered by:
 				<code>
 					 AND m.name
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1629,9 +1629,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1649,9 +1649,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1669,9 +1669,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1689,9 +1689,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1709,9 +1709,9 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
 					</ul>
 				</details>
 			</li>
@@ -1721,7 +1721,7 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 
 .. raw:: html
 
-	<p class='layout-header'>Los campos en el layout lyt_bot_1 son:</p>
+	<p class='layout-header'>The fields in the layout lyt_bot_1 are:</p>
 
 .. raw:: html
 
@@ -1731,14 +1731,14 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT s.sector_id AS id, s.name AS idval FROM sector s WHERE s.sector_id IS NOT NULL AND s.active IS TRUE ORDER BY CASE WHEN s.sector_id = 0 THEN 1 WHEN s.sector_id = -1 THEN 3 ELSE 2 END, s.sector_id
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Stylesheet:</strong> Modificaciones esteticas del campo</summary>
+					<summary><strong>Stylesheet:</strong> Aesthetic modifications of the field</summary>
 					<ul>
 						<li>
 							<details class='no-square'>
@@ -1754,10 +1754,10 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
+						<li><strong>labelPosition</strong> (top): If this value is defined [top, left, none], the label will occupy the relative position with respect to the widget. By default, left is understood. If the label field is empty, labelPosition is omitted.</li>
 						<li>
 							<details class='no-square'>
 								<summary><strong>valueRelation:</strong> </summary>
@@ -1786,22 +1786,22 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT dma_id as id, name as idval FROM dma WHERE dma_id = 0 UNION SELECT dma_id as id, name as idval FROM dma WHERE dma_id IS NOT NULL AND active IS TRUE 
 				</code>
 			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+			<li><strong>Filterc:</strong> The previous query is filtered by:
 				<code>
 					 AND dma.expl_id
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
+						<li><strong>labelPosition</strong> (top): If this value is defined [top, left, none], the label will occupy the relative position with respect to the widget. By default, left is understood. If the label field is empty, labelPosition is omitted.</li>
 						<li>
 							<details class='no-square'>
 								<summary><strong>valueRelation:</strong> </summary>
@@ -1830,17 +1830,17 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> No.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					WITH psector_value AS (   		SELECT value::integer AS psector_value    		FROM config_param_user    		WHERE parameter = 'plan_psector_current' AND cur_user = current_user), 	 tg_op_value AS (   		SELECT value::text AS tg_op_value    		FROM config_param_user    		WHERE parameter = 'utils_transaction_mode' AND cur_user = current_user)   SELECT id::integer as id, name as idval FROM value_state  WHERE id IS NOT NULL  AND CASE    WHEN (SELECT tg_op_value FROM tg_op_value)!='INSERT' THEN id IN (0,1,2)   WHEN (SELECT tg_op_value FROM tg_op_value) ='INSERT' AND (SELECT psector_value FROM psector_value) IS NOT NULL THEN id = 2    ELSE id < 2  END
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
+						<li><strong>labelPosition</strong> (top): If this value is defined [top, left, none], the label will occupy the relative position with respect to the widget. By default, left is understood. If the label field is empty, labelPosition is omitted.</li>
 					</ul>
 				</details>
 			</li>
@@ -1856,22 +1856,22 @@ Si quieres consultar la distribución de los layouts puedes ir a :ref:`Partes de
 			<li><strong>Datatype:</strong> Integer.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, name as idval FROM value_state_type WHERE id IS NOT NULL
 				</code>
 			</li>
-			<li><strong>Filterc:</strong> La consulta anterior esta filtrada por:
+			<li><strong>Filterc:</strong> The previous query is filtered by:
 				<code>
 					 AND value_state_type.state
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
-						<li><strong>setMultiline</strong> (False): Establece la posibilidad de campos multilinea para escritura con enter</li>
-						<li><strong>labelPosition</strong> (top): Si se define este valor [top, left, none], el label ocupará la posición relativa respecto al widget. Por defecto se sobreentiende left. Si el campo label está vacío, labelPosition se omite.</li>
+						<li><strong>setMultiline</strong> (False): Sets the possibility of multiline fields for writing with enter</li>
+						<li><strong>labelPosition</strong> (top): If this value is defined [top, left, none], the label will occupy the relative position with respect to the widget. By default, left is understood. If the label field is empty, labelPosition is omitted.</li>
 					</ul>
 				</details>
 			</li>

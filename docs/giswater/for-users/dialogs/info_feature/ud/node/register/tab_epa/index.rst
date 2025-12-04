@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto register son:
+The EPA types that the object register can have are:
 
 .. toctree::
 	:maxdepth: 1

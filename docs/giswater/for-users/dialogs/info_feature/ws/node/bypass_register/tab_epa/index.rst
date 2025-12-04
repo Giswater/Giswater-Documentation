@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto bypass_register son:
+The EPA types that the object bypass_register can have are:
 
 .. toctree::
 	:maxdepth: 1

@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto jump son:
+The EPA types that the object jump can have are:
 
 .. toctree::
 	:maxdepth: 1

@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto evalve son:
+The EPA types that the object evalve can have are:
 
 .. toctree::
 	:maxdepth: 1

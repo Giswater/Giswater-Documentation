@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto pr_susta_valve son:
+The EPA types that the object pr_susta_valve can have are:
 
 .. toctree::
 	:maxdepth: 1

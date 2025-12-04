@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto tap son:
+The EPA types that the object tap can have are:
 
 .. toctree::
 	:maxdepth: 1

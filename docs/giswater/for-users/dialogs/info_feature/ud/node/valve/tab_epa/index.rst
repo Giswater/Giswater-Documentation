@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto valve son:
+The EPA types that the object valve can have are:
 
 .. toctree::
 	:maxdepth: 1

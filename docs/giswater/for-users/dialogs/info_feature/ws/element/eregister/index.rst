@@ -5,7 +5,7 @@ Eregister
 =========
 
 
-El objeto eregister no tiene descripción.
+The object eregister has no description.
 
 .. toctree::
 	:maxdepth: 1

@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto highpoint son:
+The EPA types that the object highpoint can have are:
 
 .. toctree::
 	:maxdepth: 1

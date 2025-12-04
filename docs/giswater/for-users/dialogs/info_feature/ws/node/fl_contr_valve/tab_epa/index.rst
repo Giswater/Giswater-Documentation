@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto fl_contr_valve son:
+The EPA types that the object fl_contr_valve can have are:
 
 .. toctree::
 	:maxdepth: 1

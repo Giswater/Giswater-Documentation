@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto varc son:
+The EPA types that the object varc can have are:
 
 .. toctree::
 	:maxdepth: 1

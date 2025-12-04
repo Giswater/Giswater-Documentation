@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto vlink son:
+The EPA types that the object vlink can have are:
 
 .. toctree::
 	:maxdepth: 1

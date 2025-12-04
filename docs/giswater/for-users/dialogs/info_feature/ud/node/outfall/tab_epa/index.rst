@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto outfall son:
+The EPA types that the object outfall can have are:
 
 .. toctree::
 	:maxdepth: 1

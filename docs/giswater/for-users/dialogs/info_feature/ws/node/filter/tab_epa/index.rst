@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto filter son:
+The EPA types that the object filter can have are:
 
 .. toctree::
 	:maxdepth: 1

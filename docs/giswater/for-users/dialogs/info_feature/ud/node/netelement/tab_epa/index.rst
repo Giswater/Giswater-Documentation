@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto netelement son:
+The EPA types that the object netelement can have are:
 
 .. toctree::
 	:maxdepth: 1

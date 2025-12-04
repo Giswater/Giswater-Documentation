@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto siphon son:
+The EPA types that the object siphon can have are:
 
 .. toctree::
 	:maxdepth: 1

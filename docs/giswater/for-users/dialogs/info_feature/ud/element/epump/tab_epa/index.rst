@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto epump son:
+The EPA types that the object epump can have are:
 
 .. toctree::
 	:maxdepth: 1

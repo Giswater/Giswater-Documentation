@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto outfall_valve son:
+The EPA types that the object outfall_valve can have are:
 
 .. toctree::
 	:maxdepth: 1

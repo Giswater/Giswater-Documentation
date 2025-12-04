@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto pr_break_valve son:
+The EPA types that the object pr_break_valve can have are:
 
 .. toctree::
 	:maxdepth: 1

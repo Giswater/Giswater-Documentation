@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto green_valve son:
+The EPA types that the object green_valve can have are:
 
 .. toctree::
 	:maxdepth: 1

@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto emeter son:
+The EPA types that the object emeter can have are:
 
 .. toctree::
 	:maxdepth: 1

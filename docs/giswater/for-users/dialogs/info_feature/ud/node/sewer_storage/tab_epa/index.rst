@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto sewer_storage son:
+The EPA types that the object sewer_storage can have are:
 
 .. toctree::
 	:maxdepth: 1

@@ -5,7 +5,7 @@ Estep
 =====
 
 
-El objeto estep no tiene descripción.
+The object estep has no description.
 
 .. toctree::
 	:maxdepth: 1

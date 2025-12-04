@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto change son:
+The EPA types that the object change can have are:
 
 .. toctree::
 	:maxdepth: 1

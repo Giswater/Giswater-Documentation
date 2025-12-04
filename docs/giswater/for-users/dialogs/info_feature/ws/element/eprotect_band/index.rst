@@ -5,7 +5,7 @@ Eprotect Band
 =============
 
 
-El objeto eprotect_band no tiene descripción.
+The object eprotect_band has no description.
 
 .. toctree::
 	:maxdepth: 1

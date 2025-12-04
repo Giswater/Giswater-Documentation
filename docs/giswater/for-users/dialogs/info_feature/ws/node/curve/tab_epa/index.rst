@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto curve son:
+The EPA types that the object curve can have are:
 
 .. toctree::
 	:maxdepth: 1

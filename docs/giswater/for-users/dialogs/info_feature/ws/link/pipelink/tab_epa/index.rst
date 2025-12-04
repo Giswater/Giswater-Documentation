@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto pipelink son:
+The EPA types that the object pipelink can have are:
 
 .. toctree::
 	:maxdepth: 1

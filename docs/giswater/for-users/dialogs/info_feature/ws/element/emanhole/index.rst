@@ -5,7 +5,7 @@ Emanhole
 ========
 
 
-El objeto emanhole no tiene descripción.
+The object emanhole has no description.
 
 .. toctree::
 	:maxdepth: 1

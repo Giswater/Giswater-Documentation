@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto flowmeter son:
+The EPA types that the object flowmeter can have are:
 
 .. toctree::
 	:maxdepth: 1

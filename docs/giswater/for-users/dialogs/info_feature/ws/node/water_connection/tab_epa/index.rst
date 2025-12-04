@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto water_connection son:
+The EPA types that the object water_connection can have are:
 
 .. toctree::
 	:maxdepth: 1

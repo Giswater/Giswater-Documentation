@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto pgully son:
+The EPA types that the object pgully can have are:
 
 .. toctree::
 	:maxdepth: 1

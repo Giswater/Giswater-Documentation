@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto vgully son:
+The EPA types that the object vgully can have are:
 
 .. toctree::
 	:maxdepth: 1

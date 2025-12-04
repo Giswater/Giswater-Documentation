@@ -5,7 +5,7 @@ Ehydrant Plate
 ==============
 
 
-El objeto ehydrant_plate no tiene descripción.
+The object ehydrant_plate has no description.
 
 .. toctree::
 	:maxdepth: 1

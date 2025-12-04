@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto waterwell son:
+The EPA types that the object waterwell can have are:
 
 .. toctree::
 	:maxdepth: 1

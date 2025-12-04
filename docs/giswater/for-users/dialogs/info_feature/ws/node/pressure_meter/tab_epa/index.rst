@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto pressure_meter son:
+The EPA types that the object pressure_meter can have are:
 
 .. toctree::
 	:maxdepth: 1

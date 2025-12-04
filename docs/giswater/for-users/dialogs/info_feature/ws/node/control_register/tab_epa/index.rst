@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto control_register son:
+The EPA types that the object control_register can have are:
 
 .. toctree::
 	:maxdepth: 1

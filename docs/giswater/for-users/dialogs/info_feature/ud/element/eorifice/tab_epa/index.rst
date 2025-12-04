@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto eorifice son:
+The EPA types that the object eorifice can have are:
 
 .. toctree::
 	:maxdepth: 1

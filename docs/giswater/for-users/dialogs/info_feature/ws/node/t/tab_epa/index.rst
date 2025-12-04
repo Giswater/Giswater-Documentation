@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto t son:
+The EPA types that the object t can have are:
 
 .. toctree::
 	:maxdepth: 1

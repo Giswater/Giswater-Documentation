@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto tank son:
+The EPA types that the object tank can have are:
 
 .. toctree::
 	:maxdepth: 1

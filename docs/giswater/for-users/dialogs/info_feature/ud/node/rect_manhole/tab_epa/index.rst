@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto rect_manhole son:
+The EPA types that the object rect_manhole can have are:
 
 .. toctree::
 	:maxdepth: 1

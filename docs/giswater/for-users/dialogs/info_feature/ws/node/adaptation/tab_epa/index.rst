@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto adaptation son:
+The EPA types that the object adaptation can have are:
 
 .. toctree::
 	:maxdepth: 1

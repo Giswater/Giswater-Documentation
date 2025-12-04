@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto flexunion son:
+The EPA types that the object flexunion can have are:
 
 .. toctree::
 	:maxdepth: 1

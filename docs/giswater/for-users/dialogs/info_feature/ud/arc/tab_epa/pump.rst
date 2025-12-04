@@ -7,7 +7,7 @@ List of Result EPA values
 
 .. raw:: html
 
-	<p class='layout-header'>Los campos en el layout lyt_epa_data_1 son:</p>
+	<p class='layout-header'>The fields in the layout lyt_epa_data_1 are:</p>
 
 .. raw:: html
 
@@ -17,14 +17,14 @@ List of Result EPA values
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT id, id AS idval FROM inp_curve WHERE id IS NOT NULL AND curve_type IN ('PUMP', 'PUMP1', 'PUMP2', 'PUMP3', 'PUMP4')
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
@@ -42,14 +42,14 @@ List of Result EPA values
 			<li><strong>Datatype:</strong> String.</li>
 			<li><strong>Mandatory:</strong> No.</li>
 			<li><strong>Editable:</strong> Sí.</li>
-			<li><strong>Dvquerytext:</strong> Los valores de este desplegable estan determinados por la consulta:
+			<li><strong>Dvquerytext:</strong> The values of this dropdown are determined by the query:
 				<code>
 					SELECT  id, idval FROM inp_typevalue WHERE id IS NOT NULL AND typevalue='inp_value_status'
 				</code>
 			</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
@@ -69,7 +69,7 @@ List of Result EPA values
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
@@ -89,7 +89,7 @@ List of Result EPA values
 			<li><strong>Editable:</strong> Sí.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
@@ -101,7 +101,7 @@ List of Result EPA values
 
 .. raw:: html
 
-	<p class='layout-header'>Los campos en el layout lyt_epa_data_2 son:</p>
+	<p class='layout-header'>The fields in the layout lyt_epa_data_2 are:</p>
 
 .. raw:: html
 
@@ -113,7 +113,7 @@ List of Result EPA values
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
@@ -133,7 +133,7 @@ List of Result EPA values
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
@@ -153,7 +153,7 @@ List of Result EPA values
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
@@ -173,7 +173,7 @@ List of Result EPA values
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
@@ -193,7 +193,7 @@ List of Result EPA values
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
@@ -213,7 +213,7 @@ List of Result EPA values
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
@@ -233,7 +233,7 @@ List of Result EPA values
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
@@ -253,7 +253,7 @@ List of Result EPA values
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>
@@ -273,7 +273,7 @@ List of Result EPA values
 			<li><strong>Editable:</strong> No.</li>
 			<li>
 				<details class='no-square'>
-					<summary><strong>Widgetcontrols:</strong> Controles del campo</summary>
+					<summary><strong>Widgetcontrols:</strong> Field controls</summary>
 					<ul>
 						<li><strong>filterSign</strong> (ILIKE): </li>
 					</ul>

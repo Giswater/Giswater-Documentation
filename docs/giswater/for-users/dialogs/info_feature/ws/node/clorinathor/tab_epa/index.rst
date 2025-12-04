@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto clorinathor son:
+The EPA types that the object clorinathor can have are:
 
 .. toctree::
 	:maxdepth: 1

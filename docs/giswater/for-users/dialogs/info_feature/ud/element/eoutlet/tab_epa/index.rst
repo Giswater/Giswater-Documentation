@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto eoutlet son:
+The EPA types that the object eoutlet can have are:
 
 .. toctree::
 	:maxdepth: 1

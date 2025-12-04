@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto junction son:
+The EPA types that the object junction can have are:
 
 .. toctree::
 	:maxdepth: 1

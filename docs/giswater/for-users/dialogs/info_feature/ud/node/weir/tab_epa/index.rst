@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto weir son:
+The EPA types that the object weir can have are:
 
 .. toctree::
 	:maxdepth: 1

@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto waccel son:
+The EPA types that the object waccel can have are:
 
 .. toctree::
 	:maxdepth: 1

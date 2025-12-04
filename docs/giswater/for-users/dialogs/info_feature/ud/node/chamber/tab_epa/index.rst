@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto chamber son:
+The EPA types that the object chamber can have are:
 
 .. toctree::
 	:maxdepth: 1

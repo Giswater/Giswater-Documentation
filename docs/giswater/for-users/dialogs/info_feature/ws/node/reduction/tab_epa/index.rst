@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto reduction son:
+The EPA types that the object reduction can have are:
 
 .. toctree::
 	:maxdepth: 1

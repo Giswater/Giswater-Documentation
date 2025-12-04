@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto out_manhole son:
+The EPA types that the object out_manhole can have are:
 
 .. toctree::
 	:maxdepth: 1

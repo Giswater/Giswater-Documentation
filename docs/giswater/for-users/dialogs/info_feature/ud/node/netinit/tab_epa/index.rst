@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto netinit son:
+The EPA types that the object netinit can have are:
 
 .. toctree::
 	:maxdepth: 1

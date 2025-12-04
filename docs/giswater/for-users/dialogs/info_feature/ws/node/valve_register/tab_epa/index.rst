@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto valve_register son:
+The EPA types that the object valve_register can have are:
 
 .. toctree::
 	:maxdepth: 1

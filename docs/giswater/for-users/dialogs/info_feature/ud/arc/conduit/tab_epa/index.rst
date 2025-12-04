@@ -5,7 +5,7 @@ EPA
 ===
 
 
-Los tipos de EPA que puede tener el objeto conduit son:
+The EPA types that the object conduit can have are:
 
 .. toctree::
 	:maxdepth: 1
